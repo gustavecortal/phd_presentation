@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.19)  20 OCT 2025 10:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.19)  20 OCT 2025 12:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,9 +800,6 @@ File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `fig:placeholder' multiply defined.
 
-
-LaTeX Warning: Label `tab:example' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -962,12 +959,12 @@ Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./main.nav)
-<img/lmf_logo_emnlp.png, id=13, 1235.61626pt x 421.575pt>
+<img/lmf_logo_emnlp.png, id=37, 1235.61626pt x 421.575pt>
 File: img/lmf_logo_emnlp.png Graphic file (type png)
 <use img/lmf_logo_emnlp.png>
 Package pdftex.def Info: img/lmf_logo_emnlp.png  used on input line 130.
 (pdftex.def)             Requested size: 113.81102pt x 38.82782pt.
-<img/logo_ens_saclay.png, id=15, 501.5538pt x 110.814pt>
+<img/logo_ens_saclay.png, id=39, 501.5538pt x 110.814pt>
 File: img/logo_ens_saclay.png Graphic file (type png)
 <use img/logo_ens_saclay.png>
 Package pdftex.def Info: img/logo_ens_saclay.png  used on input line 130.
@@ -977,49 +974,44 @@ Package pdftex.def Info: img/logo_ens_saclay.png  used on input line 130.
 [1
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./img/lmf_logo_emnlp.png> <./img/logo_ens_saclay.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 169.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 169.
- (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 169.
- (c:/texlive/2025/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
 
 [2
 
 ]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 177.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 177.
+ (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 177.
+ (c:/texlive/2025/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
+)
 
 [3
 
 ]
-<img/scherer_integrated_framework.png, id=45, 1084.05pt x 461.725pt>
-File: img/scherer_integrated_framework.png Graphic file (type png)
-<use img/scherer_integrated_framework.png>
-Package pdftex.def Info: img/scherer_integrated_framework.png  used on input line 216.
-(pdftex.def)             Requested size: 245.83282pt x 104.7009pt.
-
 
 [4
 
- <./img/scherer_integrated_framework.png>]
+]
 
 [5
 
 ]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 276.
-
+<img/scherer_integrated_framework.png, id=79, 1084.05pt x 461.725pt>
+File: img/scherer_integrated_framework.png Graphic file (type png)
+<use img/scherer_integrated_framework.png>
+Package pdftex.def Info: img/scherer_integrated_framework.png  used on input line 237.
+(pdftex.def)             Requested size: 245.83282pt x 104.7009pt.
 
 
 [6
 
-]
+ <./img/scherer_integrated_framework.png>]
 
 [7
 
@@ -1028,30 +1020,15 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
 [8
 
 ]
-<img/dream_method.png, id=87, 289.8027pt x 210.3057pt>
-File: img/dream_method.png Graphic file (type png)
-<use img/dream_method.png>
-Package pdftex.def Info: img/dream_method.png  used on input line 357.
-(pdftex.def)             Requested size: 184.3758pt x 133.79935pt.
 
-pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.357 \end{frame}
-                 
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 313.
+
+
 
 [9
 
- <./img/dream_method.png>]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <9> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 408.
-
-
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <6> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 408.
-
-
+]
 
 [10
 
@@ -1064,164 +1041,192 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <6> not available
 [12
 
 ]
+<img/dream_method.png, id=134, 289.8027pt x 210.3057pt>
+File: img/dream_method.png Graphic file (type png)
+<use img/dream_method.png>
+Package pdftex.def Info: img/dream_method.png  used on input line 407.
+(pdftex.def)             Requested size: 245.83282pt x 178.39806pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.407 \end{frame}
+                 
 
 [13
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
+ <./img/dream_method.png>]
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-
- []
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 566--566
-[]|\T1/cmss/m/it/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 566--566
-\T1/cmss/m/n/10 ences such as thoughts,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--566
-
- []
-
-
-Overfull \vbox (6.32065pt too high) detected at line 566
- []
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <7> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 458.
 
 
 
 [14
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{tab:example}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.608 \end{frame}
-                 
 
 [15
 
-]
+] Excluding 'comment' comment.
 
 [16
 
 ]
-<img/viet_odds_2.png, id=144, 710.655pt x 420.6114pt>
-File: img/viet_odds_2.png Graphic file (type png)
-<use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 665.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-<img/viet_odds_3.png, id=145, 710.655pt x 420.6114pt>
-File: img/viet_odds_3.png Graphic file (type png)
-<use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 665.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 665--665
- [][] 
- []
-
-
 
 [17
 
- <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
-<img/dendogram_viet.png, id=158, 655.9707pt x 427.3566pt>
-File: img/dendogram_viet.png Graphic file (type png)
-<use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 686.
-(pdftex.def)             Requested size: 169.01036pt x 110.10587pt.
+]
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
 
-Overfull \vbox (2.47713pt too high) detected at line 686
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+
+ []
+
+
+Underfull \hbox (badness 2027) in paragraph at lines 635--635
+[]|\T1/cmss/m/it/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 635--635
+\T1/cmss/m/n/10 ences such as thoughts,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--635
+
  []
 
 
 
 [18
 
- <./img/dendogram_viet.png>]
+]
 
 [19
 
-]
+] Excluding 'comment' comment.
+<img/viet_odds_2.png, id=181, 710.655pt x 420.6114pt>
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 738.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+<img/viet_odds_3.png, id=182, 710.655pt x 420.6114pt>
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 738.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 
-[20
-
-]
-<img/topic_modeling/methods_v3.png, id=180, 513.8397pt x 281.1303pt>
-File: img/topic_modeling/methods_v3.png Graphic file (type png)
-<use img/topic_modeling/methods_v3.png>
-Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 733.
-(pdftex.def)             Requested size: 282.61272pt x 154.62213pt.
-
-
-[21
-
- <./img/topic_modeling/methods_v3.png>]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=188, 849.1725pt x 409.2891pt>
-File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
-<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 744.
-(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
-
-
-[22
-
- <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=196, 849.1725pt x 409.2891pt>
-File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
-<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 755.
-(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
-
-
-[23
-
- <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>]
-<img/topic_modeling/boxplot_description/popgen_description_larger.png, id=204, 991.5444pt x 1424.4417pt>
-File: img/topic_modeling/boxplot_description/popgen_description_larger.png Graphic file (type png)
-<use img/topic_modeling/boxplot_description/popgen_description_larger.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger.png  used on input line 764.
-(pdftex.def)             Requested size: 198.30536pt x 284.88329pt.
-
-Overfull \vbox (179.08423pt too high) detected at line 764
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 738--738
+ [][] 
  []
 
 
 
+[20
+
+ <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
+<img/dendogram_viet.png, id=195, 655.9707pt x 427.3566pt>
+File: img/dendogram_viet.png Graphic file (type png)
+<use img/dendogram_viet.png>
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 759.
+(pdftex.def)             Requested size: 169.01036pt x 110.10587pt.
+
+Overfull \vbox (2.47713pt too high) detected at line 759
+ []
+
+
+
+[21
+
+ <./img/dendogram_viet.png>]
+
+[22
+
+]
+
+[23
+
+]
+
 [24
 
- <./img/topic_modeling/boxplot_description/popgen_description_larger.png>]
+]
+<img/topic_modeling/methods_v3.png, id=220, 513.8397pt x 281.1303pt>
+File: img/topic_modeling/methods_v3.png Graphic file (type png)
+<use img/topic_modeling/methods_v3.png>
+Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 821.
+(pdftex.def)             Requested size: 308.3062pt x 168.67947pt.
+
+Overfull \hbox (1.01633pt too wide) in paragraph at lines 821--821
+ [] 
+ []
+
+
 
 [25
+
+ <./img/topic_modeling/methods_v3.png>]
+<img/topic_modeling/boxplot_description/popgen_description_larger.png, id=229, 991.5444pt x 1424.4417pt>
+File: img/topic_modeling/boxplot_description/popgen_description_larger.png Graphic file (type png)
+<use img/topic_modeling/boxplot_description/popgen_description_larger.png>
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger.png  used on input line 830.
+(pdftex.def)             Requested size: 198.30536pt x 284.88329pt.
+
+Overfull \vbox (179.08423pt too high) detected at line 830
+ []
+
+
+
+[26
+
+ <./img/topic_modeling/boxplot_description/popgen_description_larger.png>]
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=237, 849.1725pt x 409.2891pt>
+File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
+<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 841.
+(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
+
+
+[27
+
+ <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=245, 849.1725pt x 409.2891pt>
+File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
+<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 852.
+(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
+
+
+[28
+
+ <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>]
+
+[29
 
 ]
 \tf@nav=\write8
@@ -1233,7 +1238,7 @@ Overfull \vbox (179.08423pt too high) detected at line 764
 \tf@snm=\write10
 \openout10 = `main.snm'.
 
-runsystem(latexminted cleantemp  --timestamp 20251020105100 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleantemp  --timestamp 20251020124738 FAD58DE7366495DB4650CFEFAC2FCD61)...executed safely (allowed).
 
  (./main.aux)
  ***********
@@ -1245,21 +1250,21 @@ L3 programming layer <2025-09-02>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 5BD79C9995ECD0033839DB40FCF47F9E;1556.
  ) 
 Here is how much of TeX's memory you used:
- 30405 strings out of 467796
- 613097 string characters out of 5435961
- 1127721 words of memory out of 5000000
- 58392 multiletter control sequences out of 15000+600000
- 650180 words of font info for 93 fonts, out of 8000000 for 9000
+ 30451 strings out of 467796
+ 613544 string characters out of 5435961
+ 1127725 words of memory out of 5000000
+ 58426 multiletter control sequences out of 15000+600000
+ 648718 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,123p,781b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
-Output written on main.pdf (25 pages, 2928793 bytes).
+<c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb>
+Output written on main.pdf (29 pages, 2909055 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 374 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

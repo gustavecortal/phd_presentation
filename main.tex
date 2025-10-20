@@ -86,7 +86,7 @@
 
 %\newcommand{\comment}[1]{}
 
-\title{Natural language processing of subjectivity analysis in personal narratives}
+\title{Natural language processing for\\ subjectivity analysis in personal narratives}
 \author{Gustave Cortal}
 \titlegraphic{
     \includegraphics[width=4cm]{img/lmf_logo_emnlp.png}
@@ -129,6 +129,14 @@
   \titlepage
 \end{frame}
 
+\begin{frame}{}
+\Large
+\begin{center}
+    Introduction
+    \section{Introduction}
+\end{center}
+\end{frame}
+
 
 \begin{frame}{Introduction}
 
@@ -168,6 +176,19 @@
     
 \end{frame}
 
+\begin{frame}{}
+\Large
+\begin{center}
+    Definition of objectives using cognitive science
+    \section{Definition of objectives using cognitive science}
+\end{center}
+\vspace{1.5cm}
+
+    \footnotesize
+
+    \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
+\end{frame}
+
 \begin{frame}{Definition of objectives and scope using cognitive science}
 
 \textbf{Goal}: Identify limitations and research directions
@@ -189,33 +210,33 @@ What are current \textbf{limitations}?
 \end{itemize}
 
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 
-\scriptsize
+%\scriptsize
 
-\textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
+%\textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
     
 \end{frame}
 
-\begin{frame}{Definition of objectives and scope using cognitive science}
+\begin{frame}{Integrated framework for emotion theories}
 
 How to integrate psychological theories of emotion?
 
 \pause
 \vspace{0.5cm}
 
-I use the \textbf{integrated framework for emotion theories} (Scherer, 2022):
+%I use the \textbf{integrated framework for emotion theories} (Scherer, 2022):
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{img/scherer_integrated_framework.png}
-    \caption{Emotional episodes are synchronized changes in four components.}
+    \caption{Emotional episodes are synchronized changes in four components (Scherer, 2022).}
     \label{fig:placeholder}
 \end{figure}
     
 \end{frame}
 
-\begin{frame}{Definition of objectives and scope using cognitive science}
+\begin{frame}{Emotion expression modes}
 
 Which verbal signs are used to infer expressed emotions?
 
@@ -240,15 +261,30 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textbf{em
 $\rightarrow$ Different emotion expression modes are more or less difficult to interpret.
 \end{frame}
 
+\begin{frame}{}
+\Large
+\begin{center}
+    Construction of an emotion dataset
+    \section{Construction of an emotion dataset}
+
+    \vspace{1.5cm}
+\end{center}
+
+\footnotesize
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
+\end{frame}
+
 \begin{frame}{Construction of an emotion dataset}
 
 \textbf{Goal}: A more comprehensive understanding of emotional events
 
+\vspace{0.5cm}
 \pause
 
 \begin{table}
     \centering
-    \resizebox{0.9\textwidth}{!}{
+    \resizebox{1\textwidth}{!}{
 \begin{tabular}{l|p{0.78\textwidth}}
  
                    \textbf{Component} &
@@ -265,26 +301,46 @@ $\rightarrow$ Different emotion expression modes are more or less difficult to i
 \label{tab:description_corpus}
 \end{table} % open-ended questions, my thesis director and I
 
+\vspace{0.5cm}
 \small
 More than 1,000 narratives were collected during emotion regulation sessions
-\vspace{0.5cm}
+%\vspace{0.5cm}
 
-\scriptsize
+%\scriptsize
 
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
+%\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
     
 \end{frame}
 
-\begin{frame}{Training language models for emotion analysis}
+\begin{frame}{}
+\Large
+\begin{center}
+    Training language models for emotion analysis
+    \section{Training language models for emotion analysis}
+\end{center}
 
-\textbf{Goal}: Discrete emotion detection based on components
+\vspace{1.5cm}
+
+\footnotesize
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.
 
 \vspace{0.5cm}
-\pause
+
+\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+
+\end{frame}
+
+\begin{frame}{Discrete emotion detection based on components}
+
+%\textbf{Goal}: Discrete emotion detection based on components
+
+%\vspace{0.5cm}
+%\pause
 
 \begin{table}
     \centering
-    \resizebox{0.9\textwidth}{!}{
+    \resizebox{1\textwidth}{!}{
 \begin{tabular}{l|lllllll}
 
 &\multicolumn{3}{c}{\textbf{Logistic Regression}}&\multicolumn{3}{c}{\textbf{CamemBERT}} \\
@@ -304,16 +360,10 @@ Only \textsc{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} &
     %\caption{Scores (± std) for discrete emotion classification based on components.}
     \label{tab:pred_emotion}
 \end{table}
-
-\vspace{0.5cm}
-
-\scriptsize
-
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.
     
 \end{frame}
 
-\begin{frame}{Training language models for emotion analysis}
+\begin{frame}{Quantitative analysis of dream narratives}
 
 Need other datasets with narrative structure, emotional content, and available for research
 
@@ -336,37 +386,37 @@ How to automate the annotation process?
     
 \end{frame}
 
-\begin{frame}{Training language models for emotion analysis}
+\begin{frame}{Character and emotion detection in dream narratives}
 
-\textbf{Goal}: Character and emotion detection in dream narratives
+%\textbf{Goal}: Character and emotion detection in dream narratives
 
-\pause
+%\pause
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.6\linewidth]{img/dream_method.png}
+    \includegraphics[width=0.8\linewidth]{img/dream_method.png}
     %\caption{Codes describing characters and their emotions are converted into
 %natural language to produce the training data.}
     \label{fig:placeholder}
 \end{figure}
 
-\scriptsize
+%\scriptsize
 
-\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+%\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
     
 \end{frame}
 
-\begin{frame}{Training language models for emotion analysis}
+\begin{frame}{Results}
 
 \scriptsize
 
 LaMini-Flan-T5 finetuned on 1823 dream narratives
 
-\small
+\normalsize
 
 \begin{table}
     \centering
-    \resizebox{0.9\textwidth}{!}{
+    \resizebox{1.0\textwidth}{!}{
 \begin{tabular}{l|cccccc}
 \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
 \hline
@@ -403,10 +453,27 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
 
 %\href{https://huggingface.co/gustavecortal/dream-t5}{Dream‑T5}, a language model for emotion and character prediction in dream narratives. 2023.
 
-\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+%\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
     
 \end{frame}
 
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Formalization of style in narratives
+    \section{Formalization of style in narratives}
+\end{center}
+
+\vspace{1.5cm}
+
+\footnotesize
+
+\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+\end{frame}
+
+
+\begin{comment}
 
 
 \begin{frame}{Formalization of style in narratives}
@@ -448,11 +515,13 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
     \label{tab:example}
 \end{table}
 
-\scriptsize
+%\scriptsize
 
-\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+%\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
     
 \end{frame}
+
+\end{comment}
 
 %\begin{frame}{Formalization of style in narratives}
 
@@ -524,7 +593,7 @@ We narrow the general definition of style: \textit{a distinctive manner of commu
 
 \begin{frame}{Categorizing linguistic features}
 
-Our categorization is grounded in \textit{systemic functional linguistics}: language represents experience through \textit{processes, participants and circumstances}%  (Halliday, 2014)
+According to systemic functional linguistics, language represents experience through \textit{processes, participants and circumstances}%  (Halliday, 2014)
 
 \pause
 
@@ -607,7 +676,9 @@ Our categorization is grounded in \textit{systemic functional linguistics}: lang
     
 \end{frame}
 
-\begin{frame}{Case Study on Dream Narratives}
+\begin{comment}
+
+\begin{frame}{Case study on dream narratives}
 
 We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
 
@@ -630,9 +701,11 @@ We construct a \textit{norm} (n=720) to compare how each series deviates from a 
 \vspace{0.25cm}
 \pause
 
-To identified features, we perform in-context learning with Llama 3 8B
+To identify features, we perform in-context learning with Llama 3 8B.
     
 \end{frame}
+
+\end{comment}
 
 \begin{frame}{Results on the Vietnam War veteran}
 
@@ -714,22 +787,46 @@ Two templates: a highly action-oriented structure or a more varied structure alt
 \vspace{0.5cm}
 %\pause
 
-\small
+%\small
 
-\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
     
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Fine-grained mental health topic modeling using large language models
+    \section{Fine-grained mental health topic modeling using large language models}
+\end{center}
+
+\vspace{1.5cm}
+
+\footnotesize
+
+\textbf{G. Cortal}, S. Guessoum, X. Cao, R. Riad. \textit{Fine-grained mental health topic modeling in different cohorts using large language models} (preprint). 2025. 
+
 \end{frame}
 
 \begin{frame}{Pipeline for semantic clustering and description generation}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.55]{img/topic_modeling/methods_v3.png}
+    \includegraphics[scale=0.6]{img/topic_modeling/methods_v3.png}
     %\caption{\textbf{Computational pipeline for semantic clustering and description generation}. Speech transcripts are converted to semantic vectors via multilingual embeddings, dimensionally reduced, and grouped into clusters using density-based methods. Each cluster undergoes: (1) statistical analysis linking cluster membership to clinical/demographic  variables, and (2) automatic description generation where a large language model summarizes transcripts per cluster into human-readable natural language. This dual quantitative-qualitative output enables both statistical hypothesis testing and clinical interpretation of discovered topics.}
     %\caption{Each cluster undergoes: (1) statistical analysis linking cluster membership to clinical/demographic  variables, and (2) automatic description generation where a large language model summarizes transcripts per cluster into human-readable natural language.}
     \label{fig:methods}
 \end{figure}
 
+\end{frame}
+
+\begin{frame}{Distribution of PHQ-9 depression scores across clusters}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{img/topic_modeling/boxplot_description/popgen_description_larger.png}
+    \caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \label{fig:popgen_description}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Effect size across tasks and clinical scores}
@@ -754,19 +851,10 @@ Two templates: a highly action-oriented structure or a more varied structure alt
 
 \end{frame}
 
-\begin{frame}{Fine-grained mental health topic modeling}
-  \begin{figure}
-    \centering
-    \includegraphics[scale=0.2]{img/topic_modeling/boxplot_description/popgen_description_larger.png}
-    \caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
-    \label{fig:popgen_description}
-\end{figure}
-\end{frame}
-
 \begin{frame}{Appendix}
 
 \begin{itemize}
-    \item \textit{Fine-grained mental health topic modeling in different populations using large language models} (PhD internship, to be submitted for Nature Mental Health)
+    %\item \textit{Fine-grained mental health topic modeling in different populations using large language models} (PhD internship, to be submitted for Nature Mental Health)
     \item \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget}, a language model for psychological and philosophical reasoning, 2025.
     \item N. Richet, S. Belharbi, H. Aslam, M. Schadt, M. González-González, \textbf{G. Cortal}, A. Koerich, M. Pedersoli, A. Finkel, S. Bacon, E. Granger. \href{https://arxiv.org/abs/2407.12927}{Textualized and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild}. \textit{ABAW, ECCV 2024}.
 \end{itemize}
