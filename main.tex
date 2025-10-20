@@ -86,8 +86,13 @@
 
 %\newcommand{\comment}[1]{}
 
-\title{Natural language processing for subjectivity analysis in personal narratives}
+\title{Natural language processing of subjectivity analysis in personal narratives}
 \author{Gustave Cortal}
+\titlegraphic{
+    \includegraphics[width=4cm]{img/lmf_logo_emnlp.png}
+    \hspace{1cm}
+    \includegraphics[width=5cm]{img/logo_ens_saclay.png}
+}
 \date{\today}
 
 \makeatletter
@@ -122,10 +127,6 @@
 
 \begin{frame}
   \titlepage
-  \vspace{-1.5cm}
-  \begin{center}
-    \includegraphics[height=1.5cm]{img/logo_ens_saclay.png}
-  \end{center}
 \end{frame}
 
 
@@ -203,7 +204,7 @@ How to integrate psychological theories of emotion?
 \pause
 \vspace{0.5cm}
 
-I use the integrated framework for emotion theories (Scherer, 2022):
+I use the \textbf{integrated framework for emotion theories} (Scherer, 2022):
 
 \begin{figure}
     \centering
@@ -212,6 +213,31 @@ I use the integrated framework for emotion theories (Scherer, 2022):
     \label{fig:placeholder}
 \end{figure}
     
+\end{frame}
+
+\begin{frame}{Definition of objectives and scope using cognitive science}
+
+Which verbal signs are used to infer expressed emotions?
+
+\pause
+\vspace{0.5cm}
+
+Raphaël Micheli categorizes a range of linguistic markers into three \textbf{emotion expression modes} (Micheli, 2014). The emotion can be: 
+
+%\cite{Micheli2014}
+\pause
+\vspace{0.5cm}
+
+\begin{itemize}[<+->]
+    \item \textit{labeled} explicitly with an emotional term ("I am \underline{sad}")
+    \item \textit{shown} with utterance features such as interjections and punctuations ("\underline{Ah!} That's great\underline{!}")
+    \item \textit{suggested} with the description of a situation which generally, in a given sociocultural context, leads to an emotion ("\underline{She gave me a gift}")
+\end{itemize}
+
+\pause
+\vspace{0.5cm}
+
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret.
 \end{frame}
 
 \begin{frame}{Construction of an emotion dataset}
@@ -428,21 +454,245 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
     
 \end{frame}
 
-\begin{frame}{Formalization of style in narratives}
+%\begin{frame}{Formalization of style in narratives}
+
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.8\linewidth]{img/blind_odds_3.png}
+%    \caption{Top substring odds ratio between the blind series and the norm. Based on 381 sequences from 15 blind dreamers}
+%    \label{fig:placeholder}
+%\end{figure}
+
+%\vspace{0.5cm}
+
+%\scriptsize
+
+%\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+    
+%\end{frame}
+
+\begin{frame}{Introduction}
+
+\textbf{Research question}: How is subjective experience communicated in narratives?
+
+\vspace{0.5cm}
+\pause
+
+We use narratives to express our representations of reality and make sense of the world %(Bruner, 1990) 
+
+\vspace{0.5cm}
+\pause
+
+In everyday usage, style refers to a distinctive manner of expression
+
+\vspace{0.5cm}
+\pause
+
+We use style as a proxy to study how subjective experience is linguistically communicated
+
+\vspace{0.5cm}
+\pause
+
+We narrow the general definition of style: \textit{a distinctive manner of communicating subjective experience in narratives}
+
+\end{frame}
+
+\begin{frame}{Contributions}
+
+\textbf{Problem}: Style is an intuitive notion; we need an operational definition
+
+\vspace{0.25cm}
+\pause
+
+\textbf{Hypothesis}: An individual uses some redundant choices of features that characterize its style
+
+\vspace{0.25cm}
+\pause
+
+\textbf{Research task}: Formalize style as \textit{patterns of linguistic choices that encode subjective experience}
+
+\vspace{0.5cm}
+\pause
+
+\begin{enumerate}[<+->]
+    \item A sequence-based framework defining style as patterns in sequences of linguistic choices grounded in systemic functional linguistics
+    \item A methodology for automatically identifying patterns using sequence analysis
+    \item A case study on dream narratives %, showing how the analysis of patterns can reveal psychological insights
+\end{enumerate}
+    
+\end{frame}
+
+\begin{frame}{Categorizing linguistic features}
+
+Our categorization is grounded in \textit{systemic functional linguistics}: language represents experience through \textit{processes, participants and circumstances}%  (Halliday, 2014)
+
+\pause
+
+\begin{table}[!htb]
+    \centering
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{p{4cm}|p{11cm}}
+        %\hline
+        \textbf{Processes} & \textbf{Examples} \\ \hline
+        \textit{Action}: actions and events in the physical world. &
+        [He]$_{\text{Actor}}$ [\textbf{takes}]$_{\text{Action}}$ [the valuable]$_{\text{Affected}}$ \newline
+        
+        [Members of my cult]$_{\text{Actor}}$ [\textbf{have made]}$_{\text{Action}}$ [1500 euros]$_{\text{Result}}$ \newline
+        
+        [I]$_{\text{Actor}}$ [\textbf{give}]$_{\text{Action}}$ [her]$_{\text{Recipient}}$ [a chance]$_{\text{Range}}$ \\ \hline
+        
+        \textit{Mental}: internal experiences such as thoughts, perceptions, and feelings. &
+        [We]$_{\text{Senser}}$ [\textbf{believe}]$_{\text{Mental}}$ [women are the leaders of change]$_{\text{Phenomenon}}$ \newline
+        
+        [The moon]$_{\text{Senser}}$ [\textbf{sees}]$_{\text{Mental}}$ [the earth]$_{\text{Phenomenon}}$ \newline
+        
+        [He]$_{\text{Senser}}$ [\textbf{disliked}]$_{\text{Mental}}$ [Gilbert's writing]$_{\text{Phenomenon}}$ \\ \hline
+        
+        \textit{Verbal}: acts of communication. &
+        [David]$_{\text{Sayer}}$ [\textbf{said}]$_{\text{Verbal}}$ [``the corrupt, criminals and money launderers'']$_{\text{Verbiage}}$ \\ \hline
+        
+        \textit{State}: states of being, having, or existence. &
+
+         There [\textbf{was}]$_{\text{Existential}}$ [a swimming pool]$_{\text{Existent}}$ \newline
+        
+        [John]$_{\text{Carrier}}$ [\textbf{is}]$_{\text{State}}$ [an interesting teacher]$_{\text{Attribute}}$ \newline
+        
+        [Hadrian's Wall]$_{\text{Possessor}}$ [\textbf{has}]$_{\text{State}}$ [something for everyone]$_{\text{Possessed}}$ \\ %\hline
+    \end{tabular}}
+    \caption{Processes with their participants.}
+    \label{tab:process_participants}
+\end{table}
+    
+\end{frame}
+
+\begin{frame}{Pipeline for our sequence-based framework}
+
+
+\begin{table}[!ht]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.1}
+  \begin{threeparttable}
+    %\caption{Illustrative pipeline for our sequence-based framework. We first segment “I wake in a dark room. I feel a cold wind. I tell myself to move.” into clauses, then identify features such as processes and participants for each clause. Each text is mapped to a symbolic sequence using an alphabet based on extracted features.}
+    \label{tab:example}
+    \begin{tabular}{lll}
+      %\toprule
+      \textbf{Clause} & \textbf{Process (symbol)} & \textbf{Participants} \\
+      \midrule
+      I wake in a dark room         & Action (\textbf{a})  & Actor \\
+      I feel a cold wind            & Mental (\textbf{m})  & Senser,\\
+                                            &             & Phenomenon \\
+      I tell myself to move         & Verbal (\textbf{v})  & Sayer,\\
+                                            &             & Recipient \\
+      \bottomrule
+    \end{tabular}
+
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \textbf{Sequence:} $amv$\quad|\quad
+            \textbf{Substrings:} \{am, mv\}
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+\pause
+
+\begin{enumerate}[<+->]
+    \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
+    \item Identify features (\textit{e.g.}, processes and participants) for each clause
+    \item Each narrative is mapped to a symbolic sequence using an alphabet based on identified features
+\end{enumerate}
+
+%We define \textit{style} as patterns in choices within a system of linguistic features inspired by the transitivity system in systemic functional linguistics. We now need to explain what is a choice. To account for a subjective experience, an author makes a series of choices within a system of features. 
+    
+\end{frame}
+
+\begin{frame}{Case Study on Dream Narratives}
+
+We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
+
+\vspace{0.25cm}
+\pause
+
+We use DreamBank, a database of more than 27,000 narratives with 72 series of dreamers
+
+\vspace{0.25cm}
+\pause
+
+We analyze five series of dreamers: long-term blind dreamers (n=361), \textit{ed} (a widower, n=139), \textit{izzy} (a teenager, n=1091), \textit{merri} (an artist, n=202), and \textit{viet} (a Vietnam War veteran with PTSD, n=566)%. A description of each series is accessible on the DreamBank
+
+\vspace{0.25cm}
+\pause
+
+We construct a \textit{norm} (n=720) to compare how each series deviates from a hypothetical average dreamer %This norm comprises a random sample of ten narratives from each series of DreamBank, resulting in a collection of 720 dream narratives.
+
+
+\vspace{0.25cm}
+\pause
+
+To identified features, we perform in-context learning with Llama 3 8B
+    
+\end{frame}
+
+\begin{frame}{Results on the Vietnam War veteran}
+
+We compare the proportion of sequences containing a given substring
+
+\pause
+
+\begin{figure}[!htb]
+     \begin{subfigure}[b]{0.5\textwidth}
+         \centering
+         \includegraphics[scale=0.2]{img/viet_odds_2.png}
+         \caption{Size 2.}
+         \label{fig:viet_odds2}
+     \end{subfigure}
+         \begin{subfigure}[b]{0.4\textwidth}
+         \centering
+         \includegraphics[scale=0.2]{img/viet_odds_3.png}
+         \caption{Size 3.}
+         \label{fig:viet_odds3}
+     \end{subfigure}
+        \caption{Top substring odds ratio between the veteran and the norm}
+        \label{fig:viet_odds}
+\end{figure}
+
+\pause
+
+
+We show a preference for \textit{viet} to remain in a verbal process, as indicated by substrings such as \textit{verbal.verbal} and \textit{verbal.verbal.verbal} with high odds ratios (respectively 2.00 and 1.75)
+
+\end{frame}
+
+\begin{frame}{Results on the Vietnam War veteran}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\linewidth]{img/blind_odds_3.png}
-    \caption{Top substring odds ratio between the blind series and the norm. Based on 381 sequences from 15 blind dreamers}
-    \label{fig:placeholder}
+    \includegraphics[width=0.55\linewidth]{img/dendogram_viet.png}
+    \caption{Dendrogram with Ward linkage and cosine similarity}% on substrings of size one, two, and three.}
+    \label{fig:dendogram}
 \end{figure}
 
-\vspace{0.5cm}
+\vspace{0.25cm}
+\pause
 
-\scriptsize
+\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=action, m=mental, s=state, v=verbal$
 
-\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+\vspace{0.25cm}
+\pause
+
+Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
     
+\end{frame}
+
+\begin{frame}{Perspectives}
+
+\begin{itemize}[<+->]
+    \item \textbf{Authorship profiling}: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
+    \item \textbf{Style-conditioned narrative generation}: generating narratives from a sequence of linguistic features
+    \item \textbf{Applying methods from complexity science and formal language theory}: analyzing subsequences, using complexity measures to quantify redundancies, etc.
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}{Conclusion}
@@ -468,6 +718,49 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
 
 \textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
     
+\end{frame}
+
+\begin{frame}{Pipeline for semantic clustering and description generation}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.55]{img/topic_modeling/methods_v3.png}
+    %\caption{\textbf{Computational pipeline for semantic clustering and description generation}. Speech transcripts are converted to semantic vectors via multilingual embeddings, dimensionally reduced, and grouped into clusters using density-based methods. Each cluster undergoes: (1) statistical analysis linking cluster membership to clinical/demographic  variables, and (2) automatic description generation where a large language model summarizes transcripts per cluster into human-readable natural language. This dual quantitative-qualitative output enables both statistical hypothesis testing and clinical interpretation of discovered topics.}
+    %\caption{Each cluster undergoes: (1) statistical analysis linking cluster membership to clinical/demographic  variables, and (2) automatic description generation where a large language model summarizes transcripts per cluster into human-readable natural language.}
+    \label{fig:methods}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Effect size across tasks and clinical scores}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
+    %\caption{Effect size across tasks and clinical scores for the French general population cohort}
+    \label{fig:popgen_clinical_heatmap}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Effect size across tasks and demographics scores}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
+    %\caption{Effect size across tasks and demographics scores for the French general population cohort}
+    \label{fig:popgen_demo_heatmap}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Fine-grained mental health topic modeling}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{img/topic_modeling/boxplot_description/popgen_description_larger.png}
+    \caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \label{fig:popgen_description}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Appendix}
