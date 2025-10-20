@@ -41,7 +41,7 @@
 \definecolor{DarkBlue}{rgb}{0.1,0.1,0.9}
 
 \hypersetup{
-    colorlinks=true,
+    colorlinks=false,
     linkcolor=bluepanam,
     filecolor=bluepanam,      
     urlcolor=bluepanam,
@@ -71,20 +71,31 @@
 \beamertemplatenavigationsymbolsempty
 % --end pap's style
 
-%\usepackage[backend=biber,
-%            style=apa,
-%            block=par,]{biblatex}
-%\usepackage[backend=bibtex]{biblatex}
-%\bibliography{sample.bib}
-%\usepackage{natbib}
-%\bibliographystyle{plain}  % or ieeetr, apalike, etc.
-%\bibliography{sample_bibtex.bib}
-
 %\newcommand{\customcite}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}, \citeurl{#1}}
-%\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
+\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
 \newcommand{\parensmall}[1]{{\scriptsize #1}}
 
+\usepackage{xurl}             % allow line breaks in long URLs
+\usepackage{ragged2e}         % better ragged-right with hyphenation
+\usepackage{xspace}           % for intelligent spacing after commands
+\setlength{\emergencystretch}{3em} % gentle last-resort stretch
+
 %\newcommand{\comment}[1]{}
+
+\usepackage[style=authoryear,natbib=true,backend=biber]{biblatex}
+\addbibresource{phd_slides.bib}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=bluepanam,
+  filecolor=bluepanam,      
+  urlcolor=bluepanam,
+  citecolor=black,  % Changed to black to match text color
+  pdftitle={Overleaf Example},
+  pdfpagemode=FullScreen,
+}
+
+% Add more spacing between entries
+\setlength\bibitemsep{0.5\baselineskip}
 
 \title{Natural language processing for\\ subjectivity analysis in personal narratives}
 \author{Gustave Cortal}
@@ -138,6 +149,23 @@
 \end{frame}
 
 
+\begin{frame}{Context}
+
+  \begin{itemize}[<+->]
+    \item Natural language processing for psychology is underexplored%, despite its fundamental importance for understanding human language,
+    \item We build on an existing subfield: emotion analysis
+    \item We study subjectivity (involving first-person perspective, meaning-making processes, and experiential content)
+    \item We focus on personal narratives (\textit{e.g.}, dreams, emotional narratives)
+    %\item Computational approaches to analyzing subjective experience have potential for supporting psychological well-being
+    \end{itemize}
+
+    \vspace{0.5cm}
+
+    We first address the \textit{content} by classifying elements of personal narratives (\textit{e.g.}, characters and emotions). Then, we study the \textit{form} through the concept of style
+
+\end{frame}
+
+
 \begin{frame}{Introduction}
 
 %\pause
@@ -150,13 +178,15 @@
 %\vspace{0.5cm}
 \pause
 
-\textbf{Research question}: How to model subjective experience in narratives?
+%\textbf{Research question}: 
+
+How to model subjective experience in narratives?
 
 
 \vspace{0.5cm}
 \pause
 
-\textbf{Steps}:
+%Steps:
 
 \begin{itemize}[<+->]
     \item Definition of objectives and scope using cognitive science
@@ -165,12 +195,12 @@
     \item Formalization of style in narratives 
 \end{itemize}
 
-\vspace{0.5cm}
-\pause
+%\vspace{0.5cm}
+%\pause
 
-\small
+%\small
 
-\textit{Each step lead to a first-author article in an international conference} %(including EMNLP and LREC-COLING)
+%\textit{Each step lead to a first-author article in an international conference} %(including EMNLP and LREC-COLING)
 
 %\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
     
@@ -191,17 +221,17 @@
 
 \begin{frame}{Definition of objectives and scope using cognitive science}
 
-\textbf{Goal}: Identify limitations and research directions
+What are current limitations and interesting research directions?
 
 \pause
 \vspace{0.5cm}
 
-I review psychological theories of emotion and emotion annotation schemes in NLP
+We review psychological theories of emotion and emotion annotation schemes in NLP
 
 \pause
 \vspace{0.5cm}
 
-What are current \textbf{limitations}? 
+%What are current limitations? 
 
 \begin{itemize}[<+->]
     \item Different emotion theories lead to divergences in how to annotate them in the text
@@ -230,7 +260,7 @@ How to integrate psychological theories of emotion?
 \begin{figure}
     \centering
     \includegraphics[width=0.8\linewidth]{img/scherer_integrated_framework.png}
-    \caption{Emotional episodes are synchronized changes in four components (Scherer, 2022).}
+    \caption{Emotional episodes are synchronized changes in four components \citep{schererTheoryConvergenceEmotion2022a}.}
     \label{fig:placeholder}
 \end{figure}
     
@@ -243,7 +273,7 @@ Which verbal signs are used to infer expressed emotions?
 \pause
 \vspace{0.5cm}
 
-Raphaël Micheli categorizes a range of linguistic markers into three \textbf{emotion expression modes} (Micheli, 2014). The emotion can be: 
+Raphaël Micheli categorizes a range of linguistic markers into three \textit{emotion expression modes} \citep{micheliEsquisseDuneTypologie2013}. The emotion can be: 
 
 %\cite{Micheli2014}
 \pause
@@ -258,7 +288,7 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textbf{em
 \pause
 \vspace{0.5cm}
 
-$\rightarrow$ Different emotion expression modes are more or less difficult to interpret.
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret
 \end{frame}
 
 \begin{frame}{}
@@ -270,12 +300,15 @@ $\rightarrow$ Different emotion expression modes are more or less difficult to i
     \vspace{1.5cm}
 \end{center}
 
-\footnotesize
+\small
+Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives}
+
+\vspace{0.5cm}
 
 \textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
-\begin{frame}{Construction of an emotion dataset}
+\begin{frame}{French emotional narratives based on components}
 
 \textbf{Goal}: A more comprehensive understanding of emotional events
 
@@ -301,9 +334,11 @@ $\rightarrow$ Different emotion expression modes are more or less difficult to i
 \label{tab:description_corpus}
 \end{table} % open-ended questions, my thesis director and I
 
+
+
 \vspace{0.5cm}
 \small
-More than 1,000 narratives were collected during emotion regulation sessions
+More than 1,000 narratives were collected during emotion regulation sessions.
 %\vspace{0.5cm}
 
 %\scriptsize
@@ -323,11 +358,17 @@ More than 1,000 narratives were collected during emotion regulation sessions
 
 \footnotesize
 
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.
+%Generated dream narratives available on \href{https://gustavecortal.com/project/oneirogen}{gustavecortal.com}.
+
+%\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a language model for dream generation along with \href{https://huggingface.co/datasets/gustavecortal/DreamBank-annotated}{27,000 annotated dream narratives}
+
+%\href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a language model for emotion and character prediction in dream narratives
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}
 
 \vspace{0.5cm}
 
-\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}
 
 \end{frame}
 
@@ -360,17 +401,28 @@ Only \textsc{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} &
     %\caption{Scores (± std) for discrete emotion classification based on components.}
     \label{tab:pred_emotion}
 \end{table}
-    
+
+\vspace{0.5cm}
+\pause
+
+$\rightarrow$ Each component improves prediction performance, the best results are achieved by jointly considering all components
+
+\pause
+
+$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\textit{e.g.}, \textsc{behavior} and \textsc{territory})
+
 \end{frame}
 
 \begin{frame}{Quantitative analysis of dream narratives}
+
+  %We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
 
 Need other datasets with narrative structure, emotional content, and available for research
 
 \vspace{0.5cm}
 \pause
 
-Quantitative dream analysis examines recurring patterns between narrative elements using a database of dream narratives and an annotation scheme (Domhoff, 2004)
+Quantitative dream analysis examines recurring patterns between narrative elements using a database of dream narratives and an annotation scheme \citep{domhoffStudyingDreamContent2008b}
 
 \vspace{0.5cm}
 \pause
@@ -417,7 +469,7 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
 \begin{table}
     \centering
     \resizebox{1.0\textwidth}{!}{
-\begin{tabular}{l|cccccc}
+\begin{tabular}{lcccccc}
 \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
 \hline
 \textsc{baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
@@ -444,17 +496,35 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
     \label{tab:result}
 \end{table}
 
-\vspace{0.5cm}
-\scriptsize
-
-%Generated dream narratives available on \href{https://gustavecortal.com/project/oneirogen}{gustavecortal.com}.
-
-%\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a language model for dream generation. 2024.
-
-%\href{https://huggingface.co/gustavecortal/dream-t5}{Dream‑T5}, a language model for emotion and character prediction in dream narratives. 2023.
+TODO: add meaning of ** and *
+TODO: how effective our models are, compare to stablebeluga
 
 %\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
     
+\end{frame}
+
+\begin{frame}{Case study on a war veteran}
+  \begin{table}
+    \centering
+    \begin{tabular}{llccc}
+%\toprule
+\textbf{Group} & \textbf{Category} & \textbf{\% Viet} & \textbf{\% Total} & \textbf{$\Delta$} \\
+\midrule
+\multirow{5}{*}{Identity} & known* & 24.9\% & 51.6\% & -26.7 \\
+& prominent & 1.9\% & 2.5\% & -0.6 \\
+& occupational* & 22.4\% & 8.0\% & 14.4 \\
+& ethnic* & 4.1\% & 0.9\% & 3.1 \\
+& unknown* & 46.8\% & 37.0\% & 9.8 \\
+\addlinespace
+\multirow{4}{*}{Gender} & male* & 56.2\% & 43.0\% & 13.1 \\
+& female* & 24.1\% & 33.1\% & -9.0 \\
+& joint & 10.9\% & 12.2\% & -1.3 \\
+& undefined & 7.9\% & 8.7\% & -0.9 \\
+%\hline
+\end{tabular}
+\caption{Identity and gender proportions for the Vietnam veteran versus the other dreamers.}% in DreamBank. Columns report the share in the Vietnam subset (\% viet), the share in DreamBank (\% Total), and their difference in percentage points ($\Delta$). A star (*) marks categories where the Vietnam proportion differs significantly from the rest of the dreamers (two-proportion $z$-test, Bonferroni-corrected $\alpha=0.05$).}
+\label{tab:case_study_war_veteran}
+\end{table}
 \end{frame}
 
 
@@ -542,12 +612,12 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
 
 \begin{frame}{Introduction}
 
-\textbf{Research question}: How is subjective experience communicated in narratives?
+How is subjective experience communicated in narratives?
 
 \vspace{0.5cm}
 \pause
 
-We use narratives to express our representations of reality and make sense of the world %(Bruner, 1990) 
+We use narratives to express our representations of reality and make sense of the world \citep{brunerActsMeaning1990}
 
 \vspace{0.5cm}
 \pause
@@ -568,7 +638,7 @@ We narrow the general definition of style: \textit{a distinctive manner of commu
 
 \begin{frame}{Contributions}
 
-\textbf{Problem}: Style is an intuitive notion; we need an operational definition
+How to give an operational definition of style?
 
 \vspace{0.25cm}
 \pause
@@ -578,10 +648,10 @@ We narrow the general definition of style: \textit{a distinctive manner of commu
 \vspace{0.25cm}
 \pause
 
-\textbf{Research task}: Formalize style as \textit{patterns of linguistic choices that encode subjective experience}
+%\textbf{Research task}: Formalize style as \textit{patterns of linguistic choices that encode subjective experience}
 
-\vspace{0.5cm}
-\pause
+%\vspace{0.5cm}
+%\pause
 
 \begin{enumerate}[<+->]
     \item A sequence-based framework defining style as patterns in sequences of linguistic choices grounded in systemic functional linguistics
@@ -593,7 +663,7 @@ We narrow the general definition of style: \textit{a distinctive manner of commu
 
 \begin{frame}{Categorizing linguistic features}
 
-According to systemic functional linguistics, language represents experience through \textit{processes, participants and circumstances}%  (Halliday, 2014)
+According to systemic functional linguistics, language represents experience through \textit{processes, participants and circumstances} \citep{hallidayIntroductionFunctionalGrammar2014a}
 
 \pause
 
@@ -628,7 +698,7 @@ According to systemic functional linguistics, language represents experience thr
         
         [Hadrian's Wall]$_{\text{Possessor}}$ [\textbf{has}]$_{\text{State}}$ [something for everyone]$_{\text{Possessed}}$ \\ %\hline
     \end{tabular}}
-    \caption{Processes with their participants.}
+    %\caption{Processes with their participants.}
     \label{tab:process_participants}
 \end{table}
     
@@ -676,38 +746,7 @@ According to systemic functional linguistics, language represents experience thr
     
 \end{frame}
 
-\begin{comment}
-
-\begin{frame}{Case study on dream narratives}
-
-We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
-
-\vspace{0.25cm}
-\pause
-
-We use DreamBank, a database of more than 27,000 narratives with 72 series of dreamers
-
-\vspace{0.25cm}
-\pause
-
-We analyze five series of dreamers: long-term blind dreamers (n=361), \textit{ed} (a widower, n=139), \textit{izzy} (a teenager, n=1091), \textit{merri} (an artist, n=202), and \textit{viet} (a Vietnam War veteran with PTSD, n=566)%. A description of each series is accessible on the DreamBank
-
-\vspace{0.25cm}
-\pause
-
-We construct a \textit{norm} (n=720) to compare how each series deviates from a hypothetical average dreamer %This norm comprises a random sample of ten narratives from each series of DreamBank, resulting in a collection of 720 dream narratives.
-
-
-\vspace{0.25cm}
-\pause
-
-To identify features, we perform in-context learning with Llama 3 8B.
-    
-\end{frame}
-
-\end{comment}
-
-\begin{frame}{Results on the Vietnam War veteran}
+\begin{frame}{Results on the war veteran}
 
 We compare the proportion of sequences containing a given substring
 
@@ -733,15 +772,15 @@ We compare the proportion of sequences containing a given substring
 \pause
 
 
-We show a preference for \textit{viet} to remain in a verbal process, as indicated by substrings such as \textit{verbal.verbal} and \textit{verbal.verbal.verbal} with high odds ratios (respectively 2.00 and 1.75)
+We show a preference for the war veteran to remain in a verbal process, as indicated by substrings such as \textit{verbal.verbal} and \textit{verbal.verbal.verbal} with high odds ratios (respectively 2.00 and 1.75)
 
 \end{frame}
 
-\begin{frame}{Results on the Vietnam War veteran}
+\begin{frame}{Results on the war veteran}
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.55\linewidth]{img/dendogram_viet.png}
+    \includegraphics[width=0.65\linewidth]{img/dendogram_viet.png}
     \caption{Dendrogram with Ward linkage and cosine similarity}% on substrings of size one, two, and three.}
     \label{fig:dendogram}
 \end{figure}
@@ -751,19 +790,19 @@ We show a preference for \textit{viet} to remain in a verbal process, as indicat
 
 \textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=action, m=mental, s=state, v=verbal$
 
-\vspace{0.25cm}
-\pause
+%\vspace{0.25cm}
+%\pause
 
-Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
+%Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
     
 \end{frame}
 
 \begin{frame}{Perspectives}
 
 \begin{itemize}[<+->]
-    \item \textbf{Authorship profiling}: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
-    \item \textbf{Style-conditioned narrative generation}: generating narratives from a sequence of linguistic features
-    \item \textbf{Applying methods from complexity science and formal language theory}: analyzing subsequences, using complexity measures to quantify redundancies, etc.
+    \item Authorship profiling%: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
+    \item Style-conditioned narrative generation%: generating narratives from a sequence of linguistic features
+    \item Applying methods from complexity science and formal language theory%: analyzing subsequences, using complexity measures to quantify redundancies, etc.
 \end{itemize}
 
 \end{frame}
@@ -775,8 +814,6 @@ Two templates: a highly action-oriented structure or a more varied structure alt
 \vspace{0.5cm}
 \pause
 
-\textbf{Steps}:
-
 \begin{itemize}[<+->]
     \item Definition of objectives and scope using cognitive science
     \item Construction of an emotion dataset 
@@ -784,7 +821,7 @@ Two templates: a highly action-oriented structure or a more varied structure alt
     \item Formalization of style in narratives
 \end{itemize}
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 %\pause
 
 %\small
@@ -808,6 +845,101 @@ Two templates: a highly action-oriented structure or a more varied structure alt
 
 \end{frame}
 
+\begin{frame}{Introduction}
+  TODO: write introduction based on the preprint
+\end{frame}
+
+\begin{frame}{Data collection}
+
+We collect clinical scores and open-ended narratives from \textbf{four cohorts}. A French general population cohort (n=1809), and three clinical populations: Italian (n=116), Chinese (n=52), and Spanish (n=90) cohorts%. We focus on the French general population cohort.
+
+\vspace{0.5cm}
+\pause
+
+\textbf{Clinical scores} were assessed using various scales such as: AIS (Athens Insomnia Scale); BDI (Beck Depression Inventory); GAD-7 (Generalized Anxiety Disorder 7-item scale); MFI (Multidimensional Fatigue Inventory); PHQ-9 (Patient Health Questionnaire-9 for depression)
+
+\vspace{0.5cm}
+\pause
+
+\textbf{Open-ended questions}: \textit{Describe your last 24 hours} / \textit{a negative event that happened to you in the past} / \textit{a positive event that happened to you in the past} / \textit{a negative event you think might happen in the future} / \textit{a positive event you think might happen in the future} / \textit{Describe how you are feeling at the moment and how your sleep has been lately}
+
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Cohorts}
+
+\begin{table}[!htbp]
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{p{4cm}llll}
+ &
+\textbf{\shortstack[l]{General\\Population}} &
+\textbf{Androids} &
+\textbf{MODMA} &
+\textbf{VOCES} \\
+ &
+\textbf{n=1809} &
+\textbf{n=116} &
+\textbf{n=52} &
+\textbf{n=90} \\
+
+\hline
+\textbf{Demographics} & & & & \\
+
+\textbf{Language} & French & Italian & Chinese & Spanish \\
+
+\textbf{Age} & *** & \textit{n.s.} & \textit{n.s.} & *** \\
+Mean (SD) & 37.8 (18.2) & 37.4 (12.0) & 31.3 (9.2) & 38.6 (14.9) \\
+Range     & 18--91       & 19--71      & 18--52      & 21--76       \\
+
+\textbf{Sex, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+Female & 1187 (66.2) & 84 (72.4) & 16 (30.8) & 39 (43.3) \\
+Male   & 595  (33.2) & 32 (27.6) & 36 (69.2) & 48 (53.3) \\
+Other  & 11   (0.6)  & 0  (0.0)  & 0  (0.0)  & 3  (3.3)  \\
+
+\textbf{Education, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+No diploma   & 52   (2.9)  & 11  (9.5)  & 7  (13.5)  & -  \\
+Secondary    & 291  (16.2) & 37  (31.9) & 8  (15.4)  & - \\
+Higher short & 213  (11.9) & 52  (44.8) & 0  (0.0)   & - \\
+Higher long  & 1236 (69.0) & 16  (13.8) & 37 (71.2)  & - \\
+
+\hline
+\textbf{Clinical evaluation} & & & & \\
+\textbf{C-SSRS} & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.} \\
+Suicidal risk, n (\%) & - & - & - & 60 (66.7) \\
+No suicidal risk, n (\%) & - & - & - & 30 (33.3) \\
+\textbf{MADRS / MDD} & \textit{n.s.} &  \textit{n.s.}  & \textit{n.s.}   & \textit{n.s.}   \\
+Depression, n (\%) & -  & 64 (55.2) & 23 (44.2) & -  \\
+No depression, n (\%) & -  & 52 (44.8) & 29 (55.8) & -  \\
+%\textbf{AIS} & *** & & & \\
+%Mean (SD) & 5.2 (3.9) & & & \\
+%Range & 0--24 & & & \\
+%
+%\textbf{BDI} & *** & & & \\
+%Mean (SD) & 7.4 (7.8) &  &  &  \\
+%Range     & 0--54      &  &  &  \\
+
+%\textbf{GAD-7} & *** & & *** & \\
+%Mean (SD) & 4.8 (4.5) & & 7.3 (7.1) &  \\
+%Range     & 0--21      & & 0--21     &  \\
+%
+%\textbf{MFI} & *** & & & \\
+%Mean (SD) & 44.3 (15.9) &  &  &  \\
+%Range     & 18--99       &  &  &  \\
+
+\textbf{PHQ-9} & \textit{n.s.}  & \textit{n.s.}  & *** & *** \\
+Mean (SD) & 5.2 (4.6) & -  & 9.4 (8.5) & 10.5 (6.8) \\
+Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
+\end{tabular}}
+%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
+\label{tab:demographics}
+\end{table}
+
+\end{frame}
+
+\end{comment}
+
 \begin{frame}{Pipeline for semantic clustering and description generation}
 
 \begin{figure}
@@ -820,13 +952,17 @@ Two templates: a highly action-oriented structure or a more varied structure alt
 
 \end{frame}
 
-\begin{frame}{Distribution of PHQ-9 depression scores across clusters}
+\begin{frame}{Distribution of depression scores across clusters}
   \begin{figure}
     \centering
-    \includegraphics[scale=0.2]{img/topic_modeling/boxplot_description/popgen_description_larger.png}
-    \caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \includegraphics[scale=0.06]{img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png}
+    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
     \label{fig:popgen_description}
 \end{figure}
+
+TODO: add what to observe and conclude
+
+%Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort
 \end{frame}
 
 \begin{frame}{Effect size across tasks and clinical scores}
@@ -838,6 +974,21 @@ Two templates: a highly action-oriented structure or a more varied structure alt
     \label{fig:popgen_clinical_heatmap}
 \end{figure}
 
+TODO: add what to observe and conclude
+
+\end{frame}
+
+\begin{frame}{Generated cluster descriptions}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png}
+    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \label{fig:popgen_description}
+\end{figure}
+
+TODO: add what to observe and conclude
+
+Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
 \begin{frame}{Effect size across tasks and demographics scores}
@@ -849,16 +1000,67 @@ Two templates: a highly action-oriented structure or a more varied structure alt
     \label{fig:popgen_demo_heatmap}
 \end{figure}
 
+TODO: add what to observe and conclude
+
 \end{frame}
 
-\begin{frame}{Appendix}
+\begin{frame}{}
+\Large
+\begin{center}
+    Appendix
+    \section{Appendix}
+\end{center}
 
-\begin{itemize}
-    %\item \textit{Fine-grained mental health topic modeling in different populations using large language models} (PhD internship, to be submitted for Nature Mental Health)
-    \item \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget}, a language model for psychological and philosophical reasoning, 2025.
-    \item N. Richet, S. Belharbi, H. Aslam, M. Schadt, M. González-González, \textbf{G. Cortal}, A. Koerich, M. Pedersoli, A. Finkel, S. Bacon, E. Granger. \href{https://arxiv.org/abs/2407.12927}{Textualized and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild}. \textit{ABAW, ECCV 2024}.
-\end{itemize}
-    
+\end{frame}
+
+\begin{frame}{Selected open-source projects}
+
+My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer.
+
+\medskip
+\pause
+
+A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-lora}{lightweight preference optimization} using LoRA and ORPO.
+
+\smallskip
+\pause
+
+\href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget}, a model fine-tuned for psychological reasoning, and \href{https://huggingface.co/gustavecortal/Beck-8B}{Beck}, a model aligned with psychotherapeutic preferences.
+
+\smallskip
+\pause
+
+\href{https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k}{PsychologicalReasoning-15k}, open psychological and philosophical reasoning traces.
+
+\smallskip
+\pause
+
+\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation, and \href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives.
+
+\end{frame}
+
+\begin{frame}{Selected research papers}
+  TODO: add correct citation format
+  \customcitenourl{cortalEmotionRecognitionBased2023d}
+  \vspace{0.5cm}
+  \customcitenourl{cortalSequencetoSequenceLanguageModels2024}
+  \vspace{0.5cm}
+  \fullcite{cortalFormalizingStylePersonal2025}
+  TODO: add multimodal research paper: N. Richet, S. Belharbi, H. Aslam, M. Schadt, M. González-González, \textbf{G. Cortal}, A. Koerich, M. Pedersoli, A. Finkel, S. Bacon, E. Granger. \href{https://arxiv.org/abs/2407.12927}{Textualized and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild}. \textit{ABAW, ECCV 2024}.
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    References
+    \section{References}
+    TODO: remove useless info in references
+\end{center}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+\printbibliography
 \end{frame}
 
 \end{document}
