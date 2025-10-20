@@ -1,0 +1,483 @@
+% --begin pap's style
+\documentclass[handout,10pt]{beamer}
+
+%\usetheme[secheader]{Darmstadt}
+%\usetheme{Pittsburgh}
+
+\usepackage[english]{babel}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[final]{pdfpages}
+\usepackage[official]{eurosym}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsfonts} % for \text
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}  % for table notes
+\newcommand\mscriptsize[1]{\mbox{\scriptsize\ensuremath{#1}}}
+\newcommand\mtiny[1]{\mbox{\tiny\ensuremath{#1}}}
+
+\usepackage{subcaption}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{minted}           % core package
+\usepackage{xcolor}           % for background color
+\definecolor{LightGray}{gray}{0.95}
+
+
+\definecolor{blueNCS}{rgb}{0.0 0.53 0.74}  
+\definecolor{bluepanam}{rgb}{0.0 0.189 0.79} 
+\definecolor{Aplgreen}{rgb}{0.55 0.71 0.0}  
+\definecolor{greentech}{cmyk}{0.7 0.0 1.0 0.0} 
+\definecolor{DarkBlue}{rgb}{0.1,0.1,0.9}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=bluepanam,
+    filecolor=bluepanam,      
+    urlcolor=bluepanam,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\setbeamercolor{palette primary}{bg=white,fg=black}
+\setbeamercolor{palette secondary}{bg=white,fg=bluepanam}
+\setbeamercolor{palette tertiary}{bg=white,fg=bluepanam}
+\setbeamercolor{palette quaternary}{bg=white,fg=bluepanam}
+\setbeamercolor{structure}{fg=bluepanam} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=bluepanam} % TOC sections
+
+
+%% \setbeamercolor{section in head/foot}{fg=white, bg=blue}
+\setbeamercolor{title}{fg=bluepanam, bg=white}
+\setbeamercolor{author}{fg=black, bg=white}
+\setbeamercolor{institute}{fg=black, bg=white}
+\setbeamercolor{date}{fg=white, bg=white}
+
+
+\setbeamercolor{section in head/foot}{fg=bluepanam, bg=white}     
+     
+\setbeamercolor{author in head/foot}{fg=bluepanam, bg=white}
+%\setbeamercolor{author in head/foot}{fg=white, bg=white}
+\beamertemplatenavigationsymbolsempty
+% --end pap's style
+
+%\usepackage[backend=biber,
+%            style=apa,
+%            block=par,]{biblatex}
+%\usepackage[backend=bibtex]{biblatex}
+%\bibliography{sample.bib}
+%\usepackage{natbib}
+%\bibliographystyle{plain}  % or ieeetr, apalike, etc.
+%\bibliography{sample_bibtex.bib}
+
+%\newcommand{\customcite}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}, \citeurl{#1}}
+%\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
+\newcommand{\parensmall}[1]{{\scriptsize #1}}
+
+%\newcommand{\comment}[1]{}
+
+\title{Natural language processing for subjectivity analysis in personal narratives}
+\author{Gustave Cortal}
+\date{\today}
+
+\makeatletter
+\defbeamertemplate*{footline}{myminiframes theme}
+  {%
+    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+      \leavevmode{\usebeamerfont{author in head/foot}}%
+      \hfill%
+    %\insertframenumber{}\,/\,\inserttotalframenumber%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[ht=2.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}%
+      %%      {\usebeamerfont{section in head/foot} somthing written here \hfill  \setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!70}{My own image here}}%
+      {\usebeamerfont{section in head/foot} \insertshortauthor \hfill  %\setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!100}{foobar etc}
+      }%
+      \insertframenumber{}\,/\,\inserttotalframenumber%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+    \end{beamercolorbox}
+  }
+  \makeatother
+
+
+\begin{document}
+
+\setlength{\parskip}{5pt}%
+\setlength{\parsep}{0pt}%
+\setlength{\itemsep}{0.25cm}%
+\setlength{\leftmargini}{0.5cm}
+
+\begin{frame}
+  \titlepage
+  \vspace{-1.5cm}
+  \begin{center}
+    \includegraphics[height=1.5cm]{img/logo_ens_saclay.png}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Introduction}
+
+%\pause
+
+%\textbf{Observation}: The field emphasizes formal and mathematical tasks, whereas social and emotional tasks remains underexplored
+
+%\textbf{Observation}: LLMs have mastered linguistic knowledge but still lack functional skills such as emotional reasoning %The research field focuses more on formal reasoning compared to emotional and social reasoning.
+%contastat de these au debut, moins vrai mtn
+
+%\vspace{0.5cm}
+\pause
+
+\textbf{Research question}: How to model subjective experience in narratives?
+
+
+\vspace{0.5cm}
+\pause
+
+\textbf{Steps}:
+
+\begin{itemize}[<+->]
+    \item Definition of objectives and scope using cognitive science
+    \item Construction of an emotion dataset 
+    \item Training of language models for emotion analysis 
+    \item Formalization of style in narratives 
+\end{itemize}
+
+\vspace{0.5cm}
+\pause
+
+\small
+
+\textit{Each step lead to a first-author article in an international conference} %(including EMNLP and LREC-COLING)
+
+%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+    
+\end{frame}
+
+\begin{frame}{Definition of objectives and scope using cognitive science}
+
+\textbf{Goal}: Identify limitations and research directions
+
+\pause
+\vspace{0.5cm}
+
+I review psychological theories of emotion and emotion annotation schemes in NLP
+
+\pause
+\vspace{0.5cm}
+
+What are current \textbf{limitations}? 
+
+\begin{itemize}[<+->]
+    \item Different emotion theories lead to divergences in how to annotate them in the text
+    \item Some linguistic and cognitive science theories are not considered
+    \item There is no benchmark that evaluates the richness of the emotional phenomenon
+\end{itemize}
+
+
+\vspace{0.5cm}
+
+\scriptsize
+
+\textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
+    
+\end{frame}
+
+\begin{frame}{Definition of objectives and scope using cognitive science}
+
+How to integrate psychological theories of emotion?
+
+\pause
+\vspace{0.5cm}
+
+I use the integrated framework for emotion theories (Scherer, 2022):
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/scherer_integrated_framework.png}
+    \caption{Emotional episodes are synchronized changes in four components.}
+    \label{fig:placeholder}
+\end{figure}
+    
+\end{frame}
+
+\begin{frame}{Construction of an emotion dataset}
+
+\textbf{Goal}: A more comprehensive understanding of emotional events
+
+\pause
+
+\begin{table}
+    \centering
+    \resizebox{0.9\textwidth}{!}{
+\begin{tabular}{l|p{0.78\textwidth}}
+ 
+                   \textbf{Component} &
+                 \textbf{Answer} \\
+ 
+\hline
+          \textsc{behavior} & I'm giving a lecture on a Friday morning at 8:30. A student goes out and comes back a few moments later with a coffee in his hand. \\
+\textsc{feeling} & My heart is beating fast, and I freeze, waiting to know how to act. \\
+  \textsc{thinking} & I think this student is disrupting my class. \\
+\textsc{territory} & The student attacks my ability to be respected in class. \\
+ 
+\end{tabular}}
+%\captionof{table}{Example of an emotional narrative structured according to emotion components. More than 1,000 narratives were collected using emotion regulation questionnaires.}
+\label{tab:description_corpus}
+\end{table} % open-ended questions, my thesis director and I
+
+\small
+More than 1,000 narratives were collected during emotion regulation sessions
+\vspace{0.5cm}
+
+\scriptsize
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
+    
+\end{frame}
+
+\begin{frame}{Training language models for emotion analysis}
+
+\textbf{Goal}: Discrete emotion detection based on components
+
+\vspace{0.5cm}
+\pause
+
+\begin{table}
+    \centering
+    \resizebox{0.9\textwidth}{!}{
+\begin{tabular}{l|lllllll}
+
+&\multicolumn{3}{c}{\textbf{Logistic Regression}}&\multicolumn{3}{c}{\textbf{CamemBERT}} \\
+
+                   \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
+\hline
+              All  & 71.2\,\mscriptsize{(2.6)} & 69.1\,\mscriptsize{(2.2)} & 67.8\,\mscriptsize{(2.3)} & \textbf{85.1} & \textbf{84.8} & \textbf{84.7} \\
+              Without \textsc{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
+              Without \textsc{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
+              Without \textsc{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
+              Without \textsc{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
+          Only \textsc{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
+Only \textsc{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
+  Only \textsc{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
+              Only \textsc{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
+\end{tabular}}
+    %\caption{Scores (± std) for discrete emotion classification based on components.}
+    \label{tab:pred_emotion}
+\end{table}
+
+\vspace{0.5cm}
+
+\scriptsize
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.
+    
+\end{frame}
+
+\begin{frame}{Training language models for emotion analysis}
+
+Need other datasets with narrative structure, emotional content, and available for research
+
+\vspace{0.5cm}
+\pause
+
+Quantitative dream analysis examines recurring patterns between narrative elements using a database of dream narratives and an annotation scheme (Domhoff, 2004)
+
+\vspace{0.5cm}
+\pause
+
+The annotation process is complex and costly
+
+\vspace{0.5cm}
+\pause
+
+How to automate the annotation process?
+
+%side project in my PhD
+    
+\end{frame}
+
+\begin{frame}{Training language models for emotion analysis}
+
+\textbf{Goal}: Character and emotion detection in dream narratives
+
+\pause
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{img/dream_method.png}
+    %\caption{Codes describing characters and their emotions are converted into
+%natural language to produce the training data.}
+    \label{fig:placeholder}
+\end{figure}
+
+\scriptsize
+
+\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+    
+\end{frame}
+
+\begin{frame}{Training language models for emotion analysis}
+
+\scriptsize
+
+LaMini-Flan-T5 finetuned on 1823 dream narratives
+
+\small
+
+\begin{table}
+    \centering
+    \resizebox{0.9\textwidth}{!}{
+\begin{tabular}{l|cccccc}
+\textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
+\hline
+\textsc{baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
+\hline
+\textsc{no\textsubscript{semantics}} & 71.37 & 56.54\textbf{*} & 61.0  & 90.51  & 41.79\textbf{*} &  75.79 \\
+\textsc{no\textsubscript{names}} & 80.66\textbf{*}  & 74.32\textbf{**}  & 74.2  & 83.95\textbf{*}  & 60.93\textbf{**} &  73.04\textbf{*} \\
+\hline
+\textsc{size\textsubscript{small}} & 78.35\textbf{**}  & 72.13\textbf{**}  & 70.25\textbf{**}  & 81.66\textbf{**}  & 56.79\textbf{**} &  70.15\textbf{**} \\
+\textsc{size\textsubscript{large}} & 84.51\textbf{*} & 80.3\textbf{**}  & 78.63\textbf{**}  & 87.29  & 67.63\textbf{**} & 74.71 \\
+\hline
+\textsc{first\textsubscript{group}} & 82.33  & 77.71  & 74.86  & 85.61  & 63.71 &  71.94 \\
+\textsc{first\textsubscript{individual}} & 80.59\textbf{**}  & 76.14  & 74.22\textbf{*}  & 83.87\textbf{**} & 62.67 &  67.32 \\
+\textsc{first\textsubscript{emotion}} & 83.92 & 78.74 & 77.06  & 87.63  & 64.97 &  72.03 \\
+\hline
+\textsc{conversion\textsubscript{comma}} & 84.02\textbf{**}  & 79.84\textbf{**}  & 77.67\textbf{**}  & 87.08\textbf{*}  & 66.69\textbf{**} &  73.68 \\
+\textsc{conversion\textsubscript{marker}} & 82.39  & 78.45  & 76.53  & 86.09  & 65.44 &  74.36 \\
+\hline
+\textsc{StableBeluga\textsubscript{1}} &   43.95\textbf{**} &   39.76\textbf{**} &     31.25\textbf{**} &  56.16\textbf{**} &      15.65\textbf{**} & -\\
+\textsc{StableBeluga\textsubscript{3}} &   52.44\textbf{**} &   46.49\textbf{**} &     38.46\textbf{**} &  63.88\textbf{**} &      21.06\textbf{**} & -\\
+\textsc{StableBeluga\textsubscript{5}} &   55.89\textbf{**} &   46.29\textbf{**} &     42.61\textbf{**} &  63.73\textbf{**} &      24.86\textbf{**} & - \\
+\hline
+\textsc{cross-validation} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
+\end{tabular}}
+    \label{tab:result}
+\end{table}
+
+\vspace{0.5cm}
+\scriptsize
+
+%Generated dream narratives available on \href{https://gustavecortal.com/project/oneirogen}{gustavecortal.com}.
+
+%\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a language model for dream generation. 2024.
+
+%\href{https://huggingface.co/gustavecortal/dream-t5}{Dream‑T5}, a language model for emotion and character prediction in dream narratives. 2023.
+
+\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+    
+\end{frame}
+
+
+
+\begin{frame}{Formalization of style in narratives}
+
+\textit{How} subjective experience is communicated?
+
+\vspace{0.5cm}
+\pause
+
+\textbf{Goal}: Formalize style as patterns of linguistic choices that encode subjective experience
+
+\pause
+\vspace{0.5cm}
+
+\begin{table}[!ht]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.1}
+  \begin{threeparttable}
+  
+    \begin{tabular}{l|l|l}
+      \textbf{Clause} & \textbf{Process (code)} & \textbf{Participants} \\
+      \midrule
+      I wake in a dark room         & Action (\textbf{a})  & Actor \\
+      I feel a cold wind            & Mental (\textbf{m})  & Senser,\\
+                                            &             & Phenomenon \\
+      I tell myself to move         & Verbal (\textbf{v})  & Sayer,\\
+                                            &             & Recipient \\
+      \bottomrule
+    \end{tabular}
+
+    \begin{tablenotes}[flushleft]
+      \footnotesize
+      \item \textbf{Sequence:} $amv$\quad|\quad
+            \textbf{Substrings:} \{am, mv\}
+    \end{tablenotes}
+  \end{threeparttable}
+  \caption{Illustrative pipeline. Each narrative is mapped to a symbolic sequence using an alphabet based on extracted features}
+    \label{tab:example}
+\end{table}
+
+\scriptsize
+
+\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+    
+\end{frame}
+
+\begin{frame}{Formalization of style in narratives}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/blind_odds_3.png}
+    \caption{Top substring odds ratio between the blind series and the norm. Based on 381 sequences from 15 blind dreamers}
+    \label{fig:placeholder}
+\end{figure}
+
+\vspace{0.5cm}
+
+\scriptsize
+
+\textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+    
+\end{frame}
+
+\begin{frame}{Conclusion}
+
+\textbf{Research question}: How to model subjective experience in narratives?
+
+\vspace{0.5cm}
+\pause
+
+\textbf{Steps}:
+
+\begin{itemize}[<+->]
+    \item Definition of objectives and scope using cognitive science
+    \item Construction of an emotion dataset 
+    \item Training of language models for emotion analysis 
+    \item Formalization of style in narratives
+\end{itemize}
+
+\vspace{0.5cm}
+%\pause
+
+\small
+
+\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+    
+\end{frame}
+
+\begin{frame}{Appendix}
+
+\begin{itemize}
+    \item \textit{Fine-grained mental health topic modeling in different populations using large language models} (PhD internship, to be submitted for Nature Mental Health)
+    \item \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget}, a language model for psychological and philosophical reasoning, 2025.
+    \item N. Richet, S. Belharbi, H. Aslam, M. Schadt, M. González-González, \textbf{G. Cortal}, A. Koerich, M. Pedersoli, A. Finkel, S. Bacon, E. Granger. \href{https://arxiv.org/abs/2407.12927}{Textualized and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild}. \textit{ABAW, ECCV 2024}.
+\end{itemize}
+    
+\end{frame}
+
+\end{document}
