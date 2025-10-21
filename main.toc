@@ -1,9 +1,18 @@
-\babel@toc {english}{}\relax 
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Definition of objectives using cognitive science}{5}{0}{2}
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {3}{Construction of an emotion dataset}{9}{0}{3}
+\defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {4}{Training language models for emotion analysis}{11}{0}{4}
-\beamer@sectionintoc {5}{Formalization of style in narratives}{17}{0}{5}
-\beamer@sectionintoc {6}{Fine-grained mental health topic modeling using large language models}{26}{0}{6}
-\beamer@sectionintoc {7}{Appendix}{34}{0}{7}
-\beamer@sectionintoc {8}{References}{37}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Formalization of style in narratives}{18}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Fine-grained mental health topic modeling using large language models}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Appendix}{35}{0}{7}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {8}{References}{38}{0}{8}

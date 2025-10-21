@@ -29,7 +29,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{minted}           % core package
+%\usepackage{minted}           % core package
 \usepackage{xcolor}           % for background color
 \definecolor{LightGray}{gray}{0.95}
 
@@ -160,6 +160,7 @@
     \end{itemize}
 
     \vspace{0.5cm}
+    \pause
 
     We first address the \textit{content} by classifying elements of personal narratives (\textit{e.g.}, characters and emotions). Then, we study the \textit{form} through the concept of style
 
@@ -324,11 +325,11 @@ Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotional
                  \textbf{Answer} \\
  
 \hline
-          \textsc{behavior} & I'm giving a lecture on a Friday morning at 8:30. A student goes out and comes back a few moments later with a coffee in his hand. \\
-\textsc{feeling} & My heart is beating fast, and I freeze, waiting to know how to act. \\
-  \textsc{thinking} & I think this student is disrupting my class. \\
-\textsc{territory} & The student attacks my ability to be respected in class. \\
- 
+          \texttt{Behavior} & I'm giving a lecture on a Friday morning at 8:30. A student goes out and comes back a few moments later with a coffee in his hand. \\
+\texttt{Feeling} & My heart is beating fast, and I freeze, waiting to know how to act. \\
+  \texttt{Thinking} & I think this student is disrupting my class. \\
+\texttt{Territory} & The student attacks my ability to be respected in class. \\
+
 \end{tabular}}
 %\captionof{table}{Example of an emotional narrative structured according to emotion components. More than 1,000 narratives were collected using emotion regulation questionnaires.}
 \label{tab:description_corpus}
@@ -389,27 +390,28 @@ More than 1,000 narratives were collected during emotion regulation sessions.
                    \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
 \hline
               All  & 71.2\,\mscriptsize{(2.6)} & 69.1\,\mscriptsize{(2.2)} & 67.8\,\mscriptsize{(2.3)} & \textbf{85.1} & \textbf{84.8} & \textbf{84.7} \\
-              Without \textsc{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
-              Without \textsc{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
-              Without \textsc{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
-              Without \textsc{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
-          Only \textsc{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
-Only \textsc{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
-  Only \textsc{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
-              Only \textsc{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
+              Without \texttt{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
+              Without \texttt{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
+              Without \texttt{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
+              Without \texttt{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
+          Only \texttt{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
+Only \texttt{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
+  Only \texttt{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
+              Only \texttt{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
 \end{tabular}}
     %\caption{Scores (± std) for discrete emotion classification based on components.}
     \label{tab:pred_emotion}
 \end{table}
 
-\vspace{0.5cm}
+\vspace{0.25cm}
 \pause
 
 $\rightarrow$ Each component improves prediction performance, the best results are achieved by jointly considering all components
 
+\vspace{0.25cm}
 \pause
 
-$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\textit{e.g.}, \textsc{behavior} and \textsc{territory})
+$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\textit{e.g.}, \texttt{behavior} and \texttt{thinking})
 
 \end{frame}
 
@@ -460,11 +462,7 @@ How to automate the annotation process?
 
 \begin{frame}{Results}
 
-\scriptsize
-
-LaMini-Flan-T5 finetuned on 1823 dream narratives
-
-\normalsize
+\texttt{Baseline} is LaMini-Flan-T5 finetuned on 1823 dream narratives
 
 \begin{table}
     \centering
@@ -472,34 +470,60 @@ LaMini-Flan-T5 finetuned on 1823 dream narratives
 \begin{tabular}{lcccccc}
 \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
 \hline
-\textsc{baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
+\texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
 \hline
-\textsc{no\textsubscript{semantics}} & 71.37 & 56.54\textbf{*} & 61.0  & 90.51  & 41.79\textbf{*} &  75.79 \\
-\textsc{no\textsubscript{names}} & 80.66\textbf{*}  & 74.32\textbf{**}  & 74.2  & 83.95\textbf{*}  & 60.93\textbf{**} &  73.04\textbf{*} \\
+\texttt{No\textsubscript{semantics}} & 71.37 & 56.54\textbf{*} & 61.0  & 90.51  & 41.79\textbf{*} &  75.79 \\
+\texttt{No\textsubscript{names}} & 80.66\textbf{*}  & 74.32\textbf{**}  & 74.2  & 83.95\textbf{*}  & 60.93\textbf{**} &  73.04\textbf{*} \\
 \hline
-\textsc{size\textsubscript{small}} & 78.35\textbf{**}  & 72.13\textbf{**}  & 70.25\textbf{**}  & 81.66\textbf{**}  & 56.79\textbf{**} &  70.15\textbf{**} \\
-\textsc{size\textsubscript{large}} & 84.51\textbf{*} & 80.3\textbf{**}  & 78.63\textbf{**}  & 87.29  & 67.63\textbf{**} & 74.71 \\
+\texttt{Size\textsubscript{small}} & 78.35\textbf{**}  & 72.13\textbf{**}  & 70.25\textbf{**}  & 81.66\textbf{**}  & 56.79\textbf{**} &  70.15\textbf{**} \\
+\texttt{Size\textsubscript{large}} & 84.51\textbf{*} & 80.3\textbf{**}  & 78.63\textbf{**}  & 87.29  & 67.63\textbf{**} & 74.71 \\
 \hline
-\textsc{first\textsubscript{group}} & 82.33  & 77.71  & 74.86  & 85.61  & 63.71 &  71.94 \\
-\textsc{first\textsubscript{individual}} & 80.59\textbf{**}  & 76.14  & 74.22\textbf{*}  & 83.87\textbf{**} & 62.67 &  67.32 \\
-\textsc{first\textsubscript{emotion}} & 83.92 & 78.74 & 77.06  & 87.63  & 64.97 &  72.03 \\
+\texttt{First\textsubscript{group}} & 82.33  & 77.71  & 74.86  & 85.61  & 63.71 &  71.94 \\
+\texttt{First\textsubscript{individual}} & 80.59\textbf{**}  & 76.14  & 74.22\textbf{*}  & 83.87\textbf{**} & 62.67 &  67.32 \\
+\texttt{First\textsubscript{emotion}} & 83.92 & 78.74 & 77.06  & 87.63  & 64.97 &  72.03 \\
 \hline
-\textsc{conversion\textsubscript{comma}} & 84.02\textbf{**}  & 79.84\textbf{**}  & 77.67\textbf{**}  & 87.08\textbf{*}  & 66.69\textbf{**} &  73.68 \\
-\textsc{conversion\textsubscript{marker}} & 82.39  & 78.45  & 76.53  & 86.09  & 65.44 &  74.36 \\
+\texttt{Conversion\textsubscript{comma}} & 84.02\textbf{**}  & 79.84\textbf{**}  & 77.67\textbf{**}  & 87.08\textbf{*}  & 66.69\textbf{**} &  73.68 \\
+\texttt{Conversion\textsubscript{marker}} & 82.39  & 78.45  & 76.53  & 86.09  & 65.44 &  74.36 \\
 \hline
-\textsc{StableBeluga\textsubscript{1}} &   43.95\textbf{**} &   39.76\textbf{**} &     31.25\textbf{**} &  56.16\textbf{**} &      15.65\textbf{**} & -\\
-\textsc{StableBeluga\textsubscript{3}} &   52.44\textbf{**} &   46.49\textbf{**} &     38.46\textbf{**} &  63.88\textbf{**} &      21.06\textbf{**} & -\\
-\textsc{StableBeluga\textsubscript{5}} &   55.89\textbf{**} &   46.29\textbf{**} &     42.61\textbf{**} &  63.73\textbf{**} &      24.86\textbf{**} & - \\
-\hline
-\textsc{cross-validation} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
+\texttt{Cross-validation} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
 \end{tabular}}
+  \caption{$F_1$-scores for character and emotion detection. Significant differences from \texttt{baseline}: ** ($p<0.01$), * ($p<0.05$).}
+  \label{tab:result}
+\end{table}
+
+%\vspace{0.25cm}
+\pause
+
+$\rightarrow$ Language models can effectively address character and emotion detection in dream narratives
+    
+\end{frame}
+
+
+\begin{frame}{Results}
+
+\texttt{StableBeluga\textsubscript{i}} is a 7B model with in-context learning using $i$ examples
+
+\begin{table}
+    \centering
+    \resizebox{1.0\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
+\hline
+\texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
+\hline
+\texttt{StableBeluga\textsubscript{1}} &   43.95\textbf{**} &   39.76\textbf{**} &     31.25\textbf{**} &  56.16\textbf{**} &      15.65\textbf{**} & -\\
+\texttt{StableBeluga\textsubscript{3}} &   52.44\textbf{**} &   46.49\textbf{**} &     38.46\textbf{**} &  63.88\textbf{**} &      21.06\textbf{**} & -\\
+\texttt{StableBeluga\textsubscript{5}} &   55.89\textbf{**} &   46.29\textbf{**} &     42.61\textbf{**} &  63.73\textbf{**} &      24.86\textbf{**} & - \\
+\end{tabular}}
+\caption{$F_1$-scores for character and emotion detection. Significant differences from \texttt{baseline}: ** ($p<0.01$), * ($p<0.05$).}
+    %\caption{$F_1$-score of character and emotion detection in dream narratives. Significant differences from the baseline are indicated with ** ($p<0.01$) and * ($p<0.05$).}
     \label{tab:result}
 \end{table}
 
-TODO: add meaning of ** and *
-TODO: how effective our models are, compare to stablebeluga
+\vspace{0.25cm}
+\pause
 
-%\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
+$\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M vs 7B)
     
 \end{frame}
 
@@ -510,19 +534,19 @@ TODO: how effective our models are, compare to stablebeluga
 %\toprule
 \textbf{Group} & \textbf{Category} & \textbf{\% Viet} & \textbf{\% Total} & \textbf{$\Delta$} \\
 \midrule
-\multirow{5}{*}{Identity} & known* & 24.9\% & 51.6\% & -26.7 \\
-& prominent & 1.9\% & 2.5\% & -0.6 \\
-& occupational* & 22.4\% & 8.0\% & 14.4 \\
-& ethnic* & 4.1\% & 0.9\% & 3.1 \\
-& unknown* & 46.8\% & 37.0\% & 9.8 \\
+\multirow{5}{*}{Identity} & known* & 24.9 & 51.6 & -26.7 \\
+& prominent & 1.9 & 2.5 & -0.6 \\
+& occupational* & 22.4 & 8.0 & 14.4 \\
+& ethnic* & 4.1 & 0.9 & 3.1 \\
+& unknown* & 46.8 & 37.0 & 9.8 \\
 \addlinespace
-\multirow{4}{*}{Gender} & male* & 56.2\% & 43.0\% & 13.1 \\
-& female* & 24.1\% & 33.1\% & -9.0 \\
-& joint & 10.9\% & 12.2\% & -1.3 \\
-& undefined & 7.9\% & 8.7\% & -0.9 \\
+\multirow{4}{*}{Gender} & male* & 56.2 & 43.0 & 13.1 \\
+& female* & 24.1 & 33.1 & -9.0 \\
+& joint & 10.9 & 12.2 & -1.3 \\
+& undefined & 7.9 & 8.7 & -0.9 \\
 %\hline
 \end{tabular}
-\caption{Identity and gender proportions for the Vietnam veteran versus the other dreamers.}% in DreamBank. Columns report the share in the Vietnam subset (\% viet), the share in DreamBank (\% Total), and their difference in percentage points ($\Delta$). A star (*) marks categories where the Vietnam proportion differs significantly from the rest of the dreamers (two-proportion $z$-test, Bonferroni-corrected $\alpha=0.05$).}
+\caption{Identity and gender proportions for the Vietnam veteran versus other dreamers. $\Delta$ shows the difference in percentage points. * indicates significant difference (two-proportion $z$-test, Bonferroni-corrected $\alpha=0.05$).}
 \label{tab:case_study_war_veteran}
 \end{table}
 \end{frame}
@@ -654,8 +678,8 @@ How to give an operational definition of style?
 %\pause
 
 \begin{enumerate}[<+->]
-    \item A sequence-based framework defining style as patterns in sequences of linguistic choices grounded in systemic functional linguistics
-    \item A methodology for automatically identifying patterns using sequence analysis
+    \item A sequence-based framework defining style as patterns in sequences of linguistic choices% grounded in systemic functional linguistics
+    \item A methodology for identifying patterns using sequence analysis
     \item A case study on dream narratives %, showing how the analysis of patterns can reveal psychological insights
 \end{enumerate}
     
@@ -673,24 +697,24 @@ According to systemic functional linguistics, language represents experience thr
     \begin{tabular}{p{4cm}|p{11cm}}
         %\hline
         \textbf{Processes} & \textbf{Examples} \\ \hline
-        \textit{Action}: actions and events in the physical world. &
+        \texttt{Action}: actions and events in the physical world. &
         [He]$_{\text{Actor}}$ [\textbf{takes}]$_{\text{Action}}$ [the valuable]$_{\text{Affected}}$ \newline
         
         [Members of my cult]$_{\text{Actor}}$ [\textbf{have made]}$_{\text{Action}}$ [1500 euros]$_{\text{Result}}$ \newline
         
         [I]$_{\text{Actor}}$ [\textbf{give}]$_{\text{Action}}$ [her]$_{\text{Recipient}}$ [a chance]$_{\text{Range}}$ \\ \hline
         
-        \textit{Mental}: internal experiences such as thoughts, perceptions, and feelings. &
+        \texttt{Mental}: internal experiences such as thoughts, perceptions, and feelings. &
         [We]$_{\text{Senser}}$ [\textbf{believe}]$_{\text{Mental}}$ [women are the leaders of change]$_{\text{Phenomenon}}$ \newline
         
         [The moon]$_{\text{Senser}}$ [\textbf{sees}]$_{\text{Mental}}$ [the earth]$_{\text{Phenomenon}}$ \newline
         
         [He]$_{\text{Senser}}$ [\textbf{disliked}]$_{\text{Mental}}$ [Gilbert's writing]$_{\text{Phenomenon}}$ \\ \hline
         
-        \textit{Verbal}: acts of communication. &
+        \texttt{Verbal}: acts of communication. &
         [David]$_{\text{Sayer}}$ [\textbf{said}]$_{\text{Verbal}}$ [``the corrupt, criminals and money launderers'']$_{\text{Verbiage}}$ \\ \hline
-        
-        \textit{State}: states of being, having, or existence. &
+
+        \texttt{State}: states of being, having, or existence. &
 
          There [\textbf{was}]$_{\text{Existential}}$ [a swimming pool]$_{\text{Existent}}$ \newline
         
@@ -718,11 +742,11 @@ According to systemic functional linguistics, language represents experience thr
       %\toprule
       \textbf{Clause} & \textbf{Process (symbol)} & \textbf{Participants} \\
       \midrule
-      I wake in a dark room         & Action (\textbf{a})  & Actor \\
-      I feel a cold wind            & Mental (\textbf{m})  & Senser,\\
-                                            &             & Phenomenon \\
-      I tell myself to move         & Verbal (\textbf{v})  & Sayer,\\
-                                            &             & Recipient \\
+      I wake in a dark room         & \texttt{Action} (\textbf{a})  & \texttt{Actor} \\
+      I feel a cold wind            & \texttt{Mental} (\textbf{m})  & \texttt{Senser},\\
+                                            &             & \texttt{Phenomenon} \\
+      I tell myself to move         & \texttt{Verbal} (\textbf{v})  & \texttt{Sayer},\\
+                                            &             & \texttt{Recipient} \\
       \bottomrule
     \end{tabular}
 
@@ -738,11 +762,10 @@ According to systemic functional linguistics, language represents experience thr
 
 \begin{enumerate}[<+->]
     \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
-    \item Identify features (\textit{e.g.}, processes and participants) for each clause
+    \item Identify features (\textit{e.g.}, processes and participants) for each clause using in-context learning with large language models
     \item Each narrative is mapped to a symbolic sequence using an alphabet based on identified features
+    \item We perform sequence analysis to identify patterns such as frequent substrings and representative sequences
 \end{enumerate}
-
-%We define \textit{style} as patterns in choices within a system of linguistic features inspired by the transitivity system in systemic functional linguistics. We now need to explain what is a choice. To account for a subjective experience, an author makes a series of choices within a system of features. 
     
 \end{frame}
 
@@ -809,7 +832,7 @@ We show a preference for the war veteran to remain in a verbal process, as indic
 
 \begin{frame}{Conclusion}
 
-\textbf{Research question}: How to model subjective experience in narratives?
+How to model subjective experience in narratives?
 
 \vspace{0.5cm}
 \pause
