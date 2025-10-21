@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.9.23)  21 OCT 2025 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2025.9.23)  21 OCT 2025 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1273,10 +1273,10 @@ Package pdftex.def Info: img/dendogram_viet.png  used on input line 821.
 <img/topic_modeling/methods_v3.png, id=276, 513.8397pt x 281.1303pt>
 File: img/topic_modeling/methods_v3.png Graphic file (type png)
 <use img/topic_modeling/methods_v3.png>
-Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 976.
+Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 990.
 (pdftex.def)             Requested size: 308.3062pt x 168.67947pt.
 
-Overfull \hbox (1.01633pt too wide) in paragraph at lines 976--976
+Overfull \hbox (1.01633pt too wide) in paragraph at lines 990--990
  [] 
  []
 
@@ -1286,39 +1286,38 @@ Overfull \hbox (1.01633pt too wide) in paragraph at lines 976--976
 <img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png, id=284, 4131.435pt x 2727.18875pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 989.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1013.
 (pdftex.def)             Requested size: 247.8754pt x 163.62427pt.
- [31
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 1013.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [31
 
  </home/gcortal/phd_presentation/img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=293, 849.1725pt x 409.2891pt>
-File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
-<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1002.
-(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
- [32
-
- </home/gcortal/phd_presentation/img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
-<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=301, 991.5444pt x 766.3029pt>
+<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=294, 991.5444pt x 766.3029pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1015.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1028.
 (pdftex.def)             Requested size: 247.88548pt x 191.57526pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:popgen_description}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1015 \end{frame}
-                  
-Overfull \vbox (20.72017pt too high) detected at line 1015
- []
-
-[33
+l.1028 \end{frame}
+                   [32
 
  </home/gcortal/phd_presentation/img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=308, 849.1725pt x 409.2891pt>
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=301, 849.1725pt x 409.2891pt>
+File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
+<use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1042.
+(pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
+ [33
+
+ </home/gcortal/phd_presentation/img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=309, 849.1725pt x 409.2891pt>
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1028.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1057.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
  [34
 
@@ -1348,11 +1347,11 @@ Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_
 \tf@snm=\write10
 \openout10 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1089.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1089.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1118.
  (/home/gcortal/phd_presentation/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1089.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1089.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1118.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 81CEC2266090916E652FDABC9FABF060;587.
 
@@ -1364,18 +1363,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28638 strings out of 481239
- 542440 string characters out of 5920377
+ 28658 strings out of 481239
+ 543181 string characters out of 5920377
  1188281 words of memory out of 5000000
- 43165 multiletter control sequences out of 15000+600000
- 553821 words of font info for 76 fonts, out of 8000000 for 9000
+ 43181 multiletter control sequences out of 15000+600000
+ 554162 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,16n,77p,1432b,1860s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on /home/gcortal/phd_presentation/main.pdf (41 pages, 3000153 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on /home/gcortal/phd_presentation/main.pdf (41 pages, 3001865 bytes).
 PDF statistics:
- 504 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
+ 507 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
  117 named destinations out of 1000 (max. 500000)
  175 words of extra memory for PDF output out of 10000 (max. 10000000)
 
