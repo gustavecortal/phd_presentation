@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,90 @@
 
 
 \refsection{0}
-  \datalist[entry]{nyt/global//global/global}
-    \entry{brunerActsMeaning1990}{book}{}
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{bonardImprovingLanguageModels2024a}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b3110f23cf4fe34ccfcd74568807cf18}{%
+           family={Bonard},
+           familyi={B\bibinitperiod},
+           given={Constant},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=453a2b3838898268cf3e0021c47b4058}{%
+           family={Cortal},
+           familyi={C\bibinitperiod},
+           given={Gustave},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=35e9492c5791acb49fb717d83e68d110}{%
+           family={Kuribayashi},
+           familyi={K\bibinitperiod},
+           given={Tatsuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ce99a412873fb1a5c2cbdbade1e5e133}{%
+           family={Rambelli},
+           familyi={R\bibinitperiod},
+           given={Giulia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c1439f1d804c606be4d685faf77abf07}{%
+           family={Takmaz},
+           familyi={T\bibinitperiod},
+           given={Ece},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f146e8dcfb06f4e87ed2e240a17a8eb8}{%
+           family={Wicke},
+           familyi={W\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=cb7ef68a1ddfd856ee832e2c9f8222c1}{%
+           family={Oseki},
+           familyi={O\bibinitperiod},
+           given={Yohei},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Bangkok, Thailand}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{fullhash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{fullhashraw}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{bibnamehash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{authorbibnamehash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{authornamehash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{authorfullhash}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{authorfullhashraw}{3217474cf85ea481f2e427b12d23b0fa}
+      \strng{editorbibnamehash}{7d79afbb75dcf3581ce9cc8951d60a92}
+      \strng{editornamehash}{7d79afbb75dcf3581ce9cc8951d60a92}
+      \strng{editorfullhash}{6fc5e2297195fdea3508f5648c40ea17}
+      \strng{editorfullhashraw}{6fc5e2297195fdea3508f5648c40ea17}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We propose leveraging cognitive science research on emotions and communication to improve language models for emotion analysis. First, we present the main emotion theories in psychology and cognitive science. Then, we introduce the main methods of emotion annotation in natural language processing and their connections to psychological theories. We also present the two main types of analyses of emotional communication in cognitive pragmatics. Finally, based on the cognitive science research presented, we propose directions for improving language models for emotion analysis. We suggest that these research efforts pave the way for constructing new annotation schemes, methods, and a possible benchmark for emotional understanding, considering different facets of human emotion and communication.}
+      \field{booktitle}{Proceedings of the {{Workshop}} on {{Cognitive Modeling}} and {{Computational Linguistics}}}
+      \field{month}{8}
+      \field{shorttitle}{Improving {{Language Models}} for {{Emotion Analysis}}}
+      \field{title}{Improving {{Language Models}} for {{Emotion Analysis}}: {{Insights}} from {{Cognitive Science}}}
+      \field{year}{2024}
+      \field{pages}{264\bibrangedash 277}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.18653/v1/2024.cmcl-1.23
+      \endverb
+      \verb{file}
+      \verb C:\Users\Gustave\Zotero\storage\YF4PLVIA\Bonard et Cortal - 2024 - Improving Language Models for Emotion Analysis In.pdf
+      \endverb
+      \keyw{notion}
+    \endentry
+    \entry{brunerActsMeaning1990}{book}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=76bff24e21bc4cfee72941fbf75a52a8}{%
            family={Bruner},
@@ -36,12 +118,14 @@
       }
       \strng{namehash}{76bff24e21bc4cfee72941fbf75a52a8}
       \strng{fullhash}{76bff24e21bc4cfee72941fbf75a52a8}
+      \strng{fullhashraw}{76bff24e21bc4cfee72941fbf75a52a8}
       \strng{bibnamehash}{76bff24e21bc4cfee72941fbf75a52a8}
       \strng{authorbibnamehash}{76bff24e21bc4cfee72941fbf75a52a8}
       \strng{authornamehash}{76bff24e21bc4cfee72941fbf75a52a8}
       \strng{authorfullhash}{76bff24e21bc4cfee72941fbf75a52a8}
+      \strng{authorfullhashraw}{76bff24e21bc4cfee72941fbf75a52a8}
       \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
@@ -51,13 +135,12 @@
       \field{series}{Acts of Meaning}
       \field{title}{Acts of Meaning}
       \field{year}{1990}
-      \field{dateera}{ce}
       \verb{file}
       \verb C:\Users\Gustave\Zotero\storage\Q7UBX39J\1990-98641-000.html
       \endverb
       \keyw{Culture (Anthropological),Meaning,Psychology,Self-Perception,Social Interaction,Social Perception}
     \endentry
-    \entry{cortalSequencetoSequenceLanguageModels2024}{inproceedings}{}
+    \entry{cortalSequencetoSequenceLanguageModels2024}{inproceedings}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=453a2b3838898268cf3e0021c47b4058}{%
            family={Cortal},
@@ -106,43 +189,34 @@
       }
       \strng{namehash}{453a2b3838898268cf3e0021c47b4058}
       \strng{fullhash}{453a2b3838898268cf3e0021c47b4058}
+      \strng{fullhashraw}{453a2b3838898268cf3e0021c47b4058}
       \strng{bibnamehash}{453a2b3838898268cf3e0021c47b4058}
       \strng{authorbibnamehash}{453a2b3838898268cf3e0021c47b4058}
       \strng{authornamehash}{453a2b3838898268cf3e0021c47b4058}
       \strng{authorfullhash}{453a2b3838898268cf3e0021c47b4058}
+      \strng{authorfullhashraw}{453a2b3838898268cf3e0021c47b4058}
       \strng{editorbibnamehash}{c0f71bf98493a021e0ad741a5193b2ff}
       \strng{editornamehash}{c0f71bf98493a021e0ad741a5193b2ff}
       \strng{editorfullhash}{67cc341797d15e0b10b5e05c259573e8}
+      \strng{editorfullhashraw}{67cc341797d15e0b10b5e05c259573e8}
       \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The study of dreams has been central to understanding human (un)consciousness, cognition, and culture for centuries. Analyzing dreams quantitatively depends on labor-intensive, manual annotation of dream narratives. We automate this process through a natural language sequence-to-sequence generation framework. This paper presents the first study on character and emotion detection in the English portion of the open DreamBank corpus of dream narratives. Our results show that language models can effectively address this complex task. To get insight into prediction performance, we evaluate the impact of model size, prediction order of characters, and the consideration of proper names and character traits. We compare our approach with a large language model using in-context learning. Our supervised models perform better while having 28 times fewer parameters. Our model and its generated annotations are made publicly available.}
       \field{booktitle}{Proceedings of the 2024 {{Joint International Conference}} on {{Computational Linguistics}}, {{Language Resources}} and {{Evaluation}} ({{LREC-COLING}} 2024)}
-      \field{eventtitle}{{{LREC-COLING}} 2024}
       \field{month}{5}
       \field{title}{Sequence-to-{{Sequence Language Models}} for {{Character}} and {{Emotion Detection}} in {{Dream Narratives}}}
-      \field{urlday}{25}
-      \field{urlmonth}{11}
-      \field{urlyear}{2024}
       \field{year}{2024}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{14717\bibrangedash 14728}
       \range{pages}{12}
       \verb{file}
       \verb C:\Users\Gustave\Zotero\storage\5PCKARPN\Cortal - 2024 - Sequence-to-Sequence Language Models for Character.pdf
       \endverb
-      \verb{urlraw}
-      \verb https://aclanthology.org/2024.lrec-main.1282
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/2024.lrec-main.1282
-      \endverb
     \endentry
-    \entry{cortalFormalizingStylePersonal2025}{online}{}
+    \entry{cortalFormalizingStylePersonal2025}{misc}{}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=453a2b3838898268cf3e0021c47b4058}{%
            family={Cortal},
@@ -157,40 +231,32 @@
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
       \strng{namehash}{ef9e677f799042a605ae8f65a34033c3}
       \strng{fullhash}{ef9e677f799042a605ae8f65a34033c3}
+      \strng{fullhashraw}{ef9e677f799042a605ae8f65a34033c3}
       \strng{bibnamehash}{ef9e677f799042a605ae8f65a34033c3}
       \strng{authorbibnamehash}{ef9e677f799042a605ae8f65a34033c3}
       \strng{authornamehash}{ef9e677f799042a605ae8f65a34033c3}
       \strng{authorfullhash}{ef9e677f799042a605ae8f65a34033c3}
+      \strng{authorfullhashraw}{ef9e677f799042a605ae8f65a34033c3}
       \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Personal narratives are stories authors construct to make meaning of their experiences. Style, the distinctive way authors use language to express themselves, is fundamental to how these narratives convey subjective experiences. Yet there is a lack of a formal framework for systematically analyzing these stylistic choices. We present a novel approach that formalizes style in personal narratives as patterns in the linguistic choices authors make when communicating subjective experiences. Our framework integrates three domains: functional linguistics establishes language as a system of meaningful choices, computer science provides methods for automatically extracting and analyzing sequential patterns, and these patterns are linked to psychological observations. Using language models, we automatically extract linguistic features such as processes, participants, and circumstances. We apply our framework to hundreds of dream narratives, including a case study on a war veteran with post-traumatic stress disorder. Analysis of his narratives uncovers distinctive patterns, particularly how verbal processes dominate over mental ones, illustrating the relationship between linguistic choices and psychological states.}
-      \field{pubstate}{prepublished}
       \field{title}{Formalizing {{Style}} in {{Personal Narratives}}}
-      \field{urlday}{20}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{version}{2}
       \field{year}{2025}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.48550/ARXIV.2510.08649
       \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2510.08649
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2510.08649
-      \endverb
       \keyw{Artificial Intelligence (cs.AI),Computation and Language (cs.CL),FOS: Computer and information sciences}
     \endentry
-    \entry{cortalEmotionRecognitionBased2023d}{inproceedings}{}
+    \entry{cortalEmotionRecognitionBased2023d}{inproceedings}{}{}
       \name{author}{4}{ul=2}{%
         {{un=0,uniquepart=base,hash=453a2b3838898268cf3e0021c47b4058}{%
            family={Cortal},
@@ -219,8 +285,8 @@
       }
       \name{editor}{4}{}{%
         {{hash=18fb038ad7af8bc0a9fb189512f86a0e}{%
-           family={Degaetano-Ortlieb},
-           familyi={D\bibinithyphendelim O\bibinitperiod},
+           family={{Degaetano-Ortlieb}},
+           familyi={D\bibinitperiod},
            given={Stefania},
            giveni={S\bibinitperiod}}}%
         {{hash=3b576e19f7299da7d40bcab4b2805b6b}{%
@@ -247,30 +313,27 @@
       }
       \strng{namehash}{a08757510557253727c912a71eabd133}
       \strng{fullhash}{c23e01ead83266f40f1e9fdcb167fb49}
+      \strng{fullhashraw}{c23e01ead83266f40f1e9fdcb167fb49}
       \strng{bibnamehash}{a08757510557253727c912a71eabd133}
       \strng{authorbibnamehash}{a08757510557253727c912a71eabd133}
       \strng{authornamehash}{a08757510557253727c912a71eabd133}
       \strng{authorfullhash}{c23e01ead83266f40f1e9fdcb167fb49}
+      \strng{authorfullhashraw}{c23e01ead83266f40f1e9fdcb167fb49}
       \strng{editorbibnamehash}{ee42dff5e33c3e47f450e4cd9bc4e339}
       \strng{editornamehash}{ee42dff5e33c3e47f450e4cd9bc4e339}
       \strng{editorfullhash}{db890da46c2dde2d198c23ae188f87cd}
+      \strng{editorfullhashraw}{db890da46c2dde2d198c23ae188f87cd}
       \field{sortinit}{C}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Emotion regulation is a crucial element in dealing with emotional events and has positive effects on mental health. This paper aims to provide a more comprehensive understanding of emotional events by introducing a new French corpus of emotional narratives collected using a questionnaire for emotion regulation. We follow the theoretical framework of the Component Process Model which considers emotions as dynamic processes composed of four interrelated components (behavior, feeling, thinking and territory). Each narrative is related to a discrete emotion and is structured based on all emotion components by the writers. We study the interaction of components and their impact on emotion classification with machine learning methods and pre-trained language models. Our results show that each component improves prediction performance, and that the best results are achieved by jointly considering all components. Our results also show the effectiveness of pre-trained language models in predicting discrete emotion from certain components, which reveal differences in how emotion components are expressed.}
       \field{booktitle}{Proceedings of the 7th {{Joint SIGHUM Workshop}} on {{Computational Linguistics}} for {{Cultural Heritage}}, {{Social Sciences}}, {{Humanities}} and {{Literature}}}
-      \field{eventtitle}{{{LaTeCHCLfL}} 2023}
       \field{month}{5}
       \field{title}{Emotion {{Recognition}} Based on {{Psychological Components}} in {{Guided Narratives}} for {{Emotion Regulation}}}
-      \field{urlday}{25}
-      \field{urlmonth}{11}
-      \field{urlyear}{2024}
       \field{year}{2023}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{72\bibrangedash 81}
       \range{pages}{10}
       \verb{doi}
@@ -279,67 +342,8 @@
       \verb{file}
       \verb C:\Users\Gustave\Zotero\storage\XDMG3KV9\Cortal et al. - 2023 - Emotion Recognition based on Psychological Compone.pdf
       \endverb
-      \verb{urlraw}
-      \verb https://aclanthology.org/2023.latechclfl-1.8
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/2023.latechclfl-1.8
-      \endverb
     \endentry
-    \entry{domhoffStudyingDreamContent2008b}{article}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=8a48eeae5e9b7f988c596f438184221a}{%
-           family={Domhoff},
-           familyi={D\bibinitperiod},
-           given={G.\bibnamedelimi William},
-           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=e171d50e289410e1424d004e4f789ca5}{%
-           family={Schneider},
-           familyi={S\bibinitperiod},
-           given={Adam},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \strng{fullhash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \strng{bibnamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \strng{authorbibnamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \strng{authornamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \strng{authorfullhash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{10538100}
-      \field{journaltitle}{Consciousness and Cognition}
-      \field{langid}{english}
-      \field{month}{12}
-      \field{number}{4}
-      \field{shortjournal}{Consciousness and Cognition}
-      \field{title}{Studying Dream Content Using the Archive and Search Engine on {{DreamBank}}.Net}
-      \field{urlday}{18}
-      \field{urlmonth}{12}
-      \field{urlyear}{2024}
-      \field{volume}{17}
-      \field{year}{2008}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{1238\bibrangedash 1247}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1016/j.concog.2008.06.010
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S1053810008001116
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S1053810008001116
-      \endverb
-    \endentry
-    \entry{hallidayIntroductionFunctionalGrammar2014a}{book}{}
+    \entry{hallidayIntroductionFunctionalGrammar2014a}{book}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=02086519d39addfdf6fc98bacfee027c}{%
            family={Halliday},
@@ -371,39 +375,29 @@
       }
       \strng{namehash}{146acd6d8492ecdcd73de4c68ded7601}
       \strng{fullhash}{8043a03970b510d6480053ab5311ebeb}
+      \strng{fullhashraw}{8043a03970b510d6480053ab5311ebeb}
       \strng{bibnamehash}{146acd6d8492ecdcd73de4c68ded7601}
       \strng{authorbibnamehash}{146acd6d8492ecdcd73de4c68ded7601}
       \strng{authornamehash}{146acd6d8492ecdcd73de4c68ded7601}
       \strng{authorfullhash}{8043a03970b510d6480053ab5311ebeb}
+      \strng{authorfullhashraw}{8043a03970b510d6480053ab5311ebeb}
       \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{4}
       \field{edition}{0}
       \field{isbn}{978-1-4441-1908-4}
       \field{langid}{english}
       \field{month}{2}
       \field{title}{An {{Introduction}} to {{Functional Grammar}}}
-      \field{urlday}{28}
-      \field{urlmonth}{11}
-      \field{urlyear}{2024}
       \field{year}{2014}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.4324/9780203783771
       \endverb
-      \verb{urlraw}
-      \verb https://www.taylorfrancis.com/books/9781444119084
-      \endverb
-      \verb{url}
-      \verb https://www.taylorfrancis.com/books/9781444119084
-      \endverb
     \endentry
-    \entry{micheliEsquisseDuneTypologie2013}{article}{}
+    \entry{micheliEsquisseDuneTypologie2013}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e315acd314c2a716f07000213681abf3}{%
            family={Micheli},
@@ -417,46 +411,35 @@
       }
       \strng{namehash}{e315acd314c2a716f07000213681abf3}
       \strng{fullhash}{e315acd314c2a716f07000213681abf3}
+      \strng{fullhashraw}{e315acd314c2a716f07000213681abf3}
       \strng{bibnamehash}{e315acd314c2a716f07000213681abf3}
       \strng{authorbibnamehash}{e315acd314c2a716f07000213681abf3}
       \strng{authornamehash}{e315acd314c2a716f07000213681abf3}
       \strng{authorfullhash}{e315acd314c2a716f07000213681abf3}
+      \strng{authorfullhashraw}{e315acd314c2a716f07000213681abf3}
       \field{sortinit}{M}
-      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Les émotions posent aux sciences du langage un problème constant d’observabilité. Pour reprendre une formule de Catherine Kerbrat-Orecchioni, le «~langage émotionnel~» investit des «~moyens~» qui sont d’une «~fantastique diversité~», au point qu’on a «~le sentiment que les émotions sont à la fois dans le langage partout, et nulle part ». Dans ce contexte, l’un des défis actuels de l’étude du «~langage émotionnel~» semble être d’élaborer un modèle d’analyse global de la sémiotisation des émotions, destiné à la description des données discursives. Afin d’avancer dans une telle direction, il est utile de commencer par tenter d’identifier un nombre limité de modes de sémiotisation de l’émotion, c’est-à-dire de manières selon lesquelles l’émotion peut être rendue manifeste au moyen de signes (verbaux et co-verbaux). Cet article s’efforce de contribuer à une telle entreprise générale, en présentant une vue d’ensemble d’un modèle d’analyse possible du «~langage émotionnel~». À partir de la catégorie englobante d’émotion sémiotisée, ce modèle repose sur une tripartition entre trois grands modes de sémiotisation : dire l’émotion, montrer l’émotion et, enfin, étayer l’émotion.}
-      \field{day}{1}
+      \field{abstract}{Les émotions posent aux sciences du langage un problème constant d'observabilité. Pour reprendre une formule de Catherine Kerbrat-Orecchioni, le <<~langage émotionnel~>> investit des <<~moyens~>> qui sont d'une <<~fantastique diversité~>>, au point qu'on a <<~le sentiment que les émotions sont à la fois dans le langage partout, et nulle part >>. Dans ce contexte, l'un des défis actuels de l'étude du <<~langage émotionnel~>> semble être d'élaborer un modèle d'analyse global de la sémiotisation des émotions, destiné à la description des données discursives. Afin d'avancer dans une telle direction, il est utile de commencer par tenter d'identifier un nombre limité de modes de sémiotisation de l'émotion, c'est-à-dire de manières selon lesquelles l'émotion peut être rendue manifeste au moyen de signes (verbaux et co-verbaux). Cet article s'efforce de contribuer à une telle entreprise générale, en présentant une vue d'ensemble d'un modèle d'analyse possible du <<~langage émotionnel~>>. À partir de la catégorie englobante d'émotion sémiotisée, ce modèle repose sur une tripartition entre trois grands modes de sémiotisation : dire l'émotion, montrer l'émotion et, enfin, étayer l'émotion.}
       \field{issn}{0761-2990}
-      \field{issue}{35}
       \field{journaltitle}{Semen. Revue de sémio-linguistique des textes et discours}
       \field{langid}{french}
       \field{month}{4}
       \field{number}{35}
-      \field{title}{Esquisse d'une typologie des différents modes de sémiotisation verbale de l'émotion}
-      \field{urlday}{7}
-      \field{urlmonth}{11}
-      \field{urlyear}{2022}
+      \field{title}{{Esquisse d'une typologie des différents modes de sémiotisation verbale de l'émotion}}
       \field{year}{2013}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \verb{doi}
       \verb 10.4000/semen.9795
       \endverb
       \verb{file}
       \verb G:\Mon Drive\zotero_pdf\Micheli_2013_Esquisse d'une typologie des différents modes de sémiotisation verbale de.pdf
       \endverb
-      \verb{urlraw}
-      \verb https://journals.openedition.org/semen/9795
-      \endverb
-      \verb{url}
-      \verb https://journals.openedition.org/semen/9795
-      \endverb
-      \keyw{Analyse du discours,Émotions,Modèle d’analyse,notion,Sciences du langage,Sémiotisation}
+      \keyw{Analyse du discours,Emotions,Modele d'analyse,notion,Sciences du langage,Semiotisation}
     \endentry
-    \entry{schererTheoryConvergenceEmotion2022a}{article}{}
+    \entry{schererTheoryConvergenceEmotion2022a}{article}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d58a2db7c63b1b03e551e000c83c2a30}{%
            family={Scherer},
@@ -470,47 +453,33 @@
       }
       \strng{namehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{fullhash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{fullhashraw}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{bibnamehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{authorbibnamehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{authornamehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{authorfullhash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{authorfullhashraw}{d58a2db7c63b1b03e551e000c83c2a30}
       \field{sortinit}{S}
-      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Over the last century, emotion research has been beset by the problem of major disagreements with respect to the definition of the phenomenon and an abundance of different theories. Arguably, these divergences have had adverse effects on theory development, on the theoretical foundations of empirical research, and on knowledge accumulation in the study of emotion. Similar problems have been encountered in other areas of behavioural science. Increasingly, there have been calls to work towards some form of theory integration. In contrast, here an effort is made to show that a reasonable degree of theory convergence in the area of emotion science can be attained by adopting a design feature-based working definition of emotion and highlighting the basic agreement on the components of the dynamic emotion process. The aim is to invite constructive discussion on communalities and divergences between different theories and foster the development of more complementary theoretical frameworks to guide future empirical research.}
-      \field{day}{17}
-      \field{eprinttype}{pubmed}
       \field{issn}{0269-9931}
       \field{journaltitle}{Cognition and Emotion}
       \field{month}{2}
       \field{number}{2}
       \field{title}{Theory Convergence in Emotion Science Is Timely and Realistic}
-      \field{urlday}{25}
-      \field{urlmonth}{1}
-      \field{urlyear}{2024}
       \field{volume}{36}
       \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
       \field{pages}{154\bibrangedash 170}
       \range{pages}{17}
       \verb{doi}
       \verb 10.1080/02699931.2021.1973378
       \endverb
-      \verb{eprint}
-      \verb 35188091
-      \endverb
       \verb{file}
       \verb G:\Mon Drive\zotero_pdf\Scherer_2022_Theory convergence in emotion science is timely and realistic.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1080/02699931.2021.1973378
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1080/02699931.2021.1973378
       \endverb
       \keyw{emotion components,emotion definition,emotion process,Emotion theories,theory convergence}
     \endentry

@@ -1,5 +1,5 @@
 % --begin pap's style
-\documentclass[handout,10pt]{beamer}
+\documentclass[10pt]{beamer}
 
 %\usetheme[secheader]{Darmstadt}
 %\usetheme{Pittsburgh}
@@ -34,10 +34,9 @@
 \definecolor{LightGray}{gray}{0.95}
 
 
-\definecolor{blueNCS}{rgb}{0.0 0.53 0.74}  
-\definecolor{bluepanam}{rgb}{0.0 0.189 0.79} 
-\definecolor{Aplgreen}{rgb}{0.55 0.71 0.0}  
-\definecolor{greentech}{cmyk}{0.7 0.0 1.0 0.0} 
+\definecolor{blueNCS}{rgb}{0.0, 0.53, 0.74}    % ✓ Commas
+\definecolor{bluepanam}{rgb}{0.0, 0.189, 0.79} % ✓ Commas
+\definecolor{Aplgreen}{rgb}{0.55, 0.71, 0.0}   % ✓ Commas
 \definecolor{DarkBlue}{rgb}{0.1,0.1,0.9}
 
 \hypersetup{
@@ -72,8 +71,19 @@
 % --end pap's style
 
 %\newcommand{\customcite}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}, \citeurl{#1}}
-\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
+%\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
 \newcommand{\parensmall}[1]{{\scriptsize #1}}
+
+% Custom fullcite command without URL, DOI, and urldate
+\newcommand{\fullcitenourl}[1]{%
+  \AtNextCite{%
+    \clearfield{url}%
+    \clearfield{doi}%
+    \clearfield{urldate}%
+  }%
+  \fullcite{#1}%
+}
+
 
 \usepackage{xurl}             % allow line breaks in long URLs
 \usepackage{ragged2e}         % better ragged-right with hyphenation
@@ -82,8 +92,11 @@
 
 %\newcommand{\comment}[1]{}
 
-\usepackage[style=authoryear,natbib=true,backend=biber]{biblatex}
-\addbibresource{phd_slides.bib}
+\usepackage[style=authoryear,natbib=true,backend=biber,date=year,urldate=long]{biblatex}
+\addbibresource{phd_slides_biblatex.bib}
+
+% Remove "visited on" dates from URLs
+\AtEveryBibitem{\clearfield{urldate}}
 \hypersetup{
   colorlinks=true,
   linkcolor=bluepanam,
@@ -169,39 +182,23 @@
 
 \begin{frame}{Introduction}
 
-%\pause
-
-%\textbf{Observation}: The field emphasizes formal and mathematical tasks, whereas social and emotional tasks remains underexplored
-
-%\textbf{Observation}: LLMs have mastered linguistic knowledge but still lack functional skills such as emotional reasoning %The research field focuses more on formal reasoning compared to emotional and social reasoning.
-%contastat de these au debut, moins vrai mtn
-
-%\vspace{0.5cm}
-\pause
-
-%\textbf{Research question}: 
-
-How to model subjective experience in narratives?
-
+How to model subjective experience in personal narratives?
 
 \vspace{0.5cm}
 \pause
-
-%Steps:
 
 \begin{itemize}[<+->]
     \item Definition of objectives and scope using cognitive science
     \item Construction of an emotion dataset 
     \item Training of language models for emotion analysis 
-    \item Formalization of style in narratives 
+    \item Formalization of style in personal narratives
+    \item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
 
 %\vspace{0.5cm}
 %\pause
 
 %\small
-
-%\textit{Each step lead to a first-author article in an international conference} %(including EMNLP and LREC-COLING)
 
 %\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
     
@@ -424,7 +421,7 @@ Need other datasets with narrative structure, emotional content, and available f
 \vspace{0.5cm}
 \pause
 
-Quantitative dream analysis examines recurring patterns between narrative elements using a database of dream narratives and an annotation scheme \citep{domhoffStudyingDreamContent2008b}
+Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) %\citep{domhoffStudyingDreamContent2008b}
 
 \vspace{0.5cm}
 \pause
@@ -532,7 +529,7 @@ $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform b
     \centering
     \begin{tabular}{llccc}
 %\toprule
-\textbf{Group} & \textbf{Category} & \textbf{\% Viet} & \textbf{\% Total} & \textbf{$\Delta$} \\
+\textbf{Group} & \textbf{Category} & \textbf{\% Vet} & \textbf{\% Total} & \textbf{$\Delta$} \\
 \midrule
 \multirow{5}{*}{Identity} & known* & 24.9 & 51.6 & -26.7 \\
 & prominent & 1.9 & 2.5 & -0.6 \\
@@ -546,17 +543,22 @@ $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform b
 & undefined & 7.9 & 8.7 & -0.9 \\
 %\hline
 \end{tabular}
-\caption{Identity and gender proportions for the Vietnam veteran versus other dreamers. $\Delta$ shows the difference in percentage points. * indicates significant difference (two-proportion $z$-test, Bonferroni-corrected $\alpha=0.05$).}
+\caption{Identity and gender proportions for the veteran (n=566 narratives) versus other dreamers. $\Delta$ shows the difference in percentage points. * indicates significant difference ($p < 0.05$).}
 \label{tab:case_study_war_veteran}
 \end{table}
+
+\pause
+
+$\rightarrow$ The war veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers.
+
 \end{frame}
 
 
 \begin{frame}{}
 \Large
 \begin{center}
-    Formalization of style in narratives
-    \section{Formalization of style in narratives}
+    Formalization of style in personal narratives
+    \section{Formalization of style in personal narratives}
 \end{center}
 
 \vspace{1.5cm}
@@ -687,7 +689,11 @@ How to give an operational definition of style?
 
 \begin{frame}{Categorizing linguistic features}
 
-According to systemic functional linguistics, language represents experience through \textit{processes, participants and circumstances} \citep{hallidayIntroductionFunctionalGrammar2014a}
+What linguistic features encode subjective experience?
+
+\pause
+
+According to systemic functional linguistics, language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances} \citep{hallidayIntroductionFunctionalGrammar2014a}
 
 \pause
 
@@ -830,34 +836,11 @@ We show a preference for the war veteran to remain in a verbal process, as indic
 
 \end{frame}
 
-\begin{frame}{Conclusion}
-
-How to model subjective experience in narratives?
-
-\vspace{0.5cm}
-\pause
-
-\begin{itemize}[<+->]
-    \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion dataset 
-    \item Training of language models for emotion analysis 
-    \item Formalization of style in narratives
-\end{itemize}
-
-%\vspace{0.5cm}
-%\pause
-
-%\small
-
-%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
-    
-\end{frame}
-
 \begin{frame}{}
 \Large
 \begin{center}
-    Fine-grained mental health topic modeling using large language models (change title to thematic analysis?)
-    \section{Fine-grained mental health topic modeling using large language models}
+    Automatic thematic analysis in mental health narratives using language models% (change title to thematic analysis?)
+    \section{Thematic analysis in mental health narratives using language models}
 \end{center}
 
 \vspace{1.5cm}
@@ -880,7 +863,7 @@ How to model subjective experience in narratives?
   \pause
   \vspace{0.5cm}
 
-  $\rightarrow$ We developed a multilingual pipeline that (a) clusters speech transcripts from four cohorts, (b) generates natural-language descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors %We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use.
+  $\rightarrow$ We developed a multilingual pipeline that (a) clusters narratives from four cohorts, (b) generates natural-language descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors %We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use.
 
 \end{frame}
 
@@ -1027,33 +1010,57 @@ $\rightarrow$ Clustering captures symptom severity and age-related circumstances
 %Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
-\begin{frame}{Effect size across tasks and clinical scores}
+\begin{frame}{Effect size across questions and clinical scores}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
-    %\caption{Effect size across tasks and clinical scores for the French general population cohort}
+    %\caption{Effect size across questions and clinical scores for the French general population cohort}
     \label{fig:popgen_clinical_heatmap}
 \end{figure}
 
 \pause
-$\rightarrow$ Certain tasks better discriminate clinical scores
+$\rightarrow$ Certain questions better discriminate clinical scores
 
 \end{frame}
 
-\begin{frame}{Effect size across tasks and sociodemographics}
+\begin{frame}{Effect size across questions and sociodemographics}
 
 \begin{figure}
   \centering
   \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
-  %\caption{Effect size across tasks and sociodemographics for the French general population cohort}
+  %\caption{Effect size across questions and sociodemographics for the French general population cohort}
   \label{fig:popgen_demo_heatmap}
 \end{figure}
 
 \pause
 
-$\rightarrow$ Nearly all tasks discriminate sociodemographics
+$\rightarrow$ Nearly all questions discriminate sociodemographics
 
+\end{frame}
+
+\begin{frame}{Conclusion}
+
+How to model subjective experience in personal narratives?
+
+\vspace{0.5cm}
+\pause
+
+\begin{itemize}[<+->]
+    \item Definition of objectives and scope using cognitive science
+    \item Construction of an emotion dataset 
+    \item Training of language models for emotion analysis 
+    \item Formalization of style in personal narratives
+    \item Automatic thematic analysis in mental health narratives% using language models
+\end{itemize}
+
+%\vspace{0.5cm}
+%\pause
+
+%\small
+
+%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+    
 \end{frame}
 
 \begin{frame}{}
@@ -1067,7 +1074,7 @@ $\rightarrow$ Nearly all tasks discriminate sociodemographics
 
 \begin{frame}{Selected open-source projects}
 
-My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer.
+\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer.}
 
 \medskip
 \pause
@@ -1092,13 +1099,21 @@ A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-l
 \end{frame}
 
 \begin{frame}{Selected research papers}
-  TODO: add correct citation format
-  \customcitenourl{cortalEmotionRecognitionBased2023d}
-  \vspace{0.5cm}
-  \customcitenourl{cortalSequencetoSequenceLanguageModels2024}
-  \vspace{0.5cm}
-  \fullcite{cortalFormalizingStylePersonal2025}
-  TODO: add multimodal research paper: N. Richet, S. Belharbi, H. Aslam, M. Schadt, M. González-González, \textbf{G. Cortal}, A. Koerich, M. Pedersoli, A. Finkel, S. Bacon, E. Granger. \href{https://arxiv.org/abs/2407.12927}{Textualized and Feature-based Models for Compound Multimodal Emotion Recognition in the Wild}. \textit{ABAW, ECCV 2024}.
+  \footnotesize
+
+    \fullcitenourl{bonardImprovingLanguageModels2024a}
+
+    \vspace{0.5cm}
+
+    \fullcitenourl{cortalEmotionRecognitionBased2023d}
+
+    \vspace{0.5cm}
+
+    \fullcitenourl{cortalSequencetoSequenceLanguageModels2024}
+
+    \vspace{0.5cm}
+
+    \fullcitenourl{cortalFormalizingStylePersonal2025}
 \end{frame}
 
 \begin{frame}{}
@@ -1106,7 +1121,6 @@ A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-l
 \begin{center}
     References
     \section{References}
-    TODO: remove useless info in references
 \end{center}
 
 \end{frame}
