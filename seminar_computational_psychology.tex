@@ -1,5 +1,5 @@
 % --begin pap's style
-\documentclass[handout,10pt]{beamer}
+\documentclass[10pt]{beamer}
 
 %\usetheme[secheader]{Darmstadt}
 %\usetheme{Pittsburgh}
@@ -24,6 +24,10 @@
 \usepackage[flushleft]{threeparttable}  % for table notes
 \newcommand\mscriptsize[1]{\mbox{\scriptsize\ensuremath{#1}}}
 \newcommand\mtiny[1]{\mbox{\tiny\ensuremath{#1}}}
+\usepackage{xurl}             % allow line breaks in long URLs
+\usepackage{ragged2e}         % better ragged-right with hyphenation
+\usepackage{xspace}           % for intelligent spacing after commands
+\setlength{\emergencystretch}{3em} % gentle last-resort stretch
 
 \usepackage{subcaption}
 
@@ -169,7 +173,7 @@
     \item Natural language processing for psychology is underexplored%, despite its fundamental importance for understanding human language,
     \item We build on an existing subfield: emotion analysis
     \item We study subjectivity (involving first-person perspective, meaning-making processes, and experiential content)
-    \item We focus on personal narratives (\textit{e.g.}, dreams, emotional narratives)
+    \item We focus on personal narratives (\textit{e.g.}, emotional narratives, dream reports, mental health narratives)
     %\item Computational approaches to analyzing subjective experience have potential for supporting psychological well-being
     \end{itemize}
 
@@ -323,7 +327,7 @@ The formal semantics of a language is made of syntactical and lexical rules that
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.20]{img/scherer_eng.png}
+    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
     \caption{Dictionary analysis in cognitive pragmatics. [cite]}
 \end{figure}
 
@@ -339,7 +343,7 @@ Let's take emotion expression modes as an example:
 \vspace{0.5cm}
 \pause
 
-\begin{itemize}
+\begin{itemize}[<+->]
   \item \textit{Labeled}: \enquote{I am happy now} is explicit about the feeling but does not encode what the emotion is about
   \item \textit{Displayed}: interjections (\enquote{Wow!}, \enquote{Ah!}, \enquote{Damn!}) show affect yet leave valence and focus unclear
   \item \textit{Suggested}: \enquote{The ship has black sails.} can communicate any kind of emotion
@@ -362,7 +366,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.20]{img/scherer_eng.png}
+    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
     \caption{Dictionary analysis in cognitive pragmatics. [cite]}
 \end{figure}
 
@@ -402,7 +406,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
     \label{fig:placeholder}
 \end{figure}
 
-[refs cortal et al.]
+%[refs cortal et al.]
     
 \end{frame}
 
@@ -726,13 +730,17 @@ We narrow the general definition of style: \textit{a distinctive manner of commu
 
 \end{frame}
 
-\begin{frame}
+\begin{comment}
+
+  \begin{frame}
 {Related work on style analysis}
 
 TODO
 
 Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 \end{frame}
+
+\end{comment}
 
 \begin{frame}{How to give an operational definition of style?}
 
@@ -758,9 +766,25 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 
 \begin{frame}{What linguistic features encode subjective experience?}
 
+We ground our framework in \textit{systemic functional linguistics} (SFL) \citep{hallidayIntroductionFunctionalGrammar2014a}
+
+Systemic functional linguistics identifies three metafunctions: interpersonal (how language is used to build and
+maintain social relationships), textual (how information is organized to create coherent messages),
+and ideational (how language represents experience)
+
+According to SFL, we use language to represent \textit{experience}, \textit{interpersonal relations}, and \textit{textual cohesion}
+
+Meaning emerges through choices in systems of linguistic features to achieve communicative goals
+
+
+    
+\end{frame}
+
+\begin{frame}{What linguistic features encode subjective experience?}
+
 \pause
 
-According to systemic functional linguistics, language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances} \citep{hallidayIntroductionFunctionalGrammar2014a}
+According to systemic functional linguistics, language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances}
 
 \pause
 
@@ -1163,7 +1187,7 @@ How to model subjective experience in personal narratives?
 
 \begin{frame}{Perspectives}
 
-  \begin{itemize}
+  \begin{itemize}[<+->]
     \item Emotion analysis for mental health (empathic support, cognitive distortions, theory of mind)
     \item Post-training for psychology (preferences and reasoning data)
     \item Psychology of language models (sycophancy, thought operations)

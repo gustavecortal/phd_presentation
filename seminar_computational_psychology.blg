@@ -1,17 +1,15 @@
-[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
-[0] Config.pm:307> INFO - Logfile is 'seminar_computational_psychology.blg'
-[39] biber:322> INFO - === ven. déc. 19, 2025, 15:24:47
-[47] Biber.pm:415> INFO - Reading 'seminar_computational_psychology.bcf'
-[82] Biber.pm:943> INFO - Found 8 citekeys in bib section 0
-[90] Biber.pm:4256> INFO - Processing section 0
-[90] Utils.pm:75> INFO - Globbing data source 'phd_slides_biblatex.bib'
-[90] Utils.pm:91> INFO - Globbed data source 'phd_slides_biblatex.bib' to phd_slides_biblatex.bib
-[96] Biber.pm:4455> INFO - Looking for bibtex format file 'phd_slides_biblatex.bib' for section 0
-[97] bibtex.pm:1653> INFO - LaTeX decoding ...
-[113] bibtex.pm:1471> INFO - Found BibTeX data source 'phd_slides_biblatex.bib'
-[179] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[179] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[179] Biber.pm:4084> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[179] Biber.pm:4090> INFO - No sort tailoring available for locale 'en-US'
-[185] bbl.pm:652> INFO - Writing 'seminar_computational_psychology.bbl' with encoding 'UTF-8'
-[192] bbl.pm:755> INFO - Output to seminar_computational_psychology.bbl
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'seminar_computational_psychology.blg'
+[216] biber-MSWIN64:342> INFO - === 
+[287] Biber.pm:421> INFO - Reading 'seminar_computational_psychology.bcf'
+[821] Biber.pm:1002> INFO - Found 8 citekeys in bib section 0
+[851] Biber.pm:4487> INFO - Processing section 0
+[872] Biber.pm:4678> INFO - Looking for bibtex file 'phd_slides_biblatex.bib' for section 0
+[978] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1049] bibtex.pm:1519> INFO - Found BibTeX data source 'phd_slides_biblatex.bib'
+[1288] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1288] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1288] Biber.pm:4307> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1288] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[1307] bbl.pm:676> INFO - Writing 'seminar_computational_psychology.bbl' with encoding 'UTF-8'
+[1325] bbl.pm:779> INFO - Output to seminar_computational_psychology.bbl
