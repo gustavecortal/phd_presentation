@@ -200,12 +200,12 @@ How to model subjective experience in personal narratives?
     \item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
 
-%\vspace{0.5cm}
-%\pause
+\vspace{0.5cm}
+\pause
 
-%\small
+\small
 
-%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
     
 \end{frame}
 
@@ -236,7 +236,7 @@ What are current limitations and interesting research directions?
 
 %What are current limitations? 
 
-[add refs to each theory and annotation schemes]
+%[add refs to each theory and annotation schemes]
 
 \begin{center}
 \begin{tabular}{p{6.em}|p{10.em}|p{12.em}}
@@ -301,7 +301,7 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textit{em
 \pause
 \vspace{0.5cm}
 
-$\rightarrow$ Different emotion expression modes are more or less difficult to interpret [add refs psycholinguistic, psychiatry, refs aline etienne]
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret %[add refs psycholinguistic, psychiatry, refs aline etienne]
 \end{frame}
 
 \begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
@@ -328,7 +328,7 @@ The formal semantics of a language is made of syntactical and lexical rules that
 \begin{figure}
     \centering
     \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
-    \caption{Dictionary analysis in cognitive pragmatics. [cite]}
+    \caption{Dictionary analysis in cognitive pragmatics.}% [cite]}
 \end{figure}
 
 
@@ -367,7 +367,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 \begin{figure}
     \centering
     \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
-    \caption{Dictionary analysis in cognitive pragmatics. [cite]}
+    \caption{Dictionary analysis in cognitive pragmatics.} %[cite]}
 \end{figure}
 
 
@@ -383,7 +383,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 \begin{figure}
     \centering
     \includegraphics[scale=0.20]{img/scherer_eng.png}
-    \caption{Detective analysis in cognitive pragmatics. [cite]}
+    \caption{Detective analysis in cognitive pragmatics.} %[cite]}
 \end{figure}
 
 
@@ -401,7 +401,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.8\linewidth]{img/scherer_integrated_framework.png}
+    \includegraphics[width=0.9\linewidth]{img/scherer_integrated_framework.png}
     \caption{Integrated framework for emotion theories. Emotional episodes are synchronized changes in four components \citep{schererTheoryConvergenceEmotion2022a}.}
     \label{fig:placeholder}
 \end{figure}
@@ -560,7 +560,7 @@ Need other datasets with narrative structure, emotional content, and available f
 \vspace{0.5cm}
 \pause
 
-Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) %\citep{domhoffStudyingDreamContent2008b}
+Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) \citep{domhoffStudyingDreamContent2008b}
 
 \vspace{0.5cm}
 \pause
@@ -659,7 +659,12 @@ $\rightarrow$ Language models can effectively address character and emotion dete
 \vspace{0.25cm}
 \pause
 
-$\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M vs 7B)
+$\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M \textit{vs.} 7B)
+
+\vspace{0.25cm}
+\pause
+
+\href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives, and \href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation
     
 \end{frame}
 
@@ -689,6 +694,27 @@ $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform b
 \pause
 
 $\rightarrow$ The war veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers.
+
+\end{frame}
+
+\begin{frame}{Oneirogen, a language model for dream generation}  
+
+Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \href{https://huggingface.co/gustavecortal/oneirogen-1.5B}{1.5}, \href{https://huggingface.co/gustavecortal/oneirogen-7B}{7B}), a language model for dream generation. It is based on \href{https://huggingface.co/Qwen/Qwen2-7B}{Qwen2} and was trained on \href{https://dreambank.net/}{DreamBank}
+
+\vspace{0.25cm}
+\pause
+
+\noindent Oneirogen was used to produce \href{https://huggingface.co/datasets/gustavecortal/the-android-and-the-human}{The Android and The Machine}, an English dataset composed of 10,000 real and 10,000 generated dreams
+
+
+\vspace{0.25cm}
+%\pause
+
+\textit{I'm in a building that seems to be a school or maybe a university. There is a lot of noise and activity, and everyone is very busy talking. It is very loud and unpleasant - too loud to talk to anyone easily. The walls are made out of some soft material that might be plastic foam.}
+
+\vspace{0.25cm}
+
+\textit{I was at a shop. There were lots of people there and I lost Mom and Ezra. Later, we were in a car park. We went to get pizza's for dinner from the nearby pizza place but it was really late so they wouldn't serve us. [I think I was also walking around the shops earlier].}
 
 \end{frame}
 
@@ -766,16 +792,17 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 
 \begin{frame}{What linguistic features encode subjective experience?}
 
-We ground our framework in \textit{systemic functional linguistics} (SFL) \citep{hallidayIntroductionFunctionalGrammar2014a}
+We ground our framework in \textit{systemic functional linguistics} \citep{hallidayIntroductionFunctionalGrammar2014a}
 
-Systemic functional linguistics identifies three metafunctions: interpersonal (how language is used to build and
-maintain social relationships), textual (how information is organized to create coherent messages),
-and ideational (how language represents experience)
-
-According to SFL, we use language to represent \textit{experience}, \textit{interpersonal relations}, and \textit{textual cohesion}
+\pause
+\vspace{0.5cm}
 
 Meaning emerges through choices in systems of linguistic features to achieve communicative goals
 
+\pause
+\vspace{0.5cm}
+
+Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
 
     
 \end{frame}
@@ -784,7 +811,7 @@ Meaning emerges through choices in systems of linguistic features to achieve com
 
 \pause
 
-According to systemic functional linguistics, language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances}
+Language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances}
 
 \pause
 
@@ -976,99 +1003,6 @@ We collected clinical scores and narratives from \textbf{four cohorts}. A French
 
 \end{frame}
 
-\begin{frame}{Demographics}
-
-\begin{table}[!htbp]
-\centering
-\resizebox{1\textwidth}{!}{
-\begin{tabular}{p{4cm}llll}
- &
-\textbf{\shortstack[l]{General\\Population}} &
-\textbf{Androids} &
-\textbf{MODMA} &
-\textbf{VOCES} \\
- &
-\textbf{n=1809} &
-\textbf{n=116} &
-\textbf{n=52} &
-\textbf{n=90} \\
-
-\hline
-\textbf{Demographics} & & & & \\
-
-\textbf{Language} & French & Italian & Chinese & Spanish \\
-
-\textbf{Age} & *** & \textit{n.s.} & \textit{n.s.} & *** \\
-Mean (SD) & 37.8 (18.2) & 37.4 (12.0) & 31.3 (9.2) & 38.6 (14.9) \\
-Range     & 18--91       & 19--71      & 18--52      & 21--76       \\
-
-\textbf{Sex, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
-Female & 1187 (66.2) & 84 (72.4) & 16 (30.8) & 39 (43.3) \\
-Male   & 595  (33.2) & 32 (27.6) & 36 (69.2) & 48 (53.3) \\
-Other  & 11   (0.6)  & 0  (0.0)  & 0  (0.0)  & 3  (3.3)  \\
-
-\textbf{Education, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
-No diploma   & 52   (2.9)  & 11  (9.5)  & 7  (13.5)  & -  \\
-Secondary    & 291  (16.2) & 37  (31.9) & 8  (15.4)  & - \\
-Higher short & 213  (11.9) & 52  (44.8) & 0  (0.0)   & - \\
-Higher long  & 1236 (69.0) & 16  (13.8) & 37 (71.2)  & - \\
-\end{tabular}}
-%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
-\label{tab:demographics}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Clinical evaluation}
-
-\begin{table}[!htbp]
-\centering
-\resizebox{1\textwidth}{!}{
-\begin{tabular}{p{4cm}llll}
- &
-\textbf{\shortstack[l]{General\\Population}} &
-\textbf{Androids} &
-\textbf{MODMA} &
-\textbf{VOCES} \\
- &
-\textbf{n=1809} &
-\textbf{n=116} &
-\textbf{n=52} &
-\textbf{n=90} \\
-
-\hline
-\textbf{C-SSRS} & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.} \\
-Suicidal risk, n (\%) & - & - & - & 60 (66.7) \\
-No suicidal risk, n (\%) & - & - & - & 30 (33.3) \\
-\textbf{MADRS / MDD} & \textit{n.s.} &  \textit{n.s.}  & \textit{n.s.}   & \textit{n.s.}   \\
-Depression, n (\%) & -  & 64 (55.2) & 23 (44.2) & -  \\
-No depression, n (\%) & -  & 52 (44.8) & 29 (55.8) & -  \\
-%\textbf{AIS} & *** & & & \\
-%Mean (SD) & 5.2 (3.9) & & & \\
-%Range & 0--24 & & & \\
-%
-%\textbf{BDI} & *** & & & \\
-%Mean (SD) & 7.4 (7.8) &  &  &  \\
-%Range     & 0--54      &  &  &  \\
-
-%\textbf{GAD-7} & *** & & *** & \\
-%Mean (SD) & 4.8 (4.5) & & 7.3 (7.1) &  \\
-%Range     & 0--21      & & 0--21     &  \\
-%
-%\textbf{MFI} & *** & & & \\
-%Mean (SD) & 44.3 (15.9) &  &  &  \\
-%Range     & 18--99       &  &  &  \\
-
-\textbf{PHQ-9} & \textit{n.s.}  & \textit{n.s.}  & *** & *** \\
-Mean (SD) & 5.2 (4.6) & -  & 9.4 (8.5) & 10.5 (6.8) \\
-Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
-\end{tabular}}
-%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
-\label{tab:demographics}
-\end{table}
-
-\end{frame}
-
 \begin{frame}{Pipeline for semantic clustering and description generation}
 
   %We developed a multilingual pipeline that (a) clusters spontaneous speech transcripts from four cohorts (general population and three clinical samples in French, Italian, Chinese, and Spanish), (b) generates fine-grained natural-language descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors. We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use. 
@@ -1173,7 +1107,7 @@ How to model subjective experience in personal narratives?
     \item Construction of an emotion dataset 
     \item Training of language models for emotion analysis 
     \item Formalization of style in personal narratives
-    %\item Automatic thematic analysis in mental health narratives% using language models
+    \item Automatic thematic analysis in mental health narratives% using language models
 \end{itemize}
 
 %\vspace{0.5cm}
@@ -1189,10 +1123,108 @@ How to model subjective experience in personal narratives?
 
   \begin{itemize}[<+->]
     \item Emotion analysis for mental health (empathic support, cognitive distortions, theory of mind)
-    \item Post-training for psychology (preferences and reasoning data)
     \item Psychology of language models (sycophancy, thought operations)
+    \item Post-training for psychology (preferences and reasoning data)
   \end{itemize}
+
+\vspace{0.5cm}
+\pause
+
+I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
   
+\end{frame}
+
+\begin{frame}{Post-training for psychology}
+
+Piaget (\href{https://huggingface.co/gustavecortal/Piaget-0.6B}{0.6}, \href{https://huggingface.co/gustavecortal/Piaget-1.7B}{1.7}, \href{https://huggingface.co/gustavecortal/Piaget-4B}{4}, \href{https://huggingface.co/gustavecortal/Piaget-8B}{8B}), a model for psychological reasoning
+
+\smallskip
+\pause
+
+Domain filtering on open reasoning traces from \href{https://huggingface.co/datasets/cognitivecomputations/dolphin-r1}{Dolphin R1} and \href{https://huggingface.co/datasets/GeneralReasoning/GeneralThought-430K}{General Reasoning}
+
+\smallskip
+\pause
+
+Prompts were embedded, clustered with $k$-means ($k=20\,000$) and majority-voted for domain labels using \href{https://huggingface.co/Qwen/Qwen3-1.7B}{Qwen3-1.7B}%, following the \href{https://huggingface.co/Intelligent-Internet/II-Medical-8B-1706}{Intelligent Internet pipeline}. 
+
+\smallskip
+\pause
+
+Clusters tagged psychology or philosophy were retained for LoRA finetuning based on Qwen3% ($\text{rank}=8$, $\alpha=16$, $\text{max length}=2048$, $\text{epoch}=1$, $\text{batch size}=16$).
+
+\smallskip
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{img/lora.png}
+    %\caption{Examples of reasoning traces used for post-training Piaget.}
+    \label{fig:psychological_reasoning_examples}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Post-training for psychology}
+
+
+Beck (\href{https://huggingface.co/gustavecortal/Beck-0.6B}{0.6}, \href{https://huggingface.co/gustavecortal/Beck-1.7B}{1.7}, \href{https://huggingface.co/gustavecortal/Beck-4B}{4}, \href{https://huggingface.co/gustavecortal/Beck-8B}{8B}), a model aligned with psychotherapeutic preferences
+
+\smallskip
+\pause
+
+Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} and was finetuned on psychotherapeutic preferences from \href{https://huggingface.co/datasets/Psychotherapy-LLM/PsychoCounsel-Preference}{PsychoCounsel-Preference} using preference optimization (ORPO) and LoRA
+
+\smallskip
+\pause
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.17]{img/orpo.png}
+    %\caption{Examples of reasoning traces used for post-training Piaget.}
+    \label{fig:orpo}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{How does it compare to other language models?}
+    % The Prompt
+    \begin{block}{User prompt}
+        \scriptsize
+        Anxiety often strikes when I'm faced with making decisions. 
+        The fear of making the wrong choice or disappointing others paralyzes me, leaving me stuck in indecision. 
+        I want to learn how to trust myself and make confident choices.% \texttt{\textbackslash no\_think}
+    \end{block}
+
+    \vspace{0.2cm}
+
+    % Comparison Columns
+    \begin{columns}[T] % T aligns columns at the top
+        
+        % Qwen3-8B Column
+        \begin{column}{0.48\textwidth}
+            \textbf{\footnotesize Qwen3-8B} \\
+            \scriptsize
+            It's completely natural to feel anxious when facing important decisions, especially when you're worried about making the wrong choice or letting others down. This internal conflict can create a sense of overwhelm that makes it hard to move forward. Learning to trust yourself is a powerful step toward overcoming this challenge. Start by reflecting on past decisions—what worked, what didn't, and what you learned from them. Over time, you'll begin to recognize your own values, strengths, and patterns of thinking. Practicing self-compassion is also key; remind yourself that no decision is perfect and that growth comes from experience, not perfection [...]% Small steps, like setting aside time each day for reflection or journaling, can help build confidence. Surround yourself with people who support your journey, and don't hesitate to seek guidance if needed. Trusting yourself isn’t about having all the answers—it’s about believing in your ability to navigate uncertainty and grow through the process. With patience and practice, you’ll find greater clarity and courage in your choices.
+        \end{column}
+
+        % Beck-8B Column
+        \begin{column}{0.48\textwidth}
+            \textbf{\footnotesize Beck-8B} \\
+            \scriptsize
+            It sounds like you're dealing with a lot of pressure regarding decision-making and it's causing you significant distress. This is quite common for many people, as we all have moments where choosing can feel overwhelming. Let’s explore what might be contributing to these feelings so that we can work on building your confidence in decision-making.
+
+            Firstly, consider what specific fears arise when you think about making a decision. Is there a particular aspect of the choice that triggers anxiety? Sometimes identifying just one component can help in breaking down the process.
+
+            Also, think about past decisions that went well, even if they don’t seem big at first [...]% Remembering successful outcomes can reinforce trust in yourself, reminding you that you have experience navigating through uncertainties successfully before.%
+
+            %Building self-trust involves challenging any negative thoughts surrounding decision-making. It may also help to practice mindfulness—being fully present during each step of the decision process rather than anticipating worst-case scenarios. By cultivating patience and acceptance towards ambiguity, you might find that some anxieties lessen over time.
+
+            %Would you like us to brainstorm practical exercises or strategies tailored specifically for boosting your decision-making abilities and confidence?
+
+        \end{column}
+        
+    \end{columns}
 \end{frame}
 
 \begin{frame}{}
@@ -1203,6 +1235,8 @@ How to model subjective experience in personal narratives?
 \end{center}
 
 \end{frame}
+
+\begin{comment}
 
 \begin{frame}{Selected open-source projects}
 
@@ -1223,10 +1257,105 @@ A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-l
 
 \href{https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k}{PsychologicalReasoning-15k}, open psychological and philosophical reasoning traces.
 
-\smallskip
-\pause
+%\smallskip
+%\pause
 
-\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation, and \href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives.
+%\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation, and \href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives.
+
+\end{frame}
+
+\end{comment}
+
+\begin{frame}{Demographics}
+
+\begin{table}[!htbp]
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{p{4cm}llll}
+ &
+\textbf{\shortstack[l]{General\\Population}} &
+\textbf{Androids} &
+\textbf{MODMA} &
+\textbf{VOCES} \\
+ &
+\textbf{n=1809} &
+\textbf{n=116} &
+\textbf{n=52} &
+\textbf{n=90} \\
+
+\hline
+\textbf{Demographics} & & & & \\
+
+\textbf{Language} & French & Italian & Chinese & Spanish \\
+
+\textbf{Age} & *** & \textit{n.s.} & \textit{n.s.} & *** \\
+Mean (SD) & 37.8 (18.2) & 37.4 (12.0) & 31.3 (9.2) & 38.6 (14.9) \\
+Range     & 18--91       & 19--71      & 18--52      & 21--76       \\
+
+\textbf{Sex, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+Female & 1187 (66.2) & 84 (72.4) & 16 (30.8) & 39 (43.3) \\
+Male   & 595  (33.2) & 32 (27.6) & 36 (69.2) & 48 (53.3) \\
+Other  & 11   (0.6)  & 0  (0.0)  & 0  (0.0)  & 3  (3.3)  \\
+
+\textbf{Education, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+No diploma   & 52   (2.9)  & 11  (9.5)  & 7  (13.5)  & -  \\
+Secondary    & 291  (16.2) & 37  (31.9) & 8  (15.4)  & - \\
+Higher short & 213  (11.9) & 52  (44.8) & 0  (0.0)   & - \\
+Higher long  & 1236 (69.0) & 16  (13.8) & 37 (71.2)  & - \\
+\end{tabular}}
+%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
+\label{tab:demographics}
+\end{table}
+
+\end{frame}
+
+\begin{frame}{Clinical evaluation}
+
+\begin{table}[!htbp]
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{p{4cm}llll}
+ &
+\textbf{\shortstack[l]{General\\Population}} &
+\textbf{Androids} &
+\textbf{MODMA} &
+\textbf{VOCES} \\
+ &
+\textbf{n=1809} &
+\textbf{n=116} &
+\textbf{n=52} &
+\textbf{n=90} \\
+
+\hline
+\textbf{C-SSRS} & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.} \\
+Suicidal risk, n (\%) & - & - & - & 60 (66.7) \\
+No suicidal risk, n (\%) & - & - & - & 30 (33.3) \\
+\textbf{MADRS / MDD} & \textit{n.s.} &  \textit{n.s.}  & \textit{n.s.}   & \textit{n.s.}   \\
+Depression, n (\%) & -  & 64 (55.2) & 23 (44.2) & -  \\
+No depression, n (\%) & -  & 52 (44.8) & 29 (55.8) & -  \\
+%\textbf{AIS} & *** & & & \\
+%Mean (SD) & 5.2 (3.9) & & & \\
+%Range & 0--24 & & & \\
+%
+%\textbf{BDI} & *** & & & \\
+%Mean (SD) & 7.4 (7.8) &  &  &  \\
+%Range     & 0--54      &  &  &  \\
+
+%\textbf{GAD-7} & *** & & *** & \\
+%Mean (SD) & 4.8 (4.5) & & 7.3 (7.1) &  \\
+%Range     & 0--21      & & 0--21     &  \\
+%
+%\textbf{MFI} & *** & & & \\
+%Mean (SD) & 44.3 (15.9) &  &  &  \\
+%Range     & 18--99       &  &  &  \\
+
+\textbf{PHQ-9} & \textit{n.s.}  & \textit{n.s.}  & *** & *** \\
+Mean (SD) & 5.2 (4.6) & -  & 9.4 (8.5) & 10.5 (6.8) \\
+Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
+\end{tabular}}
+%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
+\label{tab:demographics}
+\end{table}
 
 \end{frame}
 

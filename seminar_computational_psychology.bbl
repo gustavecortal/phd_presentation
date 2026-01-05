@@ -373,6 +373,49 @@
       \verb C:\Users\Gustave\Zotero\storage\XDMG3KV9\Cortal et al. - 2023 - Emotion Recognition based on Psychological Compone.pdf
       \endverb
     \endentry
+    \entry{domhoffStudyingDreamContent2008b}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=8a48eeae5e9b7f988c596f438184221a}{%
+           family={Domhoff},
+           familyi={D\bibinitperiod},
+           given={G.\bibnamedelimi William},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e171d50e289410e1424d004e4f789ca5}{%
+           family={Schneider},
+           familyi={S\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{fullhash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{fullhashraw}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{bibnamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{authorbibnamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{authornamehash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{authorfullhash}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \strng{authorfullhashraw}{b1f37fa59e7a1ef5a969a0f1dec122ce}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10538100}
+      \field{journaltitle}{Consciousness and Cognition}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Studying Dream Content Using the Archive and Search Engine on {{DreamBank}}.Net}
+      \field{volume}{17}
+      \field{year}{2008}
+      \field{pages}{1238\bibrangedash 1247}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.concog.2008.06.010
+      \endverb
+    \endentry
     \entry{hallidayIntroductionFunctionalGrammar2014a}{book}{}{}
       \name{author}{4}{}{%
         {{un=0,uniquepart=base,hash=02086519d39addfdf6fc98bacfee027c}{%
