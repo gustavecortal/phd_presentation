@@ -1,9 +1,9 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Definition of objectives using cognitive science}{17}{0}{2}
-\beamer@sectionintoc {3}{Construction of an emotion dataset}{45}{0}{3}
-\beamer@sectionintoc {4}{Training language models for emotion analysis}{48}{0}{4}
-\beamer@sectionintoc {5}{Formalization of style in personal narratives}{66}{0}{5}
-\beamer@sectionintoc {6}{Thematic analysis in mental health narratives using language models}{96}{0}{6}
-\beamer@sectionintoc {7}{Appendix}{135}{0}{7}
-\beamer@sectionintoc {8}{References}{139}{0}{8}
+\beamer@sectionintoc {2}{Definition of objectives using cognitive science}{5}{0}{2}
+\beamer@sectionintoc {3}{Construction of an emotion dataset}{16}{0}{3}
+\beamer@sectionintoc {4}{Training language models for emotion analysis}{18}{0}{4}
+\beamer@sectionintoc {5}{Formalization of style in personal narratives}{26}{0}{5}
+\beamer@sectionintoc {6}{Thematic analysis in mental health narratives using language models}{35}{0}{6}
+\beamer@sectionintoc {7}{Appendix}{49}{0}{7}
+\beamer@sectionintoc {8}{References}{53}{0}{8}

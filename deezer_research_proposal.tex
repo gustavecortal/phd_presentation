@@ -1,0 +1,497 @@
+% --begin pap's style
+\documentclass[10pt]{beamer}
+
+%\usetheme[secheader]{Darmstadt}
+%\usetheme{Pittsburgh}
+
+\usepackage[english]{babel}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[final]{pdfpages}
+\usepackage[official]{eurosym}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{amsfonts} % for \text
+\usepackage{hyperref}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[flushleft]{threeparttable}  % for table notes
+\newcommand\mscriptsize[1]{\mbox{\scriptsize\ensuremath{#1}}}
+\newcommand\mtiny[1]{\mbox{\tiny\ensuremath{#1}}}
+\usepackage{xurl}             % allow line breaks in long URLs
+\usepackage{ragged2e}         % better ragged-right with hyphenation
+\usepackage{xspace}           % for intelligent spacing after commands
+\setlength{\emergencystretch}{3em} % gentle last-resort stretch
+
+\usepackage{subcaption}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage{minted}           % core package
+\usepackage{xcolor}           % for background color
+\definecolor{LightGray}{gray}{0.95}
+
+
+\definecolor{blueNCS}{rgb}{0.0, 0.53, 0.74}    % ✓ Commas
+\definecolor{bluepanam}{rgb}{0.0, 0.189, 0.79} % ✓ Commas
+\definecolor{Aplgreen}{rgb}{0.55, 0.71, 0.0}   % ✓ Commas
+\definecolor{DarkBlue}{rgb}{0.1,0.1,0.9}
+
+\hypersetup{
+    colorlinks=false,
+    linkcolor=bluepanam,
+    filecolor=bluepanam,      
+    urlcolor=bluepanam,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\setbeamercolor{palette primary}{bg=white,fg=black}
+\setbeamercolor{palette secondary}{bg=white,fg=bluepanam}
+\setbeamercolor{palette tertiary}{bg=white,fg=bluepanam}
+\setbeamercolor{palette quaternary}{bg=white,fg=bluepanam}
+\setbeamercolor{structure}{fg=bluepanam} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=bluepanam} % TOC sections
+
+
+%% \setbeamercolor{section in head/foot}{fg=white, bg=blue}
+\setbeamercolor{title}{fg=bluepanam, bg=white}
+\setbeamercolor{author}{fg=black, bg=white}
+\setbeamercolor{institute}{fg=black, bg=white}
+\setbeamercolor{date}{fg=white, bg=white}
+
+
+\setbeamercolor{section in head/foot}{fg=bluepanam, bg=white}     
+     
+\setbeamercolor{author in head/foot}{fg=bluepanam, bg=white}
+%\setbeamercolor{author in head/foot}{fg=white, bg=white}
+\beamertemplatenavigationsymbolsempty
+% --end pap's style
+
+%\newcommand{\customcite}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}, \citeurl{#1}}
+%\newcommand{\customcitenourl}[1]{\citeauthor{#1}, \citetitle{#1}, \citeyear{#1}}
+\newcommand{\parensmall}[1]{{\scriptsize #1}}
+
+% Custom fullcite command without URL, DOI, and urldate
+\newcommand{\fullcitenourl}[1]{%
+  \AtNextCite{%
+    \clearfield{url}%
+    \clearfield{doi}%
+    \clearfield{urldate}%
+  }%
+  \fullcite{#1}%
+}
+
+
+\usepackage{xurl}             % allow line breaks in long URLs
+\usepackage{ragged2e}         % better ragged-right with hyphenation
+\usepackage{xspace}           % for intelligent spacing after commands
+\setlength{\emergencystretch}{3em} % gentle last-resort stretch
+
+%\newcommand{\comment}[1]{}
+
+\usepackage[style=authoryear,natbib=true,backend=biber,date=year,urldate=long]{biblatex}
+\addbibresource{phd_slides_biblatex.bib}
+
+% Remove "visited on" dates from URLs
+\AtEveryBibitem{\clearfield{urldate}}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=bluepanam,
+  filecolor=bluepanam,      
+  urlcolor=bluepanam,
+  citecolor=black,  % Changed to black to match text color
+  pdftitle={Overleaf Example},
+  pdfpagemode=FullScreen,
+}
+
+% Add more spacing between entries
+\setlength\bibitemsep{0.5\baselineskip}
+
+\title{Language-based representations\\ for music recommendation}
+\author{Gustave Cortal}
+\institute{\footnotesize Deezer research proposal}
+%\titlegraphic{
+%  \includegraphics[width=4cm]{img/lmf_logo_emnlp.png}
+%  \hspace{1cm}
+%  \includegraphics[width=5cm]{img/logo_ens_saclay.png}
+%}
+\date{\today}
+
+\makeatletter
+\defbeamertemplate*{footline}{myminiframes theme}
+  {%
+    \begin{beamercolorbox}[colsep=1.5pt]{upper separation line foot}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+      \leavevmode{\usebeamerfont{author in head/foot}}%
+      \hfill%
+    %\insertframenumber{}\,/\,\inserttotalframenumber%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[ht=2.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}%
+      %%      {\usebeamerfont{section in head/foot} somthing written here \hfill  \setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!70}{My own image here}}%
+      {\usebeamerfont{section in head/foot} \insertshortauthor \hfill  %\setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!100}{foobar etc}
+      }%
+      \insertframenumber{}\,/\,\inserttotalframenumber%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.5pt]{lower separation line foot}
+    \end{beamercolorbox}
+  }
+  \makeatother
+
+
+\begin{document}
+
+\setlength{\parskip}{5pt}%
+\setlength{\parsep}{0pt}%
+\setlength{\itemsep}{0.25cm}%
+\setlength{\leftmargini}{0.5cm}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{comment}
+
+  \begin{frame}{}
+\Large
+\begin{center}
+    Automatic thematic analysis in mental health narratives using language models% (change title to thematic analysis?)
+    \section{Thematic analysis in mental health narratives using language models}
+\end{center}
+
+\vspace{1.5cm}
+
+\footnotesize
+
+\textbf{G. Cortal}, S. Guessoum, X. Cao, R. Riad. \textit{Fine-grained mental health topic modeling in different cohorts using large language models} (preprint). 2025. 
+
+\end{frame}
+  
+\end{comment}
+
+\begin{frame}{Context and objective}
+
+    \begin{itemize}[<+->]
+    \item The research proposal aims to develop language-based representations for musical items and users
+    \item Large Language Models (LLMs) can be used to generate textual descriptions of items and user profiles
+    \item This enable explainable and flexible music recommendation systems
+    \item The research strategy is articulated around three interconnected axes: user modeling, item modeling, and music recommendation
+  \end{itemize}
+
+  %\vspace{0.5cm}
+  %\pause
+
+  %\textit{I am still on the exploration phase, I want your feedback on the directions}
+
+  % Some research directions are too general, too specific, or not feasible with current LLMs and data
+
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    User modeling
+    \section{User modeling}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{User modeling}
+
+\textit{How can we leverage LLMs to obtain scrutable natural language profiles?}
+
+    \vspace{0.25cm}
+  \pause
+
+      \begin{itemize}[<+->]
+    \item Preference modeling has relied on interaction data to produce embeddings
+    \item Vector-based methods lack interpretability and raise scrutability issues
+    \item Scientific literature establishes a strong link between musical preferences and psychological traits
+    \item We could use LLMs to infer these states and preferences, transforming them into natural language profiles
+    \item Natural language descriptions serve as a transparent base that the user can verify and refine, and provide a context for the recommendation engine
+  \end{itemize}
+
+    %\vspace{0.5cm}
+  %\pause
+
+\end{frame}
+
+\begin{frame}{User modeling}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.23]{deezer_img/nl_user_preference_profiles.png}
+    %\caption{User modeling diagram}
+    \label{fig:user_modeling_diagram}
+\end{figure}
+
+    \vspace{0.25cm}
+  \pause
+
+  $\rightarrow$ Natural language profiles involve preferences, listening intents, personality, mood and emotion
+
+% long-term preferences vs short-term intents
+
+\end{frame}
+
+\begin{frame}{User modeling}
+
+  \textit{How can we better modelize user preferences, especially regarding their affective states?}
+
+      \vspace{0.25cm}
+  \pause
+
+
+  \begin{itemize}[<+->]
+    \item Existing research has explored mood and emotion detection from music listening data
+    \item However, current models often rely on simplistic emotion categories (e.g., discrete emotions or valence-arousal dimensions)
+    \item There is a need for more nuanced representations that capture the complexity of human emotions
+    \item Incorporating cognitive science theories of emotion can enhance the understanding of user affective states
+    %\item This can lead to more personalized and context-aware music recommendations
+  \end{itemize}
+
+        \vspace{0.25cm}
+  \pause
+
+  \textit{We could reuse some ideas to better modelize items' affective dimensions}
+
+  %+ add emotion annotation schemes, cognitive science theories of emotion
+
+  %A promising direction involves exploiting language models to generate synthetic training data by simulating realistic conversations about music~\cite{dohTALKPLAYMultimodalMusic2025}
+
+  %This approach enables the creation of synthetic datasets for tasks such as intent detection, allowing for the training of robust systems tailored to specific personas.
+
+
+
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Linguistic and cognitive science theories
+    %\section{Definition of objectives using cognitive science}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Psychological theories and emotion annotation schemes}
+
+  \pause
+
+What are current limitations and interesting research directions?
+
+%\pause
+%\vspace{0.25cm}
+
+%We review psychological theories of emotion and emotion annotation schemes in NLP
+
+\pause
+\vspace{0.25cm}
+
+%What are current limitations? 
+
+%[add refs to each theory and annotation schemes]
+
+\begin{center}
+\begin{tabular}{p{6.em}|p{10.em}|p{12.em}}
+Psychological theories & In text, emotion is... & Example \\
+\hline
+Basic emotions theory & a \textbf{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
+Constructivist theories & a continuous value with an \textbf{affective} meaning & "His voice soothes me." $\rightarrow$ \texttt{valence} (4/5), \texttt{arousal} (1/5) \\
+Appraisal theory & a continuous value with a \textbf{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
+& composed of \textbf{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})."
+\end{tabular}
+\end{center}
+
+
+%\vspace{0.5cm}
+
+%\scriptsize
+
+%\textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
+    
+\end{frame}
+
+\begin{frame}{Which verbal signs are used to infer expressed emotions?}
+
+%Which verbal signs are used to infer expressed emotions?
+
+\pause
+%\vspace{0.5cm}
+
+Raphaël Micheli categorizes a range of linguistic markers into three \textit{emotion expression modes} \citep{micheliEsquisseDuneTypologie2013}. The emotion can be: 
+
+%\cite{Micheli2014}
+\pause
+\vspace{0.5cm}
+
+\begin{itemize}[<+->]
+    \item \textit{labeled} explicitly with an emotional term ("I am \underline{sad}")
+    \item \textit{shown} with utterance features such as interjections and punctuations ("\underline{Ah!} That's great\underline{!}")
+    \item \textit{suggested} with the description of a situation which generally, in a given sociocultural context, leads to an emotion ("\underline{She gave me a gift}")
+\end{itemize}
+
+\pause
+\vspace{0.5cm}
+
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret %[add refs psycholinguistic, psychiatry, refs aline etienne]
+\end{frame}
+
+\begin{frame}{How to integrate psychological theories of emotion?}
+
+%How to integrate psychological theories of emotion?
+
+\pause
+\vspace{0.5cm}
+
+%I use the \textbf{integrated framework for emotion theories} (Scherer, 2022):
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\linewidth]{img/scherer_integrated_framework.png}
+    \caption{Integrated framework for emotion theories. Emotional episodes are synchronized changes in four components \citep{schererTheoryConvergenceEmotion2022a}.}
+    \label{fig:placeholder}
+\end{figure}
+
+%[refs cortal et al.]
+    
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Item modeling
+    \section{Item modeling}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Item modeling}
+
+Music item models leverage collaborative and content data
+
+    \vspace{0.25cm}
+  \pause
+
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{deezer_img/onion_model.png}
+    \caption{The \textit{onion model} of music content. A visualization of content layers accumulating over time, ranging from objective descriptors (inner) to high-level, subjective cultural data (outer).}
+    \label{fig:user_modeling_diagram}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Item modeling}
+
+  \textit{How can we construct language-based item representations that capture both intrinsic content and individual/cultural context?}
+
+      \vspace{0.25cm}
+  \pause
+
+  We could use LLMs for several roles:
+
+      \vspace{0.25cm}
+  \pause
+
+\begin{itemize}[<+->]
+    \item LLMs as \textit{knowledge bases} to generate music tags, genres, or styles% without specific training
+    \item LLMs as \textit{information extractors} to correct or augment metadata%, such as release years or artist details
+    \item LLMs as \textit{summarizers} of heterogeneous textual data to create a concise summary of a song
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Music recommendation
+    \section{Music recommendation}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Music recommendation}
+
+  \textit{How can we leverage natural language queries for context-aware music recommendation using LLMs?}
+
+        \vspace{0.25cm}
+  \pause
+
+  \begin{itemize}[<+->]
+    \item Users often employ broad concepts, such as \enquote{music for sports during a rainy day}, which implies a need to align music with specific contexts
+    \item Given an user profile and a natural language query, how to recommend the best music items?
+    \item Previous methods often rely on keyword matching, which limits the expressiveness of user intents
+    \item LLMs can interpret complex natural language queries, enabling more nuanced recommendations
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Music recommendation}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{deezer_img/prompt_different_tasks.png}
+    %\caption{User modeling diagram}
+    \label{fig:user_modeling_diagram}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Music recommendation}
+
+  \textit{How can we optimize prompts to improve recommendation quality?}
+
+        \vspace{0.25cm}
+  \pause
+
+  \begin{itemize}[<+->]
+    \item Prompt engineering is crucial for eliciting desired responses from LLMs
+    \item Manual prompt design can be time-consuming and may not yield optimal results
+    \item Automated prompt optimization techniques can explore the prompt space to find effective formulations
+    \item We could improve recommender prompts by optimizing natural language instructions and few-shot examples
+    \item We could improve LLM-as-a-judge prompts to better measure subjective dimensions of recommendation quality (\textit{e.g.}, groundedness, discovery quality, personalization gain, profile fidelity, and cultural/linguistic coverage)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{DSPy prompt optimization}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.27]{deezer_img/dspy.png}
+    %\caption{DSPy framework for prompt optimization.}
+    \label{fig:dspy_prompt_optimization}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Conclusion
+    \section{Conclusion}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Conclusion}
+  \begin{itemize}[<+->]
+    \item The research proposal aims to develop language-based representations for music recommendation using LLMs
+    \item Three interconnected axes: user modeling, item modeling, and music recommendation
+    \item User modeling: \textit{How can we leverage LLMs to obtain scrutable natural language profiles? How can we better modelize user preferences, especially regarding their affective states?}
+    \item Item modeling: \textit{How can we construct language-based item representations that capture both intrinsic content and individual/cultural context?}
+    \item Music recommendation: \textit{How can we leverage natural language queries for context-aware music recommendation using LLMs? How can we optimize prompts to improve recommendation quality?}
+  \end{itemize}
+\end{frame}
+
+\end{document}
