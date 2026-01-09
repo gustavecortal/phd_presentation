@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber deezer_research_presentation"] 1767890499.79771 "deezer_research_presentation.bcf" "deezer_research_presentation.bbl" "deezer_research_presentation" 1767890526.93298 0
-  "deezer_research_presentation.bcf" 1767890526 109501 b9a73027e2f00bfc9bc882fbebe9cb9c "pdflatex"
+["biber deezer_research_presentation"] 1767955965.40843 "deezer_research_presentation.bcf" "deezer_research_presentation.bbl" "deezer_research_presentation" 1767956161.13725 0
+  "deezer_research_presentation.bcf" 1767956160 110893 93ccc973e59c62cce05e43bdd0fad809 "pdflatex"
   "phd_slides_biblatex.bib" 1767626811 15553 f983338cefab62b9668a127cde09ddbc ""
   (generated)
   "deezer_research_presentation.bbl"
   "deezer_research_presentation.blg"
   (rewritten before read)
-["pdflatex"] 1767890518.56696 "c:/Users/Gustave/phd_presentation/deezer_research_presentation.tex" "deezer_research_presentation.pdf" "deezer_research_presentation" 1767890526.93408 0
-  "c:/Users/Gustave/phd_presentation/deezer_research_presentation.tex" 1767890487 38387 fa90fc721f74d23f24677cc488f28d94 ""
+["pdflatex"] 1767956152.56875 "c:/Users/Gustave/phd_presentation/deezer_research_presentation.tex" "deezer_research_presentation.pdf" "deezer_research_presentation" 1767956161.13839 0
+  "c:/Users/Gustave/phd_presentation/deezer_research_presentation.tex" 1767956130 38415 62aae481d668456067734eaee306b815 ""
   "c:/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1758264726 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1758265908 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/eccc0700.tfm" 1758265400 3072 c25a5e08cb36d69ee7e65fe231221f6d ""
@@ -287,12 +287,12 @@
   "c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758271007 5574153 af86687748baf417d9e7d549313527be ""
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758271593 3621775 d876734c3a7bf3cc033aca38653c4321 ""
   "c:/texlive/2025/texmf.cnf" 1758270959 713 e69b156964470283e0530f5060668171 ""
-  "deezer_research_presentation.aux" 1767890526 13017 2f0e7c431bdedc18ddc1c04f3c381d70 "pdflatex"
-  "deezer_research_presentation.bbl" 1767890503 30858 1bbeb924b2870b06a25aa149d49ab574 "biber deezer_research_presentation"
-  "deezer_research_presentation.nav" 1767890526 5182 e71dd07c3cd7ce1f553627ed090c9402 "pdflatex"
-  "deezer_research_presentation.out" 1767890526 1461 d15bb7d59dfe333bc21b24d39fb6d9d0 "pdflatex"
-  "deezer_research_presentation.run.xml" 1767890526 2522 e0e829b679b0683a2b8b2d55e63f371d "pdflatex"
-  "deezer_research_presentation.tex" 1767890487 38387 fa90fc721f74d23f24677cc488f28d94 ""
+  "deezer_research_presentation.aux" 1767956160 14895 e938308b46d0da228cdf6427f2f14adf "pdflatex"
+  "deezer_research_presentation.bbl" 1767955968 30858 1bbeb924b2870b06a25aa149d49ab574 "biber deezer_research_presentation"
+  "deezer_research_presentation.nav" 1767956160 5115 3a0952d2fae300ac944c5c612f0887b6 "pdflatex"
+  "deezer_research_presentation.out" 1767956160 1461 d15bb7d59dfe333bc21b24d39fb6d9d0 "pdflatex"
+  "deezer_research_presentation.run.xml" 1767956160 2522 e0e829b679b0683a2b8b2d55e63f371d "pdflatex"
+  "deezer_research_presentation.tex" 1767956130 38415 62aae481d668456067734eaee306b815 ""
   "img/dendogram_viet.png" 1767522362 100361 ed1b03922388ce3e8788ce6edd40493b ""
   "img/dream_method.png" 1767522362 142570 e5502b944b7c7e8944241c1e4eaac5ac ""
   "img/lmf_logo_emnlp.png" 1767522362 49966 d5603c028619b81a267824b0a65eb00f ""

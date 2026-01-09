@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.19)  8 JAN 2026 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.9.19)  9 JAN 2026 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1172,36 +1172,6 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
-[]|\T1/cmss/m/n/10 Psychological
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
-[]|\T1/cmss/m/n/10 Basic emo-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
-[]|\T1/cmss/m/n/10 Constructivist
- []
-
-
-Underfull \hbox (badness 5504) in paragraph at lines 259--259
-\T1/cmtt/m/n/10 valence \T1/cmss/m/n/10 (4/5), \T1/cmtt/m/n/10 arousal
- []
-
-
-Underfull \hbox (badness 1824) in paragraph at lines 259--259
-\T1/cmss/m/n/10 an-gry (\T1/cmtt/m/n/10 cue\T1/cmss/m/n/10 ) to-wards Paul
- []
-
-
-Overfull \hbox (9.44176pt too wide) in paragraph at lines 259--259
- [] 
- []
-
-
 
 [6
 
@@ -1217,27 +1187,15 @@ Overfull \hbox (9.44176pt too wide) in paragraph at lines 259--259
 
 [9
 
-] Excluding 'comment' comment.
-<img/scherer_eng.png, id=113, 1517.67pt x 708.6475pt>
-File: img/scherer_eng.png Graphic file (type png)
-<use img/scherer_eng.png>
-Package pdftex.def Info: img/scherer_eng.png  used on input line 395.
-(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
-
+]
 
 [10
 
- <./img/scherer_eng.png>]
-<img/scherer_integrated_framework.png, id=121, 1084.05pt x 461.725pt>
-File: img/scherer_integrated_framework.png Graphic file (type png)
-<use img/scherer_integrated_framework.png>
-Package pdftex.def Info: img/scherer_integrated_framework.png  used on input line 416.
-(pdftex.def)             Requested size: 276.559pt x 117.79115pt.
-
+]
 
 [11
 
- <./img/scherer_integrated_framework.png>] Excluding 'comment' comment.
+]
 
 [12
 
@@ -1257,22 +1215,11 @@ Package pdftex.def Info: img/scherer_integrated_framework.png  used on input lin
 
 [16
 
-]
-<img/dream_method.png, id=176, 289.8027pt x 210.3057pt>
-File: img/dream_method.png Graphic file (type png)
-<use img/dream_method.png>
-Package pdftex.def Info: img/dream_method.png  used on input line 602.
-(pdftex.def)             Requested size: 245.83282pt x 178.39806pt.
-
-pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.602 \end{frame}
-                 
+] Excluding 'comment' comment.
 
 [17
 
- <./img/dream_method.png>]
+]
 
 [18
 
@@ -1288,7 +1235,7 @@ l.602 \end{frame}
 
 [21
 
-] Excluding 'comment' comment.
+]
 
 [22
 
@@ -1297,56 +1244,6 @@ l.602 \end{frame}
 [23
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 795--795
-[]|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
- []
-
-
-Underfull \hbox (badness 2653) in paragraph at lines 795--795
-\T1/cmss/m/n/10 ences such as thoughts,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 795--795
-[]|\T1/cmtt/m/n/10 State\T1/cmss/m/n/10 : states of be-ing,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-
- []
-
-
 
 [24
 
@@ -1358,31 +1255,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 795--795
 
 [26
 
-]
+] Excluding 'comment' comment.
+<img/scherer_eng.png, id=205, 1517.67pt x 708.6475pt>
+File: img/scherer_eng.png Graphic file (type png)
+<use img/scherer_eng.png>
+Package pdftex.def Info: img/scherer_eng.png  used on input line 399.
+(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
+
 
 [27
 
-]
-<img/lora.png, id=261, 613.29124pt x 537.00626pt>
-File: img/lora.png Graphic file (type png)
-<use img/lora.png>
-Package pdftex.def Info: img/lora.png  used on input line 905.
-(pdftex.def)             Requested size: 91.98972pt x 80.54745pt.
+ <./img/scherer_eng.png>]
+<img/scherer_integrated_framework.png, id=213, 1084.05pt x 461.725pt>
+File: img/scherer_integrated_framework.png Graphic file (type png)
+<use img/scherer_integrated_framework.png>
+Package pdftex.def Info: img/scherer_integrated_framework.png  used on input line 420.
+(pdftex.def)             Requested size: 276.559pt x 117.79115pt.
 
 
 [28
 
- <./img/lora.png (PNG copy)>]
-<img/orpo.png, id=276, 1793.70125pt x 553.06625pt>
-File: img/orpo.png Graphic file (type png)
-<use img/orpo.png>
-Package pdftex.def Info: img/orpo.png  used on input line 928.
-(pdftex.def)             Requested size: 304.92519pt x 94.02002pt.
+ <./img/scherer_integrated_framework.png>]
+File: img/scherer_integrated_framework.png Graphic file (type png)
+<use img/scherer_integrated_framework.png>
+Package pdftex.def Info: img/scherer_integrated_framework.png  used on input line 420.
+(pdftex.def)             Requested size: 276.559pt x 117.79115pt.
 
 
 [29
 
- <./img/orpo.png (PNG copy)>]
+] Excluding 'comment' comment.
 
 [30
 
@@ -1391,41 +1293,14 @@ Package pdftex.def Info: img/orpo.png  used on input line 928.
 [31
 
 ]
-<img/viet_odds_2.png, id=296, 710.655pt x 420.6114pt>
-File: img/viet_odds_2.png Graphic file (type png)
-<use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 996.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-<img/viet_odds_3.png, id=297, 710.655pt x 420.6114pt>
-File: img/viet_odds_3.png Graphic file (type png)
-<use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 996.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 996--996
- [][] 
- []
-
-
 
 [32
 
- <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
-<img/dendogram_viet.png, id=311, 655.9707pt x 427.3566pt>
-File: img/dendogram_viet.png Graphic file (type png)
-<use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 1017.
-(pdftex.def)             Requested size: 199.73653pt x 130.1251pt.
-
+]
 
 [33
 
- <./img/dendogram_viet.png>]
-
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <7> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 1035.
-
-
+]
 
 [34
 
@@ -1435,21 +1310,515 @@ LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <7> not available
 
 ]
 
-LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
-(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 1048.
-
-
-
 [36
 
- <c:/texlive/2025/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+]
 
 [37
-
 
 ]
 
 [38
+
+]
+
+[39
+
+]
+
+[40
+
+]
+<img/dream_method.png, id=311, 289.8027pt x 210.3057pt>
+File: img/dream_method.png Graphic file (type png)
+<use img/dream_method.png>
+Package pdftex.def Info: img/dream_method.png  used on input line 606.
+(pdftex.def)             Requested size: 245.83282pt x 178.39806pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.606 \end{frame}
+                 
+
+[41
+
+ <./img/dream_method.png>]
+
+[42
+
+]
+
+[43
+
+]
+
+[44
+
+]
+
+[45
+
+]
+
+[46
+
+]
+
+[47
+
+]
+
+[48
+
+]
+
+[49
+
+]
+
+[50
+
+]
+
+[51
+
+] Excluding 'comment' comment.
+
+[52
+
+]
+
+[53
+
+]
+
+[54
+
+]
+
+[55
+
+]
+
+[56
+
+]
+
+[57
+
+]
+
+[58
+
+]
+
+[59
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 799--799
+\T1/cmss/m/n/10 ences such as thoughts,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 State\T1/cmss/m/n/10 : states of be-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+
+[60
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 799--799
+\T1/cmss/m/n/10 ences such as thoughts,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 State\T1/cmss/m/n/10 : states of be-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+
+[61
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-
+ []
+
+
+Underfull \hbox (badness 2653) in paragraph at lines 799--799
+\T1/cmss/m/n/10 ences such as thoughts,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+[]|\T1/cmss/m/n/10 [David]$[]$ [\T1/cmss/bx/n/10 said\T1/cmss/m/n/10 ]$[]$ [``the cor-rupt, crim-i-nals and money
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 799--799
+[]|\T1/cmtt/m/n/10 State\T1/cmss/m/n/10 : states of be-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
+
+ []
+
+
+
+[62
+
+]
+
+[63
+
+]
+
+[64
+
+]
+
+[65
+
+]
+
+[66
+
+]
+
+[67
+
+]
+
+[68
+
+]
+
+[69
+
+]
+
+[70
+
+]
+
+[71
+
+]
+
+[72
+
+]
+
+[73
+
+]
+
+[74
+
+]
+
+[75
+
+]
+
+[76
+
+]
+
+[77
+
+]
+<img/lora.png, id=543, 613.29124pt x 537.00626pt>
+File: img/lora.png Graphic file (type png)
+<use img/lora.png>
+Package pdftex.def Info: img/lora.png  used on input line 909.
+(pdftex.def)             Requested size: 91.98972pt x 80.54745pt.
+
+
+[78
+
+ <./img/lora.png (PNG copy)>]
+File: img/lora.png Graphic file (type png)
+<use img/lora.png>
+Package pdftex.def Info: img/lora.png  used on input line 909.
+(pdftex.def)             Requested size: 91.98972pt x 80.54745pt.
+
+
+[79
+
+]
+File: img/lora.png Graphic file (type png)
+<use img/lora.png>
+Package pdftex.def Info: img/lora.png  used on input line 909.
+(pdftex.def)             Requested size: 91.98972pt x 80.54745pt.
+
+
+[80
+
+]
+File: img/lora.png Graphic file (type png)
+<use img/lora.png>
+Package pdftex.def Info: img/lora.png  used on input line 909.
+(pdftex.def)             Requested size: 91.98972pt x 80.54745pt.
+
+
+[81
+
+]
+<img/orpo.png, id=599, 1793.70125pt x 553.06625pt>
+File: img/orpo.png Graphic file (type png)
+<use img/orpo.png>
+Package pdftex.def Info: img/orpo.png  used on input line 932.
+(pdftex.def)             Requested size: 304.92519pt x 94.02002pt.
+
+
+[82
+
+ <./img/orpo.png (PNG copy)>]
+File: img/orpo.png Graphic file (type png)
+<use img/orpo.png>
+Package pdftex.def Info: img/orpo.png  used on input line 932.
+(pdftex.def)             Requested size: 304.92519pt x 94.02002pt.
+
+
+[83
+
+]
+File: img/orpo.png Graphic file (type png)
+<use img/orpo.png>
+Package pdftex.def Info: img/orpo.png  used on input line 932.
+(pdftex.def)             Requested size: 304.92519pt x 94.02002pt.
+
+
+[84
+
+]
+
+[85
+
+]
+
+[86
+
+]
+
+[87
+
+]
+<img/viet_odds_2.png, id=646, 710.655pt x 420.6114pt>
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+<img/viet_odds_3.png, id=647, 710.655pt x 420.6114pt>
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1000--1000
+ [][] 
+ []
+
+
+
+[88
+
+ <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1000--1000
+ [][] 
+ []
+
+
+
+[89
+
+]
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1000.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1000--1000
+ [][] 
+ []
+
+
+
+[90
+
+]
+<img/dendogram_viet.png, id=670, 655.9707pt x 427.3566pt>
+File: img/dendogram_viet.png Graphic file (type png)
+<use img/dendogram_viet.png>
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1021.
+(pdftex.def)             Requested size: 199.73653pt x 130.1251pt.
+
+
+[91
+
+ <./img/dendogram_viet.png>]
+File: img/dendogram_viet.png Graphic file (type png)
+<use img/dendogram_viet.png>
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1021.
+(pdftex.def)             Requested size: 199.73653pt x 130.1251pt.
+
+
+[92
+
+]
+
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <7> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 1039.
+
+
+
+[93
+
+]
+
+[94
+
+]
+
+LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
+(Font)              Font shape `T1/cmr/m/sc' tried instead on input line 1052.
+
+
+
+[95
+
+ <c:/texlive/2025/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+
+[96
+
+
+]
+
+[97
 
 
 ]
@@ -1478,18 +1847,18 @@ Package logreq Info: Writing requests to 'deezer_research_presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 34075 strings out of 467796
- 657080 string characters out of 5435961
- 1475248 words of memory out of 5000000
- 62000 multiletter control sequences out of 15000+600000
+ 34206 strings out of 467796
+ 658345 string characters out of 5435961
+ 1475283 words of memory out of 5000000
+ 62013 multiletter control sequences out of 15000+600000
  650484 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,16n,123p,1426b,1889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,16n,123p,1426b,1892s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsi1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on deezer_research_presentation.pdf (38 pages, 1526268 bytes).
+Output written on deezer_research_presentation.pdf (97 pages, 1592804 bytes).
 PDF statistics:
- 521 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 913 PDF objects out of 1000 (max. 8388607)
+ 717 compressed objects within 8 object streams
+ 227 named destinations out of 1000 (max. 500000)
  157 words of extra memory for PDF output out of 10000 (max. 10000000)
 
