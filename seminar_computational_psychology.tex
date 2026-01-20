@@ -116,11 +116,19 @@
 
 \title{Natural language processing for\\ subjectivity analysis in personal narratives}
 \author{Gustave Cortal}
-\institute{\footnotesize Thesis director: Alain Finkel \\ Co-advisors: Patrick PAROUBEK and Lina YE}
-\titlegraphic{
-  \includegraphics[width=4cm]{img/lmf_logo_emnlp.png}
-  \hspace{1cm}
-  \includegraphics[width=5cm]{img/logo_ens_saclay.png}
+\institute{\footnotesize Thesis director: Alain Finkel \\ Co-advisors: Patrick Paroubek and Lina Ye}
+\titlegraphic{%
+  \begin{minipage}{\linewidth}
+    \centering
+    \includegraphics[height=1cm]{img/lmf_logo_emnlp.png}%\hfill
+    \hspace{0.5cm}
+    \includegraphics[height=1cm]{img/logo_ens_saclay.png}%\hfill
+    \hspace{0.5cm}
+    %\vspace{1.5cm}
+    \includegraphics[height=1cm]{img/logo_lisn.png}%\hfill
+    \hspace{0.5cm}
+    \includegraphics[height=1cm]{img/logo_cnrs.png}
+  \end{minipage}%
 }
 \date{\today}
 
@@ -166,12 +174,15 @@
 \end{center}
 \end{frame}
 
+% Make transition between parts
+% 
+
 
 \begin{frame}{Context}
 
   \begin{itemize}[<+->]
     \item Natural language processing for psychology is underexplored%, despite its fundamental importance for understanding human language,
-    \item We build on an existing subfield: emotion analysis
+    \item We build on an existing subfield: sentiment and emotion analysis
     \item We study subjectivity (involving first-person perspective, meaning-making processes, and experiential content)
     \item We focus on personal narratives (\textit{e.g.}, emotional narratives, dream reports, mental health narratives)
     %\item Computational approaches to analyzing subjective experience have potential for supporting psychological well-being
@@ -180,7 +191,9 @@
     \vspace{0.5cm}
     \pause
 
-    We first address the \textit{content} by classifying elements of personal narratives (\textit{e.g.}, characters and emotions). Then, we study the \textit{form} through the concept of style
+    We first address the \textit{content} by classifying elements of personal narratives. Then, we study the \textit{form} through the concept of style
+
+    %(\textit{e.g.}, characters and emotions)
 
 \end{frame}
 
@@ -197,7 +210,7 @@ How to model subjective experience in personal narratives?
     \item Construction of an emotion dataset 
     \item Training of language models for emotion analysis 
     \item Formalization of style in personal narratives
-    \item Automatic thematic analysis in mental health narratives %using language models
+    %\item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
 
 \vspace{0.5cm}
@@ -219,35 +232,45 @@ How to model subjective experience in personal narratives?
 
     \footnotesize
 
-    \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL, ACL 2024}.
+    \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL @ ACL 2024}.
 \end{frame}
 
-\begin{frame}{Psychological theories and emotion annotation schemes}
+\begin{frame}{Psychology and emotion annotations}
 
-What are current limitations and interesting research directions?
+%What are current limitations and interesting research directions?
 
 %\pause
 %\vspace{0.25cm}
 
 %We review psychological theories of emotion and emotion annotation schemes in NLP
 
-\pause
-\vspace{0.25cm}
+%\pause
+%\vspace{0.25cm}
 
 %What are current limitations? 
 
 %[add refs to each theory and annotation schemes]
 
+[add refs to klinger, etc.]
+
+{\small
 \begin{center}
-\begin{tabular}{p{6.em}|p{10.em}|p{12.em}}
+\begin{tabular}{p{6.5em}|p{10.5em}|p{13.5em}}
 Psychological theories & In text, emotion is... & Example \\
 \hline
 Basic emotions theory & a \textbf{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
+& & \\ 
+& & \\
 Constructivist theories & a continuous value with an \textbf{affective} meaning & "His voice soothes me." $\rightarrow$ \texttt{valence} (4/5), \texttt{arousal} (1/5) \\
+& & \\
+& & \\
 Appraisal theory & a continuous value with a \textbf{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
+& & \\
+& & \\
 & composed of \textbf{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})."
 \end{tabular}
 \end{center}
+}
 
 
 %\vspace{0.5cm}
@@ -261,9 +284,9 @@ Appraisal theory & a continuous value with a \textbf{cognitive} meaning & "I rec
 \begin{frame}{Limitations in emotion analysis}
 
 \begin{itemize}[<+->]
-    \item Different emotion theories lead to divergences in how to annotate them in the text
-    \item Some linguistic and cognitive science theories are not considered
-    \item There is no benchmark that evaluates the richness of the emotional phenomenon
+    \item Different emotion theories lead to divergences in how to annotate them in the text [add refs]
+    \item Some linguistic and cognitive science theories are not considered [reformulate, not some]
+    \item There is no benchmark that evaluates the richness of the emotional phenomenon [add refs]
 \end{itemize}
 
 %\cite{ekman_basic_1999}, \cite{russell_circumplex_1980,barrett_how_2017}, \cite{arnold_emotion_1960}
@@ -301,8 +324,16 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textit{em
 \pause
 \vspace{0.5cm}
 
-$\rightarrow$ Different emotion expression modes are more or less difficult to interpret %[add refs psycholinguistic, psychiatry, refs aline etienne]
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret [add refs psycholinguistic, psychiatry, refs aline etienne]
+
+\pause
+\vspace{0.25cm}
+
+$\rightarrow$ [add refs aline etienne]
+
 \end{frame}
+
+\begin{comment}
 
 \begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
 
@@ -389,6 +420,8 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 \end{frame}
 
+\end{comment}
+
 
 \begin{frame}{How to integrate psychological theories of emotion?}
 
@@ -407,6 +440,8 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 \end{figure}
 
 %[refs cortal et al.]
+
+[add Appraisal dimensions]
     
 \end{frame}
 
@@ -422,6 +457,10 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 \end{comment}
 
+%\begin{frame}
+%  Now, we rely on 
+%\end{frame}
+
 \begin{frame}{}
 \Large
 \begin{center}
@@ -436,7 +475,7 @@ Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotional
 
 \vspace{0.5cm}
 
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
 \begin{frame}{French emotional narratives based on components}
@@ -474,7 +513,7 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
 
 \vspace{0.5cm}
 \small
-More than 1,000 narratives were collected during emotion regulation sessions
+One thousand narratives were collected during emotion regulation sessions
 %\vspace{0.5cm}
 
 %\scriptsize
@@ -500,7 +539,7 @@ More than 1,000 narratives were collected during emotion regulation sessions
 
 %\href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a language model for emotion and character prediction in dream narratives
 
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM, EACL 2023}
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}
 
 \vspace{0.5cm}
 
@@ -555,6 +594,9 @@ $\rightarrow$ Some components benefit from contextual understanding and world kn
 
   %We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
 
+
+[add illustration dreambank, hdvc scheme]
+
 Need other datasets with narrative structure, emotional content, and available for research
 
 \vspace{0.5cm}
@@ -577,6 +619,8 @@ How to automate the annotation process?
 \end{frame}
 
 \begin{frame}{Character and emotion detection in dream narratives}
+
+  [add seq2seq architecture illustration, add list of characters and emotions]
 
 %\textbf{Goal}: Character and emotion detection in dream narratives
 
@@ -660,11 +704,6 @@ $\rightarrow$ Language models can effectively address character and emotion dete
 \pause
 
 $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M \textit{vs.} 7B)
-
-\vspace{0.25cm}
-\pause
-
-\href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives, and \href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation
     
 \end{frame}
 
@@ -697,27 +736,6 @@ $\rightarrow$ The war veteran dreams more about \textit{occupational}, \textit{e
 
 \end{frame}
 
-\begin{frame}{Oneirogen, a language model for dream generation}  
-
-Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \href{https://huggingface.co/gustavecortal/oneirogen-1.5B}{1.5}, \href{https://huggingface.co/gustavecortal/oneirogen-7B}{7B}), a language model for dream generation. It is based on \href{https://huggingface.co/Qwen/Qwen2-7B}{Qwen2} and was trained on \href{https://dreambank.net/}{DreamBank}
-
-\vspace{0.25cm}
-\pause
-
-\noindent Oneirogen was used to produce \href{https://huggingface.co/datasets/gustavecortal/the-android-and-the-human}{The Android and The Machine}, an English dataset composed of 10,000 real and 10,000 generated dreams
-
-
-\vspace{0.25cm}
-%\pause
-
-\textit{I'm in a building that seems to be a school or maybe a university. There is a lot of noise and activity, and everyone is very busy talking. It is very loud and unpleasant - too loud to talk to anyone easily. The walls are made out of some soft material that might be plastic foam.}
-
-\vspace{0.25cm}
-
-\textit{I was at a shop. There were lots of people there and I lost Mom and Ezra. Later, we were in a car park. We went to get pizza's for dinner from the nearby pizza place but it was really late so they wouldn't serve us. [I think I was also walking around the shops earlier].}
-
-\end{frame}
-
 
 \begin{frame}{}
 \Large
@@ -737,12 +755,19 @@ Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \hre
 
 \pause
 
-We use narratives to express our representations of reality and make sense of the world \citep{brunerActsMeaning1990}
+We use narratives to express our representations of reality and make sense of the world \citep{brunerActsMeaning1990} [add more recents refs]
 
 \vspace{0.5cm}
 \pause
 
+[better transition]
+
 In everyday usage, style refers to a distinctive manner of expression
+
+\vspace{0.5cm}
+\pause
+
+Style has been studied in stylometry and stylistics [add refs, maybe cognitive linguistics]
 
 \vspace{0.5cm}
 \pause
@@ -751,6 +776,8 @@ We use style as a proxy to study how subjective experience is linguistically com
 
 \vspace{0.5cm}
 \pause
+
+[for second slide, give a formal definition]
 
 We narrow the general definition of style: \textit{a distinctive manner of communicating subjective experience in narratives}
 
@@ -804,6 +831,8 @@ Meaning emerges through choices in systems of linguistic features to achieve com
 
 Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
 
+[add photo of book and number of citations]
+
     
 \end{frame}
 
@@ -850,9 +879,13 @@ Language represents experience through \textit{processes}, \textit{participants}
     \label{tab:process_participants}
 \end{table}
     
+[make it more visual, less text-heavy, maybe with colors]
+
 \end{frame}
 
 \begin{frame}{Pipeline for our sequence-based framework}
+
+[remove bullet points, make it more visual]
 
 
 \begin{table}[!ht]
@@ -919,7 +952,7 @@ We compare the proportion of sequences containing a given substring
 \pause
 
 
-We show a preference for the war veteran to remain in a verbal process, as indicated by substrings such as \textit{verbal.verbal} and \textit{verbal.verbal.verbal} with high odds ratios (respectively 2.00 and 1.75)
+$\rightarrow$ The veteran favors verbal processes over mental ones% with high odds ratios (respectively 2.00 and 1.75)
 
 \end{frame}
 
@@ -927,20 +960,22 @@ We show a preference for the war veteran to remain in a verbal process, as indic
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.65\linewidth]{img/dendogram_viet.png}
+    \includegraphics[width=0.7\linewidth]{img/dendogram_viet.png}
     \caption{Dendrogram with Ward linkage and cosine similarity}% on substrings of size one, two, and three.}
     \label{fig:dendogram}
 \end{figure}
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 \pause
 
-\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=action, m=mental, s=state, v=verbal$
+{\small
+\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=\text{action},\; m=\text{mental},\; s=\text{state},\; v=\text{verbal}$
+}
 
 %\vspace{0.25cm}
 %\pause
 
-%Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
+%$\rightarrow$ Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
     
 \end{frame}
 
@@ -955,6 +990,57 @@ We show a preference for the war veteran to remain in a verbal process, as indic
 \end{frame}
 
 %\begin{comment}
+
+%\end{comment}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Conclusion and perspectives
+    %\section{Thematic analysis in mental health narratives using language models}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Conclusion}
+
+How to model subjective experience in personal narratives?
+
+\vspace{0.5cm}
+\pause
+
+\begin{itemize}[<+->]
+    \item Definition of objectives and scope using cognitive science
+    \item Construction of an emotion dataset 
+    \item Training of language models for emotion analysis 
+    \item Formalization of style in personal narratives
+    %\item Automatic thematic analysis in mental health narratives% using language models
+\end{itemize}
+
+%\vspace{0.5cm}
+%\pause
+
+%\small
+
+%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+    
+\end{frame}
+
+\begin{frame}{Impact}
+
+I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+
+Callyope
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.15]{img/logo_callyope.png}
+    %\caption{Examples of reasoning traces used for post-training Piaget.}
+    \label{fig:callyope}
+\end{figure}
+
+
+\end{frame}
 
 \begin{frame}{}
 \Large
@@ -1084,41 +1170,6 @@ $\rightarrow$ Nearly all questions discriminate sociodemographics
 
 \end{frame}
 
-%\end{comment}
-
-\begin{frame}{}
-\Large
-\begin{center}
-    Conclusion and perspectives
-    %\section{Thematic analysis in mental health narratives using language models}
-\end{center}
-
-\end{frame}
-
-\begin{frame}{Conclusion}
-
-How to model subjective experience in personal narratives?
-
-\vspace{0.5cm}
-\pause
-
-\begin{itemize}[<+->]
-    \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion dataset 
-    \item Training of language models for emotion analysis 
-    \item Formalization of style in personal narratives
-    \item Automatic thematic analysis in mental health narratives% using language models
-\end{itemize}
-
-%\vspace{0.5cm}
-%\pause
-
-%\small
-
-%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
-    
-\end{frame}
-
 \begin{frame}{Perspectives}
 
   \begin{itemize}[<+->]
@@ -1127,12 +1178,14 @@ How to model subjective experience in personal narratives?
     \item Post-training for psychology (preferences and reasoning data)
   \end{itemize}
 
-\vspace{0.5cm}
-\pause
+%\vspace{0.5cm}
+%\pause
 
-I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
   
 \end{frame}
+
+\begin{comment}
 
 \begin{frame}{Post-training for psychology}
 
@@ -1227,6 +1280,26 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
     \end{columns}
 \end{frame}
 
+\end{comment}
+
+\begin{frame}{Selected research papers}[noframenumbering]
+  \scriptsize
+
+    \fullcitenourl{bonardImprovingLanguageModels2024a}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortalEmotionRecognitionBased2023d}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortalSequencetoSequenceLanguageModels2024}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortal-finkel-2025-formalizing}
+\end{frame}
+
 \begin{frame}{}
 \Large
 \begin{center}
@@ -1261,6 +1334,53 @@ A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-l
 %\pause
 
 %\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation, and \href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives.
+
+\end{frame}
+
+\end{comment}
+
+\begin{frame}{Component classification in emotional narratives}
+
+\begin{table}%%[!htb]
+    \centering
+\begin{tabular}{lllll}
+\hline
+\textbf{Model} &    \textbf{Precision} &      \textbf{Recall} &    \textbf{\boldmath{$F_1$}} \\
+\hline
+Logistic Regression &  84.9\,\mscriptsize{(0.3)} &  84.3\,\mscriptsize{(0.3)} &  84.4\,\mscriptsize{(0.3)} \\
+CamemBERT & \textbf{93.2} &  \textbf{93.0} &  \textbf{93.1} \\
+\hline
+\end{tabular}
+    \caption{Scores ($\pm$ std) for emotion component classification.}
+    \label{tab:app_auto}
+\end{table}
+
+\pause
+
+$\rightarrow$ Models can be used to automatically classify unstructured narratives
+
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}{Oneirogen, a language model for dream generation}  
+
+Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \href{https://huggingface.co/gustavecortal/oneirogen-1.5B}{1.5}, \href{https://huggingface.co/gustavecortal/oneirogen-7B}{7B}), a language model for dream generation. It is based on \href{https://huggingface.co/Qwen/Qwen2-7B}{Qwen2} and was trained on \href{https://dreambank.net/}{DreamBank}
+
+\vspace{0.25cm}
+\pause
+
+\noindent Oneirogen was used to produce \href{https://huggingface.co/datasets/gustavecortal/the-android-and-the-human}{The Android and The Machine}, an English dataset composed of 10,000 real and 10,000 generated dreams
+
+
+\vspace{0.25cm}
+%\pause
+
+\textit{I'm in a building that seems to be a school or maybe a university. There is a lot of noise and activity, and everyone is very busy talking. It is very loud and unpleasant - too loud to talk to anyone easily. The walls are made out of some soft material that might be plastic foam.}
+
+\vspace{0.25cm}
+
+\textit{I was at a shop. There were lots of people there and I lost Mom and Ezra. Later, we were in a car park. We went to get pizza's for dinner from the nearby pizza place but it was really late so they wouldn't serve us. [I think I was also walking around the shops earlier].}
 
 \end{frame}
 
@@ -1357,24 +1477,6 @@ Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
 \label{tab:demographics}
 \end{table}
 
-\end{frame}
-
-\begin{frame}{Selected research papers}
-  \scriptsize
-
-    \fullcitenourl{bonardImprovingLanguageModels2024a}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortalEmotionRecognitionBased2023d}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortalSequencetoSequenceLanguageModels2024}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortal-finkel-2025-formalizing}
 \end{frame}
 
 \begin{frame}{}
