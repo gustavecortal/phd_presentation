@@ -38,6 +38,9 @@
   {}
   {}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes,backgrounds}
+
 \usepackage{subcaption}
 
 \usepackage[T1]{fontenc}
@@ -96,6 +99,9 @@
   }%
   \fullcite{#1}%
 }
+
+\newcommand{\smallcitet}[2][]{\text{\scriptsize \citet[#1]{#2}}} % Simplified version
+\newcommand{\smallcitep}[2][]{\text{\scriptsize \citep[#1]{#2}}} % Simplified version
 
 
 \usepackage{xurl}             % allow line breaks in long URLs
@@ -189,18 +195,52 @@
 
 \begin{frame}{Context}
 
+      \centering
+    % Define the size of the diagram
+    \begin{tikzpicture}[scale=0.54, every node/.style={scale=0.58}]
+    
+        % Define transparency and blend mode for nicer overlapping colors
+        \begin{scope}[blend group=soft light]
+            % Circle 1: Top Left - Computer Science
+            \fill[blue!40!white] (135:1.5) circle (2.5);
+            
+            % Circle 2: Top Right - Machine Learning
+            \fill[red!40!white] (45:1.5) circle (2.5);
+            
+            % Circle 3: Bottom Right - Linguistics
+            \fill[green!40!white] (315:1.5) circle (2.5);
+            
+            % Circle 4: Bottom Left - Psychology
+            \fill[orange!40!white] (225:1.5) circle (2.5);
+        \end{scope}
+
+        % Labels for the fields
+        \node at (135:3.2) [align=center, font=\bfseries] {Computer\\Science};
+        \node at (45:3.2)  [align=center, font=\bfseries] {Machine\\Learning};
+        \node at (315:3.2) [align=center, font=\bfseries] {Linguistics};
+        \node at (225:3.2) [align=center, font=\bfseries] {Psychology};
+
+        % Central Label for Thesis
+        % We use a white circle behind the text to make it readable against the mixed colors
+        \node [circle, fill=white, inner sep=2pt, font=\bfseries\large, align=center] at (0,0) {This\\thesis};
+
+        % Optional: Draw outlines for better definition
+        \draw [blue!80!black, thick] (135:1.5) circle (2.5);
+        \draw [red!80!black, thick]  (45:1.5) circle (2.5);
+        \draw [green!80!black, thick](315:1.5) circle (2.5);
+        \draw [orange!80!black, thick](225:1.5) circle (2.5);
+
+    \end{tikzpicture}
+
+
+
   \begin{itemize}[<+->]
     \item Natural language processing for psychology is underexplored%, despite its fundamental importance for understanding human language,
     \item We build on an existing subfield: sentiment and emotion analysis
-    \item We study subjectivity (involving first-person perspective, meaning-making processes, and experiential content)
-    \item We focus on personal narratives (\textit{e.g.}, emotional narratives, dream reports, mental health narratives)
+    \item We study subjectivity (\textit{e.g.}, first-person perspective, meaning-making processes, and experiential content)
+    \item We focus on personal narratives (emotional narratives, dream reports)
     %\item Computational approaches to analyzing subjective experience have potential for supporting psychological well-being
     \end{itemize}
-
-    \vspace{0.5cm}
-    \pause
-
-    We first address the \textit{content} by classifying elements of personal narratives. Then, we study the \textit{form} through the concept of style
 
     %(\textit{e.g.}, characters and emotions)
 
@@ -211,7 +251,12 @@
 
 How to model subjective experience in personal narratives?
 
-\vspace{0.5cm}
+\vspace{0.25cm}
+\pause
+
+We first address the \textit{content} by classifying elements of personal narratives, then the \textit{form} through the concept of style
+
+\vspace{0.25cm}
 \pause
 
 \begin{itemize}[<+->]
@@ -222,12 +267,14 @@ How to model subjective experience in personal narratives?
     %\item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
 
+
 \vspace{0.5cm}
-\pause
+%\pause
 
 \small
 
-\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+\onslide<7->{
+\textit{2 international conferences (EMNLP, LREC-COLING); 3 international workshops; 2 national conferences and journals (TALN)}}
     
 \end{frame}
 
@@ -264,7 +311,7 @@ How to model subjective experience in personal narratives?
 {\small
 \begin{center}
 \begin{tabular}{p{6.5em}|p{10.5em}|p{13.5em}}
-Psychological theories & In text, emotion is... & Example \\
+\textbf{Psychological theories} & \textbf{In text, emotion is...} & \textbf{Example} \\
 \hline
 Basic emotions theory & a \textit{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
 \pause
@@ -317,7 +364,7 @@ Appraisal theory & a continuous value with a \textit{cognitive} meaning & "I rec
 %\pause
 %\vspace{0.5cm}
 
-Raphaël Micheli categorizes a range of linguistic markers into three \textit{emotion expression modes} \citep{micheliEsquisseDuneTypologie2013}. The emotion can be: 
+Raphaël Micheli categorizes a range of linguistic markers into three \textit{emotion expression modes} \smallcitep{micheliEsquisseDuneTypologie2013}. The emotion can be: 
 
 %\cite{Micheli2014}
 \pause
@@ -435,21 +482,23 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 %How to integrate psychological theories of emotion?
 
-\pause
-\vspace{0.5cm}
+%\pause
+%\vspace{0.5cm}
 
 %I use the \textbf{integrated framework for emotion theories} (Scherer, 2022):
 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{img/scherer_integrated_framework.png}
-    \caption{Integrated framework for emotion theories. Emotional episodes are synchronized changes in four components \citep{schererTheoryConvergenceEmotion2022a}.}
+    \caption{\textbf{Integrated framework for emotion theories}. Emotional episodes are synchronized changes in four components \smallcitep{schererTheoryConvergenceEmotion2022a}.}
     \label{fig:placeholder}
 \end{figure}
 
 %[refs cortal et al.]
 
-[add Appraisal dimensions]
+%[add Appraisal dimensions]
+
+$\rightarrow$ There is no dataset of personal narratives structured according to emotion components [add refs]
     
 \end{frame}
 
@@ -479,21 +528,29 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 \end{center}
 
 \small
-Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives}
+%Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives}
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 
 \textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
-\begin{frame}{Cognitive analysis of emotions}
+\begin{frame}{French emotional narratives based on components}
+
+
+\textbf{Goal}: Create a dataset of narratives structured according to emotion components, following the \textit{Cognitive Analysis of Emotion} \smallcitep{finkel2022}
+
+\vspace{0.25cm}
+\pause
+
+The questionnaire:
 
 \begin{minipage}{.78\linewidth}
-\begin{itemize}
+\begin{itemize}[<+->]
 
 \item explores emotions with behavioral (\textit{behavior}), physiological (\textit{feeling}), and cognitive (\textit{thinking} and \textit{territory)} components
+\item uses emotion components to reorganize the narrative of experienced events
 \item helps individuals better regulate their emotions
-\item uses psychological components to reorganize the narrative of experienced emotional events
     
     
 \end{itemize}
@@ -511,7 +568,7 @@ Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotional
 
 \begin{frame}{French emotional narratives based on components}
 
-\textbf{Goal}: A more comprehensive understanding of emotional events
+\textbf{Contribution}: 1000 narratives from emotion regulation sessions, providing a more comprehensive understanding of emotional events
 
 \vspace{0.25cm}
 \pause
@@ -542,9 +599,9 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
 
 
 
-\vspace{0.5cm}
-\small
-1000 narratives were collected during emotion regulation sessions
+%\vspace{0.5cm}
+%\small
+%1000 narratives were collected during emotion regulation sessions
 %\vspace{0.5cm}
 
 %\scriptsize
@@ -636,7 +693,7 @@ Need other datasets with narrative structure, emotional content, and available f
 \vspace{0.5cm}
 \pause
 
-Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) \citep{domhoffStudyingDreamContent2008b}
+Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) \smallcitep{domhoffStudyingDreamContent2008b}
 
 \vspace{0.5cm}
 \pause
@@ -687,34 +744,41 @@ How to automate the annotation process?
 \begin{table}
     \centering
     \resizebox{1.0\textwidth}{!}{
-\begin{tabular}{lcccccc}
+\begin{tabular}{p{2.4cm}cccccc}
 \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
 \hline
 \texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
 \hline
+\pause
 \texttt{No\textsubscript{semantics}} & 71.37 & 56.54\textbf{*} & 61.0  & 90.51  & 41.79\textbf{*} &  75.79 \\
 \texttt{No\textsubscript{names}} & 80.66\textbf{*}  & 74.32\textbf{**}  & 74.2  & 83.95\textbf{*}  & 60.93\textbf{**} &  73.04\textbf{*} \\
 \hline
+\pause
 \texttt{Size\textsubscript{small}} & 78.35\textbf{**}  & 72.13\textbf{**}  & 70.25\textbf{**}  & 81.66\textbf{**}  & 56.79\textbf{**} &  70.15\textbf{**} \\
 \texttt{Size\textsubscript{large}} & 84.51\textbf{*} & 80.3\textbf{**}  & 78.63\textbf{**}  & 87.29  & 67.63\textbf{**} & 74.71 \\
 \hline
+\pause
 \texttt{First\textsubscript{group}} & 82.33  & 77.71  & 74.86  & 85.61  & 63.71 &  71.94 \\
 \texttt{First\textsubscript{individual}} & 80.59\textbf{**}  & 76.14  & 74.22\textbf{*}  & 83.87\textbf{**} & 62.67 &  67.32 \\
 \texttt{First\textsubscript{emotion}} & 83.92 & 78.74 & 77.06  & 87.63  & 64.97 &  72.03 \\
 \hline
+\pause
 \texttt{Conversion\textsubscript{comma}} & 84.02\textbf{**}  & 79.84\textbf{**}  & 77.67\textbf{**}  & 87.08\textbf{*}  & 66.69\textbf{**} &  73.68 \\
 \texttt{Conversion\textsubscript{marker}} & 82.39  & 78.45  & 76.53  & 86.09  & 65.44 &  74.36 \\
-\hline
-\texttt{Cross-validation} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
+%\hline
+%\pause
+%\texttt{Cross-val.} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
 \end{tabular}}
-  \caption{$F_1$-scores for character and emotion detection. Significant differences from \texttt{baseline}: ** ($p<0.01$), * ($p<0.05$).}
+  \caption{\textbf{Character and emotion detection}. \scriptsize{** ($p<0.01$), * ($p<0.05$).}}
   \label{tab:result}
 \end{table}
 
 %\vspace{0.25cm}
-\pause
 
-$\rightarrow$ Language models can address character and emotion detection in dream narratives, while there is still room for improvement
+% The table sequence ends on slide 7, so we force this to slide 8
+\onslide<6->{
+$\rightarrow$ Our models can address this task, while there is still room for improvement
+}
     
 \end{frame}
 
@@ -764,19 +828,20 @@ $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform b
 & ethnic* & 4.1 & 0.9 & 3.1 \\
 & unknown* & 46.8 & 37.0 & 9.8 \\
 \addlinespace
+\pause
 \multirow{4}{*}{Gender} & male* & 56.2 & 43.0 & 13.1 \\
 & female* & 24.1 & 33.1 & -9.0 \\
 & joint & 10.9 & 12.2 & -1.3 \\
 & undefined & 7.9 & 8.7 & -0.9 \\
 %\hline
 \end{tabular}
-\caption{Identity and gender proportions for the veteran (n=566 narratives) versus other dreamers. $\Delta$ shows the difference in percentage points. * indicates significant difference ($p < 0.05$).}
+\caption{\textbf{Identity and gender proportions for the veteran} (n=566 narratives) versus other dreamers. \scriptsize{$\Delta$ shows the difference in percentage points. * ($p < 0.05$).}}
 \label{tab:case_study_war_veteran}
 \end{table}
 
-\pause
+\pause 
 
-$\rightarrow$ The war veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers.
+$\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers
 
 \end{frame}
 
@@ -819,7 +884,7 @@ We propose:
 
 \pause
 
-We use narratives to express our representations of reality and make sense of the world \citep{brunerActsMeaning1990} [add more recents refs]
+We use narratives to express our representations of reality and make sense of the world \smallcitep{brunerActsMeaning1990} [add more recents refs]
 
 \vspace{0.5cm}
 \pause
@@ -873,7 +938,7 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 %\vspace{0.5cm}
 %\pause
 
-\textbf{Objectives}:
+\textbf{Contributions}:
 
 \begin{enumerate}[<+->]
     \item A sequence-based framework defining style as patterns in sequences of linguistic choices% grounded in systemic functional linguistics
@@ -887,31 +952,37 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 
 \begin{columns}[T,onlytextwidth]
   \begin{column}{0.7\textwidth}
-    We ground our framework in \textit{systemic functional linguistics} \citep{hallidayIntroductionFunctionalGrammar2014a}
+    % 1. Wrap the first paragraph to appear on Slide 1+
+    \onslide<1->{
+        We ground our framework in \textit{systemic functional linguistics} \smallcitep{hallidayIntroductionFunctionalGrammar2014a}
+    }
 
-    \pause
     \vspace{1.cm}
 
-    Meaning emerges through choices in systems of linguistic features to achieve communicative goals
+    % 2. Wrap the second paragraph to appear on Slide 2+
+    \onslide<2->{
+        Meaning emerges through choices in systems of linguistic features to achieve communicative goals
+    }
 
-    \pause
     \vspace{1.cm}
 
-    Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
+    % 3. Wrap the third paragraph to appear on Slide 3+
+    \onslide<3->{
+        Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
+    }
   \end{column}
+
   \begin{column}{0.25\textwidth}
+    % Because we removed \pause, this column is now visible on all slides (1-3) by default.
     \begin{figure}
       \centering
       \includegraphics[width=\linewidth]{img/halliday_book_cover_upscale.jpg}
       \label{fig:placeholder}
-      \caption{\citep{hallidayIntroductionFunctionalGrammar2014a}. +57,000 citations.}
+      \caption{\citet{hallidayIntroductionFunctionalGrammar2014a}. $+57,000$ citations.}
     \end{figure}
   \end{column}
 \end{columns}
-
-%[add photo of book and number of citations]
-
-    
+ 
 \end{frame}
 
 \begin{frame}{What linguistic features encode subjective experience?}
@@ -949,7 +1020,7 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
     \textcolor{blueNCS}{Chloé}\textsubscript{\texttt{Possessor}} \textcolor{DarkBlue}{\textbf{has}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{a cat}\textsubscript{\texttt{Possessed}} \\ %\hline
   \end{tabular}}
   \label{tab:process_participants}
-  \caption{Examples of processes and their participants. Language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}.}% and \textit{circumstances}}
+  \caption{According to \textit{systemic functional linguistics}, language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}.}% and \textit{circumstances}}
 \end{table}
 
 %\vspace{0.15cm}
@@ -1091,54 +1162,67 @@ How to model subjective experience in personal narratives?
     \item Construction of an emotion dataset 
     \item Training of language models for emotion analysis 
     \item Formalization of style in personal narratives
-    %\item Automatic thematic analysis in mental health narratives% using language models
 \end{itemize}
 
-%\vspace{0.5cm}
+\vspace{0.5cm}
 %\pause
 
-%\small
+\small
 
-%\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
-    
+\onslide<6->{
+\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}}
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Impact
+    %\section{Thematic analysis in mental health narratives using language models}
+\end{center}
+
 \end{frame}
 
 \begin{frame}[noframenumbering]
-    \frametitle{Impact}
+    \frametitle{Impact: Ongoing PhD thesis related to my works}
 
-%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
 \begin{figure}[!htb]
   \centering
   \begin{subfigure}[b]{0.32\textwidth}
     \centering
     \includegraphics[width=\linewidth]{img/face/face_amine.png}
-    \caption{Amine Haddou on cognitive distortions (2025).}
+    \caption{A. Haddou on cognitive distortions\\(2025, ENS Paris-Saclay).}
     \label{fig:face_amine}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.32\textwidth}
     \centering
     \includegraphics[width=\linewidth]{img/face/face_raphael.jpeg}
-    \caption{Raphael Faure on style analysis (2025).}
+    \caption{R. Faure on style analysis\\(2025, ENS Paris-Saclay).}
     \label{fig:face_raphael}
   \end{subfigure}\hfill
   \begin{subfigure}[b]{0.32\textwidth}
     \centering
     \includegraphics[width=\linewidth]{img/face/face_nicolas.jpeg}
-    \caption{Nicolas Richet on emotion multimodal recognition (2024).}
+    \caption{N. Richet on multimodal emotion\\ (2024, ETS Montréal).}
     \label{fig:face_nicolas}
   \end{subfigure}
-  \caption{Co-supervised PhD topics.}
+  %\caption{Ongoing PhD thesis related to my works.}
   \label{fig:faces}
 \end{figure}
 
-During my PhD internship at Callyope, \textit{Fine-grained mental health topic modeling in different cohorts using large language models}
+\end{frame}
 
-\begin{figure}
+\begin{frame}[noframenumbering]
+    \frametitle{Impact: NLP for psychiatry (industry)}
+
+\noindent
+\begin{minipage}[c]{0.7\textwidth}
+    6-month PhD internship at Callyope on \textit{NLP for quantifying memory, future thinking, and the self in mental health narratives}
+\end{minipage}%
+\hfill
+\begin{minipage}[c]{0.25\textwidth}
     \centering
-    \includegraphics[scale=0.15]{img/logo_callyope.png}
-    %\caption{Examples of reasoning traces used for post-training Piaget.}
-    \label{fig:callyope}
-\end{figure}
+    \includegraphics[scale=0.12]{img/logo_callyope.png}
+\end{minipage}
 
 
 \end{frame}
@@ -1163,16 +1247,19 @@ During my PhD internship at Callyope, \textit{Fine-grained mental health topic m
   \begin{itemize}[<+->]
     \item Qualitative analysis of speech content is central to clinical practice
     \item Thematic analysis studies how people construct meaning% from their experiences
-    \item Thematic analysis is time-consuming, and typically constrained to small, monolingual corpora
-    \item Computational approaches offers time savings over manual annotation, and the power to analyze a larger amount of data
+    \item Thematic analysis is time-consuming, often constrained to small, monolingual corpora
+    \item Computational approaches offers time savings, can analyze a larger amount of data
   \end{itemize}
 
-  \pause
-  \vspace{0.5cm}
+  %\pause
+  %\vspace{0.5cm}
 
-  $\rightarrow$ We developed a pipeline that (a) clusters narratives from different cohorts, (b) generates descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors %We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use.
+  %$\rightarrow$ We developed a pipeline that (a) clusters narratives from different cohorts, (b) generates descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors %We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use.
 
 \end{frame}
+
+\begin{comment}
+  
 
 \begin{frame}{Data collection}
 
@@ -1190,7 +1277,9 @@ We collected clinical scores and narratives from \textbf{four cohorts}. A French
 
 \end{frame}
 
-\begin{frame}{Pipeline for semantic clustering and description generation}
+\end{comment}
+
+\begin{frame}{Semantic clustering and description generation}
 
   %We developed a multilingual pipeline that (a) clusters spontaneous speech transcripts from four cohorts (general population and three clinical samples in French, Italian, Chinese, and Spanish), (b) generates fine-grained natural-language descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors. We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use. 
 
@@ -1201,6 +1290,122 @@ We collected clinical scores and narratives from \textbf{four cohorts}. A French
     %\caption{Each cluster undergoes: (1) statistical analysis linking cluster membership to clinical/demographic  variables, and (2) automatic description generation where a large language model summarizes transcripts per cluster into human-readable natural language.}
     \label{fig:methods}
 \end{figure}
+
+\end{frame}
+
+\begin{frame}{Effect size across questions and clinical scores}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
+    %\caption{Effect size across questions and clinical scores for the French general population cohort}
+    \label{fig:popgen_clinical_heatmap}
+\end{figure}
+
+\pause
+$\rightarrow$ Certain questions better discriminate clinical scores
+
+\end{frame}
+
+\begin{frame}{Effect size across questions and sociodemographics}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
+  %\caption{Effect size across questions and sociodemographics for the French general population cohort}
+  \label{fig:popgen_demo_heatmap}
+\end{figure}
+
+\pause
+
+$\rightarrow$ Nearly all questions discriminate sociodemographics
+
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Perspectives
+    %\section{Thematic analysis in mental health narratives using language models}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Perspectives}
+
+  \begin{itemize}[<+->]
+    \item Emotion analysis for mental health (empathic support, cognitive distortions, theory of mind)
+    \item Psychology of language models (sycophancy, thought operations)
+    \item Post-training for psychology (preferences and reasoning data)
+  \end{itemize}
+
+%\vspace{0.5cm}
+%\pause
+
+%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+  
+\end{frame}
+
+\begin{frame}{Conclusion}
+
+How to model subjective experience in personal narratives?
+
+\vspace{0.5cm}
+
+\begin{itemize}
+    \item Definition of objectives and scope using cognitive science
+    \item Construction of an emotion dataset 
+    \item Training of language models for emotion analysis 
+    \item Formalization of style in personal narratives
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Selected research papers}
+  \scriptsize
+
+    \fullcitenourl{bonardImprovingLanguageModels2024a}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortalEmotionRecognitionBased2023d}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortalSequencetoSequenceLanguageModels2024}
+
+    \vspace{0.25cm}
+
+    \fullcitenourl{cortal-finkel-2025-formalizing}
+\end{frame}
+
+\begin{frame}{}
+\Large
+\begin{center}
+    Appendix
+    \section{Appendix}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Component classification in emotional narratives}
+
+\begin{table}%%[!htb]
+    \centering
+\begin{tabular}{lllll}
+\hline
+\textbf{Model} &    \textbf{Precision} &      \textbf{Recall} &    \textbf{\boldmath{$F_1$}} \\
+\hline
+Logistic Regression &  84.9\,\mscriptsize{(0.3)} &  84.3\,\mscriptsize{(0.3)} &  84.4\,\mscriptsize{(0.3)} \\
+CamemBERT & \textbf{93.2} &  \textbf{93.0} &  \textbf{93.1} \\
+\hline
+\end{tabular}
+    \caption{Scores ($\pm$ std) for emotion component classification.}
+    \label{tab:app_auto}
+\end{table}
+
+\pause
+
+$\rightarrow$ Models can be used to automatically classify unstructured narratives
 
 \end{frame}
 
@@ -1242,51 +1447,121 @@ $\rightarrow$ Clustering captures symptom severity and age-related circumstances
 %Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
-\begin{frame}{Effect size across questions and clinical scores}
+\begin{frame}{Demographics}
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
-    %\caption{Effect size across questions and clinical scores for the French general population cohort}
-    \label{fig:popgen_clinical_heatmap}
-\end{figure}
+\begin{table}[!htbp]
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{p{4cm}llll}
+ &
+\textbf{\shortstack[l]{General\\Population}} &
+\textbf{Androids} &
+\textbf{MODMA} &
+\textbf{VOCES} \\
+ &
+\textbf{n=1809} &
+\textbf{n=116} &
+\textbf{n=52} &
+\textbf{n=90} \\
 
-\pause
-$\rightarrow$ Certain questions better discriminate clinical scores
+\hline
+\textbf{Demographics} & & & & \\
+
+\textbf{Language} & French & Italian & Chinese & Spanish \\
+
+\textbf{Age} & *** & \textit{n.s.} & \textit{n.s.} & *** \\
+Mean (SD) & 37.8 (18.2) & 37.4 (12.0) & 31.3 (9.2) & 38.6 (14.9) \\
+Range     & 18--91       & 19--71      & 18--52      & 21--76       \\
+
+\textbf{Sex, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+Female & 1187 (66.2) & 84 (72.4) & 16 (30.8) & 39 (43.3) \\
+Male   & 595  (33.2) & 32 (27.6) & 36 (69.2) & 48 (53.3) \\
+Other  & 11   (0.6)  & 0  (0.0)  & 0  (0.0)  & 3  (3.3)  \\
+
+\textbf{Education, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
+No diploma   & 52   (2.9)  & 11  (9.5)  & 7  (13.5)  & -  \\
+Secondary    & 291  (16.2) & 37  (31.9) & 8  (15.4)  & - \\
+Higher short & 213  (11.9) & 52  (44.8) & 0  (0.0)   & - \\
+Higher long  & 1236 (69.0) & 16  (13.8) & 37 (71.2)  & - \\
+\end{tabular}}
+%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
+\label{tab:demographics}
+\end{table}
 
 \end{frame}
 
-\begin{frame}{Effect size across questions and sociodemographics}
+\begin{frame}{Clinical evaluation}
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
-  %\caption{Effect size across questions and sociodemographics for the French general population cohort}
-  \label{fig:popgen_demo_heatmap}
-\end{figure}
+\begin{table}[!htbp]
+\centering
+\resizebox{1\textwidth}{!}{
+\begin{tabular}{p{4cm}llll}
+ &
+\textbf{\shortstack[l]{General\\Population}} &
+\textbf{Androids} &
+\textbf{MODMA} &
+\textbf{VOCES} \\
+ &
+\textbf{n=1809} &
+\textbf{n=116} &
+\textbf{n=52} &
+\textbf{n=90} \\
 
-\pause
+\hline
+\textbf{C-SSRS} & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.} \\
+Suicidal risk, n (\%) & - & - & - & 60 (66.7) \\
+No suicidal risk, n (\%) & - & - & - & 30 (33.3) \\
+\textbf{MADRS / MDD} & \textit{n.s.} &  \textit{n.s.}  & \textit{n.s.}   & \textit{n.s.}   \\
+Depression, n (\%) & -  & 64 (55.2) & 23 (44.2) & -  \\
+No depression, n (\%) & -  & 52 (44.8) & 29 (55.8) & -  \\
+%\textbf{AIS} & *** & & & \\
+%Mean (SD) & 5.2 (3.9) & & & \\
+%Range & 0--24 & & & \\
+%
+%\textbf{BDI} & *** & & & \\
+%Mean (SD) & 7.4 (7.8) &  &  &  \\
+%Range     & 0--54      &  &  &  \\
 
-$\rightarrow$ Nearly all questions discriminate sociodemographics
+%\textbf{GAD-7} & *** & & *** & \\
+%Mean (SD) & 4.8 (4.5) & & 7.3 (7.1) &  \\
+%Range     & 0--21      & & 0--21     &  \\
+%
+%\textbf{MFI} & *** & & & \\
+%Mean (SD) & 44.3 (15.9) &  &  &  \\
+%Range     & 18--99       &  &  &  \\
 
-\end{frame}
+\textbf{PHQ-9} & \textit{n.s.}  & \textit{n.s.}  & *** & *** \\
+Mean (SD) & 5.2 (4.6) & -  & 9.4 (8.5) & 10.5 (6.8) \\
+Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
+\end{tabular}}
+%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
+\label{tab:demographics}
+\end{table}
 
-\begin{frame}{Perspectives}
-
-  \begin{itemize}[<+->]
-    \item Emotion analysis for mental health (empathic support, cognitive distortions, theory of mind)
-    \item Psychology of language models (sycophancy, thought operations)
-    \item Post-training for psychology (preferences and reasoning data)
-  \end{itemize}
-
-%\vspace{0.5cm}
-%\pause
-
-%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
-  
 \end{frame}
 
 \begin{comment}
+
+\begin{frame}{Oneirogen, a language model for dream generation}  
+
+Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \href{https://huggingface.co/gustavecortal/oneirogen-1.5B}{1.5}, \href{https://huggingface.co/gustavecortal/oneirogen-7B}{7B}), a language model for dream generation. It is based on \href{https://huggingface.co/Qwen/Qwen2-7B}{Qwen2} and was trained on \href{https://dreambank.net/}{DreamBank}
+
+\vspace{0.25cm}
+\pause
+
+\noindent Oneirogen was used to produce \href{https://huggingface.co/datasets/gustavecortal/the-android-and-the-human}{The Android and The Machine}, an English dataset composed of 10,000 real and 10,000 generated dreams
+
+
+\vspace{0.25cm}
+%\pause
+
+\textit{I'm in a building that seems to be a school or maybe a university. There is a lot of noise and activity, and everyone is very busy talking. It is very loud and unpleasant - too loud to talk to anyone easily. The walls are made out of some soft material that might be plastic foam.}
+
+\vspace{0.25cm}
+
+\textit{I was at a shop. There were lots of people there and I lost Mom and Ezra. Later, we were in a car park. We went to get pizza's for dinner from the nearby pizza place but it was really late so they wouldn't serve us. [I think I was also walking around the shops earlier].}
+
+\end{frame}
 
 \begin{frame}{Post-training for psychology}
 
@@ -1383,202 +1658,6 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
 
 \end{comment}
 
-\begin{frame}{Selected research papers}
-  \scriptsize
-
-    \fullcitenourl{bonardImprovingLanguageModels2024a}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortalEmotionRecognitionBased2023d}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortalSequencetoSequenceLanguageModels2024}
-
-    \vspace{0.25cm}
-
-    \fullcitenourl{cortal-finkel-2025-formalizing}
-\end{frame}
-
-\begin{frame}{}
-\Large
-\begin{center}
-    Appendix
-    \section{Appendix}
-\end{center}
-
-\end{frame}
-
-\begin{comment}
-
-\begin{frame}{Selected open-source projects}
-
-\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer.}
-
-\medskip
-\pause
-
-A repo for \href{https://github.com/gustavecortal/preference-optimization-orpo-lora}{lightweight preference optimization} using LoRA and ORPO.
-
-\smallskip
-\pause
-
-\href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget}, a model fine-tuned for psychological reasoning, and \href{https://huggingface.co/gustavecortal/Beck-8B}{Beck}, a model aligned with psychotherapeutic preferences.
-
-\smallskip
-\pause
-
-\href{https://huggingface.co/datasets/gustavecortal/PsychologicalReasoning-15k}{PsychologicalReasoning-15k}, open psychological and philosophical reasoning traces.
-
-%\smallskip
-%\pause
-
-%\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a model for dream generation, and \href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a model for emotion and character prediction in dream narratives.
-
-\end{frame}
-
-\end{comment}
-
-\begin{frame}{Component classification in emotional narratives}
-
-\begin{table}%%[!htb]
-    \centering
-\begin{tabular}{lllll}
-\hline
-\textbf{Model} &    \textbf{Precision} &      \textbf{Recall} &    \textbf{\boldmath{$F_1$}} \\
-\hline
-Logistic Regression &  84.9\,\mscriptsize{(0.3)} &  84.3\,\mscriptsize{(0.3)} &  84.4\,\mscriptsize{(0.3)} \\
-CamemBERT & \textbf{93.2} &  \textbf{93.0} &  \textbf{93.1} \\
-\hline
-\end{tabular}
-    \caption{Scores ($\pm$ std) for emotion component classification.}
-    \label{tab:app_auto}
-\end{table}
-
-\pause
-
-$\rightarrow$ Models can be used to automatically classify unstructured narratives
-
-\end{frame}
-
-\begin{comment}
-
-\begin{frame}{Oneirogen, a language model for dream generation}  
-
-Oneirogen (\href{https://huggingface.co/gustavecortal/oneirogen-0.5B}{0.5}, \href{https://huggingface.co/gustavecortal/oneirogen-1.5B}{1.5}, \href{https://huggingface.co/gustavecortal/oneirogen-7B}{7B}), a language model for dream generation. It is based on \href{https://huggingface.co/Qwen/Qwen2-7B}{Qwen2} and was trained on \href{https://dreambank.net/}{DreamBank}
-
-\vspace{0.25cm}
-\pause
-
-\noindent Oneirogen was used to produce \href{https://huggingface.co/datasets/gustavecortal/the-android-and-the-human}{The Android and The Machine}, an English dataset composed of 10,000 real and 10,000 generated dreams
-
-
-\vspace{0.25cm}
-%\pause
-
-\textit{I'm in a building that seems to be a school or maybe a university. There is a lot of noise and activity, and everyone is very busy talking. It is very loud and unpleasant - too loud to talk to anyone easily. The walls are made out of some soft material that might be plastic foam.}
-
-\vspace{0.25cm}
-
-\textit{I was at a shop. There were lots of people there and I lost Mom and Ezra. Later, we were in a car park. We went to get pizza's for dinner from the nearby pizza place but it was really late so they wouldn't serve us. [I think I was also walking around the shops earlier].}
-
-\end{frame}
-
-\end{comment}
-
-\begin{frame}{Demographics}
-
-\begin{table}[!htbp]
-\centering
-\resizebox{1\textwidth}{!}{
-\begin{tabular}{p{4cm}llll}
- &
-\textbf{\shortstack[l]{General\\Population}} &
-\textbf{Androids} &
-\textbf{MODMA} &
-\textbf{VOCES} \\
- &
-\textbf{n=1809} &
-\textbf{n=116} &
-\textbf{n=52} &
-\textbf{n=90} \\
-
-\hline
-\textbf{Demographics} & & & & \\
-
-\textbf{Language} & French & Italian & Chinese & Spanish \\
-
-\textbf{Age} & *** & \textit{n.s.} & \textit{n.s.} & *** \\
-Mean (SD) & 37.8 (18.2) & 37.4 (12.0) & 31.3 (9.2) & 38.6 (14.9) \\
-Range     & 18--91       & 19--71      & 18--52      & 21--76       \\
-
-\textbf{Sex, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
-Female & 1187 (66.2) & 84 (72.4) & 16 (30.8) & 39 (43.3) \\
-Male   & 595  (33.2) & 32 (27.6) & 36 (69.2) & 48 (53.3) \\
-Other  & 11   (0.6)  & 0  (0.0)  & 0  (0.0)  & 3  (3.3)  \\
-
-\textbf{Education, n (\%)} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} & \textit{n.s.} \\
-No diploma   & 52   (2.9)  & 11  (9.5)  & 7  (13.5)  & -  \\
-Secondary    & 291  (16.2) & 37  (31.9) & 8  (15.4)  & - \\
-Higher short & 213  (11.9) & 52  (44.8) & 0  (0.0)   & - \\
-Higher long  & 1236 (69.0) & 16  (13.8) & 37 (71.2)  & - \\
-\end{tabular}}
-%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
-\label{tab:demographics}
-\end{table}
-
-\end{frame}
-
-\begin{frame}{Clinical evaluation}
-
-\begin{table}[!htbp]
-\centering
-\resizebox{1\textwidth}{!}{
-\begin{tabular}{p{4cm}llll}
- &
-\textbf{\shortstack[l]{General\\Population}} &
-\textbf{Androids} &
-\textbf{MODMA} &
-\textbf{VOCES} \\
- &
-\textbf{n=1809} &
-\textbf{n=116} &
-\textbf{n=52} &
-\textbf{n=90} \\
-
-\hline
-\textbf{C-SSRS} & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.}  & \textit{n.s.} \\
-Suicidal risk, n (\%) & - & - & - & 60 (66.7) \\
-No suicidal risk, n (\%) & - & - & - & 30 (33.3) \\
-\textbf{MADRS / MDD} & \textit{n.s.} &  \textit{n.s.}  & \textit{n.s.}   & \textit{n.s.}   \\
-Depression, n (\%) & -  & 64 (55.2) & 23 (44.2) & -  \\
-No depression, n (\%) & -  & 52 (44.8) & 29 (55.8) & -  \\
-%\textbf{AIS} & *** & & & \\
-%Mean (SD) & 5.2 (3.9) & & & \\
-%Range & 0--24 & & & \\
-%
-%\textbf{BDI} & *** & & & \\
-%Mean (SD) & 7.4 (7.8) &  &  &  \\
-%Range     & 0--54      &  &  &  \\
-
-%\textbf{GAD-7} & *** & & *** & \\
-%Mean (SD) & 4.8 (4.5) & & 7.3 (7.1) &  \\
-%Range     & 0--21      & & 0--21     &  \\
-%
-%\textbf{MFI} & *** & & & \\
-%Mean (SD) & 44.3 (15.9) &  &  &  \\
-%Range     & 18--99       &  &  &  \\
-
-\textbf{PHQ-9} & \textit{n.s.}  & \textit{n.s.}  & *** & *** \\
-Mean (SD) & 5.2 (4.6) & -  & 9.4 (8.5) & 10.5 (6.8) \\
-Range     & 0--27      & -  & 0--25     & 0.0--26.0 \\
-\end{tabular}}
-%\caption{Demographics and clinical scores of the four cohorts. Categorical variables are compared with the Pearson chi-square test, and continuous variables are compared with the Kruskal-Wallis $H$ test based on control and non-control groups (***: $p<0.001$, \textit{n.s.} means not significant). For example, }
-\label{tab:demographics}
-\end{table}
-
-\end{frame}
 
 \begin{frame}{}
 \Large
