@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.26)  21 JAN 2026 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.26)  21 JAN 2026 15:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1025,6 +1025,9 @@ LaTeX Warning: Label `fig:placeholder' multiply defined.
 LaTeX Warning: Label `fig:placeholder' multiply defined.
 
 
+LaTeX Warning: Label `fig:placeholder' multiply defined.
+
+
 LaTeX Warning: Label `fig:popgen_description' multiply defined.
 
 
@@ -1214,6 +1217,13 @@ Package biblatex Info: ... file 'seminar_computational_psychology.bbl' found.
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
 (biblatex)                finkel2022
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                hallContentAnalysisDream1966
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1612,112 +1622,109 @@ Overfull \hbox (7.80025pt too wide) in paragraph at lines 567--567
 
 ] [47
 
-] [48
-
 ]
-<img/dream_method.png, id=368, 289.8027pt x 210.3057pt>
+<img/hdvc_girl.png, id=363, 1352.05125pt x 681.54625pt>
+File: img/hdvc_girl.png Graphic file (type png)
+<use img/hdvc_girl.png>
+Package pdftex.def Info: img/hdvc_girl.png  used on input line 726.
+(pdftex.def)             Requested size: 307.28987pt x 154.90121pt.
+
+
+LaTeX Warning: Citation 'hallContentAnalysisDream1966' on page 48 undefined on input line 726.
+
+
+LaTeX Warning: Citation 'hallContentAnalysisDream1966' on page 48 undefined on input line 726.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.726 \end{frame}
+                 
+Overfull \vbox (2.60155pt too high) detected at line 726
+ []
+
+[48
+
+ <./img/hdvc_girl.png>]
+<img/dream_method.png, id=370, 289.8027pt x 210.3057pt>
 File: img/dream_method.png Graphic file (type png)
 <use img/dream_method.png>
-Package pdftex.def Info: img/dream_method.png  used on input line 738.
+Package pdftex.def Info: img/dream_method.png  used on input line 748.
 (pdftex.def)             Requested size: 245.83282pt x 178.39806pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.738 \end{frame}
+l.748 \end{frame}
                   [49
 
  <./img/dream_method.png>]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [50
 
 ]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [51
 
 ]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [52
 
 ]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [53
 
 ]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [54
 
 ]
-Overfull \hbox (3.28992pt too wide) in paragraph at lines 783--783
+Overfull \hbox (3.28992pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
  []
 
 
-Overfull \hbox (7.00775pt too wide) in paragraph at lines 783--783
+Overfull \hbox (7.00775pt too wide) in paragraph at lines 793--793
 []|\T1/cmtt/m/n/10 Conversion$[]$| 
- []
-
-
-Overfull \vbox (2.68565pt too high) detected at line 783
  []
 
 [55
@@ -1755,53 +1762,53 @@ Overfull \vbox (2.68565pt too high) detected at line 783
 ] [71
 
 ]
-<img/halliday_book_cover_upscale.jpg, id=504, 708.6475pt x 1003.75pt>
+<img/halliday_book_cover_upscale.jpg, id=506, 708.6475pt x 1003.75pt>
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 986.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 996.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.986 \end{frame}
+l.996 \end{frame}
                   [72
 
  <./img/halliday_book_cover_upscale.jpg>]
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 986.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 996.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
  [73
 
 ]
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 986.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 996.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
  [74
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1044
 
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 1034--1034
+Underfull \hbox (badness 1852) in paragraph at lines 1044--1044
 []|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-ences
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1044
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1044--1044
 
  []
 
 
-Overfull \vbox (6.3363pt too high) detected at line 1034
+Overfull \vbox (6.3363pt too high) detected at line 1044
  []
 
 [75
@@ -1809,33 +1816,33 @@ Overfull \vbox (6.3363pt too high) detected at line 1034
 ] [76
 
 ]
-<img/dendogram_viet.png, id=544, 655.9707pt x 427.3566pt>
+<img/dendogram_viet.png, id=546, 655.9707pt x 427.3566pt>
 File: img/dendogram_viet.png Graphic file (type png)
 <use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 1098.
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1108.
 (pdftex.def)             Requested size: 215.10196pt x 140.13474pt.
  [77
 
  <./img/dendogram_viet.png>]
 File: img/dendogram_viet.png Graphic file (type png)
 <use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 1098.
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1108.
 (pdftex.def)             Requested size: 215.10196pt x 140.13474pt.
  [78
 
 ]
-<img/viet_odds_2.png, id=558, 710.655pt x 420.6114pt>
+<img/viet_odds_2.png, id=560, 710.655pt x 420.6114pt>
 File: img/viet_odds_2.png Graphic file (type png)
 <use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-<img/viet_odds_3.png, id=559, 710.655pt x 420.6114pt>
+<img/viet_odds_3.png, id=561, 710.655pt x 420.6114pt>
 File: img/viet_odds_3.png Graphic file (type png)
 <use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1138--1138
  [][] 
  []
 
@@ -1844,14 +1851,14 @@ Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
  <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
 File: img/viet_odds_2.png Graphic file (type png)
 <use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 File: img/viet_odds_3.png Graphic file (type png)
 <use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1138--1138
  [][] 
  []
 
@@ -1860,14 +1867,14 @@ Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
 ]
 File: img/viet_odds_2.png Graphic file (type png)
 <use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 File: img/viet_odds_3.png Graphic file (type png)
 <use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1128.
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1138.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1138--1138
  [][] 
  []
 
@@ -1896,28 +1903,28 @@ Overfull \hbox (19.21442pt too wide) in paragraph at lines 1128--1128
 ] [92
 
 ]
-<img/face/face_amine.png, id=641, 401.5pt x 401.5pt>
+<img/face/face_amine.png, id=643, 401.5pt x 401.5pt>
 File: img/face/face_amine.png Graphic file (type png)
 <use img/face/face_amine.png>
-Package pdftex.def Info: img/face/face_amine.png  used on input line 1212.
+Package pdftex.def Info: img/face/face_amine.png  used on input line 1222.
 (pdftex.def)             Requested size: 98.335pt x 98.33466pt.
-<img/face/face_raphael.jpeg, id=642, 803.0pt x 803.0pt>
+<img/face/face_raphael.jpeg, id=644, 803.0pt x 803.0pt>
 File: img/face/face_raphael.jpeg Graphic file (type jpg)
 <use img/face/face_raphael.jpeg>
-Package pdftex.def Info: img/face/face_raphael.jpeg  used on input line 1212.
+Package pdftex.def Info: img/face/face_raphael.jpeg  used on input line 1222.
 (pdftex.def)             Requested size: 98.335pt x 98.32854pt.
-<img/face/face_nicolas.jpeg, id=643, 1230.5975pt x 1230.5975pt>
+<img/face/face_nicolas.jpeg, id=645, 1230.5975pt x 1230.5975pt>
 File: img/face/face_nicolas.jpeg Graphic file (type jpg)
 <use img/face/face_nicolas.jpeg>
-Package pdftex.def Info: img/face/face_nicolas.jpeg  used on input line 1212.
+Package pdftex.def Info: img/face/face_nicolas.jpeg  used on input line 1222.
 (pdftex.def)             Requested size: 98.335pt x 98.31836pt.
  [93
 
  <./img/face/face_amine.png> <./img/face/face_raphael.jpeg> <./img/face/face_nicolas.jpeg>]
-<img/logo_callyope.png, id=656, 513.92pt x 513.92pt>
+<img/logo_callyope.png, id=658, 513.92pt x 513.92pt>
 File: img/logo_callyope.png Graphic file (type png)
 <use img/logo_callyope.png>
-Package pdftex.def Info: img/logo_callyope.png  used on input line 1228.
+Package pdftex.def Info: img/logo_callyope.png  used on input line 1238.
 (pdftex.def)             Requested size: 61.66772pt x 61.66772pt.
  [94
 
@@ -1932,45 +1939,45 @@ Package pdftex.def Info: img/logo_callyope.png  used on input line 1228.
 ] [99
 
 ] Excluding 'comment' comment.
-<img/topic_modeling/methods_v3.png, id=689, 513.8397pt x 281.1303pt>
+<img/topic_modeling/methods_v3.png, id=691, 513.8397pt x 281.1303pt>
 File: img/topic_modeling/methods_v3.png Graphic file (type png)
 <use img/topic_modeling/methods_v3.png>
-Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 1294.
+Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 1304.
 (pdftex.def)             Requested size: 308.3062pt x 168.67947pt.
 
-Overfull \hbox (1.01633pt too wide) in paragraph at lines 1294--1294
+Overfull \hbox (1.01633pt too wide) in paragraph at lines 1304--1304
  [] 
  []
 
 [100
 
  <./img/topic_modeling/methods_v3.png>]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=697, 849.1725pt x 409.2891pt>
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=699, 849.1725pt x 409.2891pt>
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1308.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1318.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
  [101
 
  <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1308.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1318.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
  [102
 
 ]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=710, 849.1725pt x 409.2891pt>
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=712, 849.1725pt x 409.2891pt>
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1323.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1333.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
  [103
 
  <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>]
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1323.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1333.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
  [104
 
@@ -1990,27 +1997,27 @@ Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1410.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1420.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1410.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1420.
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1410.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1420.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/b/n' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 1410.
+(Font)              using `T1/cmss/m/n' instead on input line 1420.
 
 [112
 
 ] [113
 
 ]
-<img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png, id=776, 4131.435pt x 2727.18875pt>
+<img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png, id=778, 4131.435pt x 2727.18875pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1433.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1443.
 (pdftex.def)             Requested size: 247.8754pt x 163.62427pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 1433.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 1443.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [114
@@ -2018,26 +2025,26 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
  <./img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>]
 File: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1433.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1443.
 (pdftex.def)             Requested size: 247.8754pt x 163.62427pt.
  [115
 
 ]
-<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=791, 991.5444pt x 766.3029pt>
+<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=793, 991.5444pt x 766.3029pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1448.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1458.
 (pdftex.def)             Requested size: 247.88548pt x 191.57526pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:popgen_description}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1448 \end{frame}
+l.1458 \end{frame}
                    [116
 
  <./img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>]
 File: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1448.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1458.
 (pdftex.def)             Requested size: 247.88548pt x 191.57526pt.
  [117
 
@@ -2046,7 +2053,7 @@ Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_descripti
 ]pdfTeX warning (ext4): destination with the same identifier (name{tab:demographics}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1541 \end{frame}
+l.1551 \end{frame}
                    [119
 
 ] Excluding 'comment' comment. [120
@@ -2083,18 +2090,18 @@ Package logreq Info: Writing requests to 'seminar_computational_psychology.run.x
 
  ) 
 Here is how much of TeX's memory you used:
- 39131 strings out of 478287
- 795501 string characters out of 5849288
- 1483411 words of memory out of 5000000
- 56278 multiletter control sequences out of 15000+600000
+ 39138 strings out of 478287
+ 795647 string characters out of 5849288
+ 1483469 words of memory out of 5000000
+ 56284 multiletter control sequences out of 15000+600000
  499144 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,1420b,1953s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on seminar_computational_psychology.pdf (123 pages, 3781168 bytes).
+Output written on seminar_computational_psychology.pdf (123 pages, 3872038 bytes).
 PDF statistics:
- 1049 PDF objects out of 1200 (max. 8388607)
+ 1051 PDF objects out of 1200 (max. 8388607)
  802 compressed objects within 9 object streams
  291 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
