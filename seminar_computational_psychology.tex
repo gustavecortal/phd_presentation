@@ -1,5 +1,5 @@
 % --begin pap's style
-\documentclass[handout,10pt]{beamer}
+\documentclass[10pt]{beamer}
 
 %\usetheme[secheader]{Darmstadt}
 %\usetheme{Pittsburgh}
@@ -28,6 +28,15 @@
 \usepackage{ragged2e}         % better ragged-right with hyphenation
 \usepackage{xspace}           % for intelligent spacing after commands
 \setlength{\emergencystretch}{3em} % gentle last-resort stretch
+
+\usepackage{xpatch}
+
+% Patch 'itemize' to set itemsep
+\xpatchcmd{\itemize}
+  {\def\makelabel}
+  {\setlength{\itemsep}{1em}\def\makelabel} % Change 1em to your size
+  {}
+  {}
 
 \usepackage{subcaption}
 
@@ -235,7 +244,7 @@ How to model subjective experience in personal narratives?
     \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL @ ACL 2024}.
 \end{frame}
 
-\begin{frame}{Psychology and emotion annotations}
+\begin{frame}{Psychological theories and emotion annotation schemes}
 
 %What are current limitations and interesting research directions?
 
@@ -252,22 +261,21 @@ How to model subjective experience in personal narratives?
 %[add refs to each theory and annotation schemes]
 
 [add refs to klinger, etc.]
-
 {\small
 \begin{center}
 \begin{tabular}{p{6.5em}|p{10.5em}|p{13.5em}}
 Psychological theories & In text, emotion is... & Example \\
 \hline
-Basic emotions theory & a \textbf{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
+Basic emotions theory & a \textit{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
+\pause
 & & \\ 
+Constructivist theories & a continuous value with an \textit{affective} meaning & "His voice soothes me." $\rightarrow$ \texttt{valence} (4/5), \texttt{arousal} (1/5) \\
 & & \\
-Constructivist theories & a continuous value with an \textbf{affective} meaning & "His voice soothes me." $\rightarrow$ \texttt{valence} (4/5), \texttt{arousal} (1/5) \\
+\pause
+Appraisal theory & a continuous value with a \textit{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
 & & \\
-& & \\
-Appraisal theory & a continuous value with a \textbf{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
-& & \\
-& & \\
-& composed of \textbf{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})."
+\pause
+& composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})."
 \end{tabular}
 \end{center}
 }
@@ -478,6 +486,29 @@ Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotional
 \textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
+\begin{frame}{Cognitive analysis of emotions}
+
+\begin{minipage}{.78\linewidth}
+\begin{itemize}
+
+\item explores emotions with behavioral (\textit{behavior}), physiological (\textit{feeling}), and cognitive (\textit{thinking} and \textit{territory)} components
+\item helps individuals better regulate their emotions
+\item uses psychological components to reorganize the narrative of experienced emotional events
+    
+    
+\end{itemize}
+
+\end{minipage}
+\hfill
+\begin{minipage}{.20\linewidth}
+\centering
+\includegraphics[scale=0.23]{img/manuel.jpg}
+\footnotesize	 \citeauthor{finkel2022}, april \citeyear{finkel2022}
+\end{minipage}
+  
+
+\end{frame}
+
 \begin{frame}{French emotional narratives based on components}
 
 \textbf{Goal}: A more comprehensive understanding of emotional events
@@ -513,7 +544,7 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
 
 \vspace{0.5cm}
 \small
-One thousand narratives were collected during emotion regulation sessions
+1000 narratives were collected during emotion regulation sessions
 %\vspace{0.5cm}
 
 %\scriptsize
@@ -550,9 +581,7 @@ One thousand narratives were collected during emotion regulation sessions
 \begin{frame}{Discrete emotion detection based on components}
 
 %\textbf{Goal}: Discrete emotion detection based on components
-
 %\vspace{0.5cm}
-%\pause
 
 \begin{table}
     \centering
@@ -564,10 +593,12 @@ One thousand narratives were collected during emotion regulation sessions
                    \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
 \hline
               All  & 71.2\,\mscriptsize{(2.6)} & 69.1\,\mscriptsize{(2.2)} & 67.8\,\mscriptsize{(2.3)} & \textbf{85.1} & \textbf{84.8} & \textbf{84.7} \\
+              \pause
               Without \texttt{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
               Without \texttt{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
               Without \texttt{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
               Without \texttt{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
+              \pause
           Only \texttt{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
 Only \texttt{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
   Only \texttt{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
@@ -578,15 +609,18 @@ Only \texttt{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} &
 \end{table}
 
 \vspace{0.25cm}
-\pause
 
-%\centering
+% We use \onslide<4-> to force this text to wait until the table is finished (slides 1-3)
+\onslide<4->{
 $\rightarrow$ Each component improves prediction performance, the best results are achieved by jointly considering all components
+}
 
 \vspace{0.25cm}
-\pause
 
+% This appears on the next click (slide 5)
+\onslide<5->{
 $\rightarrow$ Some components benefit from contextual understanding and world knowledge (\textit{e.g.}, \texttt{behavior} and \texttt{thinking})
+}
 
 \end{frame}
 
@@ -616,6 +650,12 @@ How to automate the annotation process?
 
 %side project in my PhD
     
+\end{frame}
+
+\begin{frame}{Hall and Van de Castle annotation scheme}
+
+
+  
 \end{frame}
 
 \begin{frame}{Character and emotion detection in dream narratives}
@@ -674,10 +714,12 @@ How to automate the annotation process?
 %\vspace{0.25cm}
 \pause
 
-$\rightarrow$ Language models can effectively address character and emotion detection in dream narratives
+$\rightarrow$ Language models can address character and emotion detection in dream narratives, while there is still room for improvement
     
 \end{frame}
 
+
+\begin{comment}
 
 \begin{frame}{Results}
 
@@ -706,6 +748,8 @@ $\rightarrow$ Language models can effectively address character and emotion dete
 $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M \textit{vs.} 7B)
     
 \end{frame}
+
+\end{comment}
 
 \begin{frame}{Case study on the war veteran}
   \begin{table}
@@ -749,6 +793,26 @@ $\rightarrow$ The war veteran dreams more about \textit{occupational}, \textit{e
 \footnotesize
 
 \textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+\end{frame}
+
+\begin{frame}{Expand the Cognitive Model of Isabelle Tellier}
+
+Tellier was a PhD student of Alain (30 years ago)
+
+\begin{itemize}
+    \item Tellier's cognitive model proposes formally capturing redundancies in decision-making texts, characterizing a \textit{cognitive style}; using algebraic languages and finite automata.
+    \item For implementation, Tellier performs a partial automatic analysis using categorial grammars.
+
+\end{itemize}
+
+We propose: 
+
+\begin{itemize}
+    \item to fully implement the cognitive model using language models %(thus analyzing the semantic traits of verbs and nouns that were not automatable before)
+    \item to linguistically justify the relevant traits to capture and organize%, thanks to systemic functional linguistics
+    \item to extend the model to account for the attention mechanisms involved in expressing subjective experience
+\end{itemize}
+
 \end{frame}
 
 \begin{frame}{How is subjective experience communicated in narratives?}
@@ -809,6 +873,8 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 %\vspace{0.5cm}
 %\pause
 
+\textbf{Objectives}:
+
 \begin{enumerate}[<+->]
     \item A sequence-based framework defining style as patterns in sequences of linguistic choices% grounded in systemic functional linguistics
     \item A methodology for identifying patterns using sequence analysis
@@ -819,67 +885,80 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 
 \begin{frame}{What linguistic features encode subjective experience?}
 
-We ground our framework in \textit{systemic functional linguistics} \citep{hallidayIntroductionFunctionalGrammar2014a}
+\begin{columns}[T,onlytextwidth]
+  \begin{column}{0.7\textwidth}
+    We ground our framework in \textit{systemic functional linguistics} \citep{hallidayIntroductionFunctionalGrammar2014a}
 
-\pause
-\vspace{0.5cm}
+    \pause
+    \vspace{1.cm}
 
-Meaning emerges through choices in systems of linguistic features to achieve communicative goals
+    Meaning emerges through choices in systems of linguistic features to achieve communicative goals
 
-\pause
-\vspace{0.5cm}
+    \pause
+    \vspace{1.cm}
 
-Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
+    Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
+  \end{column}
+  \begin{column}{0.25\textwidth}
+    \begin{figure}
+      \centering
+      \includegraphics[width=\linewidth]{img/halliday_book_cover_upscale.jpg}
+      \label{fig:placeholder}
+      \caption{\citep{hallidayIntroductionFunctionalGrammar2014a}. +57,000 citations.}
+    \end{figure}
+  \end{column}
+\end{columns}
 
-[add photo of book and number of citations]
+%[add photo of book and number of citations]
 
     
 \end{frame}
 
 \begin{frame}{What linguistic features encode subjective experience?}
 
-\pause
-
-Language represents experience through \textit{processes}, \textit{participants} and \textit{circumstances}
-
-\pause
 
 \begin{table}[!htb]
-    \centering
-    \resizebox{\textwidth}{!}{
-    \begin{tabular}{p{4cm}|p{11cm}}
-        %\hline
-        \textbf{Processes} & \textbf{Examples} \\ \hline
-        \texttt{Action}: actions and events in the physical world. &
-        [He]$_{\text{Actor}}$ [\textbf{takes}]$_{\text{Action}}$ [the valuable]$_{\text{Affected}}$ \newline
-        
-        [Members of my cult]$_{\text{Actor}}$ [\textbf{have made]}$_{\text{Action}}$ [1500 euros]$_{\text{Result}}$ \newline
-        
-        [I]$_{\text{Actor}}$ [\textbf{give}]$_{\text{Action}}$ [her]$_{\text{Recipient}}$ [a chance]$_{\text{Range}}$ \\ \hline
-        
-        \texttt{Mental}: internal experiences such as thoughts, perceptions, and feelings. &
-        [We]$_{\text{Senser}}$ [\textbf{believe}]$_{\text{Mental}}$ [women are the leaders of change]$_{\text{Phenomenon}}$ \newline
-        
-        [The moon]$_{\text{Senser}}$ [\textbf{sees}]$_{\text{Mental}}$ [the earth]$_{\text{Phenomenon}}$ \newline
-        
-        [He]$_{\text{Senser}}$ [\textbf{disliked}]$_{\text{Mental}}$ [Gilbert's writing]$_{\text{Phenomenon}}$ \\ \hline
-        
-        \texttt{Verbal}: acts of communication. &
-        [David]$_{\text{Sayer}}$ [\textbf{said}]$_{\text{Verbal}}$ [``the corrupt, criminals and money launderers'']$_{\text{Verbiage}}$ \\ \hline
-
-        \texttt{State}: states of being, having, or existence. &
-
-         There [\textbf{was}]$_{\text{Existential}}$ [a swimming pool]$_{\text{Existent}}$ \newline
-        
-        [John]$_{\text{Carrier}}$ [\textbf{is}]$_{\text{State}}$ [an interesting teacher]$_{\text{Attribute}}$ \newline
-        
-        [Hadrian's Wall]$_{\text{Possessor}}$ [\textbf{has}]$_{\text{State}}$ [something for everyone]$_{\text{Possessed}}$ \\ %\hline
-    \end{tabular}}
-    %\caption{Processes with their participants.}
-    \label{tab:process_participants}
-\end{table}
+  \centering
+  \renewcommand{\arraystretch}{2.3}
+  \resizebox{\textwidth}{!}{
+  \begin{tabular}{p{4.7cm}|p{7.3cm}}
+    %\hline
+    \textbf{Processes} & \textbf{Examples} \\ \hline
+    \texttt{Action}: actions and events in the physical world. &
+    \textcolor{blueNCS}{He}\textsubscript{\texttt{Actor}} \textcolor{DarkBlue}{\textbf{takes}}\textsubscript{\texttt{Action}} \textcolor{blueNCS}{the valuable}\textsubscript{\texttt{Affected}} \newline
     
-[make it more visual, less text-heavy, maybe with colors]
+    %\textcolor{blueNCS}{Members of my cult}\textsubscript{\texttt{Actor}} \textcolor{DarkBlue}{\textbf{have made}}\textsubscript{\texttt{Action}} \textcolor{blueNCS}{1500 euros}\textsubscript{\texttt{Result}} \newline
+    
+    \textcolor{blueNCS}{I}\textsubscript{\texttt{Actor}} \textcolor{DarkBlue}{\textbf{give}}\textsubscript{\texttt{Action}} \textcolor{blueNCS}{her}\textsubscript{\texttt{Recipient}} \textcolor{blueNCS}{a chance}\textsubscript{\texttt{Range}} \\ \hline
+    
+    \texttt{Mental}: internal experiences such as thoughts, perceptions, and feelings. &
+    %\textcolor{blueNCS}{We}\textsubscript{\texttt{Senser}} \textcolor{DarkBlue}{\textbf{believe}}\textsubscript{\texttt{Mental}} \textcolor{blueNCS}{women are the leaders of change}\textsubscript{\texttt{Phenomenon}} \newline
+    
+    \textcolor{blueNCS}{The moon}\textsubscript{\texttt{Senser}} \textcolor{DarkBlue}{\textbf{sees}}\textsubscript{\texttt{Mental}} \textcolor{blueNCS}{the earth}\textsubscript{\texttt{Phenomenon}} \newline
+    
+    \textcolor{blueNCS}{He}\textsubscript{\texttt{Senser}} \textcolor{DarkBlue}{\textbf{disliked}}\textsubscript{\texttt{Mental}} \textcolor{blueNCS}{Gilbert's writing}\textsubscript{\texttt{Phenomenon}} \\ \hline
+    
+    \texttt{Verbal}: acts of communication. &
+    \textcolor{blueNCS}{David}\textsubscript{\texttt{Sayer}} \textcolor{DarkBlue}{\textbf{said}}\textsubscript{\texttt{Verbal}} \textcolor{blueNCS}{``the corrupt, [...]''}\textsubscript{\texttt{Verbiage}} \\ \hline
+
+    \texttt{State}: states of being, having, or existence. &
+     %\textcolor{DarkBlue}{\textbf{was}}\textsubscript{\texttt{Existential}} \textcolor{blueNCS}{a swimming pool}\textsubscript{\texttt{Existent}} \newline
+    
+    \textcolor{blueNCS}{John}\textsubscript{\texttt{Carrier}} \textcolor{DarkBlue}{\textbf{is}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{an interesting teacher}\textsubscript{\texttt{Attribute}} \newline
+    
+    \textcolor{blueNCS}{Chloé}\textsubscript{\texttt{Possessor}} \textcolor{DarkBlue}{\textbf{has}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{a cat}\textsubscript{\texttt{Possessed}} \\ %\hline
+  \end{tabular}}
+  \label{tab:process_participants}
+  \caption{Examples of processes and their participants. Language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}.}% and \textit{circumstances}}
+\end{table}
+
+%\vspace{0.15cm}
+%\footnotesize
+%\textbf{Legend:} \textcolor{DarkBlue}{\textbf{Process}} (bold, dark blue) \quad
+%\textcolor{blueNCS}{Participant} (blue) \quad
+%\textit{Role labels} in subscripts (e.g., \texttt{Actor}, \texttt{Senser})
+    
+%[make it more visual, less text-heavy, maybe with colors]
 
 \end{frame}
 
@@ -915,14 +994,35 @@ Language represents experience through \textit{processes}, \textit{participants}
   \end{threeparttable}
 \end{table}
 
+%\begin{enumerate}[<+->]
+%    \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
+%    \item Identify features (\textit{e.g.}, processes and participants) for each clause using in-context learning with large language models
+%    \item Each narrative is mapped to a symbolic sequence using an alphabet based on identified features
+%    \item We perform sequence analysis to identify patterns such as frequent substrings and representative sequences
+%\end{enumerate}
+    
+\end{frame}
+
+\begin{frame}{Results on the war veteran}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{img/dendogram_viet.png}
+    \caption{Dendrogram with Ward linkage and cosine similarity}% on substrings of size one, two, and three.}
+    \label{fig:dendogram}
+\end{figure}
+
+%\vspace{0.25cm}
 \pause
 
-\begin{enumerate}[<+->]
-    \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
-    \item Identify features (\textit{e.g.}, processes and participants) for each clause using in-context learning with large language models
-    \item Each narrative is mapped to a symbolic sequence using an alphabet based on identified features
-    \item We perform sequence analysis to identify patterns such as frequent substrings and representative sequences
-\end{enumerate}
+{\small
+\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=\text{action},\; m=\text{mental},\; s=\text{state},\; v=\text{verbal}$
+}
+
+%\vspace{0.25cm}
+%\pause
+
+%$\rightarrow$ Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
     
 \end{frame}
 
@@ -956,30 +1056,7 @@ $\rightarrow$ The veteran favors verbal processes over mental ones% with high od
 
 \end{frame}
 
-\begin{frame}{Results on the war veteran}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=0.7\linewidth]{img/dendogram_viet.png}
-    \caption{Dendrogram with Ward linkage and cosine similarity}% on substrings of size one, two, and three.}
-    \label{fig:dendogram}
-\end{figure}
-
-%\vspace{0.25cm}
-\pause
-
-{\small
-\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=\text{action},\; m=\text{mental},\; s=\text{state},\; v=\text{verbal}$
-}
-
-%\vspace{0.25cm}
-%\pause
-
-%$\rightarrow$ Two templates: a highly action-oriented structure or a more varied structure alternating between state and action processes
-    
-\end{frame}
-
-\begin{frame}{Perspectives}
+\begin{frame}{How can this framework be extended?}
 
 \begin{itemize}[<+->]
     \item Authorship profiling%: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
@@ -1026,11 +1103,35 @@ How to model subjective experience in personal narratives?
     
 \end{frame}
 
-\begin{frame}{Impact}
+\begin{frame}[noframenumbering]
+    \frametitle{Impact}
 
-I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+\begin{figure}[!htb]
+  \centering
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{img/face/face_amine.png}
+    \caption{Amine Haddou on cognitive distortions (2025).}
+    \label{fig:face_amine}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{img/face/face_raphael.jpeg}
+    \caption{Raphael Faure on style analysis (2025).}
+    \label{fig:face_raphael}
+  \end{subfigure}\hfill
+  \begin{subfigure}[b]{0.32\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{img/face/face_nicolas.jpeg}
+    \caption{Nicolas Richet on emotion multimodal recognition (2024).}
+    \label{fig:face_nicolas}
+  \end{subfigure}
+  \caption{Co-supervised PhD topics.}
+  \label{fig:faces}
+\end{figure}
 
-Callyope
+During my PhD internship at Callyope, \textit{Fine-grained mental health topic modeling in different cohorts using large language models}
 
 \begin{figure}
     \centering
@@ -1282,7 +1383,7 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
 
 \end{comment}
 
-\begin{frame}{Selected research papers}[noframenumbering]
+\begin{frame}{Selected research papers}
   \scriptsize
 
     \fullcitenourl{bonardImprovingLanguageModels2024a}
