@@ -81,6 +81,9 @@
     </requires>
     <requires type="editable">
       <file>phd_slides_biblatex.bib</file>
+      <file>full.bib</file>
+      <file>custom.bib</file>
+      <file>introduction.bib</file>
     </requires>
   </external>
 </requests>

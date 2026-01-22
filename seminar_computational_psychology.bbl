@@ -19,6 +19,133 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{arnold_emotion_1960}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=28bd4b33157f6421286e682d3a843748}{%
+           family={Arnold},
+           familyi={A\bibinitperiod},
+           given={Magda\bibnamedelima B.},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Columbia University Press}%
+      }
+      \strng{namehash}{28bd4b33157f6421286e682d3a843748}
+      \strng{fullhash}{28bd4b33157f6421286e682d3a843748}
+      \strng{bibnamehash}{28bd4b33157f6421286e682d3a843748}
+      \strng{authorbibnamehash}{28bd4b33157f6421286e682d3a843748}
+      \strng{authornamehash}{28bd4b33157f6421286e682d3a843748}
+      \strng{authorfullhash}{28bd4b33157f6421286e682d3a843748}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Emotion and {Personality}}
+      \field{year}{1960}
+      \field{dateera}{ce}
+    \endentry
+    \entry{bertolini2023automatic}{misc}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=ca7619139aee200440b53cdea0deec25}{%
+           family={Bertolini},
+           familyi={B\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=68cf39bfa1be4d4a1d0a34cc34bae279}{%
+           family={Elce},
+           familyi={E\bibinitperiod},
+           given={Valentina},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63af7ad9ea982aba1f319079e8a75007}{%
+           family={Michalak},
+           familyi={M\bibinitperiod},
+           given={Adriana},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=beff5d0648cf66b9bfc93e4a939de8d6}{%
+           family={Bernardi},
+           familyi={B\bibinitperiod},
+           given={Giulio},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=36f99f6bbc578cfa330764df20b057a9}{%
+           family={Weeds},
+           familyi={W\bibinitperiod},
+           given={Julie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed8467967ba84f1b011d1cf8d8bd4df8}
+      \strng{fullhash}{2daddb1c1f3aa495dc9c20b39b077287}
+      \strng{bibnamehash}{ed8467967ba84f1b011d1cf8d8bd4df8}
+      \strng{authorbibnamehash}{ed8467967ba84f1b011d1cf8d8bd4df8}
+      \strng{authornamehash}{ed8467967ba84f1b011d1cf8d8bd4df8}
+      \strng{authorfullhash}{2daddb1c1f3aa495dc9c20b39b077287}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arxiv}
+      \field{title}{Automatic scoring of dream reports' emotional content with large language models}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2302.14828 [cs.CL]
+      \endverb
+    \endentry
+    \entry{blancComprehensionContesEntre2010}{article}{}
+      \name{author}{1}{}{%
+        {{un=2,uniquepart=given,hash=022f933f44bd56cebb0a0b9d5ae4cc0e}{%
+           family={Blanc},
+           familyi={B\bibinitperiod},
+           given={Nathalie},
+           giveni={N\bibinitperiod},
+           givenun=2}}%
+      }
+      \list{location}{1}{%
+        {US}%
+      }
+      \list{publisher}{1}{%
+        {Educational Publishing Foundation}%
+      }
+      \strng{namehash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \strng{fullhash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \strng{bibnamehash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \strng{authorbibnamehash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \strng{authornamehash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \strng{authorfullhash}{022f933f44bd56cebb0a0b9d5ae4cc0e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Orally presented tales comprehension was studied in 5-to-7-year-old children using a sentence verification task. The sentences to be judged by children concerned the emotional dimension of the described situations, but also their spatial, temporal, and causal dimensions, as well as the characters involved. In addition to observing a better tales comprehension with increasing age, we found that the emotional dimension was represented with less precision than the causal or spatial dimensions. A deeper examination of the emotional dimension representation revealed that the precision of the representation depends on the type of emotional information that is presented, (i.e., the emotion is designed, the behavioral expression of an emotion is described, an event that generates the emotion is mentioned), but it also depends on the gender and age. The diverse implications of this study are discussed in the light of data coming from the literature on comprehension skills in children. (PsycInfo Database Record (c) 2022 APA, all rights reserved)}
+      \field{issn}{1878-7290}
+      \field{journaltitle}{Canadian Journal of Experimental Psychology / Revue canadienne de psychologie expérimentale}
+      \field{number}{4}
+      \field{shorttitle}{La Compréhension Des Contes Entre 5 et 7 Ans}
+      \field{title}{La Compréhension Des Contes Entre 5 et 7 Ans: {{Quelle}} Représentation Des Informations Émotionnelles? [{{The}} Comprehension of the Tales between 5 and 7 Year-Olds: {{Which}} Representation of Emotional Information?]}
+      \field{volume}{64}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{pages}{256\bibrangedash 265}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1037/a0021283
+      \endverb
+      \keyw{Comprehension,Emotions,Inference,Storytelling}
+    \endentry
     \entry{bonardImprovingLanguageModels2024a}{inproceedings}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=b3110f23cf4fe34ccfcd74568807cf18}{%
@@ -98,42 +225,208 @@
       \endverb
       \keyw{notion}
     \endentry
-    \entry{brunerActsMeaning1990}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=76bff24e21bc4cfee72941fbf75a52a8}{%
-           family={Bruner},
+    \entry{bostan-klinger-2018-analysis}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2196cfa488f7d6ba4f9c79ca61e43a2b}{%
+           family={Bostan},
            familyi={B\bibinitperiod},
-           given={Jerome},
-           giveni={J\bibinitperiod},
+           given={Laura-Ana-Maria},
+           giveni={L\bibinithyphendelim A\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
            givenun=0}}%
       }
       \list{location}{1}{%
-        {Cambridge, MA, US}%
+        {Santa Fe, New Mexico, USA}%
       }
       \list{publisher}{1}{%
-        {Harvard University Press}%
+        {Association for Computational Linguistics}%
       }
-      \strng{namehash}{76bff24e21bc4cfee72941fbf75a52a8}
-      \strng{fullhash}{76bff24e21bc4cfee72941fbf75a52a8}
-      \strng{bibnamehash}{76bff24e21bc4cfee72941fbf75a52a8}
-      \strng{authorbibnamehash}{76bff24e21bc4cfee72941fbf75a52a8}
-      \strng{authornamehash}{76bff24e21bc4cfee72941fbf75a52a8}
-      \strng{authorfullhash}{76bff24e21bc4cfee72941fbf75a52a8}
+      \strng{namehash}{b4e08efbb8817ba48b44fe9e464a3c29}
+      \strng{fullhash}{b4e08efbb8817ba48b44fe9e464a3c29}
+      \strng{bibnamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
+      \strng{authorbibnamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
+      \strng{authornamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
+      \strng{authorfullhash}{b4e08efbb8817ba48b44fe9e464a3c29}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{Bruner begins his investigations with an incisive assessment of the cognitive revolution from its historical origins to its present-day preoccupation with computers and computer-ability. . . . Bruner argues that the current fixation on mind as "information processor" has led psychology away from the deeper objective of understanding mind as a creator of meanings. Bruner develops his thesis by elaborating upon the powerful role of culturally shaped narrative thinking in our conception of ourselves and of the social world in which we live. He explores the central significance of "folk psychology" not only in determining human interaction but also in providing a basis for the social institutions that constrain it. And then he demonstrates how narrative thinking, beginning with the acquisition of language, brings the growing human being into the arena of human culture. . . . Finally, through an examination of spontaneous autobiography, he shows how the very conception of Self comes to reflect both individual idiosyncrasy and the requirements of social living. (PsycINFO Database Record (c) 2016 APA, all rights reserved)}
-      \field{isbn}{978-0-674-00360-6}
-      \field{series}{Acts of Meaning}
-      \field{title}{Acts of Meaning}
-      \field{year}{1990}
-      \verb{file}
-      \verb C:\Users\Gustave\Zotero\storage\Q7UBX39J\1990-98641-000.html
+      \field{booktitle}{Proceedings of the 27th International Conference on Computational Linguistics}
+      \field{month}{8}
+      \field{title}{An Analysis of Annotated Corpora for Emotion Classification in Text}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{2104\bibrangedash 2119}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb https://aclanthology.org/C18-1179
       \endverb
-      \keyw{Culture (Anthropological),Meaning,Psychology,Self-Perception,Social Interaction,Social Perception}
+      \verb{url}
+      \verb https://aclanthology.org/C18-1179
+      \endverb
+    \endentry
+    \entry{buechel-hahn-2017-emobank}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cf2dcd609fa859ac722c3916885ceeba}{%
+           family={Buechel},
+           familyi={B\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1b23e913d226bd63c4c7022beb08edd}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={Udo},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Valencia, Spain}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{230d65f0015ba4ff2d12ccd225875689}
+      \strng{fullhash}{230d65f0015ba4ff2d12ccd225875689}
+      \strng{bibnamehash}{230d65f0015ba4ff2d12ccd225875689}
+      \strng{authorbibnamehash}{230d65f0015ba4ff2d12ccd225875689}
+      \strng{authornamehash}{230d65f0015ba4ff2d12ccd225875689}
+      \strng{authorfullhash}{230d65f0015ba4ff2d12ccd225875689}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics: Volume 2, Short Papers}
+      \field{month}{4}
+      \field{title}{{E}mo{B}ank: Studying the Impact of Annotation Perspective and Representation Format on Dimensional Emotion Analysis}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{578\bibrangedash 585}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://aclanthology.org/E17-2092
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/E17-2092
+      \endverb
+    \endentry
+    \entry{campagnano-etal-2022-srl4e}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1f88a161396243f7e3fd51cf0a7e09f1}{%
+           family={Campagnano},
+           familyi={C\bibinitperiod},
+           given={Cesare},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe829fd3086bc649124c89d238f312cc}{%
+           family={Conia},
+           familyi={C\bibinitperiod},
+           given={Simone},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe24dce481a67e247581d4b20435709}{%
+           family={Navigli},
+           familyi={N\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dublin, Ireland}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \strng{fullhash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \strng{bibnamehash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \strng{authorbibnamehash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \strng{authornamehash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \strng{authorfullhash}{519d24c0d35ad6fdcf71fdc87214478b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}
+      \field{month}{5}
+      \field{title}{{SRL4E} {--} {S}emantic {R}ole {L}abeling for {E}motions: {A} Unified Evaluation Framework}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{4586\bibrangedash 4601}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.18653/v1/2022.acl-long.314
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.acl-long.314
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.acl-long.314
+      \endverb
+    \endentry
+    \entry{casel-etal-2021-emotion}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9b924e38cb9f76463d019d74208bd4d3}{%
+           family={Casel},
+           familyi={C\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1c77a76f4166c33ae177c1c13c9983af}{%
+           family={Heindl},
+           familyi={H\bibinitperiod},
+           given={Amelie},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Düsseldorf, Germany}%
+      }
+      \list{publisher}{1}{%
+        {KONVENS 2021 Organizers}%
+      }
+      \strng{namehash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \strng{fullhash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \strng{bibnamehash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \strng{authorbibnamehash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \strng{authornamehash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \strng{authorfullhash}{93e0fc3ec202ed282ad4bb4fbb170462}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 17th Conference on Natural Language Processing (KONVENS 2021)}
+      \field{month}{6}
+      \field{title}{Emotion Recognition under Consideration of the Emotion Component Process Model}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{pages}{49\bibrangedash 61}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2021.konvens-1.5
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2021.konvens-1.5
+      \endverb
     \endentry
     \entry{cortalSequencetoSequenceLanguageModels2024}{inproceedings}{}
       \name{author}{1}{}{%
@@ -359,7 +652,304 @@
       \verb C:\Users\Gustave\Zotero\storage\XDMG3KV9\Cortal et al. - 2023 - Emotion Recognition based on Psychological Compone.pdf
       \endverb
     \endentry
-    \entry{domhoffStudyingDreamContent2008b}{article}{}
+    \entry{creissenQuelleRepresentationDifferentes2017a}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=2dbb69879d6a9c081e26cd6f9a2d06c7}{%
+           family={Creissen},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=2,uniquepart=given,hash=3eef9a58df9a062a4ccabd5ddf88d719}{%
+           family={Blanc},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=2}}%
+      }
+      \strng{namehash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \strng{fullhash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \strng{bibnamehash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \strng{authorbibnamehash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \strng{authornamehash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \strng{authorfullhash}{5abe92da80b73bc8e20dd575af5fda1b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Résumé La présente étude examine comment les enfants âgés de 6 à 10ans comprennent et se représentent les différentes facettes de la dimension émotionnelle d'une histoire. Le caractère généralisable des capacités de compréhension des enfants est également mis à l'épreuve en comparant leur compréhension en situation auditive (i.e., histoire à écouter) et en situation audiovisuelle (i.e., histoire télévisée). À travers l'exploration de leurs habiletés à se représenter les passages de l'histoire où l'émotion du personnage est soit explicitement désignée, soit exprimée à travers son comportement, soit suggérée par l'événement décrit, cette étude permet de dégager trois principaux apports : (1) les performances des enfants en situations auditive et audiovisuelle étant corrélées, le caractère généralisable des capacités de compréhension est confirmé ; (2) la représentation de certaines facettes de la dimension émotionnelle gagne en précision lorsqu'elle est appréhendée à partir du support audiovisuel ; (3) entre 6 et 10ans, les enfants exploitent davantage les informations émotionnelles explicites que les informations émotionnelles implicites. Ces résultats sont discutés au regard des études antérieures menées sur la compréhension de récits chez l'enfant. This study examined how children between ages 6 and 10 understand and represent the different facets of the emotional dimension of a story. The idea that children's comprehension skills generalize across different media was also tested by comparing their ability to understand auditory and televised stories. Based on the exploration of their ability to represent the story passages where the emotion of the character was either explicitly mentioned, or expressed through his/her behavior, or suggested by the event described, this study highlighted three main contributions: (1) overall, children's comprehension skills generalize across different media; (2) some facets of the emotional dimension of a story were better represented from the audiovisual presentation compared to the auditory one (3) between the ages of 6 and 10 years, explicit emotional information was easier to use than implicit emotional information. These results are discussed in relation to the findings of previous studies conducted on children's understanding of story.}
+      \field{issn}{0033-2984}
+      \field{journaltitle}{Psychologie Française}
+      \field{month}{9}
+      \field{number}{3}
+      \field{series}{Cognition et Multimédia : {{Les}} Atouts Du Numérique En Situation d'apprentissage}
+      \field{shorttitle}{Quelle Représentation Des Différentes Facettes de La Dimension Émotionnelle d'une Histoire Entre l'âge de 6 et 10 Ans ?}
+      \field{title}{Quelle Représentation Des Différentes Facettes de La Dimension Émotionnelle d'une Histoire Entre l'âge de 6 et 10 Ans ? {{Apports}} d'une Étude Multimédia}
+      \field{volume}{62}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{263\bibrangedash 277}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.psfr.2015.07.006
+      \endverb
+      \keyw{Développement de la compréhension de récits,Development of story understanding,Dimension émotionnelle,Emotional dimension,Génération d'inférences,Inference generation,Modalité de présentation,Modality of presentation}
+    \endentry
+    \entry{darwin_expression_1872}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d0e4f38206db228a7b870a49f6f52db2}{%
+           family={Darwin},
+           familyi={D\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {John Murray}%
+      }
+      \strng{namehash}{d0e4f38206db228a7b870a49f6f52db2}
+      \strng{fullhash}{d0e4f38206db228a7b870a49f6f52db2}
+      \strng{bibnamehash}{d0e4f38206db228a7b870a49f6f52db2}
+      \strng{authorbibnamehash}{d0e4f38206db228a7b870a49f6f52db2}
+      \strng{authornamehash}{d0e4f38206db228a7b870a49f6f52db2}
+      \strng{authorfullhash}{d0e4f38206db228a7b870a49f6f52db2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The expression of the emotions in man and animals}
+      \field{year}{1872}
+      \field{dateera}{ce}
+    \endentry
+    \entry{davidsonChildrenRecallEmotional2001}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=239572f949e9346cfb5ed4e1c0043f40}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Denise},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eaca4cadd86abe99ae81fd29037ffb4d}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Zupei},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0e054f3e62ab874dcfc330835fb536c5}{%
+           family={Burden},
+           familyi={B\bibinitperiod},
+           given={Matthew\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{bc35c1a53b052b92e715b64bca30cab7}
+      \strng{fullhash}{bc35c1a53b052b92e715b64bca30cab7}
+      \strng{bibnamehash}{bc35c1a53b052b92e715b64bca30cab7}
+      \strng{authorbibnamehash}{bc35c1a53b052b92e715b64bca30cab7}
+      \strng{authornamehash}{bc35c1a53b052b92e715b64bca30cab7}
+      \strng{authorfullhash}{bc35c1a53b052b92e715b64bca30cab7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Determined if children were able to judge the importance of the emotional occurrences (EOs) and examined children's memory for emotional behaviours (EBs), emotional labels (ELs), and nonemotional behaviours (NBs) across 3 studies. Ss were 150 1st-, 3rd-, and 5th-graders (aged 5–11 yrs). Study 1 involved EO judgements by 10 Ss from each grade level (GL). Ss were asked 6 questions (2 reflecting happiness (HS), 2 reflecting sadness (SS), and 2 reflecting anger (AR) of which they were to choose a statement (reflecting a high emotional, HE, or low emotional, LE, situation) that would result in more HS, SS, or AR. Study 2 involved 20 Ss from each GL who responded to 2 HE and 2 LE stories constructed about everyday family life. Each story consisted of 3 emotional events that reflected HS, SS, and AR. After each story, Ss were to recall all that they could. Study 3 involved 20 Ss from each GL who responded to 2 stories in which both HEs and LEs were included in addition to the 3 types of emotions. Ss were either given or not given corresponding labels. Ss were to recall all that they could. The results show that children can readily distinguish between EBs in terms of significance and importance. Further, all Ss recalled more EBs than NBs. Also, the use of ELs appears to enhance recall. (PsycINFO Database Record (c) 2016 APA, all rights reserved)}
+      \field{issn}{1464-0600}
+      \field{journaltitle}{Cognition and Emotion}
+      \field{number}{1}
+      \field{shorttitle}{Children's Recall of Emotional Behaviours, Emotional Labels, and Nonemotional Behaviours}
+      \field{title}{Children's Recall of Emotional Behaviours, Emotional Labels, and Nonemotional Behaviours: {{Does}} Emotion Enhance Memory?}
+      \field{volume}{15}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1080/0269993004200105
+      \endverb
+      \keyw{Age Differences,Behavior,Emotional Content,Judgment,Labeling,Memory,Recall (Learning)}
+    \endentry
+    \entry{demszky-etal-2020-goemotions}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=781f21f06cf4d5235ce00a1ac39748d2}{%
+           family={Demszky},
+           familyi={D\bibinitperiod},
+           given={Dorottya},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=70c5a80e9b1597f305ea6443e9400071}{%
+           family={Movshovitz-Attias},
+           familyi={M\bibinithyphendelim A\bibinitperiod},
+           given={Dana},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a054987b0bfea064f4eefb985a75626}{%
+           family={Ko},
+           familyi={K\bibinitperiod},
+           given={Jeongwoo},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6a67331e843dd140153b0149c3c296a7}{%
+           family={Cowen},
+           familyi={C\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=420c16b119149b9c532ea0567e3986ad}{%
+           family={Nemade},
+           familyi={N\bibinitperiod},
+           given={Gaurav},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d6b493755244f5969cce472fb900a773}{%
+           family={Ravi},
+           familyi={R\bibinitperiod},
+           given={Sujith},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Online}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{7f359278fcac1088c807a2cef5ffc659}
+      \strng{fullhash}{8fe37d6f8739f77935437b5d1382f35d}
+      \strng{bibnamehash}{7f359278fcac1088c807a2cef5ffc659}
+      \strng{authorbibnamehash}{7f359278fcac1088c807a2cef5ffc659}
+      \strng{authornamehash}{7f359278fcac1088c807a2cef5ffc659}
+      \strng{authorfullhash}{8fe37d6f8739f77935437b5d1382f35d}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Understanding emotion expressed in language has a wide range of applications, from building empathetic chatbots to detecting harmful online behavior. Advancement in this area can be improved using large-scale datasets with a fine-grained typology, adaptable to multiple downstream tasks. We introduce {GoEmotions}, the largest manually annotated dataset of 58k English Reddit comments, labeled for 27 emotion categories or Neutral. We demonstrate the high quality of the annotations via Principal Preserved Component Analysis. We conduct transfer learning experiments with existing emotion benchmarks to show that our dataset generalizes well to other domains and different emotion taxonomies. Our {BERT}-based model achieves an average F1-score of .46 across our proposed taxonomy, leaving much room for improvement.}
+      \field{booktitle}{Proceedings of the 58th annual meeting of the association for computational linguistics}
+      \field{month}{7}
+      \field{title}{{GoEmotions}: a dataset of fine-grained emotions}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{4040\bibrangedash 4054}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.18653/v1/2020.acl-main.372
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2020.acl-main.372
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2020.acl-main.372
+      \endverb
+    \endentry
+    \entry{didolkar2025metacognitivereuseturningrecurring}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=917ef24596229b2ee1084f5f2a7e0fc5}{%
+           family={Didolkar},
+           familyi={D\bibinitperiod},
+           given={Aniket},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=088c8a878ffb450444f0e6a8aa932e4b}{%
+           family={Ballas},
+           familyi={B\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e08b59145b9531815169c7ed0a0b055}{%
+           family={Arora},
+           familyi={A\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eb6a43771a55bde951c0119ac5c7ad13}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Anirudh},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e21f2e44353b4b98161d9f7b23ebc207}
+      \strng{fullhash}{d4360c3fe05b498bb53119eb7c6797f8}
+      \strng{bibnamehash}{e21f2e44353b4b98161d9f7b23ebc207}
+      \strng{authorbibnamehash}{e21f2e44353b4b98161d9f7b23ebc207}
+      \strng{authornamehash}{e21f2e44353b4b98161d9f7b23ebc207}
+      \strng{authorfullhash}{d4360c3fe05b498bb53119eb7c6797f8}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Metacognitive Reuse: Turning Recurring LLM Reasoning Into Concise Behaviors}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2509.13237
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2509.13237
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2509.13237
+      \endverb
+    \endentry
+    \entry{dilts1994strategies}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db0c6b6eac09446ad3b832763bd9d110}{%
+           family={Dilts},
+           familyi={D\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Capitola, CA}%
+      }
+      \list{publisher}{1}{%
+        {Meta Publications}%
+      }
+      \strng{namehash}{db0c6b6eac09446ad3b832763bd9d110}
+      \strng{fullhash}{db0c6b6eac09446ad3b832763bd9d110}
+      \strng{bibnamehash}{db0c6b6eac09446ad3b832763bd9d110}
+      \strng{authorbibnamehash}{db0c6b6eac09446ad3b832763bd9d110}
+      \strng{authornamehash}{db0c6b6eac09446ad3b832763bd9d110}
+      \strng{authorfullhash}{db0c6b6eac09446ad3b832763bd9d110}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-916990-32-X}
+      \field{title}{Strategies of Genius, Volume 1: {{Aristotle}}, Sherlock Holmes, Walt Disney, Wolfgang Amadeus Mozart}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com/books/about/Strategies_of_Genius_Aristotle_Sherlock.html?id=jAQRAQAAIAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books/about/Strategies_of_Genius_Aristotle_Sherlock.html?id=jAQRAQAAIAAJ
+      \endverb
+    \endentry
+    \entry{dreambank}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=8a48eeae5e9b7f988c596f438184221a}{%
            family={Domhoff},
@@ -383,21 +973,569 @@
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{10538100}
       \field{journaltitle}{Consciousness and Cognition}
-      \field{langid}{english}
       \field{month}{12}
+      \field{note}{Publisher: Elsevier {BV}}
       \field{number}{4}
-      \field{title}{Studying Dream Content Using the Archive and Search Engine on {{DreamBank}}.Net}
+      \field{title}{Studying dream content using the archive and search engine on {DreamBank}.net}
       \field{volume}{17}
       \field{year}{2008}
+      \field{dateera}{ce}
       \field{pages}{1238\bibrangedash 1247}
       \range{pages}{10}
       \verb{doi}
       \verb 10.1016/j.concog.2008.06.010
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.concog.2008.06.010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.concog.2008.06.010
+      \endverb
+    \endentry
+    \entry{dragos-etal-2022-angry}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=91953873734ab73919c38b285bbd444a}{%
+           family={Dragos},
+           familyi={D\bibinitperiod},
+           given={Valentina},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35c85177b03074e875c67dce2284df78}{%
+           family={Battistelli},
+           familyi={B\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7095238857420574e3d8082521d849b2}{%
+           family={Etienne},
+           familyi={E\bibinitperiod},
+           given={Aline},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecec2b561672c71c285b97882392e26c}{%
+           family={Constable},
+           familyi={C\bibinitperiod},
+           given={Yolène},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{e9b2831855eb116cf9c7389b5e25063b}
+      \strng{fullhash}{84bce8bffdf5ef0d00829a59bcb1a156}
+      \strng{bibnamehash}{e9b2831855eb116cf9c7389b5e25063b}
+      \strng{authorbibnamehash}{e9b2831855eb116cf9c7389b5e25063b}
+      \strng{authornamehash}{e9b2831855eb116cf9c7389b5e25063b}
+      \strng{authorfullhash}{84bce8bffdf5ef0d00829a59bcb1a156}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper examines the role of emotion annotations to characterize extremist content released on social platforms. The analysis of extremist content is important to identify user emotions towards some extremist ideas and to highlight the root cause of where emotions and extremist attitudes merge together. To address these issues our methodology combines knowledge from sociological and linguistic annotations to explore French extremist content collected online. For emotion linguistic analysis, the solution presented in this paper relies on a complex linguistic annotation scheme. The scheme was used to annotate extremist text corpora in French. Data sets were collected online by following semi-automatic procedures for content selection and validation. The paper describes the integrated annotation scheme, the annotation protocol that was set-up for French corpora annotation and the results, e.g. agreement measures and remarks on annotation disagreements. The aim of this work is twofold: first, to provide a characterization of extremist contents; second, to validate the annotation scheme and to test its capacity to capture and describe various aspects of emotions.}
+      \field{booktitle}{Proceedings of the thirteenth language resources and evaluation conference}
+      \field{month}{6}
+      \field{title}{Angry or sad ? Emotion annotation for extremist content characterisation}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{193\bibrangedash 201}
+      \range{pages}{9}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.lrec-1.21
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.lrec-1.21
+      \endverb
+    \endentry
+    \entry{ekman_basic_1999}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f57fd5f1b9feec71b7d8f0ce35b57dbc}{%
+           family={Ekman},
+           familyi={E\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=f8f6bbf588ede38b2013d88d3be44d4e}{%
+           family={Dalgleish},
+           familyi={D\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a5ab13007e6d4e7c07dcbe6c1b2782ea}{%
+           family={Power},
+           familyi={P\bibinitperiod},
+           given={Mike\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chichester}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons Ltd}%
+      }
+      \strng{namehash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{fullhash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{bibnamehash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{authorbibnamehash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{authornamehash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{authorfullhash}{f57fd5f1b9feec71b7d8f0ce35b57dbc}
+      \strng{editorbibnamehash}{d540c80b299df1e556c088324879cbd9}
+      \strng{editornamehash}{d540c80b299df1e556c088324879cbd9}
+      \strng{editorfullhash}{d540c80b299df1e556c088324879cbd9}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of cognition and emotion}
+      \field{title}{Basic emotions}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{45\bibrangedash 60}
+      \range{pages}{16}
+      \verb{file}
+      \verb Available Version (via Google Scholar):/Users/bonard/switchdrive2/Zotero/storage/E852PHBL/Ekman - 1999 - Basic emotions.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{etienne-etal-2022-psycho}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=7095238857420574e3d8082521d849b2}{%
+           family={Etienne},
+           familyi={E\bibinitperiod},
+           given={Aline},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35c85177b03074e875c67dce2284df78}{%
+           family={Battistelli},
+           familyi={B\bibinitperiod},
+           given={Delphine},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=888631fb71ead79c28b6f5255ba04a8f}{%
+           family={Lecorvé},
+           familyi={L\bibinitperiod},
+           given={Gwénolé},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Marseille, France}%
+      }
+      \list{publisher}{1}{%
+        {European Language Resources Association}%
+      }
+      \strng{namehash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \strng{fullhash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \strng{bibnamehash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \strng{authorbibnamehash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \strng{authornamehash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \strng{authorfullhash}{3a1873ce109ee1a164aa23cce9ab1035}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a scheme for emotion annotation and its manual application on a genre-diverse corpus of texts written in French. The methodology introduced here emphasizes the necessity of clarifying the main concepts implied by the analysis of emotions as they are expressed in texts, before conducting a manual annotation campaign. After explaining whatentails a deeply linguistic perspective on emotion expression modeling, we present a few {NLP} works that share some common points with this perspective and meticulously compare our approach with them. We then highlight some interesting quantitative results observed on our annotated corpus. The most notable interactions are on the one hand between emotion expression modes and genres of texts, and on the other hand between emotion expression modes and emotional categories. These observation corroborate and clarify some of the results already mentioned in other {NLP} works on emotion annotation.}
+      \field{booktitle}{Proceedings of the thirteenth language resources and evaluation conference}
+      \field{month}{6}
+      \field{title}{A (psycho-)linguistically motivated scheme for annotating and exploring emotions in a genre-diverse corpus}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{603\bibrangedash 612}
+      \range{pages}{10}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2022.lrec-1.64
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2022.lrec-1.64
+      \endverb
+    \endentry
+    \entry{Finkel2022}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=509dc3f55025549291f16bed8cd64ba1}{%
+           family={Finkel},
+           familyi={F\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {Dunod}%
+      }
+      \strng{namehash}{509dc3f55025549291f16bed8cd64ba1}
+      \strng{fullhash}{509dc3f55025549291f16bed8cd64ba1}
+      \strng{bibnamehash}{509dc3f55025549291f16bed8cd64ba1}
+      \strng{authorbibnamehash}{509dc3f55025549291f16bed8cd64ba1}
+      \strng{authornamehash}{509dc3f55025549291f16bed8cd64ba1}
+      \strng{authorfullhash}{509dc3f55025549291f16bed8cd64ba1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manuel d'analyse cognitive des émotions: Théorie et applications}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{hvdc}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=571d3101de188dd82382d688716814b5}{%
+           family={Flanagan},
+           familyi={F\bibinitperiod},
+           given={H.\bibnamedelimi M.},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{571d3101de188dd82382d688716814b5}
+      \strng{fullhash}{571d3101de188dd82382d688716814b5}
+      \strng{bibnamehash}{571d3101de188dd82382d688716814b5}
+      \strng{authorbibnamehash}{571d3101de188dd82382d688716814b5}
+      \strng{authornamehash}{571d3101de188dd82382d688716814b5}
+      \strng{authorfullhash}{571d3101de188dd82382d688716814b5}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The British Journal of Psychiatry}
+      \field{note}{Publisher: Cambridge University Press}
+      \field{number}{490}
+      \field{title}{The content analysis of dreams. By calvin S. Hall and robert L. Van de castle new york: The century psychology series. 1966. Pp. 320. Price not given.}
+      \field{volume}{112}
+      \field{year}{1966}
+      \field{dateera}{ce}
+      \field{pages}{963\bibrangedash 964}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1192/bjp.112.490.963
+      \endverb
+    \endentry
+    \entry{ourdreams}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=1f288d428698987f86c48c518626e41b}{%
+           family={Fogli},
+           familyi={F\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=578dd0d02865626d9fe222b65cec8558}{%
+           family={Aiello},
+           familyi={A\bibinitperiod},
+           given={Luca\bibnamedelima Maria},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27e76c15e2056efb784afbddc01f48fa}{%
+           family={Quercia},
+           familyi={Q\bibinitperiod},
+           given={Daniele},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a92c1576cde7af9b242f4f4871d24f35}
+      \strng{fullhash}{a92c1576cde7af9b242f4f4871d24f35}
+      \strng{bibnamehash}{a92c1576cde7af9b242f4f4871d24f35}
+      \strng{authorbibnamehash}{a92c1576cde7af9b242f4f4871d24f35}
+      \strng{authornamehash}{a92c1576cde7af9b242f4f4871d24f35}
+      \strng{authorfullhash}{a92c1576cde7af9b242f4f4871d24f35}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Royal Society Open Science}
+      \field{month}{8}
+      \field{note}{Publisher: The Royal Society}
+      \field{number}{8}
+      \field{title}{Our dreams, our selves: automatic analysis of dream reports}
+      \field{volume}{7}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{192080}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsos.192080
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1098/rsos.192080
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1098/rsos.192080
+      \endverb
+    \endentry
+    \entry{ball_conversational_2024}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fcdcaa0459cb4e8e1cf89c4d5df01304}{%
+           family={Foppolo},
+           familyi={F\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3fb6c8308bb4616ed1dbc2135b4f3d11}{%
+           family={Mazzaggio},
+           familyi={M\bibinitperiod},
+           given={Greta},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=387d949cdd42c2b2d8c93e3622e1b122}{%
+           family={Ball},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=bad81b4436da220e126a7455475ede71}{%
+           family={Müller},
+           familyi={M\bibinitperiod},
+           given={Nicole},
+           giveni={N\bibinitperiod}}}%
+        {{hash=199620cc17247f8aa43ec5f7a8af52c0}{%
+           family={Spencer},
+           familyi={S\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{fullhash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{bibnamehash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{authorbibnamehash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{authornamehash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{authorfullhash}{6a3fff8d1ce6dc2727ba5d91f97cfa95}
+      \strng{editorbibnamehash}{7d5263b126f15263b6298195b3661027}
+      \strng{editornamehash}{7d5263b126f15263b6298195b3661027}
+      \strng{editorfullhash}{7d5263b126f15263b6298195b3661027}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The {Handbook} of {Clinical} {Linguistics}, {Second} {Edition}}
+      \field{edition}{1}
+      \field{isbn}{978-1-119-87590-1 978-1-119-87594-9}
+      \field{month}{1}
+      \field{title}{Conversational {Implicature} and {Communication} {Disorders}}
+      \field{urlday}{13}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 27}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/9781119875949.ch2
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/9781119875949.ch2
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/10.1002/9781119875949.ch2
+      \endverb
+    \endentry
+    \entry{gandhiUnderstandingSocialReasoning2023}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=c298330f220776bd67aabaac28bd81cc}{%
+           family={Gandhi},
+           familyi={G\bibinitperiod},
+           given={Kanishk},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1ffc0e473ae45f19b2acbab148fec34d}{%
+           family={Fränken},
+           familyi={F\bibinitperiod},
+           given={Jan-Philipp},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7984042ee7d500f82c1c171b2054899}{%
+           family={Gerstenberg},
+           familyi={G\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=17c6b9edbad988db7d426fba005cecff}{%
+           family={Goodman},
+           familyi={G\bibinitperiod},
+           given={Noah\bibnamedelima D.},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e308785bc12a1c4fcd3e466a5df7979d}
+      \strng{fullhash}{d0339cbbf67dc6c269181e630177fef5}
+      \strng{bibnamehash}{e308785bc12a1c4fcd3e466a5df7979d}
+      \strng{authorbibnamehash}{e308785bc12a1c4fcd3e466a5df7979d}
+      \strng{authornamehash}{e308785bc12a1c4fcd3e466a5df7979d}
+      \strng{authorfullhash}{d0339cbbf67dc6c269181e630177fef5}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As Large Language Models (LLMs) become increasingly integrated into our everyday lives, understanding their ability to comprehend human mental states becomes critical for ensuring effective interactions. However, despite the recent attempts to assess the Theory-of-Mind (ToM) reasoning capabilities of LLMs, the degree to which these models can align with human ToM remains a nuanced topic of exploration. This is primarily due to two distinct challenges: (1) the presence of inconsistent results from previous evaluations, and (2) concerns surrounding the validity of existing evaluation methodologies. To address these challenges, we present a novel framework for procedurally generating evaluations with LLMs by populating causal templates. Using our framework, we create a new social reasoning benchmark (BigToM) for LLMs which consists of 25 controls and 5,000 model-written evaluations. We find that human participants rate the quality of our benchmark higher than previous crowd-sourced evaluations and comparable to expert-written evaluations. Using BigToM, we evaluate the social reasoning capabilities of a variety of LLMs and compare model performances with human performance. Our results suggest that GPT4 has ToM capabilities that mirror human inference patterns, though less reliable, while other LLMs struggle.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{12}
+      \field{title}{Understanding {{Social Reasoning}} in {{Language Models}} with {{Language Models}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2306.15448
+      \endverb
+      \verb{eprint}
+      \verb 2306.15448
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction}
+    \endentry
+    \entry{granger1968essai}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fe4e8eaa0a6fb67ee7ef0380d703a20b}{%
+           family={Granger},
+           familyi={G\bibinitperiod},
+           given={Gilles-Gaston},
+           giveni={G\bibinithyphendelim G\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Paris}%
+      }
+      \list{publisher}{1}{%
+        {A. Colin}%
+      }
+      \strng{namehash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \strng{fullhash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \strng{bibnamehash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \strng{authorbibnamehash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \strng{authornamehash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \strng{authorfullhash}{fe4e8eaa0a6fb67ee7ef0380d703a20b}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Essai d'une Philosophie Du Style}
+      \field{year}{1968}
+      \field{dateera}{ce}
+    \endentry
+    \entry{GUTMANMUSIC2022103428}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=75a0200eb55e7b4097c49698fee0127d}{%
+           family={Gutman\bibnamedelima Music},
+           familyi={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Maja},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fa0fc236b77bc048f4b74ed9a5a606d}{%
+           family={Holur},
+           familyi={H\bibinitperiod},
+           given={Pavan},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9ec034df6613a31e5f87450d0e3c33d}{%
+           family={Bulkeley},
+           familyi={B\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \strng{fullhash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \strng{bibnamehash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \strng{authorbibnamehash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \strng{authornamehash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \strng{authorfullhash}{4107415cb2ebe8eb81d0e6243bcb5ddf}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article demonstrates that an automated system of linguistic analysis can be developed – the Oneirograph – to analyze large collections of dreams and computationally map their contents in terms of typical situations involving an interplay of characters, activities, and settings. Focusing the analysis first on the twin situations of fighting and fleeing, the results provide densely detailed empirical evidence of the underlying semantic structures of typical dreams. The results also indicate that the Oneirograph analytic system can be applied to other typical dream situations as well (e.g., flying, falling), each of which can be computationally mapped in terms of a distinctive constellation of characters, activities, and settings.}
+      \field{issn}{1053-8100}
+      \field{journaltitle}{Consciousness and Cognition}
+      \field{title}{Mapping dreams in a computational space: A phrase-level model for analyzing Fight/Flight and other typical situations in dream reports}
+      \field{volume}{106}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{103428}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.concog.2022.103428
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S105381002200160X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S105381002200160X
+      \endverb
+      \keyw{Dreams,Fight/Flight,Flying/Falling,Natural Language Processing ({NLP}),Network analysis,Pattern quantification,Representation learning,Semantic structure,Typical situation}
+    \endentry
+    \entry{hadamard1945essay}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=867a2303b0c6cc9d6fb2010bbc2f6fbe}{%
+           family={Hadamard},
+           familyi={H\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Princeton, N.J.}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \strng{fullhash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \strng{bibnamehash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \strng{authorbibnamehash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \strng{authornamehash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \strng{authorfullhash}{867a2303b0c6cc9d6fb2010bbc2f6fbe}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Essay on the Psychology of Invention in the Mathematical Field}
+      \field{year}{1945}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com/books?id=W2U4AAAAMAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?id=W2U4AAAAMAAJ
       \endverb
     \endentry
     \entry{hallidayIntroductionFunctionalGrammar2014a}{book}{}
@@ -452,6 +1590,382 @@
       \verb 10.4324/9780203783771
       \endverb
     \endentry
+    \entry{hofmann-etal-2020-appraisal}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=89bc403028a457484a59f671cc486d48}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5f4d2d4557cd530abfddfca75e9a4fe4}{%
+           family={Troiano},
+           familyi={T\bibinitperiod},
+           given={Enrica},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c7bc9eb97cfde68528e81194c14a3566}{%
+           family={Sassenberg},
+           familyi={S\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Barcelona, Spain (Online)}%
+      }
+      \list{publisher}{1}{%
+        {International Committee on Computational Linguistics}%
+      }
+      \strng{namehash}{450f5d842746501dae869be09b17eef4}
+      \strng{fullhash}{395043bdcd9ba4b53949fbba30009230}
+      \strng{bibnamehash}{450f5d842746501dae869be09b17eef4}
+      \strng{authorbibnamehash}{450f5d842746501dae869be09b17eef4}
+      \strng{authornamehash}{450f5d842746501dae869be09b17eef4}
+      \strng{authorfullhash}{395043bdcd9ba4b53949fbba30009230}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 28th international conference on computational linguistics}
+      \field{month}{12}
+      \field{title}{Appraisal theories for emotion classification in text}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{125\bibrangedash 138}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.18653/v1/2020.coling-main.11
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/2020.coling-main.11
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2020.coling-main.11
+      \endverb
+    \endentry
+    \entry{husserl2012ideas}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=bc4e518ab332880cc4d6b85ccc3c4e03}{%
+           family={Husserl},
+           familyi={H\bibinitperiod},
+           given={Edmund},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Dordrecht}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{fullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{bibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorbibnamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authornamehash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \strng{authorfullhash}{bc4e518ab332880cc4d6b85ccc3c4e03}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{illustrated}
+      \field{isbn}{978-94-009-7445-6}
+      \field{title}{Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy: {{First}} Book: {{General}} Introduction to a Pure Phenomenology}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.com/books/about/Ideas_Pertaining_to_a_Pure_Phenomenology.html?id=geEsBAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books/about/Ideas_Pertaining_to_a_Pure_Phenomenology.html?id=geEsBAAAQBAJ
+      \endverb
+    \endentry
+    \entry{kim-klinger-2019-analysis}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=1,uniquepart=given,hash=64d4666577407979d0b71c4f95c66a6c}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Evgeny},
+           giveni={E\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Florence, Italy}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \strng{fullhash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \strng{bibnamehash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \strng{authorbibnamehash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \strng{authornamehash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \strng{authorfullhash}{6ae0fbc9be4753087e3ef87edfc5ae89}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Second Workshop on Storytelling}
+      \field{month}{8}
+      \field{title}{An Analysis of Emotion Communication Channels in Fan-Fiction: Towards Emotional Storytelling}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{56\bibrangedash 64}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.18653/v1/W19-3406
+      \endverb
+      \verb{urlraw}
+      \verb https://aclanthology.org/W19-3406
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/W19-3406
+      \endverb
+    \endentry
+    \entry{kimFANToMBenchmarkStresstesting2023}{misc}{}
+      \name{author}{7}{}{%
+        {{un=1,uniquepart=given,hash=b0b312b71e9f0f0ba01027017c18717b}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyunwoo},
+           giveni={H\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=77137c320a8b03d67130db50691be796}{%
+           family={Sclar},
+           familyi={S\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ba22c75d7aa23d8ca51f50038d130ed6}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xuhui},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62c2d350eff3c9b76d6355eea3ea9788}{%
+           family={Bras},
+           familyi={B\bibinitperiod},
+           given={Ronan\bibnamedelima Le},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8909d30b1960f92d393725f3da0abaad}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Gunhee},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64d48b2f4b0370b6692c87cfc65f19b9}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Yejin},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d08a8223cbc0816afc54dd2f7f7eb96c}{%
+           family={Sap},
+           familyi={S\bibinitperiod},
+           given={Maarten},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{748b979c33a155851428d4c7e7e75266}
+      \strng{fullhash}{cffc4e5a2ca6b23ec3c1fd8af284a25e}
+      \strng{bibnamehash}{748b979c33a155851428d4c7e7e75266}
+      \strng{authorbibnamehash}{748b979c33a155851428d4c7e7e75266}
+      \strng{authornamehash}{748b979c33a155851428d4c7e7e75266}
+      \strng{authorfullhash}{cffc4e5a2ca6b23ec3c1fd8af284a25e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Theory of mind (ToM) evaluations currently focus on testing models using passive narratives that inherently lack interactivity. We introduce FANToM, a new benchmark designed to stress-test ToM within information-asymmetric conversational contexts via question answering. Our benchmark draws upon important theoretical requisites from psychology and necessary empirical considerations when evaluating large language models (LLMs). In particular, we formulate multiple types of questions that demand the same underlying reasoning to identify illusory or false sense of ToM capabilities in LLMs. We show that FANToM is challenging for state-of-the-art LLMs, which perform significantly worse than humans even with chain-of-thought reasoning or fine-tuning.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{shorttitle}{{{FANToM}}}
+      \field{title}{{{FANToM}}: {{A Benchmark}} for {{Stress-testing Machine Theory}} of {{Mind}} in {{Interactions}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.15421
+      \endverb
+      \verb{eprint}
+      \verb 2310.15421
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{lazarus_progress_1991}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3c3711bd375c3f88df9dc526de14be67}{%
+           family={Lazarus},
+           familyi={L\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c3711bd375c3f88df9dc526de14be67}
+      \strng{fullhash}{3c3711bd375c3f88df9dc526de14be67}
+      \strng{bibnamehash}{3c3711bd375c3f88df9dc526de14be67}
+      \strng{authorbibnamehash}{3c3711bd375c3f88df9dc526de14be67}
+      \strng{authornamehash}{3c3711bd375c3f88df9dc526de14be67}
+      \strng{authorfullhash}{3c3711bd375c3f88df9dc526de14be67}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{American psychologist}
+      \field{number}{8}
+      \field{title}{Progress on a cognitive-motivational-relational theory of emotion.}
+      \field{volume}{46}
+      \field{year}{1991}
+      \field{dateera}{ce}
+      \field{pages}{819}
+      \range{pages}{1}
+      \verb{file}
+      \verb Full Text:/Users/bonard/switchdrive2/Zotero/storage/FJZ759EF/1991-32296-001.html:text/html
+      \endverb
+    \endentry
+    \entry{maHolisticLandscapeSituated2023}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=55e819b11a33eb70ba0f3ae06b4b392e}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Ziqiao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e59d257eb2fc6e93f3909e13625e7989}{%
+           family={Sansom},
+           familyi={S\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f2885d73fec728c8da7c20a6c295e74}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Run},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b8d8d0f2eea7025356be957bed3afa4e}{%
+           family={Chai},
+           familyi={C\bibinitperiod},
+           given={Joyce},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{14b3f1212e76fa7e0ae18657c6617f90}
+      \strng{fullhash}{56c31060927ef16ae90ab00925b5d4a9}
+      \strng{bibnamehash}{14b3f1212e76fa7e0ae18657c6617f90}
+      \strng{authorbibnamehash}{14b3f1212e76fa7e0ae18657c6617f90}
+      \strng{authornamehash}{14b3f1212e76fa7e0ae18657c6617f90}
+      \strng{authorfullhash}{56c31060927ef16ae90ab00925b5d4a9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Large Language Models (LLMs) have generated considerable interest and debate regarding their potential emergence of Theory of Mind (ToM). Several recent inquiries reveal a lack of robust ToM in these models and pose a pressing demand to develop new benchmarks, as current ones primarily focus on different aspects of ToM and are prone to shortcuts and data leakage. In this position paper, we seek to answer two road-blocking questions: (1) How can we taxonomize a holistic landscape of machine ToM? (2) What is a more effective evaluation protocol for machine ToM? Following psychological studies, we taxonomize machine ToM into 7 mental state categories and delineate existing benchmarks to identify under-explored aspects of ToM. We argue for a holistic and situated evaluation of ToM to break ToM into individual components and treat LLMs as an agent who is physically situated in environments and socially situated in interactions with humans. Such situated evaluation provides a more comprehensive assessment of mental states and potentially mitigates the risk of shortcuts and data leakage. We further present a pilot study in a grid world setup as a proof of concept. We hope this position paper can facilitate future research to integrate ToM with LLMs and offer an intuitive means for researchers to better position their work in the landscape of ToM. Project page: https://github.com/Mars-tin/awesome-theory-of-mind}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{Towards {{A Holistic Landscape}} of {{Situated Theory}} of {{Mind}} in {{Large Language Models}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.19619
+      \endverb
+      \verb{eprint}
+      \verb 2310.19619
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
+    \entry{McNamara_Duffy-Deno_Marsh_Marsh_2019}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=598fed972b86a409ca839b9e5f1bd617}{%
+           family={{McNamara}},
+           familyi={M\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8db2ab9bd819517a31b87b2e643d036}{%
+           family={Duffy-Deno},
+           familyi={D\bibinithyphendelim D\bibinitperiod},
+           given={Kelly},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b26eea78df3c91801599697e094820e2}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b65448c57457c19c65703ffc50331a7}{%
+           family={Marsh},
+           familyi={M\bibinitperiod},
+           given={Thomas\bibnamedelima Jr.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f3c524e66d4ec8e0fade9639a3045b72}
+      \strng{fullhash}{79afe6a97f09caa6b12e4bafe5381280}
+      \strng{bibnamehash}{f3c524e66d4ec8e0fade9639a3045b72}
+      \strng{authorbibnamehash}{f3c524e66d4ec8e0fade9639a3045b72}
+      \strng{authornamehash}{f3c524e66d4ec8e0fade9639a3045b72}
+      \strng{authorfullhash}{79afe6a97f09caa6b12e4bafe5381280}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{\&amp;lt;p\&amp;gt;We developed a dream content analysis system ({DCAS}) based on an artificial intelligence ({AI}) algorithm that was trained using a relatively large corpus of over 35,000 dreams.\&amp;amp;nbsp; This sample of dreams were supplied by 424 female and 211 male users over 4 years who had posted them at the dream posting website and app Dreamboard.com. Building upon previous dream content ontologies developed by Hall, Van de Castle, Domhoff and Bulkeley, forty-seven reliably identified dream themes emerged from repeated application of algorithm and agent training procedures. {DCAS} reproduced most of the key dream content themes from these previous ontologies but also returned some unexpected findings. Mixed-model estimation detected significant male-female content differences for 34 dream themes, with female dreams evidencing higher incidence percentages for most themes, but effect sizes were small. Mixed-model logistic regression identified those themes that best predicted self-reported positive or negative mood associated with dreams.\&amp;amp;nbsp; We conclude that the {AI}-based {DCAS} algorithm developed here is a promising tool for detailed analyses of dream content patterns.\&amp;lt;/p\&amp;gt;}
+      \field{journaltitle}{International Journal of Dream Research}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{Dream content analysis using Artificial Intelligence}
+      \field{volume}{12}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{42\bibrangedash 52}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.11588/ijodr.2019.1.48744
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.ub.uni-heidelberg.de/index.php/IJoDR/article/view/48744
+      \endverb
+      \verb{url}
+      \verb https://journals.ub.uni-heidelberg.de/index.php/IJoDR/article/view/48744
+      \endverb
+    \endentry
     \entry{micheliEsquisseDuneTypologie2013}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e315acd314c2a716f07000213681abf3}{%
@@ -470,8 +1984,10 @@
       \strng{authorbibnamehash}{e315acd314c2a716f07000213681abf3}
       \strng{authornamehash}{e315acd314c2a716f07000213681abf3}
       \strng{authorfullhash}{e315acd314c2a716f07000213681abf3}
+      \field{extraname}{1}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -492,6 +2008,352 @@
       \endverb
       \keyw{Analyse du discours,Emotions,Modele d'analyse,notion,Sciences du langage,Semiotisation}
     \endentry
+    \entry{micheli2013}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e315acd314c2a716f07000213681abf3}{%
+           family={Micheli},
+           familyi={M\bibinitperiod},
+           given={Raphaël},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e315acd314c2a716f07000213681abf3}
+      \strng{fullhash}{e315acd314c2a716f07000213681abf3}
+      \strng{bibnamehash}{e315acd314c2a716f07000213681abf3}
+      \strng{authorbibnamehash}{e315acd314c2a716f07000213681abf3}
+      \strng{authornamehash}{e315acd314c2a716f07000213681abf3}
+      \strng{authorfullhash}{e315acd314c2a716f07000213681abf3}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Semen}
+      \field{month}{4}
+      \field{number}{35}
+      \field{title}{Esquisse dune typologie des différents modes de sémiotisation verbale de lémotion}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.4000/semen.9795
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.4000/semen.9795
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4000/semen.9795
+      \endverb
+    \endentry
+    \entry{miller-1994-wordnet}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=52cf88006a41a8cd9aab3bcb5e428b80}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={George\bibnamedelima A.},
+           giveni={G\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \strng{fullhash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \strng{bibnamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \strng{authorbibnamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \strng{authornamehash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \strng{authorfullhash}{52cf88006a41a8cd9aab3bcb5e428b80}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Human Language Technology: Proceedings of a Workshop held at Plainsboro, New Jersey, March 8-11, 1994}
+      \field{title}{{WordNet}: A Lexical Database for English}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://aclanthology.org/H94-1111
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/H94-1111
+      \endverb
+    \endentry
+    \entry{nealSurveyingStylometryTechniques2017}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=024bc40f766cccf42c11fef25d024883}{%
+           family={Neal},
+           familyi={N\bibinitperiod},
+           given={Tempestt},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=caf19a265895ce36798e1593f895ee3e}{%
+           family={Sundararajan},
+           familyi={S\bibinitperiod},
+           given={Kalaivani},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c190b2d17b0b56171eab5d9918dd3d37}{%
+           family={Fatima},
+           familyi={F\bibinitperiod},
+           given={Aneez},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ef29a9fc9613121005623ba539c3f3d}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Yiming},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e064d9ffb425bfb28968268b09764c4f}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Yingfei},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d642d4439a4b5031a27df3013e3689c3}{%
+           family={Woodard},
+           familyi={W\bibinitperiod},
+           given={Damon},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8dc976c6e082dab7bfba90ce51b73480}
+      \strng{fullhash}{b0aac31c073e2a5fda01d4966a853baa}
+      \strng{bibnamehash}{8dc976c6e082dab7bfba90ce51b73480}
+      \strng{authorbibnamehash}{8dc976c6e082dab7bfba90ce51b73480}
+      \strng{authornamehash}{8dc976c6e082dab7bfba90ce51b73480}
+      \strng{authorfullhash}{b0aac31c073e2a5fda01d4966a853baa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The analysis of authorial style, termed stylometry, assumes that style is quantifiably measurable for evaluation of distinctive qualities. Stylometry research has yielded several methods and tools over the past 200 years to handle a variety of challenging cases. This survey reviews several articles within five prominent subtasks: authorship attribution, authorship verification, authorship profiling, stylochronometry, and adversarial stylometry. Discussions on datasets, features, experimental techniques, and recent approaches are provided. Further, a current research challenge lies in the inability of authorship analysis techniques to scale to a large number of authors with few text samples. Here, we perform an extensive performance analysis on a corpus of 1,000 authors to investigate authorship attribution, verification, and clustering using 14 algorithms from the literature. Finally, several remaining research challenges are discussed, along with descriptions of various open-source and commercial software that may be useful for stylometry subtasks.}
+      \field{issn}{0360-0300}
+      \field{journaltitle}{Acm Computing Surveys}
+      \field{number}{6}
+      \field{shortjournal}{ACM Comput. Surv.}
+      \field{title}{Surveying Stylometry Techniques and Applications}
+      \field{volume}{50}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{86:1\bibrangedash 86:36}
+      \range{pages}{-1}
+    \endentry
+    \entry{paechEQBenchEmotionalIntelligence2024}{misc}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7dcf49eed76b9fdefb7cc27f6177b335}{%
+           family={Paech},
+           familyi={P\bibinitperiod},
+           given={Samuel\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \strng{fullhash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \strng{bibnamehash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \strng{authorbibnamehash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \strng{authornamehash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \strng{authorfullhash}{7dcf49eed76b9fdefb7cc27f6177b335}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce EQ-Bench, a novel benchmark designed to evaluate aspects of emotional intelligence in Large Language Models (LLMs). We assess the ability of LLMs to understand complex emotions and social interactions by asking them to predict the intensity of emotional states of characters in a dialogue. The benchmark is able to discriminate effectively between a wide range of models. We find that EQ-Bench correlates strongly with comprehensive multi-domain benchmarks like MMLU (Hendrycks et al., 2020) (r=0.97), indicating that we may be capturing similar aspects of broad intelligence. Our benchmark produces highly repeatable results using a set of 60 English-language questions. We also provide open-source code for an automated benchmarking pipeline at https://github.com/EQ-bench/EQ-Bench and a leaderboard at https://eqbench.com}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{shorttitle}{{{EQ-Bench}}}
+      \field{title}{{{EQ-Bench}}: {{An Emotional Intelligence Benchmark}} for {{Large Language Models}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2312.06281
+      \endverb
+      \verb{eprint}
+      \verb 2312.06281
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language,I.2.7}
+    \endentry
+    \entry{plutchik}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=050935e4cfedc32e862f19fc78769796}{%
+           family={Plutchik},
+           familyi={P\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{050935e4cfedc32e862f19fc78769796}
+      \strng{fullhash}{050935e4cfedc32e862f19fc78769796}
+      \strng{bibnamehash}{050935e4cfedc32e862f19fc78769796}
+      \strng{authorbibnamehash}{050935e4cfedc32e862f19fc78769796}
+      \strng{authornamehash}{050935e4cfedc32e862f19fc78769796}
+      \strng{authorfullhash}{050935e4cfedc32e862f19fc78769796}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00030996}
+      \field{journaltitle}{American Scientist}
+      \field{note}{Publisher: Sigma Xi, The Scientific Research Society}
+      \field{number}{4}
+      \field{title}{The Nature of Emotions: Human emotions have deep evolutionary roots, a fact that may explain their complexity and provide tools for clinical practice}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
+      \field{urlyear}{2022}
+      \field{volume}{89}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{344\bibrangedash 350}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/27857503
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/27857503
+      \endverb
+    \endentry
+    \entry{russell_core_1999}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ee6848fb2fac892f7b0fe7674e81f502}{%
+           family={Russell},
+           familyi={R\bibinitperiod},
+           given={James\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ea6353453f3557bcb1b18f1b55a7335}{%
+           family={Barrett},
+           familyi={B\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{050ea397e1c559fa6167a43eaba08296}
+      \strng{fullhash}{050ea397e1c559fa6167a43eaba08296}
+      \strng{bibnamehash}{050ea397e1c559fa6167a43eaba08296}
+      \strng{authorbibnamehash}{050ea397e1c559fa6167a43eaba08296}
+      \strng{authornamehash}{050ea397e1c559fa6167a43eaba08296}
+      \strng{authorfullhash}{050ea397e1c559fa6167a43eaba08296}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{What is the structure of emotion? Emotion is too broad a class of events to be a single scientific category, and no one structure suffices. As an illustration, core affect is distinguished from prototypical emotional episode. Core affect refers to consciously accessible elemental processes of pleasure and activation, has many causes, and is always present. Its structure involves two bipolar dimensions. Prototypical emotional episode refers to a complex process that unfolds over time, involves causally connected subevents (antecedent; appraisal; physiological, affective, and cognitive changes; behavioral response; self-categorization), has one perceived cause, and is rare. Its structure involves categories (anger, fear, shame, jealousy, etc.) vertically organized as a fuzzy hierarchy and horizontally organized as part of a circumplex.}
+      \field{journaltitle}{Journal of personality and social psychology}
+      \field{month}{6}
+      \field{shorttitle}{Core affect, prototypical emotional episodes, and other things called emotion}
+      \field{title}{Core affect, prototypical emotional episodes, and other things called emotion: {Dissecting} the elephant}
+      \field{volume}{76}
+      \field{year}{1999}
+      \field{dateera}{ce}
+      \field{pages}{805\bibrangedash 19}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1037//0022-3514.76.5.805
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/Users/bonard/switchdrive2/Zotero/storage/I6M5JR2P/Russell et Barrett - 1999 - Core affect, prototypical emotional episodes, and .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{schachter_cognitive_1962}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=43579cf723cecab2dda1a9fcdb589f9a}{%
+           family={Schachter},
+           familyi={S\bibinitperiod},
+           given={Stanley},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dad95de74452e6e4cb0934d1a882079e}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Jerome},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \strng{fullhash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \strng{bibnamehash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \strng{authorbibnamehash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \strng{authornamehash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \strng{authorfullhash}{ac5a512b70bd1e37a5a1d5333369d00a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Psychological review}
+      \field{note}{Publisher: American Psychological Association}
+      \field{number}{5}
+      \field{title}{Cognitive, social, and physiological determinants of emotional state.}
+      \field{volume}{69}
+      \field{year}{1962}
+      \field{dateera}{ce}
+      \field{pages}{379}
+      \range{pages}{1}
+      \verb{file}
+      \verb Full Text:/Users/bonard/switchdrive2/Zotero/storage/VZF77N6F/Schachter et Singer - 1962 - Cognitive, social, and physiological determinants .pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{schererTheoryConvergenceEmotion2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d58a2db7c63b1b03e551e000c83c2a30}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Klaus\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{fullhash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{bibnamehash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{authorbibnamehash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{authornamehash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \strng{authorfullhash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the last century, emotion research has been beset by the problem of major disagreements with respect to the definition of the phenomenon and an abundance of different theories. Arguably, these divergences have had adverse effects on theory development, on the theoretical foundations of empirical research, and on knowledge accumulation in the study of emotion. Similar problems have been encountered in other areas of behavioural science. Increasingly, there have been calls to work towards some form of theory integration. In contrast, here an effort is made to show that a reasonable degree of theory convergence in the area of emotion science can be attained by adopting a design feature-based working definition of emotion and highlighting the basic agreement on the components of the dynamic emotion process. The aim is to invite constructive discussion on communalities and divergences between different theories and foster the development of more complementary theoretical frameworks to guide future empirical research.}
+      \field{eprinttype}{pubmed}
+      \field{issn}{0269-9931}
+      \field{journaltitle}{Cognition and Emotion}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Theory Convergence in Emotion Science Is Timely and Realistic}
+      \field{volume}{36}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{154\bibrangedash 170}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1080/02699931.2021.1973378
+      \endverb
+      \verb{eprint}
+      \verb 35188091
+      \endverb
+      \keyw{emotion components,emotion definition,emotion process,Emotion theories,theory convergence}
+    \endentry
     \entry{schererTheoryConvergenceEmotion2022a}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d58a2db7c63b1b03e551e000c83c2a30}{%
@@ -510,8 +2372,10 @@
       \strng{authorbibnamehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{authornamehash}{d58a2db7c63b1b03e551e000c83c2a30}
       \strng{authorfullhash}{d58a2db7c63b1b03e551e000c83c2a30}
+      \field{extraname}{2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -534,9 +2398,639 @@
       \endverb
       \keyw{emotion components,emotion definition,emotion process,Emotion theories,theory convergence}
     \endentry
+    \entry{sharmaCognitiveReframingNegative2023b}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=b05620aa2ec177d220e7ad210f055d74}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8da60b15cded2305f204fabfe079f16}{%
+           family={Rushton},
+           familyi={R\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f331eea2b4ee44d3912b9e9998551f9}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Inna},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c7f87fd0fbcad38bf0e891d37a1e2db}{%
+           family={Wadden},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=370fa443ffb04d9e5bfadca51514ab66}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={Khendra},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dcf6e88b39c3bfaae69249e7353cda31}{%
+           family={Miner},
+           familyi={M\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=224e5f6b278d1debe6dccb5d5864d286}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Theresa},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6f0e508410bc4aa98036302c03da3d8}{%
+           family={Althoff},
+           familyi={A\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=d41347f273c226091f12a17225bb356a}{%
+           family={Rogers},
+           familyi={R\bibinitperiod},
+           given={Anna},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a4f042894bd8d9a67882ad8fe0c379ce}{%
+           family={Boyd-Graber},
+           familyi={B\bibinithyphendelim G\bibinitperiod},
+           given={Jordan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1848c9de6e6dd0f9eaf2c08799e9e2f}{%
+           family={Okazaki},
+           familyi={O\bibinitperiod},
+           given={Naoaki},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Toronto, Canada}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{28ab34db547f72d11ccdd3e77502bfb9}
+      \strng{fullhash}{0f7100bd30031881c64a9de7b3702470}
+      \strng{bibnamehash}{28ab34db547f72d11ccdd3e77502bfb9}
+      \strng{authorbibnamehash}{28ab34db547f72d11ccdd3e77502bfb9}
+      \strng{authornamehash}{28ab34db547f72d11ccdd3e77502bfb9}
+      \strng{authorfullhash}{0f7100bd30031881c64a9de7b3702470}
+      \strng{editorbibnamehash}{d48170eb3f2753595c93a652fafe3e7a}
+      \strng{editornamehash}{d48170eb3f2753595c93a652fafe3e7a}
+      \strng{editorfullhash}{d48170eb3f2753595c93a652fafe3e7a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A proven therapeutic technique to overcome negative thoughts is to replace them with a more hopeful “reframed thought.” Although therapy can help people practice and learn this Cognitive Reframing of Negative Thoughts, clinician shortages and mental health stigma commonly limit people's access to therapy. In this paper, we conduct a human-centered study of how language models may assist people in reframing negative thoughts. Based on psychology literature, we define a framework of seven linguistic attributes that can be used to reframe a thought. We develop automated metrics to measure these attributes and validate them with expert judgements from mental health practitioners. We collect a dataset of 600 situations, thoughts and reframes from practitioners and use it to train a retrieval-enhanced in-context learning model that effectively generates reframed thoughts and controls their linguistic attributes. To investigate what constitutes a “high-quality” reframe, we conduct an IRB-approved randomized field study on a large mental health website with over 2,000 participants. Amongst other findings, we show that people prefer highly empathic or specific reframes, as opposed to reframes that are overly positive. Our findings provide key implications for the use of LMs to assist people in overcoming negative thoughts.}
+      \field{booktitle}{Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: {{Long}} Papers)}
+      \field{title}{Cognitive Reframing of Negative Thoughts through Human-Language Model Interaction}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{9977\bibrangedash 10000}
+      \range{pages}{24}
+      \verb{file}
+      \verb C:\Users\Gustave\Zotero\storage\KUDKPFE5\Sharma et al. - 2023 - Cognitive Reframing of Negative Thoughts through H.pdf
+      \endverb
+    \endentry
+    \entry{tomkins_affect_1962}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9cf7f488529b198dda48171e19310a42}{%
+           family={Tomkins},
+           familyi={T\bibinitperiod},
+           given={Silvan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9cf7f488529b198dda48171e19310a42}
+      \strng{fullhash}{9cf7f488529b198dda48171e19310a42}
+      \strng{bibnamehash}{9cf7f488529b198dda48171e19310a42}
+      \strng{authorbibnamehash}{9cf7f488529b198dda48171e19310a42}
+      \strng{authornamehash}{9cf7f488529b198dda48171e19310a42}
+      \strng{authorfullhash}{9cf7f488529b198dda48171e19310a42}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{shorttitle}{Affect imagery consciousness}
+      \field{title}{Affect imagery consciousness}
+      \field{urlday}{12}
+      \field{urlmonth}{2}
+      \field{urlyear}{2024}
+      \field{volume}{Volume I: The positive affects}
+      \field{year}{1962}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{troianoDimensionalModelingEmotions2022}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5f4d2d4557cd530abfddfca75e9a4fe4}{%
+           family={Troiano},
+           familyi={T\bibinitperiod},
+           given={Enrica},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f487f22e5d0ae9833c8d0d2f47032741}{%
+           family={Oberländer},
+           familyi={O\bibinitperiod},
+           given={Laura},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6742e2ca107969c160ee4027f77e4696}
+      \strng{fullhash}{6742e2ca107969c160ee4027f77e4696}
+      \strng{bibnamehash}{6742e2ca107969c160ee4027f77e4696}
+      \strng{authorbibnamehash}{6742e2ca107969c160ee4027f77e4696}
+      \strng{authornamehash}{6742e2ca107969c160ee4027f77e4696}
+      \strng{authorfullhash}{6742e2ca107969c160ee4027f77e4696}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The most prominent tasks in emotion analysis are to assign emotions to texts and to understand how emotions manifest in language. An observation for NLP is that emotions can be communicated implicitly by referring to events, appealing to an empathetic, intersubjective understanding of events, even without explicitly mentioning an emotion name. In psychology, the class of emotion theories known as appraisal theories aims at explaining the link between events and emotions. Appraisals can be formalized as variables that measure a cognitive evaluation by people living through an event that they consider relevant. They include the assessment if an event is novel, if the person considers themselves to be responsible, if it is in line with the own goals, and many others. Such appraisals explain which emotions are developed based on an event, e.g., that a novel situation can induce surprise or one with uncertain consequences could evoke fear. We analyze the suitability of appraisal theories for emotion analysis in text with the goal of understanding if appraisal concepts can reliably be reconstructed by annotators, if they can be predicted by text classifiers, and if appraisal concepts help to identify emotion categories. To achieve that, we compile a corpus by asking people to textually describe events that triggered particular emotions and to disclose their appraisals. Then, we ask readers to reconstruct emotions and appraisals from the text. This setup allows us to measure if emotions and appraisals can be recovered purely from text and provides a human baseline. Our comparison of text classification methods to human annotators shows that both can reliably detect emotions and appraisals with similar performance. Therefore, appraisals constitute an alternative computational emotion analysis paradigm and further improve the categorization of emotions in text with joint models.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0891-2017, 1530-9312}
+      \field{journaltitle}{Computational Linguistics}
+      \field{month}{9}
+      \field{shorttitle}{Dimensional {{Modeling}} of {{Emotions}} in {{Text}} with {{Appraisal Theories}}}
+      \field{title}{Dimensional {{Modeling}} of {{Emotions}} in {{Text}} with {{Appraisal Theories}}: {{Corpus Creation}}, {{Annotation Reliability}}, and {{Prediction}}}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 71}
+      \range{pages}{71}
+      \verb{doi}
+      \verb 10.1162/coli_a_00461
+      \endverb
+      \verb{eprint}
+      \verb 2206.05238
+      \endverb
+      \keyw{Computer Science - Computation and Language,notion}
+    \endentry
+    \entry{walesDictionaryStylistics2014a}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d33fd9a4c9eb1174cd6ff33f73dcf6c7}{%
+           family={Wales},
+           familyi={W\bibinitperiod},
+           given={Katie},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \strng{fullhash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \strng{bibnamehash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \strng{authorbibnamehash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \strng{authornamehash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \strng{authorfullhash}{d33fd9a4c9eb1174cd6ff33f73dcf6c7}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1-315-83350-7}
+      \field{langid}{english}
+      \field{title}{A Dictionary of Stylistics}
+      \field{year}{2014}
+      \field{dateera}{ce}
+    \endentry
+    \entry{whiteNarrativeMeansTherapeutic1990}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=7988598546b60ae5376580c33ef7cb20}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1208d85cdeb5633c12c5abf8ce1d0ded}{%
+           family={Epston},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {WW Norton}%
+      }
+      \strng{namehash}{1c50b60c5b94e7bf504db884df119f50}
+      \strng{fullhash}{1c50b60c5b94e7bf504db884df119f50}
+      \strng{bibnamehash}{1c50b60c5b94e7bf504db884df119f50}
+      \strng{authorbibnamehash}{1c50b60c5b94e7bf504db884df119f50}
+      \strng{authornamehash}{1c50b60c5b94e7bf504db884df119f50}
+      \strng{authorfullhash}{1c50b60c5b94e7bf504db884df119f50}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Use of letter-writing in family therapy.White and Epston base their therapy on the assumption that people experience problems when the stories of their lives, as they or others have invented them, do not sufficiently represent their lived experience. Therapy then becomes a process of storying or restorying the lives and experiences of these people. In this way narrative comes to play a central role in therapy. Both authors share delightful examples of a storied therapy that privileges a person’s lived experience, inviting a reflexive posture and encouraging a sense of authorship and reauthorship of one’s experiences and relationships in the telling and retelling of one’s story.}
+      \field{isbn}{978-0-393-70098-5}
+      \field{langid}{english}
+      \field{title}{Narrative Means to Therapeutic Ends}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \keyw{Medical / Psychiatry / General,Psychology / General,Psychology / Psychopathology / Compulsive Behavior,Psychology / Psychotherapy / General}
+    \endentry
+    \entry{dreamscale}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=44f6bb4b9bc7226c27989455cfbf2548}{%
+           family={Winget},
+           familyi={W\bibinitperiod},
+           given={Carolyn},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee0e38b205f20387d7e8ebd27064c0de}{%
+           family={Kramer},
+           familyi={K\bibinitperiod},
+           given={Milton},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Gainesville: University of Florida Press}%
+      }
+      \strng{namehash}{da54a15fde955beb96c08244a5f6bf89}
+      \strng{fullhash}{da54a15fde955beb96c08244a5f6bf89}
+      \strng{bibnamehash}{da54a15fde955beb96c08244a5f6bf89}
+      \strng{authorbibnamehash}{da54a15fde955beb96c08244a5f6bf89}
+      \strng{authornamehash}{da54a15fde955beb96c08244a5f6bf89}
+      \strng{authorfullhash}{da54a15fde955beb96c08244a5f6bf89}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dimensions of dreams}
+      \field{year}{1979}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Yu2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4ab666626832a30808f9fc9b478ebdc4}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Calvin\bibnamedelima Kai-Ching},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ab666626832a30808f9fc9b478ebdc4}
+      \strng{fullhash}{4ab666626832a30808f9fc9b478ebdc4}
+      \strng{bibnamehash}{4ab666626832a30808f9fc9b478ebdc4}
+      \strng{authorbibnamehash}{4ab666626832a30808f9fc9b478ebdc4}
+      \strng{authornamehash}{4ab666626832a30808f9fc9b478ebdc4}
+      \strng{authorfullhash}{4ab666626832a30808f9fc9b478ebdc4}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Dreaming : journal of the Association for the Study of Dreams}
+      \field{month}{3}
+      \field{note}{Publisher: American Psychological Association ({APA})}
+      \field{number}{1}
+      \field{shortjournal}{Dreaming}
+      \field{title}{Automated analysis of dream sentiment—The royal road to dream dynamics?}
+      \field{volume}{32}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{33\bibrangedash 51}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1037/drm0000189
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1037/drm0000189
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1037/drm0000189
+      \endverb
+    \endentry
+    \entry{zhanEvaluatingSubjectiveCognitive2023}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=636793a8104396f089ddbb3f95461568}{%
+           family={Zhan},
+           familyi={Z\bibinitperiod},
+           given={Hongli},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1452fdfae044e1c201c45fab7c9ee556}{%
+           family={Ong},
+           familyi={O\bibinitperiod},
+           given={Desmond},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=1f30679330f0fc32db88902b582f4499}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Junyi\bibnamedelima Jessy},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=1}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=b46767bc2cc6558bc2276b0d8cda03d7}{%
+           family={Bouamor},
+           familyi={B\bibinitperiod},
+           given={Houda},
+           giveni={H\bibinitperiod}}}%
+        {{hash=70fbbebd4875461935ebed5a7c7d4d1d}{%
+           family={Pino},
+           familyi={P\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4e7a16b33b42e17420a922fd0fca193b}{%
+           family={Bali},
+           familyi={B\bibinitperiod},
+           given={Kalika},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{fullhash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{bibnamehash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{authorbibnamehash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{authornamehash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{authorfullhash}{fc5adce9b9687e362b6f40310f801ad9}
+      \strng{editorbibnamehash}{35afbfee52595edf1ad6a24c177ade36}
+      \strng{editornamehash}{35afbfee52595edf1ad6a24c177ade36}
+      \strng{editorfullhash}{35afbfee52595edf1ad6a24c177ade36}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The emotions we experience involve complex processes; besides physiological aspects, research in psychology has studied cognitive appraisals where people assess their situations subjectively, according to their own values (Scherer, 2005). Thus, the same situation can often result in different emotional experiences. While the detection of emotion is a well-established task, there is very limited work so far on the automatic prediction of cognitive appraisals. This work fills the gap by presenting CovidET-Appraisals, the most comprehensive dataset to-date that assesses 24 appraisal dimensions, each with a natural language rationale, across 241 Reddit posts. CovidET-Appraisals presents an ideal testbed to evaluate the ability of large language models — excelling at a wide range of NLP tasks — to automatically assess and explain cognitive appraisals. We found that while the best models are performant, open-sourced LLMs fall short at this task, presenting a new challenge in the future development of emotionally intelligent models. We release our dataset at https://github.com/honglizhan/CovidET-Appraisals-Public.}
+      \field{booktitle}{Findings of the {{Association}} for {{Computational Linguistics}}: {{EMNLP}} 2023}
+      \field{month}{12}
+      \field{title}{Evaluating {{Subjective Cognitive Appraisals}} of {{Emotions}} from {{Large Language Models}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{14418\bibrangedash 14446}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.18653/v1/2023.findings-emnlp.962
+      \endverb
+    \endentry
+    \entry{zhangSentimentAnalysisEra2023}{misc}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wenxuan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ec5b7fd92345dc07570d3626b3cf329e}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c6fb2af2964f3126cfd4e505a38daca}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=224c02b5d289fefd08d4f9f1a83c5d0c}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Sinno\bibnamedelima Jialin},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fe22ed203b25c67e853adfbc3c880f8}{%
+           family={Bing},
+           familyi={B\bibinitperiod},
+           given={Lidong},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{662e07a0ec5215b00c24852c933dfa4d}
+      \strng{fullhash}{ae13433da53a967946d29f7645a98dc6}
+      \strng{bibnamehash}{662e07a0ec5215b00c24852c933dfa4d}
+      \strng{authorbibnamehash}{662e07a0ec5215b00c24852c933dfa4d}
+      \strng{authornamehash}{662e07a0ec5215b00c24852c933dfa4d}
+      \strng{authorfullhash}{ae13433da53a967946d29f7645a98dc6}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Sentiment analysis (SA) has been a long-standing research area in natural language processing. It can offer rich insights into human sentiments and opinions and has thus seen considerable interest from both academia and industry. With the advent of large language models (LLMs) such as ChatGPT, there is a great potential for their employment on SA problems. However, the extent to which existing LLMs can be leveraged for different sentiment analysis tasks remains unclear. This paper aims to provide a comprehensive investigation into the capabilities of LLMs in performing various sentiment analysis tasks, from conventional sentiment classification to aspect-based sentiment analysis and multifaceted analysis of subjective texts. We evaluate performance across 13 tasks on 26 datasets and compare the results against small language models (SLMs) trained on domain-specific datasets. Our study reveals that while LLMs demonstrate satisfactory performance in simpler tasks, they lag behind in more complex tasks requiring deeper understanding or structured sentiment information. However, LLMs significantly outperform SLMs in few-shot learning settings, suggesting their potential when annotation resources are limited. We also highlight the limitations of current evaluation practices in assessing LLMs' SA abilities and propose a novel benchmark, \textbackslash textsc\{SentiEval\}, for a more comprehensive and realistic evaluation. Data and code during our investigations are available at \textbackslash url\{https://github.com/DAMO-NLP-SG/LLM-Sentiment\}.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{shorttitle}{Sentiment {{Analysis}} in the {{Era}} of {{Large Language Models}}}
+      \field{title}{Sentiment {{Analysis}} in the {{Era}} of {{Large Language Models}}: {{A Reality Check}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2305.15005
+      \endverb
+      \verb{eprint}
+      \verb 2305.15005
+      \endverb
+      \keyw{Computer Science - Computation and Language}
+    \endentry
+    \entry{zhangSurveyAspectBasedSentiment2022}{unpublished}{}
+      \name{author}{5}{ul=2}{%
+        {{un=0,uniquepart=base,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Wenxuan},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=1,uniquepart=given,hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=63c044fc1bc04fba0954b8e26fcca4ce}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Yang},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fe22ed203b25c67e853adfbc3c880f8}{%
+           family={Bing},
+           familyi={B\bibinitperiod},
+           given={Lidong},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=56789f2d40a059bed1d3d0c663022c3e}{%
+           family={Lam},
+           familyi={L\bibinitperiod},
+           given={Wai},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9b44259eada34287a316c4b292740780}
+      \strng{fullhash}{a887978fc75b7de86fd0e6a698def834}
+      \strng{bibnamehash}{9b44259eada34287a316c4b292740780}
+      \strng{authorbibnamehash}{9b44259eada34287a316c4b292740780}
+      \strng{authornamehash}{9b44259eada34287a316c4b292740780}
+      \strng{authorfullhash}{a887978fc75b7de86fd0e6a698def834}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{As an important fine-grained sentiment analysis problem, aspect-based sentiment analysis (ABSA), aiming to analyze and understand people's opinions at the aspect level, has been attracting considerable interest in the last decade. To handle ABSA in different scenarios, various tasks have been introduced for analyzing different sentiment elements and their relations, including the aspect term, aspect category, opinion term, and sentiment polarity. Unlike early ABSA works focusing on a single sentiment element, many compound ABSA tasks involving multiple elements have been studied in recent years for capturing more complete aspect-level sentiment information. However, a systematic review of various ABSA tasks and their corresponding solutions is still lacking, which we aim to fill in this survey. More specifically, we provide a new taxonomy for ABSA which organizes existing studies from the axes of concerned sentiment elements, with an emphasis on recent advances of compound ABSA tasks. From the perspective of solutions, we summarize the utilization of pre-trained language models for ABSA, which improved the performance of ABSA to a new stage. Besides, techniques for building more practical ABSA systems in cross-domain/lingual scenarios are discussed. Finally, we review some emerging topics and discuss some open challenges to outlook potential future directions of ABSA.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{3}
+      \field{shorttitle}{A {{Survey}} on {{Aspect-Based Sentiment Analysis}}}
+      \field{title}{A {{Survey}} on {{Aspect-Based Sentiment Analysis}}: {{Tasks}}, {{Methods}}, and {{Challenges}}}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 2203.01054
+      \endverb
+      \keyw{Computer Science - Computation and Language,notion}
+    \endentry
+    \entry{zhouHowFaRAre2023}{misc}{}
+      \name{author}{12}{}{%
+        {{un=0,uniquepart=base,hash=2dd11f0e6305e6c8cbffd634ed28ed57}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Pei},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc045738b58bf295d87617ee066e6714}{%
+           family={Madaan},
+           familyi={M\bibinitperiod},
+           given={Aman},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=59c58fee07449d2500551864e78aa3b7}{%
+           family={Potharaju},
+           familyi={P\bibinitperiod},
+           given={Srividya\bibnamedelima Pranavi},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f546049cf939f55379fab01f639f61e9}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c5090d22f754600c3456980aef0ddc1}{%
+           family={McKee},
+           familyi={M\bibinitperiod},
+           given={Kevin\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c32ace2a5a2590ef3542c3713e05925d}{%
+           family={Holtzman},
+           familyi={H\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=603e425c04181fb9cb012633c322ac6d}{%
+           family={Pujara},
+           familyi={P\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62341ebcc57e03720c55a39d93f0b17d}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1d320765e8b313bd56bb50bd79666ad2}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Swaroop},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d3f725068034ab2e73a4197de624ce20}{%
+           family={Nematzadeh},
+           familyi={N\bibinitperiod},
+           given={Aida},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7ca2d2f9cb5655371f602dce60560de0}{%
+           family={Upadhyay},
+           familyi={U\bibinitperiod},
+           given={Shyam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a0b82c57d86d45ad2132d2cff643d32}{%
+           family={Faruqui},
+           familyi={F\bibinitperiod},
+           given={Manaal},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{6be96f7a41a6ceb25678490c9a6de7b6}
+      \strng{fullhash}{35c39e2d3540581637a05ae4db615f03}
+      \strng{bibnamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
+      \strng{authorbibnamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
+      \strng{authornamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
+      \strng{authorfullhash}{35c39e2d3540581637a05ae4db615f03}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"Thinking is for Doing." Humans can infer other people's mental states from observations–an ability called Theory-of-Mind (ToM)–and subsequently act pragmatically on those inferences. Existing question answering benchmarks such as ToMi ask models questions to make inferences about beliefs of characters in a story, but do not test whether models can then use these inferences to guide their actions. We propose a new evaluation paradigm for large language models (LLMs): Thinking for Doing (T4D), which requires models to connect inferences about others' mental states to actions in social scenarios. Experiments on T4D demonstrate that LLMs such as GPT-4 and PaLM 2 seemingly excel at tracking characters' beliefs in stories, but they struggle to translate this capability into strategic action. Our analysis reveals the core challenge for LLMs lies in identifying the implicit inferences about mental states without being explicitly asked about as in ToMi, that lead to choosing the correct action in T4D. To bridge this gap, we introduce a zero-shot prompting framework, Foresee and Reflect (FaR), which provides a reasoning structure that encourages LLMs to anticipate future challenges and reason about potential actions. FaR boosts GPT-4's performance from 50\% to 71\% on T4D, outperforming other prompting methods such as Chain-of-Thought and Self-Ask. Moreover, FaR generalizes to diverse out-of-distribution story structures and scenarios that also require ToM inferences to choose an action, consistently outperforming other methods including few-shot in-context learning.}
+      \field{eprintclass}{cs}
+      \field{eprinttype}{arXiv}
+      \field{month}{10}
+      \field{title}{How {{FaR Are Large Language Models From Agents}} with {{Theory-of-Mind}}?}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2310.03051
+      \endverb
+      \verb{eprint}
+      \verb 2310.03051
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
+    \endentry
   \enddatalist
-  \missing{finkel2022}
-  \missing{hallContentAnalysisDream1966}
 \endrefsection
 \endinput
 

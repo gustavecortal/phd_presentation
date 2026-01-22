@@ -113,6 +113,9 @@
 
 \usepackage[style=authoryear,natbib=true,backend=biber,date=year,urldate=long]{biblatex}
 \addbibresource{phd_slides_biblatex.bib}
+\addbibresource{full.bib}
+\addbibresource{custom.bib}
+\addbibresource{introduction.bib}
 
 % Remove "visited on" dates from URLs
 \AtEveryBibitem{\clearfield{urldate}}
@@ -307,25 +310,49 @@ We first address the \textit{content} by classifying elements of personal narrat
 
 %[add refs to each theory and annotation schemes]
 
-[add refs to klinger, etc.]
+%[add refs to klinger, etc.]
 {\small
 \begin{center}
-\begin{tabular}{p{6.5em}|p{10.5em}|p{13.5em}}
+\begin{tabular}{p{6.5em}p{10.5em}p{13.5em}}
 \textbf{Psychological theories} & \textbf{In text, emotion is...} & \textbf{Example} \\
 \hline
+\addlinespace
 Basic emotions theory & a \textit{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
+\addlinespace
+\smallcitet{darwin_expression_1872,tomkins_affect_1962,ekman_basic_1999,plutchik} & & \\
+\smallcitet{demszky-etal-2020-goemotions,bostan-klinger-2018-analysis} & & \\ 
+\addlinespace
+\hline
+\addlinespace
 \pause
-& & \\ 
 Constructivist theories & a continuous value with an \textit{affective} meaning & "His voice soothes me." $\rightarrow$ \texttt{valence} (4/5), \texttt{arousal} (1/5) \\
-& & \\
+\addlinespace
+\smallcitet{schachter_cognitive_1962,russell_core_1999} & & \\
+\smallcitet{buechel-hahn-2017-emobank} & & \\
+\addlinespace
+\hline
+\addlinespace
 \pause
-Appraisal theory & a continuous value with a \textit{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
-& & \\
-\pause
-& composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})."
+Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
+\smallcitet{arnold_emotion_1960,lazarus_progress_1991}  & & \\
+\smallcitet{hofmann-etal-2020-appraisal,troianoDimensionalModelingEmotions2022,zhanEvaluatingSubjectiveCognitive2023} & & \\
+%\addlinespace
+%\hline
+%\pause
+%& composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})." \\
+%\smallcitet{lee-etal-2010-text,campagnano-etal-2022-srl4e,klingerWhereAreWe2023} & & \\
 \end{tabular}
 \end{center}
 }
+
+%This section will present the three main emotion theories in psychology to provide a background for connecting emotion analysis in natural language processing with cognitive science.
+%\paragraph{Basic emotion theory.} Basic emotion theory is certainly the most influential today. Inspired by Darwin's research on emotions \parencite{darwin_expression_1872}, it postulates a certain number of discrete, basic emotions that are universal and innate among humans due to their evolutionary origins. Emotions are understood as psycho-physiological \enquote{programs} that were naturally selected to help overcome recurrent evolutionary challenges \parencite{cosmides_evolutionary_2000}. A prominent version is that of Paul Ekman \parencite{ekman_basic_1999}, who sought to show, as Darwin envisaged, that some emotions are expressed with the same facial expressions across cultures. Ekman used Darwin's \parencite{darwin_expression_1872} list of six \enquote{core} expressions of emotions: anger, fear, surprise, disgust, happiness, and sadness. He notably conducted studies with individuals having no exposure to Western culture, indicating that they could accurately identify facial expressions for these six emotions \parencite{ekman1971constantsac}. It should be noted that Ekman left it open how many basic emotions there are. Besides the six emotions listed, candidates include amusement, contempt, embarrassment, guilt, pride, and shame \parencite{ekman_basic_1999}. Other versions of basic emotion theory have different lists \parencite{tomkins_affect_1962,izard_basic_1992,panksepp_affective_1998,plutchik}. For a discussion of the evidence supportive of basic emotion theory, notably the potential physiological and neurological signatures of basic emotions, see \citet[129––131]{moors_demystifying_2022}.
+
+%\paragraph{Psychological constructivism.} Psychological constructivism is the most influential alternative to basic emotion theory today. It rejects that there are discrete, basic emotions universally shared by humans and posits instead that emotion kinds such as anger, fear, and joy are constructed through the interplay of biological, psychological, and sociocultural factors. Early proponents include \citet{schachter_cognitive_1962}, but its main representatives are James Russell and Lisa Feldman Barrett \parencite{russell_core_1999}. Psychological constructivists focus on the feeling component of emotions that they interpret as a continuum with no categorical barriers. Feelings are typically represented in a two-dimensional space with a valence axis (pleasant to unpleasant) and an arousal axis (activation to deactivation). The impression that there are discrete emotions is seen as a social construct: different forms of enculturation yield different ways to conceptualize or label our bodily feelings into discrete emotional kinds. For a discussion of the evidence supportive of psychological constructivism, see \citet[261––265]{moors_demystifying_2022}. Some evidence comes from so-called \enquote{arousal misattribution} studies, i.e. cases where subjects misinterpret the source of their arousal and where that seems to influence what emotions they undergo.
+
+%\paragraph{Appraisal theory.} The third major psychological theory of emotion is appraisal theory, whose empirical version was pioneered by Magda Arnold \parencite{arnold_emotion_1960}. It was developed to explain the absence of a bijective, one–to–one correspondence between kinds of emotions and emotional stimuli, \textit{i.e.}, the fact that the same kind of stimuli triggers different emotions and that different kinds of stimuli trigger the same kind of emotion. To explain this fact, appraisals are postulated as mediators between stimuli and emotional reactions. Appraisals are cognitive evaluations (unconscious, fast, and error-prone) of the relevance of stimuli given one's concerns and how one should react. Appraisal theory hypothesizes that, for instance, Sam is fearful of the mouse in the kitchen because he appraises it as an imminent threat to his safety, while Maria, on the other, is angry that there is a mouse in the kitchen because she appraises it as an intruder to be kicked out. Thus, each emotion kind can be analyzed by the associated appraisal. For instance, \citet{lazarus_progress_1991} proposes \textit{imminent danger} for fear, \textit{demeaning offense} for anger, \textit{irrevocable loss} for sadness, and \textit{progress towards a goal} for happiness. 
+
+%\paragraph{Emotion consists of semantic roles.} An emotion cannot be reduced to a category or continuous values with affective or cognitive meaning. To better understand an emotional event, several approaches associate spans of text with semantic roles, such as \textit{cause}, \textit{target}, \textit{experiencer}, and \textit{cue} of the emotion \parencite{lee-etal-2010-text,kim-klinger-2019-analysis,bostan-etal-2020-goodnewseveryone,oberlanderExperiencersStimuliTargets2020,campagnano-etal-2022-srl4e,weggeExperiencerSpecificEmotionAppraisal2023,cortal-2024-sequence}. Thus, instead of considering emotion as caused by an event, semantic role labeling of emotions considers that emotion \textit{is} an event \parencite{klingerWhereAreWe2023} that must be reconstructed by answering the question: \enquote{Who (\textit{experiencer}) feels what (\textit{cue}) towards whom (\textit{target}) and why (\textit{cause})?}. In this example, each text span can be associated with a semantic role: \enquote{Louise (\textit{experiencer}) was angry (\textit{cue}) at Paul (\textit{target}) because he did not warn her (\textit{cause}).}.
 
 
 %\vspace{0.5cm}
@@ -336,13 +363,50 @@ Appraisal theory & a continuous value with a \textit{cognitive} meaning & "I rec
     
 \end{frame}
 
+\begin{frame}{Psychological theories and emotion annotation schemes}
+
+{\small
+\begin{center}
+\begin{tabular}{p{6.5em}p{10.5em}p{13.5em}}
+\textbf{Psychological theories} & \textbf{In text, emotion is...} & \textbf{Example} \\
+\addlinespace
+\hline
+& composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})." \\
+%\smallcitet{lee-etal-2010-text,campagnano-etal-2022-srl4e,klingerWhereAreWe2023} & & \\
+\end{tabular}
+\end{center}
+}
+
+\vspace{0.5cm}
+\pause
+
+%\paragraph{Emotion is a refined feeling.} Sentiment analysis, a fundamental task in natural language processing, is sometimes considered a simplified version of emotion analysis. In its most basic form, sentiment analysis associates textual units with a category indicating a polarity (\textit{positive} or \textit{negative}) \parencite{poriaTipIcebergCurrent2020a}. A finer-grained task identifies aspects of a product or topic and determines the sentiment expressed about each of these aspects \parencite{zhangSurveyAspectBasedSentiment2022}. For example, in the sentence \enquote{The battery life of this phone is amazing, but its camera quality is disappointing.}, the sentiment is \textit{positive} for the aspect \enquote{battery life} and is \textit{negative} for the aspect \enquote{camera quality}.
+
+%Sentiment analysis, a fundamental task in natural language processing, is sometimes considered a simplified version of emotion analysis. In its most basic form, sentiment analysis associates textual units with a category indicating a polarity (\textit{positive} or \textit{negative}) \parencite{poriaTipIcebergCurrent2020a}
+
+Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSentiment2022}: \enquote{The battery life is \textit{amazing} (\textcolor{Aplgreen}{\Large$\boldsymbol{+}$}), but its camera quality is \textit{disappointing} (\textcolor{red!70!black}{\Large$\boldsymbol{-}$}).}
+%\vspace{0.2cm}
+
+%\centering
+%\textcolor{Aplgreen}{\Large$\boldsymbol{+}$}\,\textit{positive}\hspace{1cm}
+%\textcolor{red!70!black}{\Large$\boldsymbol{-}$}\,\textit{negative}
+
+    
+\end{frame}
+
+
 \begin{frame}{Limitations in emotion analysis}
 
 \begin{itemize}[<+->]
-    \item Different emotion theories lead to divergences in how to annotate them in the text [add refs]
-    \item Some linguistic and cognitive science theories are not considered [reformulate, not some]
-    \item There is no benchmark that evaluates the richness of the emotional phenomenon [add refs]
+    %\item Different emotion theories lead to divergences in how to annotate them in the text [add refs]
+    \item Though the three theories reviewed are usually considered rivals, their integration is possible and desirable \smallcitep{schererTheoryConvergenceEmotion2022}
+    \item Emotion verbalization is underexplored \smallcitep{micheli2013,etienne-etal-2022-psycho}
+    \item Benchmarks evaluate certain aspects of emotional understanding but do not consider its full complexity \smallcitep{campagnano-etal-2022-srl4e,zhangSentimentAnalysisEra2023,paechEQBenchEmotionalIntelligence2024}
 \end{itemize}
+
+%Recent benchmarks evaluate language models on specific aspects of emotional understanding \parencite{wangEmotionalIntelligenceLarge2023,paechEQBenchEmotionalIntelligence2024}, but they don't consider its full richness \parencite{scherer_componential_2007,mayer_human_2008,oconnor_measurement_2019}. For example, \citet{paechEQBenchEmotionalIntelligence2024} assesses emotional understanding by predicting the intensity of multiple emotions in conflict scenes. Some benchmarks evaluate models on related tasks, such as sentiment analysis \parencite{zhangSentimentAnalysisEra2023} and theory of mind \parencite{zhouHowFaRAre2023,maHolisticLandscapeSituated2023,kimFANToMBenchmarkStresstesting2023,gandhiUnderstandingSocialReasoning2023}. However, no benchmark specifically proposes to evaluate the multiple facets of emotions that affective sciences reveal (Section \ref{theorie_emotion}). Therefore, it is difficult to know whether current models are efficient for emotional understanding.
+
+%This limitation is compounded by the fact that it is difficult to clearly determine which properties of emotional understanding are to be evaluated. We believe that evaluating language models should be grounded in research on human emotional communication, especially psycholinguistics. For example, before the age of ten, basic emotions (\textit{e.g.}, joy or sadness) are better remembered than complex emotions (\textit{e.g.}, pride or guilt) \parencite{davidsonChildrenRecallEmotional2001,creissenQuelleRepresentationDifferentes2017a}. From six to ten years old, \textit{labeled} emotions are better understood than \textit{suggested} emotions \parencite{blancComprehensionContesEntre2010,creissenQuelleRepresentationDifferentes2017a}. Another example of relevant studies concerns the difficulty that autistic people have in understanding different types of emotional expressions \parencite{ball_conversational_2024}. These studies suggest that, for humans, different types of emotions and different modes of emotional expression are more or less difficult to interpret. It would be desirable for benchmarks to evaluate language models in ways that reflect the relative difficulty of tasks for humans. Such a project would certainly benefit from research in cognitive pragmatics (Section \ref{modele_detective}), knowing, for example, that people with communication disorders have difficulty understanding conversational implicatures \parencite{ball_conversational_2024}, which indicates that the different sources of evidence distinguished by the detective analysis are associated with different levels of difficulty.
 
 %\cite{ekman_basic_1999}, \cite{russell_circumplex_1980,barrett_how_2017}, \cite{arnold_emotion_1960}
 
@@ -379,104 +443,20 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textit{em
 \pause
 \vspace{0.5cm}
 
-$\rightarrow$ Different emotion expression modes are more or less difficult to interpret [add refs psycholinguistic, psychiatry, refs aline etienne]
+$\rightarrow$ Different emotion expression modes are more or less difficult to interpret \smallcitep{davidsonChildrenRecallEmotional2001,blancComprehensionContesEntre2010,creissenQuelleRepresentationDifferentes2017a,ball_conversational_2024}
+
+%[add refs psycholinguistic, psychiatry, refs aline etienne]
+
+%For example, before the age of ten, basic emotions (\textit{e.g.}, joy or sadness) are better remembered than complex emotions (\textit{e.g.}, pride or guilt) \parencite{davidsonChildrenRecallEmotional2001,creissenQuelleRepresentationDifferentes2017a}. From six to ten years old, \textit{labeled} emotions are better understood than \textit{suggested} emotions \parencite{blancComprehensionContesEntre2010,creissenQuelleRepresentationDifferentes2017a}
+
+%Another example of relevant studies concerns the difficulty that autistic people have in understanding different types of emotional expressions \parencite{ball_conversational_2024}
 
 \pause
 \vspace{0.25cm}
 
-$\rightarrow$ [add refs aline etienne]
+$\rightarrow$ [add refs] \smallcitep{etienne-etal-2022-psycho,dragos-etal-2022-angry}
 
 \end{frame}
-
-\begin{comment}
-
-\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
-
-A \textit{code} is a pre-established pairing between stimuli and sets of information
-
-\pause
-\vspace{0.5cm}
-
-The Morse code is a pairing between <combination of short and long signals> and [letters]% that senders and receivers must share to communicate with it. 
-
-\pause
-\vspace{0.5cm}
-
-The formal semantics of a language is made of syntactical and lexical rules that pairs <strings of words> with [sentential meanings] %\cite{heim_semantics_1998}
-
-%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
-
-
-\end{frame}
-
-\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
-    \caption{Dictionary analysis in cognitive pragmatics.}% [cite]}
-\end{figure}
-
-
-\end{frame}
-
-\begin{frame}{Codes underdetermine emotion meaning}
-
-\pause
-
-Let's take emotion expression modes as an example:
-
-\vspace{0.5cm}
-\pause
-
-\begin{itemize}[<+->]
-  \item \textit{Labeled}: \enquote{I am happy now} is explicit about the feeling but does not encode what the emotion is about
-  \item \textit{Displayed}: interjections (\enquote{Wow!}, \enquote{Ah!}, \enquote{Damn!}) show affect yet leave valence and focus unclear
-  \item \textit{Suggested}: \enquote{The ship has black sails.} can communicate any kind of emotion
-\end{itemize}
-
-\vspace{0.5cm}
-\pause
-
-
-$\rightarrow$ We rely on other sources of evidence to infer what is communicated
-
-\end{frame}
-
-\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
-
-%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
-
-%\pause
-%\vspace{0.5cm}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
-    \caption{Dictionary analysis in cognitive pragmatics.} %[cite]}
-\end{figure}
-
-
-\end{frame}
-
-\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
-
-%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
-
-%\pause
-%\vspace{0.5cm}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.20]{img/scherer_eng.png}
-    \caption{Detective analysis in cognitive pragmatics.} %[cite]}
-\end{figure}
-
-
-\end{frame}
-
-\end{comment}
-
 
 \begin{frame}{How to integrate psychological theories of emotion?}
 
@@ -490,7 +470,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 \begin{figure}
     \centering
     \includegraphics[width=0.9\linewidth]{img/scherer_integrated_framework.png}
-    \caption{\textbf{Integrated framework for emotion theories}. Emotional episodes are synchronized changes in four components \smallcitep{schererTheoryConvergenceEmotion2022a}.}
+    \caption{\textbf{The integrated framework for emotion theories} \smallcitep{schererTheoryConvergenceEmotion2022a}. Rectangles represents the components constituting an emotional episode, and arrows represent causation.}%Emotional episodes are synchronized changes in four components \smallcitep{schererTheoryConvergenceEmotion2022a}.}
     \label{fig:placeholder}
 \end{figure}
 
@@ -498,7 +478,7 @@ $\rightarrow$ We rely on other sources of evidence to infer what is communicated
 
 %[add Appraisal dimensions]
 
-$\rightarrow$ There is no dataset of personal narratives structured according to emotion components [add refs]
+$\rightarrow$ We use this framework to construct an emotion dataset 
     
 \end{frame}
 
@@ -513,10 +493,6 @@ $\rightarrow$ There is no dataset of personal narratives structured according to
 \end{frame}
 
 \end{comment}
-
-%\begin{frame}
-%  Now, we rely on 
-%\end{frame}
 
 \begin{frame}{}
 \Large
@@ -538,7 +514,7 @@ $\rightarrow$ There is no dataset of personal narratives structured according to
 \begin{frame}{French emotional narratives based on components}
 
 
-\textbf{Goal}: Create a dataset of narratives structured according to emotion components, following a questionnaire from \textit{Cognitive Analysis of Emotion} \smallcitep{finkel2022}
+\textbf{Goal}: Create a dataset of narratives structured according to emotion components, following a questionnaire from \textit{Cognitive Analysis of Emotion} \smallcitep{Finkel2022}
 
 \vspace{0.25cm}
 \pause
@@ -560,10 +536,36 @@ The questionnaire:
 \begin{minipage}{.20\linewidth}
 \centering
 \includegraphics[scale=0.23]{img/manuel.jpg}
-\footnotesize	 \citeauthor{finkel2022}, april \citeyear{finkel2022}
+\smallcitet{Finkel2022}
 \end{minipage}
   
 
+\end{frame}
+
+\begin{frame}{French emotional narratives based on components}
+
+\textbf{Limitation}: No annotation schemes consider all emotion components
+
+\vspace{0.5cm}
+\pause
+
+\citet{kim-klinger-2019-analysis} study emotion communication in fiction via subjective sensations, postures, and facial expressions
+
+\vspace{0.5cm}
+\pause
+
+\citet{casel-etal-2021-emotion} associate text spans with Scherer's emotion components
+
+%\vspace{0.25cm}
+%\pause
+
+%To our knowledge, no annotation schemes capture the interaction between components
+
+\vspace{0.5cm}
+\pause
+
+$\rightarrow$ We structure emotional narratives according to behaviors, thoughts, physical feelings, and appraisals
+    
 \end{frame}
 
 \begin{frame}{French emotional narratives based on components}
@@ -686,14 +688,12 @@ $\rightarrow$ Some components benefit from contextual understanding and world kn
   %We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
 
 
-[add illustration dreambank, hdvc scheme]
-
 Need other datasets with narrative structure, emotional content, and available for research
 
 \vspace{0.5cm}
 \pause
 
-Quantitative dream analysis most relies on dream databases (\textit{e.g.}, DreamBank composed of 27,000 dreams) and annotation schemes (\textit{e.g.}, Hall and Van de Castle system) \smallcitep{domhoffStudyingDreamContent2008b}
+\textit{Quantitative dream analysis} relies on dream databases and annotation schemes \smallcitep{dreambank,dreamscale}
 
 \vspace{0.5cm}
 \pause
@@ -703,7 +703,7 @@ The annotation process is complex and costly
 \vspace{0.5cm}
 \pause
 
-How to automate the annotation process?
+How to automate the annotation process using language models?
 
 %side project in my PhD
     
@@ -711,18 +711,75 @@ How to automate the annotation process?
 
 \begin{frame}{Hall and Van de Castle annotation scheme}
 
+  DreamBank contains 27,000 narratives, only 1823 annotated with the Hall and Van de Castle (HVdC) scheme \smallcitep{dreambank,hvdc}
+
+  \vspace{0.25cm}
 
 \begin{figure}
     \centering
-    \includegraphics[width=1\linewidth]{img/hdvc_girl.png}
-    \caption{\textbf{Hall and Van de Castle (HVC) annotation scheme}. Categories for character and emotion detection in dream narratives \smallcitep{hallContentAnalysisDream1966}.}
+    \includegraphics[width=1.\linewidth]{img/hdvc_girl.png}
+    \caption{\textbf{Example of an annotated dream narrative with HVdC.}}
     \label{fig:placeholder}
 \end{figure}
 
-[add related works, what we propose]
-
-
+%\begin{itemize}
+%    \item Status: individual alive (1), group alive (2), dead individual (3), dead group (4), imaginary individual (5), imaginary group (6), original form (7), changed form (8).
+%    \item Gender: male (M), female (F), joint (J), indefinite (I).
+%    \item Identity: known (K), prominent (P), occupational (O), ethnic (E), stranger (S).
+%    \item Age: adult (A), child (C).
+%\end{itemize}
   
+\end{frame}
+
+\begin{frame}{Existing research on computational dream analysis}
+
+  \textit{Lexical-based approaches} associate text spans with specific categories (\textit{e.g.}, type of interactions) \smallcitep{miller-1994-wordnet,ourdreams}
+
+  \vspace{0.25cm}
+  \pause
+
+  \textit{Distributional semantic-based approaches} represent text spans in a vector space  to identify prototypical situations \smallcitep{GUTMANMUSIC2022103428}
+
+  \vspace{0.25cm}
+  \pause
+
+  \citet{McNamara_Duffy-Deno_Marsh_Marsh_2019,Yu2022} combine the lexical-based and distributional semantic-based approaches with machine learning% to compare predictions with established coding systems
+
+  %Overall, prior work focuses on emotion presence. 
+
+
+
+
+  %\citet{ourdreams} use the lexical database WordNet \citep{miller-1994-wordnet} to identify some aspects of the Hall and Van de Castle (HVdC) scheme, such as friendly and aggressive interactions.
+
+  %The distributional semantic-based approach uses models for the vector representation of words or phrases. \citet{GUTMANMUSIC2022103428} identify prototypical situations of flight or attack through embedding and clustering narratives in a vector space with a pre-trained Sentence-BERT model 
+
+  %Previous studies present two major limitations: a partial consideration of the context of the narratives and the absence of comparison with established coding systems like the HVdC scheme. To remedy these limitations, some studies combine the dictionary-based or distributional semantic-based approaches with machine learning \citep{McNamara_Duffy-Deno_Marsh_Marsh_2019,Yu2022}. For example, \citet{Yu2022} combines a sentiment dictionary with a support vector machine \citep{cortes1995support} to predict the overall sentiment of a dream narrative. \citet{bertolini2023automatic} are the first to fine-tune a pre-trained language model for detecting the absence or presence of emotions in narratives. This approach makes it possible to consider the whole context of the narrative and evaluate performance by comparing the model's predictions with HVdC gold-standard annotations. However, this study does not account for the frequency with which an emotion appears in the narrative. Moreover, emotions are not identified with the characters experiencing them. 
+
+  %Generally, the studies we have cited focus mainly on the presence of emotional states in narratives without linking characters to these states. To remedy this limitation, we propose automatically identifying characters and their emotions using sequence-to-sequence language models based on the transformer architecture.
+
+
+\end{frame}
+
+\begin{frame}{Existing research on computational dream analysis}
+
+  \citet{bertolini2023automatic} are the first to fine-tune a pre-trained language model for detecting the presence of emotions
+
+  \vspace{0.25cm}
+  \pause
+
+  This approach uses full narrative context and compares predictions with HVdC gold annotations
+
+  \vspace{0.25cm}
+  \pause
+
+  \textbf{Limitations}: emotions are not linked to characters; emotion frequency is not modeled
+
+  \vspace{0.25cm}
+  \pause
+  
+  $\rightarrow$ We address this by identifying characters and their emotions with transformer-based sequence-to-sequence models
+
 \end{frame}
 
 \begin{frame}{Character and emotion detection in dream narratives}
@@ -792,39 +849,6 @@ $\rightarrow$ Our models can address this task; there is room for improvement
     
 \end{frame}
 
-
-\begin{comment}
-
-\begin{frame}{Results}
-
-\texttt{StableBeluga\textsubscript{i}} is a 7B model with in-context learning using $i$ examples
-
-\begin{table}
-    \centering
-    \resizebox{1.0\textwidth}{!}{
-\begin{tabular}{lcccccc}
-\textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
-\hline
-\texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
-\hline
-\texttt{StableBeluga\textsubscript{1}} &   43.95\textbf{**} &   39.76\textbf{**} &     31.25\textbf{**} &  56.16\textbf{**} &      15.65\textbf{**} & -\\
-\texttt{StableBeluga\textsubscript{3}} &   52.44\textbf{**} &   46.49\textbf{**} &     38.46\textbf{**} &  63.88\textbf{**} &      21.06\textbf{**} & -\\
-\texttt{StableBeluga\textsubscript{5}} &   55.89\textbf{**} &   46.29\textbf{**} &     42.61\textbf{**} &  63.73\textbf{**} &      24.86\textbf{**} & - \\
-\end{tabular}}
-\caption{$F_1$-scores for character and emotion detection. Significant differences from \texttt{baseline}: ** ($p<0.01$), * ($p<0.05$).}
-    %\caption{$F_1$-score of character and emotion detection in dream narratives. Significant differences from the baseline are indicated with ** ($p<0.01$) and * ($p<0.05$).}
-    \label{tab:result}
-\end{table}
-
-\vspace{0.25cm}
-\pause
-
-$\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M \textit{vs.} 7B)
-    
-\end{frame}
-
-\end{comment}
-
 \begin{frame}{Case study on the war veteran}
   \begin{table}
     \centering
@@ -870,72 +894,53 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 \textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
 \end{frame}
 
-\begin{frame}{Expand the Cognitive Model of Isabelle Tellier}
+\begin{frame}{Introduction}
 
-Tellier was a PhD student of Alain (30 years ago)
+  Scholarly work has examined personal modes of reasoning and expression \smallcitep{husserl2012ideas,hadamard1945essay,dilts1994strategies,granger1968essai}
 
-\begin{itemize}
-    \item Tellier's cognitive model proposes formally capturing redundancies in decision-making texts, characterizing a \textit{cognitive style}; using algebraic languages and finite automata.
-    \item For implementation, Tellier performs a partial automatic analysis using categorial grammars.
+    \vspace{0.5cm}
+    \pause
 
-\end{itemize}
+    $\rightarrow$ They describe "styles of thought" but lack operational tools
 
-We propose: 
+    \vspace{0.5cm}
+    \pause
 
-\begin{itemize}
-    \item to fully implement the cognitive model using language models %(thus analyzing the semantic traits of verbs and nouns that were not automatable before)
-    \item to linguistically justify the relevant traits to capture and organize%, thanks to systemic functional linguistics
-    \item to extend the model to account for the attention mechanisms involved in expressing subjective experience
-\end{itemize}
+    Style is central to how authors express themselves: stylistics \smallcitep{walesDictionaryStylistics2014a}, stylometry \smallcitep{nealSurveyingStylometryTechniques2017} 
 
-\end{frame}
+    \vspace{0.5cm}
+    \pause
 
-\begin{frame}{How is subjective experience communicated in narratives?}
-
-\pause
-
-We use narratives to express our representations of reality and make sense of the world \smallcitep{brunerActsMeaning1990} [add more recents refs]
-
-\vspace{0.5cm}
-\pause
-
-[better transition]
-
-In everyday usage, style refers to a distinctive manner of expression
-
-\vspace{0.5cm}
-\pause
-
-Style has been studied in stylometry and stylistics [add refs, maybe cognitive linguistics]
-
-\vspace{0.5cm}
-\pause
-
-We use style as a proxy to study how subjective experience is linguistically communicated
-
-\vspace{0.5cm}
-\pause
-
-[for second slide, give a formal definition]
-
-We narrow the general definition of style: \textit{a distinctive manner of communicating subjective experience in narratives}
+  $\rightarrow$ They provide operational tools to capture linguistic form, but do not focus on how such forms encode subjective experience
 
 \end{frame}
 
-\begin{comment}
+\begin{frame}{Introduction}
 
-  \begin{frame}
-{Related work on style analysis}
+  \textbf{Limitation}: A formalization of style that captures how subjective experience is linguistically communicated is lacking
 
-TODO
+  \vspace{0.5cm}
+  \pause
 
-Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
+  Formalization could enable more precise identification of linguistic patterns associated with psychological states and may support interventions \smallcitep{whiteNarrativeMeansTherapeutic1990} 
+
+  \vspace{0.5cm}
+  \pause
+
+  $\rightarrow$ Our approach complements existing works by providing a formal framework grounded in systemic functional linguistics %\smallcitep{hallidayIntroductionFunctionalGrammar2014}
+
+  \vspace{0.5cm}
+  \pause
+
+  $\rightarrow$ We aim to create a accessible framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
+
 \end{frame}
-
-\end{comment}
 
 \begin{frame}{How to give an operational definition of style?}
 
+\textbf{Intuitive definition}: a distinctive manner of communicating subjective experience in narratives
+
+\vspace{0.25cm}
 \pause
 
 \textbf{Hypothesis}: An individual uses some redundant choices of features that characterize its style
@@ -951,7 +956,7 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 \textbf{Contributions}:
 
 \begin{enumerate}[<+->]
-    \item A sequence-based framework defining style as patterns in sequences of linguistic choices% grounded in systemic functional linguistics
+    \item A sequence-based framework defining style as \textit{patterns in sequences of linguistic choices that encode subjective experience}% grounded in systemic functional linguistics
     \item A methodology for identifying patterns using sequence analysis
     \item A case study on dream narratives %, showing how the analysis of patterns can reveal psychological insights
 \end{enumerate}
@@ -1043,9 +1048,16 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
 
 \end{frame}
 
-\begin{frame}{Pipeline for our sequence-based framework}
+\begin{frame}{Methodology for our sequence-based framework}
 
-[remove bullet points, make it more visual]
+\textbf{Goal}: Map narratives to sequences based on extracted linguistic features:
+
+\vspace{0.25cm}
+\pause
+
+“I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
+
+\pause
 
 
 \begin{table}[!ht]
@@ -1074,6 +1086,11 @@ Stylometry, stylistics, knowledge graph, cognitive linguistics, etc.
     \end{tablenotes}
   \end{threeparttable}
 \end{table}
+
+\vspace{0.25cm}
+
+\small
+\textit{Substrings are contiguous sequences of symbols within a sequence}
 
 %\begin{enumerate}[<+->]
 %    \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
@@ -1146,10 +1163,6 @@ $\rightarrow$ The veteran favors verbal processes over mental ones% with high od
 \end{itemize}
 
 \end{frame}
-
-%\begin{comment}
-
-%\end{comment}
 
 \begin{frame}{}
 \Large
@@ -1344,9 +1357,9 @@ $\rightarrow$ Nearly all questions discriminate sociodemographics
 \begin{frame}{Perspectives}
 
   \begin{itemize}[<+->]
-    \item Emotion analysis for mental health (empathic support, cognitive distortions, theory of mind) [add refs]
-    \item Psychology of language models (sycophancy, thought operations) [add refs]
-    \item Post-training for psychology (preferences and reasoning data) [add refs]
+    \item \textbf{Emotion analysis for mental health}: empathic support \smallcitep{sharmaCognitiveReframingNegative2023b}, cognitive distortions, theory of mind \smallcitep{zhouHowFaRAre2023,maHolisticLandscapeSituated2023,kimFANToMBenchmarkStresstesting2023,gandhiUnderstandingSocialReasoning2023}
+    \item \textbf{Psychology of language models}: sycophancy, thought operations \smallcitep{didolkar2025metacognitivereuseturningrecurring} [add refs]
+    \item \textbf{Post-training for psychology} (preferences and reasoning data) [add refs]
   \end{itemize}
 
 %\vspace{0.5cm}
@@ -1397,6 +1410,91 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
+\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
+
+A \textit{code} is a pre-established pairing between stimuli and sets of information
+
+\pause
+\vspace{0.5cm}
+
+The Morse code is a pairing between <combination of short and long signals> and [letters]% that senders and receivers must share to communicate with it. 
+
+\pause
+\vspace{0.5cm}
+
+The formal semantics of a language is made of syntactical and lexical rules that pairs <strings of words> with [sentential meanings] %\cite{heim_semantics_1998}
+
+%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
+
+
+\end{frame}
+
+\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
+    \caption{Dictionary analysis in cognitive pragmatics.}% [cite]}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{Codes underdetermine emotion meaning}
+
+\pause
+
+Let's take emotion expression modes as an example:
+
+\vspace{0.5cm}
+\pause
+
+\begin{itemize}[<+->]
+  \item \textit{Labeled}: \enquote{I am happy now} is explicit about the feeling but does not encode what the emotion is about
+  \item \textit{Displayed}: interjections (\enquote{Wow!}, \enquote{Ah!}, \enquote{Damn!}) show affect yet leave valence and focus unclear
+  \item \textit{Suggested}: \enquote{The ship has black sails.} can communicate any kind of emotion
+\end{itemize}
+
+\vspace{0.5cm}
+\pause
+
+
+$\rightarrow$ We rely on other sources of evidence to infer what is communicated
+
+\end{frame}
+
+\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
+
+%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
+
+%\pause
+%\vspace{0.5cm}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.20]{img/scherer_dictionary_eng.png}
+    \caption{Dictionary analysis in cognitive pragmatics.} %[cite]}
+\end{figure}
+
+
+\end{frame}
+
+\begin{frame}{What are the psychological mechanisms used to infer what is communicated?}
+
+%What are the psychological mechanisms used to infer what is communicated? %\cite{grice_logic_1975}
+
+%\pause
+%\vspace{0.5cm}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.20]{img/scherer_eng.png}
+    \caption{Detective analysis in cognitive pragmatics.} %[cite]}
+\end{figure}
+
+
+\end{frame}
+
 \begin{frame}{Component classification in emotional narratives}
 
 \begin{table}%%[!htb]
@@ -1417,6 +1515,34 @@ CamemBERT & \textbf{93.2} &  \textbf{93.0} &  \textbf{93.1} \\
 
 $\rightarrow$ Models can be used to automatically classify unstructured narratives
 
+\end{frame}
+
+\begin{frame}{Results}
+
+\texttt{StableBeluga\textsubscript{i}} is a 7B model with in-context learning using $i$ examples
+
+\begin{table}
+    \centering
+    \resizebox{1.0\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
+\hline
+\texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
+\hline
+\texttt{StableBeluga\textsubscript{1}} &   43.95\textbf{**} &   39.76\textbf{**} &     31.25\textbf{**} &  56.16\textbf{**} &      15.65\textbf{**} & -\\
+\texttt{StableBeluga\textsubscript{3}} &   52.44\textbf{**} &   46.49\textbf{**} &     38.46\textbf{**} &  63.88\textbf{**} &      21.06\textbf{**} & -\\
+\texttt{StableBeluga\textsubscript{5}} &   55.89\textbf{**} &   46.29\textbf{**} &     42.61\textbf{**} &  63.73\textbf{**} &      24.86\textbf{**} & - \\
+\end{tabular}}
+\caption{$F_1$-scores for character and emotion detection. Significant differences from \texttt{baseline}: ** ($p<0.01$), * ($p<0.05$).}
+    %\caption{$F_1$-score of character and emotion detection in dream narratives. Significant differences from the baseline are indicated with ** ($p<0.01$) and * ($p<0.05$).}
+    \label{tab:result}
+\end{table}
+
+\vspace{0.25cm}
+\pause
+
+$\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform better while having 28 times fewer parameters (248M \textit{vs.} 7B)
+    
 \end{frame}
 
 \begin{frame}{Distribution of depression scores across clusters}
