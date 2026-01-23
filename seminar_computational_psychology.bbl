@@ -19,6 +19,104 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{alhafniPersonalizedTextGeneration2024b}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b58eb292986775844e11291d3aa466fa}{%
+           family={Alhafni},
+           familyi={A\bibinitperiod},
+           given={Bashar},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=52f483a4b11f9e4e53d760a20239fcfd}{%
+           family={Kulkarni},
+           familyi={K\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97836bab86bc4c48372d3b33e8bd1d82}{%
+           family={Kumar},
+           familyi={K\bibinitperiod},
+           given={Dhruv},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=685bb0ed56bc5cb053f202200b57ec0f}{%
+           family={Raheja},
+           familyi={R\bibinitperiod},
+           given={Vipul},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{8}{}{%
+        {{hash=82c947884058fba088bf3b8f0f4fd1dc}{%
+           family={Deshpande},
+           familyi={D\bibinitperiod},
+           given={Ameet},
+           giveni={A\bibinitperiod}}}%
+        {{hash=50b590a4c620d79f465f611fdc58eb80}{%
+           family={Hwang},
+           familyi={H\bibinitperiod},
+           given={EunJeong},
+           giveni={E\bibinitperiod}}}%
+        {{hash=50e33c16c7f11ca2f1ab604106e66ae7}{%
+           family={Murahari},
+           familyi={M\bibinitperiod},
+           given={Vishvak},
+           giveni={V\bibinitperiod}}}%
+        {{hash=a6d2d4802375c9b3367011ada5e50822}{%
+           family={Park},
+           familyi={P\bibinitperiod},
+           given={Joon\bibnamedelima Sung},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=6ff611991cba7ee48521ab941158ac2f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Diyi},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a9e0631f7cb86b51f2dbfd908c164960}{%
+           family={Sabharwal},
+           familyi={S\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=997c3143c2e5d593e816d2ff704fbf98}{%
+           family={Narasimhan},
+           familyi={N\bibinitperiod},
+           given={Karthik},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0fd961fe6ef2e9446aea0a874c620393}{%
+           family={Kalyan},
+           familyi={K\bibinitperiod},
+           given={Ashwin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {St. Julians, Malta}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{9cfdae3552b4ff974a268a17d7955d98}
+      \strng{fullhash}{0ede359c3ec416d960a1b8f384d41eca}
+      \strng{bibnamehash}{9cfdae3552b4ff974a268a17d7955d98}
+      \strng{authorbibnamehash}{9cfdae3552b4ff974a268a17d7955d98}
+      \strng{authornamehash}{9cfdae3552b4ff974a268a17d7955d98}
+      \strng{authorfullhash}{0ede359c3ec416d960a1b8f384d41eca}
+      \strng{editorbibnamehash}{7696098de5630d4a01b1f90e90e2ab3b}
+      \strng{editornamehash}{7696098de5630d4a01b1f90e90e2ab3b}
+      \strng{editorfullhash}{fa4afef5dde86eb3d7de315590138e27}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As the text generation capabilities of large language models become increasingly prominent, recent studies have focused on controlling particular aspects of the generated text to make it more personalized. However, most research on controllable text generation focuses on controlling the content or modeling specific high-level/coarse-grained attributes that reflect authors' writing styles, such as formality, domain, or sentiment. In this paper, we focus on controlling fine-grained attributes spanning multiple linguistic dimensions, such as lexical and syntactic attributes. We introduce a novel benchmark to train generative models and evaluate their ability to generate personalized text based on multiple fine-grained linguistic attributes. We systematically investigate the performance of various large language models on our benchmark and draw insights from the factors that impact their performance. We make our code, data, models, and benchmarks publicly available.}
+      \field{booktitle}{Proceedings of the 1st Workshop on Personalization of Generative {{AI}} Systems ({{PERSONALIZE}} 2024)}
+      \field{title}{Personalized Text Generation with Fine-Grained Linguistic Control}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{pages}{88\bibrangedash 101}
+      \range{pages}{14}
+    \endentry
     \entry{arnold_emotion_1960}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=28bd4b33157f6421286e682d3a843748}{%
@@ -224,53 +322,6 @@
       \verb C:\Users\Gustave\Zotero\storage\YF4PLVIA\Bonard et Cortal - 2024 - Improving Language Models for Emotion Analysis In.pdf
       \endverb
       \keyw{notion}
-    \endentry
-    \entry{bostan-klinger-2018-analysis}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=2196cfa488f7d6ba4f9c79ca61e43a2b}{%
-           family={Bostan},
-           familyi={B\bibinitperiod},
-           given={Laura-Ana-Maria},
-           giveni={L\bibinithyphendelim A\bibinithyphendelim M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
-           family={Klinger},
-           familyi={K\bibinitperiod},
-           given={Roman},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {Santa Fe, New Mexico, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computational Linguistics}%
-      }
-      \strng{namehash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \strng{fullhash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \strng{bibnamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \strng{authorbibnamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \strng{authornamehash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \strng{authorfullhash}{b4e08efbb8817ba48b44fe9e464a3c29}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 27th International Conference on Computational Linguistics}
-      \field{month}{8}
-      \field{title}{An Analysis of Annotated Corpora for Emotion Classification in Text}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{pages}{2104\bibrangedash 2119}
-      \range{pages}{16}
-      \verb{urlraw}
-      \verb https://aclanthology.org/C18-1179
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/C18-1179
-      \endverb
     \endentry
     \entry{buechel-hahn-2017-emobank}{inproceedings}{}
       \name{author}{2}{}{%
@@ -1166,6 +1217,60 @@
       \verb https://aclanthology.org/2022.lrec-1.64
       \endverb
     \endentry
+    \entry{ferraraDetectionPromotedSocial2016}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9ff088972e751f036f6d04e4c835050d}{%
+           family={Ferrara},
+           familyi={F\bibinitperiod},
+           given={Emilio},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a87d0c70e43b7e935e92f1f97c48d2e}{%
+           family={Varol},
+           familyi={V\bibinitperiod},
+           given={Onur},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3e3991fca812b39b0448729fca507968}{%
+           family={Menczer},
+           familyi={M\bibinitperiod},
+           given={Filippo},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2596bc60fbbe46dccfc09ae3fd2522d0}{%
+           family={Flammini},
+           familyi={F\bibinitperiod},
+           given={Alessandro},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{826a38cc9b913984b6199233dca8703e}
+      \strng{fullhash}{e73858747edb09e19fa01b38b4c1d3b9}
+      \strng{bibnamehash}{826a38cc9b913984b6199233dca8703e}
+      \strng{authorbibnamehash}{826a38cc9b913984b6199233dca8703e}
+      \strng{authornamehash}{826a38cc9b913984b6199233dca8703e}
+      \strng{authorfullhash}{e73858747edb09e19fa01b38b4c1d3b9}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Information spreading on social media contributes to the formation of collective opinions. Millions of social media users are exposed every day to popular memes — some generated organically by grassroots activity, others sustained by advertising, information campaigns or more or less transparent coordinated efforts. While most information campaigns are benign, some may have nefarious purposes, including terrorist propaganda, political astroturf, and financial market manipulation. This poses a crucial technological challenge with deep social implications: can we detect whether the spreading of a viral meme is being sustained by a promotional campaign? Here we study trending memes that attract attention either organically, or by means of advertisement. We designed a machine learning framework capable to detect promoted campaigns and separate them from organic ones in their early stages. Using a dataset of millions of posts associated with trending Twitter hashtags, we prove that remarkably accurate early detection is possible, achieving 95\% AUC score. Feature selection analysis reveals that network diffusion patterns and content cues are powerful early detection signals.}
+      \field{issn}{2334-0770}
+      \field{journaltitle}{Proceedings of the International AAAI Conference on Web and Social Media}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Detection of Promoted Social Media Campaigns}
+      \field{volume}{10}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{563\bibrangedash 566}
+      \range{pages}{4}
+      \verb{file}
+      \verb C:\Users\Gustave\Zotero\storage\LIJZRLWC\Ferrara et al. - 2016 - Detection of Promoted Social Media Campaigns.pdf
+      \endverb
+    \endentry
     \entry{Finkel2022}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=509dc3f55025549291f16bed8cd64ba1}{%
@@ -1448,6 +1553,59 @@
       \field{year}{1968}
       \field{dateera}{ce}
     \endentry
+    \entry{greschner2025categoricalemotionsappraisals}{misc}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a4ed971794b9bd2245f5d22f28af1572}{%
+           family={Greschner},
+           familyi={G\bibinitperiod},
+           given={Lynn},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12f1a2863bb3e30a101e5204639b622e}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={Meike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e62efb957199c08cc1f73a5d388e87b7}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Sabine},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f8022256c267d82acf82096cd4f59974}
+      \strng{fullhash}{5e4aa4bb3dde57b0287b619cd400aa76}
+      \strng{bibnamehash}{f8022256c267d82acf82096cd4f59974}
+      \strng{authorbibnamehash}{f8022256c267d82acf82096cd4f59974}
+      \strng{authornamehash}{f8022256c267d82acf82096cd4f59974}
+      \strng{authorfullhash}{5e4aa4bb3dde57b0287b619cd400aa76}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Categorical Emotions or Appraisals - Which Emotion Model Explains Argument Convincingness Better?}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2511.07162
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2511.07162
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2511.07162
+      \endverb
+    \endentry
     \entry{GUTMANMUSIC2022103428}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=75a0200eb55e7b4097c49698fee0127d}{%
@@ -1590,67 +1748,57 @@
       \verb 10.4324/9780203783771
       \endverb
     \endentry
-    \entry{hofmann-etal-2020-appraisal}{inproceedings}{}
+    \entry{hipolitoPatternBreakingComplex2023a}{article}{}
       \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=89bc403028a457484a59f671cc486d48}{%
-           family={Hofmann},
+        {{un=0,uniquepart=base,hash=d0e8d1bc70c6b66a39c53afcbe0b45bd}{%
+           family={Hipólito},
            familyi={H\bibinitperiod},
-           given={Jan},
+           given={Inês},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=523e5f16b621bfae6df865344803d217}{%
+           family={Mago},
+           familyi={M\bibinitperiod},
+           given={Jonas},
            giveni={J\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=5f4d2d4557cd530abfddfca75e9a4fe4}{%
-           family={Troiano},
-           familyi={T\bibinitperiod},
-           given={Enrica},
-           giveni={E\bibinitperiod},
+        {{un=0,uniquepart=base,hash=44a88ebde63fdbe9dc557594865fa888}{%
+           family={Rosas},
+           familyi={R\bibinitperiod},
+           given={Fernando\bibnamedelima E},
+           giveni={F\bibinitperiod\bibinitdelim E\bibinitperiod},
            givenun=0}}%
-        {{un=0,uniquepart=base,hash=c7bc9eb97cfde68528e81194c14a3566}{%
-           family={Sassenberg},
-           familyi={S\bibinitperiod},
-           given={Kai},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
-           family={Klinger},
-           familyi={K\bibinitperiod},
-           given={Roman},
+        {{un=0,uniquepart=base,hash=9c80de633dca6f4185b82c9ab70ddca8}{%
+           family={Carhart-Harris},
+           familyi={C\bibinithyphendelim H\bibinitperiod},
+           given={Robin},
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
-      \list{location}{1}{%
-        {Barcelona, Spain (Online)}%
-      }
-      \list{publisher}{1}{%
-        {International Committee on Computational Linguistics}%
-      }
-      \strng{namehash}{450f5d842746501dae869be09b17eef4}
-      \strng{fullhash}{395043bdcd9ba4b53949fbba30009230}
-      \strng{bibnamehash}{450f5d842746501dae869be09b17eef4}
-      \strng{authorbibnamehash}{450f5d842746501dae869be09b17eef4}
-      \strng{authornamehash}{450f5d842746501dae869be09b17eef4}
-      \strng{authorfullhash}{395043bdcd9ba4b53949fbba30009230}
+      \strng{namehash}{9c26ecbea314c0f7e5704ccc16bb0d60}
+      \strng{fullhash}{9146d1fabeeea057dcd9bbc7743cf9f5}
+      \strng{bibnamehash}{9c26ecbea314c0f7e5704ccc16bb0d60}
+      \strng{authorbibnamehash}{9c26ecbea314c0f7e5704ccc16bb0d60}
+      \strng{authornamehash}{9c26ecbea314c0f7e5704ccc16bb0d60}
+      \strng{authorfullhash}{9146d1fabeeea057dcd9bbc7743cf9f5}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 28th international conference on computational linguistics}
-      \field{month}{12}
-      \field{title}{Appraisal theories for emotion classification in text}
-      \field{year}{2020}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Abstract Recent research has demonstrated the potential of psychedelic therapy for mental health care. However, the psychological experience underlying its therapeutic effects remains poorly understood. This paper proposes a framework that suggests psychedelics act as destabilizers, both psychologically and neurophysiologically. Drawing on the ‘entropic brain’ hypothesis and the ‘RElaxed Beliefs Under pSychedelics’ model, this paper focuses on the richness of psychological experience. Through a complex systems theory perspective, we suggest that psychedelics destabilize fixed points or attractors, breaking reinforced patterns of thinking and behaving. Our approach explains how psychedelic-induced increases in brain entropy destabilize neurophysiological set points and lead to new conceptualizations of psychedelic psychotherapy. These insights have important implications for risk mitigation and treatment optimization in psychedelic medicine, both during the peak psychedelic experience and during the subacute period of potential recovery.}
+      \field{issn}{2057-2107}
+      \field{journaltitle}{Neuroscience of Consciousness}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{shorttitle}{Pattern Breaking}
+      \field{title}{Pattern Breaking: A Complex Systems Approach to Psychedelic Medicine}
+      \field{volume}{2023}
+      \field{year}{2023}
       \field{dateera}{ce}
-      \field{pages}{125\bibrangedash 138}
-      \range{pages}{14}
-      \verb{doi}
-      \verb 10.18653/v1/2020.coling-main.11
-      \endverb
-      \verb{urlraw}
-      \verb https://aclanthology.org/2020.coling-main.11
-      \endverb
-      \verb{url}
-      \verb https://aclanthology.org/2020.coling-main.11
-      \endverb
+      \field{pages}{niad017}
+      \range{pages}{-1}
     \endentry
     \entry{husserl2012ideas}{book}{}
       \name{author}{1}{}{%
@@ -1682,13 +1830,73 @@
       \field{edition}{illustrated}
       \field{isbn}{978-94-009-7445-6}
       \field{title}{Ideas Pertaining to a Pure Phenomenology and to a Phenomenological Philosophy: {{First}} Book: {{General}} Introduction to a Pure Phenomenology}
-      \field{year}{2012}
+      \field{year}{1982}
       \field{dateera}{ce}
       \verb{urlraw}
       \verb https://books.google.com/books/about/Ideas_Pertaining_to_a_Pure_Phenomenology.html?id=geEsBAAAQBAJ
       \endverb
       \verb{url}
       \verb https://books.google.com/books/about/Ideas_Pertaining_to_a_Pure_Phenomenology.html?id=geEsBAAAQBAJ
+      \endverb
+    \endentry
+    \entry{jinDeepLearningText2022}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=2f889329de29e295fcb391586c7978f0}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Di},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c28d4d196ae83a7396fc9a7a676d25f7}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Zhijing},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af4657fcaf2cf4bfc9b7d5c668496903}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Zhiting},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=379911f4b8e05eb040bdcb343cf42fef}{%
+           family={Vechtomova},
+           familyi={V\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7147443179f5f0b00a44986a0f561f4d}{%
+           family={Mihalcea},
+           familyi={M\bibinitperiod},
+           given={Rada},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{89c5d83675f58dc9b08ab863da6caf7b}
+      \strng{fullhash}{1d4c32f9eab731a6ca067f11c9e215a9}
+      \strng{bibnamehash}{89c5d83675f58dc9b08ab863da6caf7b}
+      \strng{authorbibnamehash}{89c5d83675f58dc9b08ab863da6caf7b}
+      \strng{authornamehash}{89c5d83675f58dc9b08ab863da6caf7b}
+      \strng{authorfullhash}{1d4c32f9eab731a6ca067f11c9e215a9}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Text style transfer is an important task in natural language generation, which aims to control certain attributes in the generated text, such as politeness, emotion, humor, and many others. It has a long history in the field of natural language processing, and recently has re-gained significant attention thanks to the promising performance brought by deep neural models. In this article, we present a systematic survey of the research on neural text style transfer, spanning over 100 representative articles since the first neural text style transfer work in 2017. We discuss the task formulation, existing datasets and subtasks, evaluation, as well as the rich methodologies in the presence of parallel and non-parallel data. We also provide discussions on a variety of important topics regarding the future development of this task.1}
+      \field{issn}{0891-2017}
+      \field{journaltitle}{Computational Linguistics}
+      \field{number}{1}
+      \field{shorttitle}{Deep Learning for Text Style Transfer}
+      \field{title}{Deep Learning for Text Style Transfer: A Survey}
+      \field{volume}{48}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{155\bibrangedash 205}
+      \range{pages}{51}
+      \verb{file}
+      \verb C\:\\Users\\Gustave\\Zotero\\storage\\YNV549B5\\Jin et al. - 2022 - Deep Learning for Text Style Transfer A Survey.pdf;C\:\\Users\\Gustave\\Zotero\\storage\\U8M538FP\\Deep-Learning-for-Text-Style-Transfer-A-Survey.html
       \endverb
     \endentry
     \entry{kim-klinger-2019-analysis}{inproceedings}{}
@@ -1817,6 +2025,76 @@
       \endverb
       \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
     \endentry
+    \entry{klingerWhereAreWe2023}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=ecf6844c3c1983ee94c878e2b9625fb8}{%
+           family={Elazar},
+           familyi={E\bibinitperiod},
+           given={Yanai},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=de7c03ae2e887e750872247d882c1399}{%
+           family={Ettinger},
+           familyi={E\bibinitperiod},
+           given={Allyson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=37db75d7464d8df392b96fc06ca731c4}{%
+           family={Kassner},
+           familyi={K\bibinitperiod},
+           given={Nora},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=31380ca016724ecb554d057c5d85b1d4}{%
+           family={A.\bibnamedelimi Smith},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Singapore}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computational Linguistics}%
+      }
+      \strng{namehash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{fullhash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{bibnamehash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{authorbibnamehash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{authornamehash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{authorfullhash}{2c2bc9b064a660f5bab9807cc78239f3}
+      \strng{editorbibnamehash}{a569ea5d6580e34895ce7716ef199af7}
+      \strng{editornamehash}{a569ea5d6580e34895ce7716ef199af7}
+      \strng{editorfullhash}{9d7471b01f8b777a53b1d2dbfeecab9b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The term emotion analysis in text subsumes various natural language processing tasks which have in common the goal to enable computers to understand emotions. Most popular is emotion classification in which one or multiple emotions are assigned to a predefined textual unit. While such setting is appropriate for identifying the reader's or author's emotion, emotion role labeling adds the perspective of mentioned entities and extracts text spans that correspond to the emotion cause. The underlying emotion theories agree on one important point; that an emotion is caused by some internal or external event and comprises several subcomponents, including the subjective feeling and a cognitive evaluation. We therefore argue that emotions and events are related in two ways. (1) Emotions are events; and this perspective is the fundament in natural language processing for emotion role labeling. (2) Emotions are caused by events; a perspective that is made explicit with research how to incorporate psychological appraisal theories in NLP models to interpret events. These two research directions, role labeling and (event-focused) emotion classification, have by and large been tackled separately. In this paper, we contextualize both perspectives and discuss open research questions.}
+      \field{booktitle}{Proceedings of the {{Big Picture Workshop}}}
+      \field{month}{12}
+      \field{shorttitle}{Where Are {{We}} in {{Event-centric Emotion Analysis}}?}
+      \field{title}{Where Are {{We}} in {{Event-centric Emotion Analysis}}? {{Bridging Emotion Role Labeling}} and {{Appraisal-based Approaches}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.18653/v1/2023.bigpicture-1.1
+      \endverb
+    \endentry
     \entry{lazarus_progress_1991}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=3c3711bd375c3f88df9dc526de14be67}{%
@@ -1849,6 +2127,44 @@
       \verb{file}
       \verb Full Text:/Users/bonard/switchdrive2/Zotero/storage/FJZ759EF/1991-32296-001.html:text/html
       \endverb
+    \endentry
+    \entry{lempelComplexityFiniteSequences1976}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=fbe575925b828a4cce363199c686254b}{%
+           family={Lempel},
+           familyi={L\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=66c17d5c1088d4f705399f18f3461ef5}{%
+           family={Ziv},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9682eb998c69881f9283b501c1d499ea}
+      \strng{fullhash}{9682eb998c69881f9283b501c1d499ea}
+      \strng{bibnamehash}{9682eb998c69881f9283b501c1d499ea}
+      \strng{authorbibnamehash}{9682eb998c69881f9283b501c1d499ea}
+      \strng{authornamehash}{9682eb998c69881f9283b501c1d499ea}
+      \strng{authorfullhash}{9682eb998c69881f9283b501c1d499ea}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A new approach to the problem of evaluating the complexity ("randomness") of finite sequences is presented. The proposed complexity measure is related to the number of steps in a self-delimiting production process by which a given sequence is presumed to be generated. It is further related to the number of distinct substrings and the rate of their occurrence along the sequence. The derived properties of the proposed measure are discussed and motivated in conjunction with other well-established complexity criteria.}
+      \field{issn}{1557-9654}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{1}
+      \field{title}{On the Complexity of Finite Sequences}
+      \field{volume}{22}
+      \field{year}{1976}
+      \field{dateera}{ce}
+      \field{pages}{75\bibrangedash 81}
+      \range{pages}{7}
     \endentry
     \entry{maHolisticLandscapeSituated2023}{misc}{}
       \name{author}{4}{}{%
@@ -2398,6 +2714,53 @@
       \endverb
       \keyw{emotion components,emotion definition,emotion process,Emotion theories,theory convergence}
     \endentry
+    \entry{continuity}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=afff1996eb4e8dadc94a496b553ae94c}{%
+           family={Schredl},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bdc825c0ab2a5981b5e44fd1671483b2}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Friedrich},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \strng{fullhash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \strng{bibnamehash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \strng{authorbibnamehash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \strng{authornamehash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \strng{authorfullhash}{6f44abb3568d12b1d3baab76f24cb59a}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Consciousness and Cognition}
+      \field{month}{6}
+      \field{note}{Publisher: Elsevier {BV}}
+      \field{number}{2}
+      \field{title}{Continuity between waking activities and dream activities}
+      \field{volume}{12}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{pages}{298\bibrangedash 308}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/s1053-8100(02)00072-7
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/s1053-8100(02)00072-7
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/s1053-8100(02)00072-7
+      \endverb
+    \endentry
     \entry{sharmaCognitiveReframingNegative2023b}{inproceedings}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=b05620aa2ec177d220e7ad210f055d74}{%
@@ -2535,7 +2898,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
     \endentry
-    \entry{troianoDimensionalModelingEmotions2022}{article}{}
+    \entry{Troiano2023}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=5f4d2d4557cd530abfddfca75e9a4fe4}{%
            family={Troiano},
@@ -2556,6 +2919,12 @@
            giveni={R\bibinitperiod},
            givenun=0}}%
       }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
       \strng{namehash}{6742e2ca107969c160ee4027f77e4696}
       \strng{fullhash}{6742e2ca107969c160ee4027f77e4696}
       \strng{bibnamehash}{6742e2ca107969c160ee4027f77e4696}
@@ -2565,28 +2934,29 @@
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
+      \field{labeltitlesource}{title}
       \field{abstract}{The most prominent tasks in emotion analysis are to assign emotions to texts and to understand how emotions manifest in language. An observation for NLP is that emotions can be communicated implicitly by referring to events, appealing to an empathetic, intersubjective understanding of events, even without explicitly mentioning an emotion name. In psychology, the class of emotion theories known as appraisal theories aims at explaining the link between events and emotions. Appraisals can be formalized as variables that measure a cognitive evaluation by people living through an event that they consider relevant. They include the assessment if an event is novel, if the person considers themselves to be responsible, if it is in line with the own goals, and many others. Such appraisals explain which emotions are developed based on an event, e.g., that a novel situation can induce surprise or one with uncertain consequences could evoke fear. We analyze the suitability of appraisal theories for emotion analysis in text with the goal of understanding if appraisal concepts can reliably be reconstructed by annotators, if they can be predicted by text classifiers, and if appraisal concepts help to identify emotion categories. To achieve that, we compile a corpus by asking people to textually describe events that triggered particular emotions and to disclose their appraisals. Then, we ask readers to reconstruct emotions and appraisals from the text. This setup allows us to measure if emotions and appraisals can be recovered purely from text and provides a human baseline. Our comparison of text classification methods to human annotators shows that both can reliably detect emotions and appraisals with similar performance. Therefore, appraisals constitute an alternative computational emotion analysis paradigm and further improve the categorization of emotions in text with joint models.}
-      \field{eprintclass}{cs}
       \field{eprinttype}{arXiv}
-      \field{issn}{0891-2017, 1530-9312}
       \field{journaltitle}{Computational Linguistics}
-      \field{month}{9}
-      \field{shorttitle}{Dimensional {{Modeling}} of {{Emotions}} in {{Text}} with {{Appraisal Theories}}}
-      \field{title}{Dimensional {{Modeling}} of {{Emotions}} in {{Text}} with {{Appraisal Theories}}: {{Corpus Creation}}, {{Annotation Reliability}}, and {{Prediction}}}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 71}
-      \range{pages}{71}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Dimensional Modeling of Emotions in Text with Appraisal Theories: Corpus Creation, Annotation Reliability, and Prediction}
+      \field{volume}{49}
+      \field{year}{2023}
       \verb{doi}
       \verb 10.1162/coli_a_00461
       \endverb
       \verb{eprint}
       \verb 2206.05238
       \endverb
-      \keyw{Computer Science - Computation and Language,notion}
+      \verb{urlraw}
+      \verb https://doi.org/10.1162/coli_a_00461
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1162/coli_a_00461
+      \endverb
     \endentry
     \entry{walesDictionaryStylistics2014a}{book}{}
       \name{author}{1}{}{%
@@ -2732,77 +3102,6 @@
       \verb https://doi.org/10.1037/drm0000189
       \endverb
     \endentry
-    \entry{zhanEvaluatingSubjectiveCognitive2023}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=636793a8104396f089ddbb3f95461568}{%
-           family={Zhan},
-           familyi={Z\bibinitperiod},
-           given={Hongli},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1452fdfae044e1c201c45fab7c9ee556}{%
-           family={Ong},
-           familyi={O\bibinitperiod},
-           given={Desmond},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=1,uniquepart=given,hash=1f30679330f0fc32db88902b582f4499}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Junyi\bibnamedelima Jessy},
-           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=1}}%
-      }
-      \name{editor}{3}{}{%
-        {{hash=b46767bc2cc6558bc2276b0d8cda03d7}{%
-           family={Bouamor},
-           familyi={B\bibinitperiod},
-           given={Houda},
-           giveni={H\bibinitperiod}}}%
-        {{hash=70fbbebd4875461935ebed5a7c7d4d1d}{%
-           family={Pino},
-           familyi={P\bibinitperiod},
-           given={Juan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4e7a16b33b42e17420a922fd0fca193b}{%
-           family={Bali},
-           familyi={B\bibinitperiod},
-           given={Kalika},
-           giveni={K\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Singapore}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computational Linguistics}%
-      }
-      \strng{namehash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{fullhash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{bibnamehash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{authorbibnamehash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{authornamehash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{authorfullhash}{fc5adce9b9687e362b6f40310f801ad9}
-      \strng{editorbibnamehash}{35afbfee52595edf1ad6a24c177ade36}
-      \strng{editornamehash}{35afbfee52595edf1ad6a24c177ade36}
-      \strng{editorfullhash}{35afbfee52595edf1ad6a24c177ade36}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{The emotions we experience involve complex processes; besides physiological aspects, research in psychology has studied cognitive appraisals where people assess their situations subjectively, according to their own values (Scherer, 2005). Thus, the same situation can often result in different emotional experiences. While the detection of emotion is a well-established task, there is very limited work so far on the automatic prediction of cognitive appraisals. This work fills the gap by presenting CovidET-Appraisals, the most comprehensive dataset to-date that assesses 24 appraisal dimensions, each with a natural language rationale, across 241 Reddit posts. CovidET-Appraisals presents an ideal testbed to evaluate the ability of large language models — excelling at a wide range of NLP tasks — to automatically assess and explain cognitive appraisals. We found that while the best models are performant, open-sourced LLMs fall short at this task, presenting a new challenge in the future development of emotionally intelligent models. We release our dataset at https://github.com/honglizhan/CovidET-Appraisals-Public.}
-      \field{booktitle}{Findings of the {{Association}} for {{Computational Linguistics}}: {{EMNLP}} 2023}
-      \field{month}{12}
-      \field{title}{Evaluating {{Subjective Cognitive Appraisals}} of {{Emotions}} from {{Large Language Models}}}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \field{pages}{14418\bibrangedash 14446}
-      \range{pages}{29}
-      \verb{doi}
-      \verb 10.18653/v1/2023.findings-emnlp.962
-      \endverb
-    \endentry
     \entry{zhangSentimentAnalysisEra2023}{misc}{}
       \name{author}{5}{ul=2}{%
         {{un=0,uniquepart=base,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
@@ -2875,12 +3174,12 @@
            given={Wenxuan},
            giveni={W\bibinitperiod},
            givenun=0}}%
-        {{un=1,uniquepart=given,hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
+        {{un=0,uniquepart=base,hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
            family={Li},
            familyi={L\bibinitperiod},
            given={Xin},
            giveni={X\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=63c044fc1bc04fba0954b8e26fcca4ce}{%
            family={Deng},
            familyi={D\bibinitperiod},

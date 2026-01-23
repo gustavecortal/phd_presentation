@@ -1,5 +1,5 @@
 % --begin pap's style
-\documentclass[10pt]{beamer}
+\documentclass[handout,10pt]{beamer}
 
 %\usetheme[secheader]{Darmstadt}
 %\usetheme{Pittsburgh}
@@ -108,6 +108,7 @@
 \usepackage{ragged2e}         % better ragged-right with hyphenation
 \usepackage{xspace}           % for intelligent spacing after commands
 \setlength{\emergencystretch}{3em} % gentle last-resort stretch
+\usepackage{appendixnumberbeamer}
 
 %\newcommand{\comment}[1]{}
 
@@ -163,7 +164,7 @@
     \end{beamercolorbox}%
     \begin{beamercolorbox}[ht=2.5ex,dp=2.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}%
       %%      {\usebeamerfont{section in head/foot} somthing written here \hfill  \setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!70}{My own image here}}%
-      {\usebeamerfont{section in head/foot} \insertshortauthor \hfill  %\setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!100}{foobar etc}
+      {\usebeamerfont{section in head/foot} \insertsectionhead \hfill  %\setlength{\fboxrule}{0pt}\setlength{\fboxsep}{0pt}\fcolorbox{blueNCS}{blueNCS!100}{foobar etc}
       }%
       \insertframenumber{}\,/\,\inserttotalframenumber%
     \end{beamercolorbox}%
@@ -184,11 +185,11 @@
   \titlepage
 \end{frame}
 
+\section{Introduction}
 \begin{frame}{}
 \Large
 \begin{center}
     Introduction
-    \section{Introduction}
 \end{center}
 \end{frame}
 
@@ -240,7 +241,7 @@
   \begin{itemize}[<+->]
     \item Natural language processing for psychology is underexplored%, despite its fundamental importance for understanding human language,
     \item We build on an existing subfield: sentiment and emotion analysis
-    \item We study subjectivity (\textit{e.g.}, first-person perspective, meaning-making processes, and experiential content)
+    \item We study subjectivity (first-person perspective, meaning-making processes, and experiential content)
     \item We focus on personal narratives (emotional narratives, dream reports)
     %\item Computational approaches to analyzing subjective experience have potential for supporting psychological well-being
     \end{itemize}
@@ -263,9 +264,9 @@ We first address the \textit{content} by classifying elements of personal narrat
 \pause
 
 \begin{itemize}[<+->]
-    \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion dataset 
-    \item Training of language models for emotion analysis 
+    \item Objectives and scope using cognitive theories
+    \item French narratives based on emotion components
+    \item Models for emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
     %\item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
@@ -281,11 +282,13 @@ We first address the \textit{content} by classifying elements of personal narrat
     
 \end{frame}
 
+\section{Scope of research}
+
 \begin{frame}{}
 \Large
 \begin{center}
-    Definition of objectives using cognitive science
-    \section{Definition of objectives using cognitive science}
+    Objectives and scope using cognitive theories
+    %\section{Objectives and scope using cognitive theories}
 \end{center}
 \vspace{1.5cm}
 
@@ -320,7 +323,7 @@ We first address the \textit{content} by classifying elements of personal narrat
 Basic emotions theory & a \textit{category} & "I love philosophy." $\rightarrow$ \texttt{joy} \\
 \addlinespace
 \smallcitet{darwin_expression_1872,tomkins_affect_1962,ekman_basic_1999,plutchik} & & \\
-\smallcitet{demszky-etal-2020-goemotions,bostan-klinger-2018-analysis} & & \\ 
+\smallcitet{demszky-etal-2020-goemotions,greschner2025categoricalemotionsappraisals} & & \\ 
 \addlinespace
 \hline
 \addlinespace
@@ -335,7 +338,7 @@ Constructivist theories & a continuous value with an \textit{affective} meaning 
 \pause
 Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I received a surprise gift." $\rightarrow$ \texttt{sudden} (4/5), \texttt{control} (0/5) \\ 
 \smallcitet{arnold_emotion_1960,lazarus_progress_1991}  & & \\
-\smallcitet{hofmann-etal-2020-appraisal,troianoDimensionalModelingEmotions2022,zhanEvaluatingSubjectiveCognitive2023} & & \\
+\smallcitet{Troiano2023} & & \\
 %\addlinespace
 %\hline
 %\pause
@@ -372,7 +375,7 @@ Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I rece
 \addlinespace
 \hline
 & composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})." \\
-%\smallcitet{lee-etal-2010-text,campagnano-etal-2022-srl4e,klingerWhereAreWe2023} & & \\
+\smallcitet{campagnano-etal-2022-srl4e,klingerWhereAreWe2023} & & \\
 \end{tabular}
 \end{center}
 }
@@ -384,7 +387,7 @@ Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I rece
 
 %Sentiment analysis, a fundamental task in natural language processing, is sometimes considered a simplified version of emotion analysis. In its most basic form, sentiment analysis associates textual units with a category indicating a polarity (\textit{positive} or \textit{negative}) \parencite{poriaTipIcebergCurrent2020a}
 
-Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSentiment2022}: \enquote{The battery life is \textit{amazing} (\textcolor{Aplgreen}{\Large$\boldsymbol{+}$}), but its camera quality is \textit{disappointing} (\textcolor{red!70!black}{\Large$\boldsymbol{-}$}).}
+Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSentiment2022}: \enquote{The battery life is \textit{amazing} (\textcolor{Aplgreen}{\large$\boldsymbol{+}$}), but its camera quality is \textit{disappointing} (\textcolor{red!70!black}{\large$\boldsymbol{-}$}).}
 %\vspace{0.2cm}
 
 %\centering
@@ -412,11 +415,13 @@ Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSen
 
 \end{frame}
 
+\section{Linguistic and cognitive science theories}
+
 \begin{frame}{}
 \Large
 \begin{center}
     Linguistic and cognitive science theories
-    %\section{Definition of objectives using cognitive science}
+    %\section{Objectives and scope using cognitive theories}
 \end{center}
 
 \end{frame}
@@ -494,11 +499,13 @@ $\rightarrow$ We use this framework to construct an emotion dataset
 
 \end{comment}
 
+\section{French narratives based on emotion components}
+
 \begin{frame}{}
 \Large
 \begin{center}
-    Construction of an emotion dataset
-    \section{Construction of an emotion dataset}
+    French narratives based on emotion components
+    %\section{Construction of an emotion dataset}
 
     \vspace{1.5cm}
 \end{center}
@@ -612,11 +619,13 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
     
 \end{frame}
 
+\section{Language models for emotion analysis}
+
 \begin{frame}{}
 \Large
 \begin{center}
-    Training language models for emotion analysis
-    \section{Training language models for emotion analysis}
+    Language models for emotion analysis in emotional and dream narratives
+    %\section{Training language models for emotion analysis}
 \end{center}
 
 \vspace{1.5cm}
@@ -643,43 +652,64 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
 %\vspace{0.5cm}
 
 \begin{table}
-    \centering
-    \resizebox{1\textwidth}{!}{
-\begin{tabular}{l|lllllll}
+  \centering
+  \resizebox{1\textwidth}{!}{
+\begin{tabular}{l|ccccccc}
 
 &\multicolumn{3}{c}{\textbf{Logistic Regression}}&\multicolumn{3}{c}{\textbf{CamemBERT}} \\
 
-                   \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
+           \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
 \hline
-              All  & 71.2\,\mscriptsize{(2.6)} & 69.1\,\mscriptsize{(2.2)} & 67.8\,\mscriptsize{(2.3)} & \textbf{85.1} & \textbf{84.8} & \textbf{84.7} \\
-              \pause
-              Without \texttt{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
-              Without \texttt{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
-              Without \texttt{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
-              Without \texttt{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
-              \pause
-          Only \texttt{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
+        All  & 71.2\,\mscriptsize{(2.6)} & 69.1\,\mscriptsize{(2.2)} & 67.8\,\mscriptsize{(2.3)} & \textbf{85.1} & \textbf{84.8} & \textbf{84.7} \\
+        \pause
+        Without \texttt{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
+        Without \texttt{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
+        Without \texttt{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
+        Without \texttt{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
+        \pause
+      Only \texttt{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
 Only \texttt{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
   Only \texttt{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
-              Only \texttt{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
+        Only \texttt{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
 \end{tabular}}
-    %\caption{Scores (± std) for discrete emotion classification based on components.}
-    \label{tab:pred_emotion}
+  %\caption{Scores (± std) for discrete emotion classification based on components.}
+  \label{tab:pred_emotion}
 \end{table}
 
 \vspace{0.25cm}
 
 % We use \onslide<4-> to force this text to wait until the table is finished (slides 1-3)
 \onslide<4->{
-$\rightarrow$ Each component improves prediction performance, the best results are achieved by jointly considering all components
+$\rightarrow$ All components help; best results come from using all, \textit{supporting Scherer’s hypothesis}
 }
 
 \vspace{0.25cm}
 
 % This appears on the next click (slide 5)
 \onslide<5->{
-$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\textit{e.g.}, \texttt{behavior} and \texttt{thinking})
+$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\texttt{behavior} and \texttt{thinking})
 }
+
+\end{frame}
+
+\begin{frame}{Motivation for dream analysis}
+
+  We performed emotional analysis on concrete, real life situations
+
+  \vspace{0.5cm}
+  \pause
+
+  We now turn to oniric, fictional situations: dream narratives
+
+  \vspace{0.5cm}
+  \pause
+
+  According to the \textit{continuity hypothesis}, dreams reflect waking-life concerns, emotions, and social contexts \smallcitep{continuity}
+
+  \vspace{0.5cm}
+  \pause
+
+  $\rightarrow$ Dream narratives possess a narrative structure and represent attempts to communicate subjective experience
 
 \end{frame}
 
@@ -688,12 +718,17 @@ $\rightarrow$ Some components benefit from contextual understanding and world kn
   %We apply our framework to dream narratives as they possess a narrative structure and represent attempts to communicate subjective experience
 
 
-Need other datasets with narrative structure, emotional content, and available for research
+%Need other datasets with narrative structure, emotional content, and available for research
+
+%\vspace{0.5cm}
+%\pause
+
+\textit{Quantitative dream analysis} studies the continuity hypothesis, and relies on dream databases and annotation schemes \smallcitep{dreamscale,dreambank}
 
 \vspace{0.5cm}
 \pause
 
-\textit{Quantitative dream analysis} relies on dream databases and annotation schemes \smallcitep{dreambank,dreamscale}
+DreamBank contains 27,000 narratives, only 1823 annotated with the Hall and Van de Castle (HVdC) scheme \smallcitep{hvdc,dreambank}
 
 \vspace{0.5cm}
 \pause
@@ -703,7 +738,7 @@ The annotation process is complex and costly
 \vspace{0.5cm}
 \pause
 
-How to automate the annotation process using language models?
+$\rightarrow$ How to automate the annotation process using language models?
 
 %side project in my PhD
     
@@ -711,9 +746,9 @@ How to automate the annotation process using language models?
 
 \begin{frame}{Hall and Van de Castle annotation scheme}
 
-  DreamBank contains 27,000 narratives, only 1823 annotated with the Hall and Van de Castle (HVdC) scheme \smallcitep{dreambank,hvdc}
+  %
 
-  \vspace{0.25cm}
+  %\vspace{0.25cm}
 
 \begin{figure}
     \centering
@@ -735,12 +770,12 @@ How to automate the annotation process using language models?
 
   \textit{Lexical-based approaches} associate text spans with specific categories (\textit{e.g.}, type of interactions) \smallcitep{miller-1994-wordnet,ourdreams}
 
-  \vspace{0.25cm}
+  \vspace{0.5cm}
   \pause
 
   \textit{Distributional semantic-based approaches} represent text spans in a vector space  to identify prototypical situations \smallcitep{GUTMANMUSIC2022103428}
 
-  \vspace{0.25cm}
+  \vspace{0.5cm}
   \pause
 
   \citet{McNamara_Duffy-Deno_Marsh_Marsh_2019,Yu2022} combine the lexical-based and distributional semantic-based approaches with machine learning% to compare predictions with established coding systems
@@ -765,17 +800,17 @@ How to automate the annotation process using language models?
 
   \citet{bertolini2023automatic} are the first to fine-tune a pre-trained language model for detecting the presence of emotions
 
-  \vspace{0.25cm}
+  \vspace{0.5cm}
   \pause
 
   This approach uses full narrative context and compares predictions with HVdC gold annotations
 
-  \vspace{0.25cm}
+  \vspace{0.5cm}
   \pause
 
   \textbf{Limitations}: emotions are not linked to characters; emotion frequency is not modeled
 
-  \vspace{0.25cm}
+  \vspace{0.5cm}
   \pause
   
   $\rightarrow$ We address this by identifying characters and their emotions with transformer-based sequence-to-sequence models
@@ -809,35 +844,46 @@ How to automate the annotation process using language models?
 \texttt{Baseline} is LaMini-Flan-T5 finetuned on 1823 dream narratives
 
 \begin{table}
-    \centering
-    \resizebox{1.0\textwidth}{!}{
-\begin{tabular}{p{2.4cm}cccccc}
-\textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
-\hline
-\texttt{Baseline} & 82.87 & 78.02 & 76.17 & 86.21 & 64.74 &  75.13 \\
-\hline
-\pause
-\texttt{No\textsubscript{semantics}} & 71.37 & 56.54\textbf{*} & 61.0  & 90.51  & 41.79\textbf{*} &  75.79 \\
-\texttt{No\textsubscript{names}} & 80.66\textbf{*}  & 74.32\textbf{**}  & 74.2  & 83.95\textbf{*}  & 60.93\textbf{**} &  73.04\textbf{*} \\
-\hline
-\pause
-\texttt{Size\textsubscript{small}} & 78.35\textbf{**}  & 72.13\textbf{**}  & 70.25\textbf{**}  & 81.66\textbf{**}  & 56.79\textbf{**} &  70.15\textbf{**} \\
-\texttt{Size\textsubscript{large}} & 84.51\textbf{*} & 80.3\textbf{**}  & 78.63\textbf{**}  & 87.29  & 67.63\textbf{**} & 74.71 \\
-\hline
-\pause
-\texttt{First\textsubscript{group}} & 82.33  & 77.71  & 74.86  & 85.61  & 63.71 &  71.94 \\
-\texttt{First\textsubscript{individual}} & 80.59\textbf{**}  & 76.14  & 74.22\textbf{*}  & 83.87\textbf{**} & 62.67 &  67.32 \\
-\texttt{First\textsubscript{emotion}} & 83.92 & 78.74 & 77.06  & 87.63  & 64.97 &  72.03 \\
-\hline
-\pause
-\texttt{Conversion\textsubscript{comma}} & 84.02\textbf{**}  & 79.84\textbf{**}  & 77.67\textbf{**}  & 87.08\textbf{*}  & 66.69\textbf{**} &  73.68 \\
-\texttt{Conversion\textsubscript{marker}} & 82.39  & 78.45  & 76.53  & 86.09  & 65.44 &  74.36 \\
-%\hline
-%\pause
-%\texttt{Cross-val.} & 86.28 & 81.9  & 79.51  & 89.52 & 68.64 &  76.18\\
-\end{tabular}}
-  \caption{\textbf{Character and emotion detection}. \scriptsize{** ($p<0.01$), * ($p<0.05$).}}
-  \label{tab:result}
+  \centering
+  % 1. Use font size and tabcolsep instead of resizebox to ensure
+  % columns stay aligned across slides.
+  \small
+  \setlength{\tabcolsep}{5pt} 
+  
+  \begin{tabular}{lcccccc}
+    \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
+    \hline
+    \texttt{Baseline} & 82.9 & 78.0 & 76.2 & 86.2 & 64.7 &  75.1 \\
+    \hline
+    
+    % 2. Use \noalign{\pause} to prevent the blank row issue
+    \pause
+    
+    \texttt{No\textsubscript{semantics}} & 71.4 & \textcolor{bluepanam}{56.5} & 61.0  & 90.5  & \textcolor{bluepanam}{41.8} &  75.8 \\
+    \texttt{No\textsubscript{names}} & \textcolor{bluepanam}{80.7}  & \textcolor{blueNCS}{74.3}  & 74.2  & \textcolor{bluepanam}{84.0}  & \textcolor{blueNCS}{60.9} &  \textcolor{bluepanam}{73.0} \\
+    \hline
+    
+    \pause
+    
+    \texttt{Size\textsubscript{small}} & \textcolor{blueNCS}{78.4}  & \textcolor{blueNCS}{72.1}  & \textcolor{blueNCS}{70.3}  & \textcolor{blueNCS}{81.7}  & \textcolor{blueNCS}{56.8} &  \textcolor{blueNCS}{70.2} \\
+    \texttt{Size\textsubscript{large}} & \textcolor{bluepanam}{84.5} & \textcolor{blueNCS}{80.3}  & \textcolor{blueNCS}{78.6}  & 87.3  & \textcolor{blueNCS}{67.6} & 74.7 \\
+    \hline
+    
+    \pause
+    
+    \texttt{First\textsubscript{group}} & 82.3  & 77.7  & 74.9  & 85.6  & 63.7 &  71.9 \\
+    \texttt{First\textsubscript{individual}} & \textcolor{blueNCS}{80.6}  & 76.1  & \textcolor{bluepanam}{74.2}  & \textcolor{blueNCS}{83.9} & 62.7 &  67.3 \\
+    \texttt{First\textsubscript{emotion}} & 83.9 & 78.7 & 77.1  & 87.6  & 65.0 &  72.0 \\
+    \hline
+    
+    \pause
+    
+    \texttt{Conversion\textsubscript{comma}} & \textcolor{blueNCS}{84.0}  & \textcolor{blueNCS}{79.8}  & \textcolor{blueNCS}{77.7}  & \textcolor{bluepanam}{87.1}  & \textcolor{blueNCS}{66.7} &  73.7 \\
+    \texttt{Conversion\textsubscript{marker}} & 82.4  & 78.5  & 76.5  & 86.1  & 65.4 &  74.4 \\
+  \end{tabular}
+  
+  \caption{\textbf{Character and emotion detection}. \scriptsize{\textcolor{bluepanam}{$p<0.05$}, \textcolor{blueNCS}{$p<0.01$}.}}
+  \label{tab:result_ablation}
 \end{table}
 
 %\vspace{0.25cm}
@@ -856,35 +902,35 @@ $\rightarrow$ Our models can address this task; there is room for improvement
 %\toprule
 \textbf{Group} & \textbf{Category} & \textbf{\% Vet} & \textbf{\% Total} & \textbf{$\Delta$} \\
 \midrule
-\multirow{5}{*}{Identity} & known* & 24.9 & 51.6 & -26.7 \\
+\multirow{5}{*}{Identity} & known & 24.9 & 51.6 & \textcolor{bluepanam}{-26.7} \\
 & prominent & 1.9 & 2.5 & -0.6 \\
-& occupational* & 22.4 & 8.0 & 14.4 \\
-& ethnic* & 4.1 & 0.9 & 3.1 \\
-& unknown* & 46.8 & 37.0 & 9.8 \\
+& occupational & 22.4 & 8.0 & \textcolor{bluepanam}{14.4} \\
+& ethnic & 4.1 & 0.9 & \textcolor{bluepanam}{3.1} \\
+& unknown & 46.8 & 37.0 & \textcolor{bluepanam}{9.8} \\
 \addlinespace
-\pause
-\multirow{4}{*}{Gender} & male* & 56.2 & 43.0 & 13.1 \\
-& female* & 24.1 & 33.1 & -9.0 \\
+%\pause
+\multirow{4}{*}{Gender} & male & 56.2 & 43.0 & \textcolor{bluepanam}{13.1} \\
+& female & 24.1 & 33.1 & \textcolor{bluepanam}{-9.0} \\
 & joint & 10.9 & 12.2 & -1.3 \\
 & undefined & 7.9 & 8.7 & -0.9 \\
 %\hline
 \end{tabular}
-\caption{\textbf{Identity and gender proportions for the veteran} (n=566 narratives) versus other dreamers. \scriptsize{$\Delta$ shows the difference in percentage points. * ($p < 0.05$).}}
+\caption{\textbf{Identity and gender proportions for the veteran} (n=566 narratives) versus other dreamers. \scriptsize{$\Delta$ shows the difference in percentage points; \textcolor{bluepanam}{$p<0.05$}.}}
 \label{tab:case_study_war_veteran}
 \end{table}
 
-\pause 
-
-$\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers
+\onslide<2->{
+$\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers}
 
 \end{frame}
 
+\section{Formalization of style}
 
 \begin{frame}{}
 \Large
 \begin{center}
     Formalization of style in personal narratives
-    \section{Formalization of style in personal narratives}
+    %\section{Formalization of style in personal narratives}
 \end{center}
 
 \vspace{1.5cm}
@@ -896,7 +942,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{Introduction}
 
-  Scholarly work has examined personal modes of reasoning and expression \smallcitep{husserl2012ideas,hadamard1945essay,dilts1994strategies,granger1968essai}
+  Scholarly work has examined personal modes of reasoning and expression \smallcitep{hadamard1945essay,granger1968essai,husserl2012ideas,dilts1994strategies}
 
     \vspace{0.5cm}
     \pause
@@ -908,10 +954,15 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
     Style is central to how authors express themselves: stylistics \smallcitep{walesDictionaryStylistics2014a}, stylometry \smallcitep{nealSurveyingStylometryTechniques2017} 
 
-    \vspace{0.5cm}
+  \vspace{0.5cm}
     \pause
 
-  $\rightarrow$ They provide operational tools to capture linguistic form, but do not focus on how such forms encode subjective experience
+    In NLP, style transfer aims to control linguistic attributes while preserving semantic content \smallcitep{jinDeepLearningText2022}
+
+        \vspace{0.5cm}
+    \pause
+
+  $\rightarrow$ They provide operational tools to capture or control linguistic form, but do not focus on how such forms encode subjective experience
 
 \end{frame}
 
@@ -1152,17 +1203,26 @@ We compare the proportion of sequences containing a given substring
 
 $\rightarrow$ The veteran favors verbal processes over mental ones% with high odds ratios (respectively 2.00 and 1.75)
 
+\pause
+
+
+$\rightarrow$ Our results can inform psychological interpretations; need more individuals to generalize findings
+
 \end{frame}
 
 \begin{frame}{How can this framework be extended?}
 
 \begin{itemize}[<+->]
-    \item Authorship profiling%: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
-    \item Style-conditioned narrative generation%: generating narratives from a sequence of linguistic features
-    \item Applying methods from complexity science and formal language theory%: analyzing subsequences, using complexity measures to quantify redundancies, etc.
+    \item \textbf{Authorship profiling}: predicting authors based on their sequences \smallcitep{ferraraDetectionPromotedSocial2016}
+    [map sequences to authors]
+    %: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
+    \item \textbf{Style-conditioned narrative generation} \smallcitep{alhafniPersonalizedTextGeneration2024b} [add pachet]%: generating narratives from a sequence of linguistic features
+    \item \textbf{Applying methods from complexity science} \smallcitep{lempelComplexityFiniteSequences1976,hipolitoPatternBreakingComplex2023a}% and formal language theory%: analyzing subsequences, using complexity measures to quantify redundancies, etc.
 \end{itemize}
 
 \end{frame}
+
+\section{Conclusion and perspectives}
 
 \begin{frame}{}
 \Large
@@ -1181,9 +1241,9 @@ How to model subjective experience in personal narratives?
 \pause
 
 \begin{itemize}[<+->]
-    \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion dataset 
-    \item Training of language models for emotion analysis 
+    \item Objectives and scope using cognitive theories
+    \item French narratives based on emotion components
+    \item Models for emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
 \end{itemize}
 
@@ -1196,6 +1256,8 @@ How to model subjective experience in personal narratives?
 \textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}}
 \end{frame}
 
+\section{Impact}
+
 \begin{frame}{}
 \Large
 \begin{center}
@@ -1206,7 +1268,7 @@ How to model subjective experience in personal narratives?
 \end{frame}
 
 \begin{frame}[noframenumbering]
-    \frametitle{Impact: Ongoing PhD thesis related to my works}
+    \frametitle{Ongoing PhD thesis related to my works}
 
 \begin{figure}[!htb]
   \centering
@@ -1235,7 +1297,7 @@ How to model subjective experience in personal narratives?
 \end{frame}
 
 \begin{frame}[noframenumbering]
-    \frametitle{Impact: NLP for psychiatry (industry)}
+    \frametitle{NLP for psychiatry (industry)}
 
 \noindent
 \begin{minipage}[c]{0.7\textwidth}
@@ -1250,11 +1312,13 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
+\section{Thematic analysis in mental health narratives}
+
 \begin{frame}{}
 \Large
 \begin{center}
     Automatic thematic analysis in mental health narratives using language models% (change title to thematic analysis?)
-    \section{Thematic analysis in mental health narratives using language models}
+    %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
 
 \vspace{1.5cm}
@@ -1345,6 +1409,8 @@ $\rightarrow$ Nearly all questions discriminate sociodemographics
 
 \end{frame}
 
+\section{Perspectives}
+
 \begin{frame}{}
 \Large
 \begin{center}
@@ -1401,11 +1467,14 @@ How to model subjective experience in personal narratives?
     \fullcitenourl{cortal-finkel-2025-formalizing}
 \end{frame}
 
+\appendix
+\section{Appendix}
+
 \begin{frame}{}
 \Large
 \begin{center}
     Appendix
-    \section{Appendix}
+    %\section{Appendix}
 \end{center}
 
 \end{frame}
