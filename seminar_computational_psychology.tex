@@ -264,31 +264,104 @@ We first address the \textit{content} by classifying elements of personal narrat
 \pause
 
 \begin{itemize}[<+->]
-    \item Objectives and scope using cognitive theories
-    \item French narratives based on emotion components
+    \item Cognitive science perspective on emotion analysis
+    \item French corpus based on emotion components
     \item Models for emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
     %\item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
 
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 %\pause
 
-\small
+%\small
 
-\onslide<7->{
-\textit{2 international conferences (EMNLP, LREC-COLING); 3 international workshops; 2 national conferences and journals (TALN)}}
+%\onslide<7->{
+%\textit{2 international conferences (EMNLP, LREC-COLING); 3 international workshops; 2 national conferences and journals (TALN)}}
     
 \end{frame}
 
-\section{Scope of research}
+\section{Contributions}
+\begin{frame}{}
+\Large
+\begin{center}
+    Contributions
+\end{center}
+\end{frame}
+
+\begin{frame}{Papers}
+
+\textbf{International conferences (2):}
+\begin{itemize}[<+->]
+  \setlength{\itemsep}{0.5em}
+  \item Language models for character and emotion detection in dream narratives \parensmall{(first author, oral, LREC-COLING)}
+  \item Formal definition of style in personal narratives \parensmall{(first author, oral, EMNLP)}
+\end{itemize}
+
+\vspace{0.25cm}
+\pause
+
+\textbf{International workshops (3):}
+\begin{itemize}[<+->]
+  \setlength{\itemsep}{0.5em}
+  \item Data paper on emotional narratives \parensmall{(first author, SIGHUM @ EACL)}
+  \item Position paper on emotion analysis \parensmall{(equal contribution, CMCL @ ACL)}
+  \item Multimodal emotion analysis competition paper \parensmall{(3rd place, intern supervision, ABAW @ ECCV)}
+\end{itemize}
+
+\vspace{0.25cm}
+\pause
+
+\textbf{National venues (2, French translations):} 
+\begin{itemize}[<+->]
+  \setlength{\itemsep}{0.25em}
+  \item Position paper on emotion analysis \parensmall{(TALN conference)}
+  \item Language models for dream analysis \parensmall{(TAL journal)}
+\end{itemize}
+  
+\end{frame}
+
+\begin{frame}{Corpus and tools}
+
+\begin{columns}[T,onlytextwidth]
+  \begin{column}{0.75\textwidth}
+    \textbf{Corpus}:
+
+    \vspace{0.25cm}
+
+    \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French narratives based on emotion components}
+
+    \vspace{0.5cm}
+    \pause
+
+    \textbf{Tools}:
+
+    \vspace{0.25cm}
+
+    \href{https://huggingface.co/gustavecortal/dream-t5}{Language model for emotion and character prediction in dream narratives} \parensmall{+400 downloads}
+
+    \vspace{0.5cm}
+    \pause
+
+    French language models for \href{https://huggingface.co/gustavecortal/distilcamembert-cae-component}{emotion component prediction} and \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{discrete emotion prediction} \parensmall{+1200 downloads}
+  \end{column}
+  \begin{column}{0.20\textwidth}
+    \centering
+    \includegraphics[width=\linewidth]{img/logo_huggingface.png}
+    \textbf{\footnotesize{\href{https://huggingface.co/gustavecortal}{hf.co/gustavecortal}}}
+  \end{column}
+\end{columns}
+  
+\end{frame}
+
+\section{Cognitive science perspective on emotion analysis}
 
 \begin{frame}{}
 \Large
 \begin{center}
-    Objectives and scope using cognitive theories
-    %\section{Objectives and scope using cognitive theories}
+    Cognitive science perspective on emotion analysis
+    %\section{Cognitive science perspective on emotion analysis}
 \end{center}
 \vspace{1.5cm}
 
@@ -297,7 +370,7 @@ We first address the \textit{content} by classifying elements of personal narrat
     \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL @ ACL 2024}.
 \end{frame}
 
-\begin{frame}{Psychological theories and emotion annotation schemes}
+\begin{frame}{Psychology and emotion annotation}
 
 %What are current limitations and interesting research directions?
 
@@ -366,7 +439,7 @@ Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I rece
     
 \end{frame}
 
-\begin{frame}{Psychological theories and emotion annotation schemes}
+\begin{frame}{Psychology and emotion annotation}
 
 {\small
 \begin{center}
@@ -402,7 +475,7 @@ Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSen
 
 \begin{itemize}[<+->]
     %\item Different emotion theories lead to divergences in how to annotate them in the text [add refs]
-    \item Though the three theories reviewed are usually considered rivals, their integration is possible and desirable \smallcitep{schererTheoryConvergenceEmotion2022}
+    \item Though the theories reviewed are usually considered rivals, their integration is possible and desirable \smallcitep{schererTheoryConvergenceEmotion2022}
     \item Emotion verbalization is underexplored \smallcitep{micheli2013,etienne-etal-2022-psycho}
     \item Benchmarks evaluate certain aspects of emotional understanding but do not consider its full complexity \smallcitep{campagnano-etal-2022-srl4e,zhangSentimentAnalysisEra2023,paechEQBenchEmotionalIntelligence2024}
 \end{itemize}
@@ -421,7 +494,7 @@ Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSen
 \Large
 \begin{center}
     Linguistic and cognitive science theories
-    %\section{Objectives and scope using cognitive theories}
+    %\section{Cognitive science perspective on emotion analysis}
 \end{center}
 
 \end{frame}
@@ -448,7 +521,7 @@ Raphaël Micheli categorizes a range of linguistic markers into three \textit{em
 \pause
 \vspace{0.5cm}
 
-$\rightarrow$ Different emotion expression modes are more or less difficult to interpret \smallcitep{davidsonChildrenRecallEmotional2001,blancComprehensionContesEntre2010,creissenQuelleRepresentationDifferentes2017a,ball_conversational_2024}
+$\rightarrow$ Emotion expression modes vary in interpretive difficulty \smallcitep{blancComprehensionContesEntre2010,creissenQuelleRepresentationDifferentes2017a,ball_conversational_2024}
 
 %[add refs psycholinguistic, psychiatry, refs aline etienne]
 
@@ -483,7 +556,7 @@ $\rightarrow$ [add refs] \smallcitep{etienne-etal-2022-psycho,dragos-etal-2022-a
 
 %[add Appraisal dimensions]
 
-$\rightarrow$ We use this framework to construct an emotion dataset 
+$\rightarrow$ We use this framework to construct an emotion corpus
     
 \end{frame}
 
@@ -518,38 +591,7 @@ $\rightarrow$ We use this framework to construct an emotion dataset
 \textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
-\begin{frame}{French emotional narratives based on components}
-
-
-\textbf{Goal}: Create a dataset of narratives structured according to emotion components, following a questionnaire from \textit{Cognitive Analysis of Emotion} \smallcitep{Finkel2022}
-
-\vspace{0.25cm}
-\pause
-
-The questionnaire:
-
-\begin{minipage}{.78\linewidth}
-\begin{itemize}[<+->]
-
-\item explores emotions with behavioral (\textit{behavior}), physiological (\textit{feeling}), and cognitive (\textit{thinking} and \textit{territory)} components
-\item uses emotion components to reorganize the narrative of experienced events
-\item helps individuals better regulate their emotions
-    
-    
-\end{itemize}
-
-\end{minipage}
-\hfill
-\begin{minipage}{.20\linewidth}
-\centering
-\includegraphics[scale=0.23]{img/manuel.jpg}
-\smallcitet{Finkel2022}
-\end{minipage}
-  
-
-\end{frame}
-
-\begin{frame}{French emotional narratives based on components}
+\begin{frame}{Motivation}
 
 \textbf{Limitation}: No annotation schemes consider all emotion components
 
@@ -571,15 +613,46 @@ The questionnaire:
 \vspace{0.5cm}
 \pause
 
-$\rightarrow$ We structure emotional narratives according to behaviors, thoughts, physical feelings, and appraisals
+$\rightarrow$ We structure emotional narratives according to behaviors, thoughts, physical feelings, and reasons
     
 \end{frame}
 
-\begin{frame}{French emotional narratives based on components}
+\begin{frame}{Cognitive Analysis of Emotions}
 
-\textbf{Contribution}: 1000 narratives from emotion regulation sessions, providing a more comprehensive understanding of emotional events
+
+\textbf{Goal}: Create a corpus of narratives structured according to emotion components, following a questionnaire from \textit{Cognitive Analysis of Emotions} \smallcitep{Finkel2022}
 
 \vspace{0.25cm}
+\pause
+
+The questionnaire:
+
+\begin{minipage}{.78\linewidth}
+\begin{itemize}[<+->]
+
+\item explores emotions with behavioral (\textit{behavior}), physiological (\textit{feeling}), and cognitive (\textit{thinking} and \textit{reason)} components
+\item uses emotion components to reorganize the narrative of experienced events
+\item helps individuals better regulate their emotions
+    
+    
+\end{itemize}
+
+\end{minipage}
+\hfill
+\begin{minipage}{.20\linewidth}
+\centering
+\includegraphics[scale=0.23]{img/manuel.jpg}
+\smallcitet{Finkel2022}
+\end{minipage}
+  
+
+\end{frame}
+
+\begin{frame}{French narratives based on emotion components}
+
+\textbf{Contribution}: +1,000 narratives structured with emotion components by the writers themselves plus discrete emotion labels
+
+%\vspace{0.05cm}
 \pause
 
 \begin{table}
@@ -594,7 +667,7 @@ $\rightarrow$ We structure emotional narratives according to behaviors, thoughts
           \texttt{Behavior} & I'm giving a lecture on a Friday morning at 8:30. A student goes out and comes back a few moments later with a coffee in his hand. \\
 \texttt{Feeling} & My heart is beating fast, and I freeze, waiting to know how to act. \\
   \texttt{Thinking} & I think this student is disrupting my class. \\
-\texttt{Territory} & The student attacks my ability to be respected in class. \\
+\texttt{Reason} & The student attacks my ability to be respected in class. \\
 
 \end{tabular}}
 %\captionof{table}{Example of an emotional narrative structured according to emotion components. More than 1,000 narratives were collected using emotion regulation questionnaires.}
@@ -606,7 +679,10 @@ $\rightarrow$ We structure emotional narratives according to behaviors, thoughts
 
 Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear}, \texttt{joy}, \texttt{sadness})
 
+\vspace{0.25cm}
+\pause
 
+$\rightarrow$ A. Finkel has been collecting narratives since 2005 during emotion regulation sessions; I structured them to build a corpus for emotion classification
 
 %\vspace{0.5cm}
 %\small
@@ -665,12 +741,12 @@ Chosen emotion: \texttt{anger} (possible choices: \texttt{anger}, \texttt{fear},
         Without \texttt{behavior}   & 77.4\,\mscriptsize{(2.3)} & 75.8\,\mscriptsize{(2.4)} & 74.5\,\mscriptsize{(2.6)} & 80.3 & 79.8 & 79.7 \\
         Without \texttt{feeling}  & 64.3\,\mscriptsize{(1.9)} & 61.5\,\mscriptsize{(1.2)} & 61.3\,\mscriptsize{(2.2)} & 81.6 & 79.8 & 79.9  \\
         Without \texttt{thinking}  & 70.9\,\mscriptsize{(1.8)} & 69.1\,\mscriptsize{(2.0)} & 68.3\,\mscriptsize{(2.2)} & 79.6 & 78.5 & 78.7 \\
-        Without \texttt{territory}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
+        Without \texttt{reason}  & 64.3\,\mscriptsize{(4.1)} & 64.5\,\mscriptsize{(2.4)} & 62.3\,\mscriptsize{(2.8)} & 78.7 & 78.5 & 78.6 \\
         \pause
       Only \texttt{behavior}  & 52.1\,\mscriptsize{(3.5)} & 54.6\,\mscriptsize{(2.9)} & 51.7\,\mscriptsize{(2.9)} & 68.4  & 67.1 & 66.6 \\
 Only \texttt{feeling}  & 69.6\,\mscriptsize{(1.5)} & 68.9\,\mscriptsize{(2.1)} & 68.4\,\mscriptsize{(2.0)} & 67.8 & 68.4 & 67.7 \\
   Only \texttt{thinking}  & 50.1\,\mscriptsize{(3.4)} & 53.8\,\mscriptsize{(2.3)} & 50.6\,\mscriptsize{(2.7)} & 70.5 & 70.1 & 70.1 \\
-        Only \texttt{territory}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
+        Only \texttt{reason}  & 68.2\,\mscriptsize{(1.8)} & 66.8\,\mscriptsize{(2.2)} & 66.6\,\mscriptsize{(2.3)} & 71.4 & 68.4 & 68.9 \\
 \end{tabular}}
   %\caption{Scores (± std) for discrete emotion classification based on components.}
   \label{tab:pred_emotion}
@@ -1241,7 +1317,7 @@ How to model subjective experience in personal narratives?
 \pause
 
 \begin{itemize}[<+->]
-    \item Objectives and scope using cognitive theories
+    \item Cognitive science perspective on emotion analysis
     \item French narratives based on emotion components
     \item Models for emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
@@ -1443,7 +1519,7 @@ How to model subjective experience in personal narratives?
 
 \begin{itemize}
     \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion dataset 
+    \item Construction of an emotion corpus 
     \item Training of language models for emotion analysis 
     \item Formalization of style in personal narratives
 \end{itemize}

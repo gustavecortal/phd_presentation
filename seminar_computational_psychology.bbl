@@ -779,61 +779,6 @@
       \field{year}{1872}
       \field{dateera}{ce}
     \endentry
-    \entry{davidsonChildrenRecallEmotional2001}{article}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=239572f949e9346cfb5ed4e1c0043f40}{%
-           family={Davidson},
-           familyi={D\bibinitperiod},
-           given={Denise},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=eaca4cadd86abe99ae81fd29037ffb4d}{%
-           family={Luo},
-           familyi={L\bibinitperiod},
-           given={Zupei},
-           giveni={Z\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0e054f3e62ab874dcfc330835fb536c5}{%
-           family={Burden},
-           familyi={B\bibinitperiod},
-           given={Matthew\bibnamedelima J.},
-           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {United Kingdom}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{bc35c1a53b052b92e715b64bca30cab7}
-      \strng{fullhash}{bc35c1a53b052b92e715b64bca30cab7}
-      \strng{bibnamehash}{bc35c1a53b052b92e715b64bca30cab7}
-      \strng{authorbibnamehash}{bc35c1a53b052b92e715b64bca30cab7}
-      \strng{authornamehash}{bc35c1a53b052b92e715b64bca30cab7}
-      \strng{authorfullhash}{bc35c1a53b052b92e715b64bca30cab7}
-      \field{sortinit}{D}
-      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Determined if children were able to judge the importance of the emotional occurrences (EOs) and examined children's memory for emotional behaviours (EBs), emotional labels (ELs), and nonemotional behaviours (NBs) across 3 studies. Ss were 150 1st-, 3rd-, and 5th-graders (aged 5–11 yrs). Study 1 involved EO judgements by 10 Ss from each grade level (GL). Ss were asked 6 questions (2 reflecting happiness (HS), 2 reflecting sadness (SS), and 2 reflecting anger (AR) of which they were to choose a statement (reflecting a high emotional, HE, or low emotional, LE, situation) that would result in more HS, SS, or AR. Study 2 involved 20 Ss from each GL who responded to 2 HE and 2 LE stories constructed about everyday family life. Each story consisted of 3 emotional events that reflected HS, SS, and AR. After each story, Ss were to recall all that they could. Study 3 involved 20 Ss from each GL who responded to 2 stories in which both HEs and LEs were included in addition to the 3 types of emotions. Ss were either given or not given corresponding labels. Ss were to recall all that they could. The results show that children can readily distinguish between EBs in terms of significance and importance. Further, all Ss recalled more EBs than NBs. Also, the use of ELs appears to enhance recall. (PsycINFO Database Record (c) 2016 APA, all rights reserved)}
-      \field{issn}{1464-0600}
-      \field{journaltitle}{Cognition and Emotion}
-      \field{number}{1}
-      \field{shorttitle}{Children's Recall of Emotional Behaviours, Emotional Labels, and Nonemotional Behaviours}
-      \field{title}{Children's Recall of Emotional Behaviours, Emotional Labels, and Nonemotional Behaviours: {{Does}} Emotion Enhance Memory?}
-      \field{volume}{15}
-      \field{year}{2001}
-      \field{dateera}{ce}
-      \field{pages}{1\bibrangedash 26}
-      \range{pages}{26}
-      \verb{doi}
-      \verb 10.1080/0269993004200105
-      \endverb
-      \keyw{Age Differences,Behavior,Emotional Content,Judgment,Labeling,Memory,Recall (Learning)}
-    \endentry
     \entry{demszky-etal-2020-goemotions}{inproceedings}{}
       \name{author}{6}{}{%
         {{un=0,uniquepart=base,hash=781f21f06cf4d5235ce00a1ac39748d2}{%

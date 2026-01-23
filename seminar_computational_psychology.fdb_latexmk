@@ -1,16 +1,16 @@
 # Fdb version 3
-["biber seminar_computational_psychology"] 1769177369 "seminar_computational_psychology.bcf" "seminar_computational_psychology.bbl" "seminar_computational_psychology" 1769178487
+["biber seminar_computational_psychology"] 1769187356 "seminar_computational_psychology.bcf" "seminar_computational_psychology.bbl" "seminar_computational_psychology" 1769188004
   "custom.bib" 1766065529 1072 d3d70f42005efe9ee947e8fae6b9c587 ""
   "full.bib" 1769173831 240993 2e7ae1c34d9a9ce6cb2e22be5b620ffd ""
   "introduction.bib" 1769096197 17463 b6609266f9a775defd64a331651ef8b2 ""
   "phd_slides_biblatex.bib" 1767957021 15387 f983338cefab62b9668a127cde09ddbc ""
-  "seminar_computational_psychology.bcf" 1769178487 116466 c05529ce5a01996255f2f3d9ff650968 "pdflatex"
+  "seminar_computational_psychology.bcf" 1769188004 116309 201cadbdd8cde0c5c5a58879ac95ac5e "pdflatex"
   (generated)
   "seminar_computational_psychology.bbl"
   "seminar_computational_psychology.blg"
-["pdflatex"] 1769178480 "/home/gcortal/phd_presentation/seminar_computational_psychology.tex" "seminar_computational_psychology.pdf" "seminar_computational_psychology" 1769178487
+["pdflatex"] 1769187996 "/home/gcortal/phd_presentation/seminar_computational_psychology.tex" "seminar_computational_psychology.pdf" "seminar_computational_psychology" 1769188004
   "/etc/texmf/web2c/texmf.cnf" 1766596138 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gcortal/phd_presentation/seminar_computational_psychology.tex" 1769178480 83994 4364bc649899e41b01d165972f29d144 ""
+  "/home/gcortal/phd_presentation/seminar_computational_psychology.tex" 1769187995 86302 54f495067dfb1669ede94bc87f7d26c0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0700.tfm" 1136768653 3584 0720b4ccd5fa2debb05d019875c8e532 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0800.tfm" 1136768653 3584 3dfe0566d0b48ead5866d1b455f67a43 ""
@@ -358,6 +358,7 @@
   "img/logo_callyope.png" 1768918391 45362 a09fda7e129d59d854c0b5803d589269 ""
   "img/logo_cnrs.png" 1687273644 19008 01b8e06aa182588d5b889b8e0643be1c ""
   "img/logo_ens_saclay.png" 1767957021 19764 6f143337b0c6f10d065435dfc4942e62 ""
+  "img/logo_huggingface.png" 1769185250 185450 cfa649417b1d011234a2363e0251a164 ""
   "img/logo_lisn.png" 1768303669 30572 347743e101c593c9d36e919143d2a15b ""
   "img/manuel.jpg" 1768921104 28741 5c119e31fd19e2138dfc64c9d4c9ec9b ""
   "img/scherer_dictionary_eng.png" 1767957021 77805 8e8acc1831acb68b01c13c393582926a ""
@@ -370,12 +371,12 @@
   "img/topic_modeling/methods_v3.png" 1767957021 184598 ebe7f8c6743b13afc3823bd137bcf3b0 ""
   "img/viet_odds_2.png" 1767957021 219612 8a8d401e05bae53b1e0dd17e379fc04d ""
   "img/viet_odds_3.png" 1767957021 310530 34f18cdabd28a1a45454f445dae77451 ""
-  "seminar_computational_psychology.aux" 1769178487 37079 d91644934bbd6e64bb7ae2abc32216a0 "pdflatex"
-  "seminar_computational_psychology.bbl" 1769177370 169505 f06cc427e650092bd9c3d9befed4d1fc "biber seminar_computational_psychology"
-  "seminar_computational_psychology.nav" 1769178487 10494 55769a7b0ea170b38a4c19677f93cdbd "pdflatex"
-  "seminar_computational_psychology.out" 1769178487 2200 05bf13a03be92b7879de0580f34de64a "pdflatex"
-  "seminar_computational_psychology.run.xml" 1769178487 2644 3f62c8d5cd28a67e217503384b87a83c "pdflatex"
-  "seminar_computational_psychology.tex" 1769178480 83994 4364bc649899e41b01d165972f29d144 ""
+  "seminar_computational_psychology.aux" 1769188004 37481 9a4d5619928501e9f5981aebebfc856a "pdflatex"
+  "seminar_computational_psychology.bbl" 1769187358 165885 8e35d8dd51ea41ae9094f2b04dceafd7 "biber seminar_computational_psychology"
+  "seminar_computational_psychology.nav" 1769188004 10910 ef324069af9eed72cc6f337bd1f7d7fe "pdflatex"
+  "seminar_computational_psychology.out" 1769188004 2479 b9ed9577d1f10003a8529ddae6be80fa "pdflatex"
+  "seminar_computational_psychology.run.xml" 1769188004 2644 3f62c8d5cd28a67e217503384b87a83c "pdflatex"
+  "seminar_computational_psychology.tex" 1769187995 86302 54f495067dfb1669ede94bc87f7d26c0 ""
   (generated)
   "seminar_computational_psychology.aux"
   "seminar_computational_psychology.bcf"

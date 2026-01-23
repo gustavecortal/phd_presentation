@@ -1,28 +1,28 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'seminar_computational_psychology.blg'
-[68] biber:340> INFO - === ven. janv. 23, 2026, 15:09:29
-[77] Biber.pm:418> INFO - Reading 'seminar_computational_psychology.bcf'
-[118] Biber.pm:972> INFO - Found 63 citekeys in bib section 0
-[126] Biber.pm:4383> INFO - Processing section 0
-[132] Biber.pm:4574> INFO - Looking for bibtex file 'phd_slides_biblatex.bib' for section 0
-[133] bibtex.pm:1713> INFO - LaTeX decoding ...
-[150] bibtex.pm:1518> INFO - Found BibTeX data source 'phd_slides_biblatex.bib'
-[201] Biber.pm:4574> INFO - Looking for bibtex file 'full.bib' for section 0
-[213] bibtex.pm:1713> INFO - LaTeX decoding ...
-[387] bibtex.pm:1518> INFO - Found BibTeX data source 'full.bib'
-[567] Biber.pm:4574> INFO - Looking for bibtex file 'custom.bib' for section 0
-[568] bibtex.pm:1713> INFO - LaTeX decoding ...
-[570] bibtex.pm:1518> INFO - Found BibTeX data source 'custom.bib'
-[573] Biber.pm:4574> INFO - Looking for bibtex file 'introduction.bib' for section 0
-[574] bibtex.pm:1713> INFO - LaTeX decoding ...
-[586] bibtex.pm:1518> INFO - Found BibTeX data source 'introduction.bib'
-[652] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[652] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[652] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[652] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[689] bbl.pm:654> INFO - Writing 'seminar_computational_psychology.bbl' with encoding 'UTF-8'
-[729] bbl.pm:757> INFO - Output to seminar_computational_psychology.bbl
-[730] Biber.pm:130> WARN - ISBN '979-8-89176-332-6' in entry 'cortal-finkel-2025-formalizing' is invalid - run biber with '--validate_datamodel' for details.
-[730] Biber.pm:130> WARN - Duplicate entry key: 'brunerActsMeaning1990' in file 'full.bib', skipping ...
-[730] Biber.pm:130> WARN - ISBN '978-1-119-87590-1 978-1-119-87594-9' in entry 'ball_conversational_2024' is invalid - run biber with '--validate_datamodel' for details.
-[730] Biber.pm:132> INFO - WARNINGS: 3
+[73] biber:340> INFO - === ven. janv. 23, 2026, 17:55:57
+[84] Biber.pm:418> INFO - Reading 'seminar_computational_psychology.bcf'
+[133] Biber.pm:972> INFO - Found 62 citekeys in bib section 0
+[143] Biber.pm:4383> INFO - Processing section 0
+[150] Biber.pm:4574> INFO - Looking for bibtex file 'phd_slides_biblatex.bib' for section 0
+[151] bibtex.pm:1713> INFO - LaTeX decoding ...
+[170] bibtex.pm:1518> INFO - Found BibTeX data source 'phd_slides_biblatex.bib'
+[229] Biber.pm:4574> INFO - Looking for bibtex file 'full.bib' for section 0
+[243] bibtex.pm:1713> INFO - LaTeX decoding ...
+[434] bibtex.pm:1518> INFO - Found BibTeX data source 'full.bib'
+[709] Biber.pm:4574> INFO - Looking for bibtex file 'custom.bib' for section 0
+[709] bibtex.pm:1713> INFO - LaTeX decoding ...
+[712] bibtex.pm:1518> INFO - Found BibTeX data source 'custom.bib'
+[717] Biber.pm:4574> INFO - Looking for bibtex file 'introduction.bib' for section 0
+[719] bibtex.pm:1713> INFO - LaTeX decoding ...
+[734] bibtex.pm:1518> INFO - Found BibTeX data source 'introduction.bib'
+[814] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[815] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[815] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[815] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[857] bbl.pm:654> INFO - Writing 'seminar_computational_psychology.bbl' with encoding 'UTF-8'
+[907] bbl.pm:757> INFO - Output to seminar_computational_psychology.bbl
+[907] Biber.pm:130> WARN - ISBN '979-8-89176-332-6' in entry 'cortal-finkel-2025-formalizing' is invalid - run biber with '--validate_datamodel' for details.
+[907] Biber.pm:130> WARN - Duplicate entry key: 'brunerActsMeaning1990' in file 'full.bib', skipping ...
+[907] Biber.pm:130> WARN - ISBN '978-1-119-87590-1 978-1-119-87594-9' in entry 'ball_conversational_2024' is invalid - run biber with '--validate_datamodel' for details.
+[908] Biber.pm:132> INFO - WARNINGS: 3
