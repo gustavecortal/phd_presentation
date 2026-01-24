@@ -1,5 +1,5 @@
 % --begin pap's style
-\documentclass[handout,10pt]{beamer}
+\documentclass[10pt]{beamer}
 
 %\usetheme[secheader]{Darmstadt}
 %\usetheme{Pittsburgh}
@@ -143,7 +143,7 @@
     \hspace{0.5cm}
     \includegraphics[height=1cm]{img/logo_ens_saclay.png}%\hfill
     \hspace{0.5cm}
-    %\vspace{1.5cm}
+    %\vfill
     \includegraphics[height=1cm]{img/logo_lisn.png}%\hfill
     \hspace{0.5cm}
     \includegraphics[height=1cm]{img/logo_cnrs.png}
@@ -188,9 +188,11 @@
 \section{Introduction}
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Introduction
 \end{center}
+\vfill
 \end{frame}
 
 % Make transition between parts
@@ -285,9 +287,11 @@ We first address the \textit{content} by classifying elements of personal narrat
 \section{Contributions}
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Contributions
 \end{center}
+\vfill
 \end{frame}
 
 \begin{frame}{Papers}
@@ -330,21 +334,21 @@ We first address the \textit{content} by classifying elements of personal narrat
 
     \vspace{0.25cm}
 
-    \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French narratives based on emotion components}
+    \onslide<1->{\href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French narratives based on emotion components}}
 
     \vspace{0.5cm}
-    \pause
+    
 
-    \textbf{Tools}:
+    \onslide<2->{\textbf{Tools}:
 
     \vspace{0.25cm}
 
     \href{https://huggingface.co/gustavecortal/dream-t5}{Language model for emotion and character prediction in dream narratives} \parensmall{+400 downloads}
 
     \vspace{0.5cm}
-    \pause
+    
 
-    French language models for \href{https://huggingface.co/gustavecortal/distilcamembert-cae-component}{emotion component prediction} and \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{discrete emotion prediction} \parensmall{+1200 downloads}
+    French language models for \href{https://huggingface.co/gustavecortal/distilcamembert-cae-component}{emotion component prediction} and \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{discrete emotion prediction} \parensmall{+1200 downloads}}
   \end{column}
   \begin{column}{0.20\textwidth}
     \centering
@@ -363,15 +367,13 @@ We first address the \textit{content} by classifying elements of personal narrat
 \section{Cognitive science perspective on emotion analysis}
 
 \begin{frame}{}
-\Large
-\begin{center}
-    Cognitive science perspective on emotion analysis
-    %\section{Cognitive science perspective on emotion analysis}
-\end{center}
-\vspace{1.5cm}
+    \vfill
+    \begin{center}
+        \Large Cognitive science perspective on emotion analysis
+    \end{center}
+    \vfill
 
     \footnotesize
-
     \textbf{G. Cortal} and C. Bonard. \href{https://aclanthology.org/2024.cmcl-1.23/}{Improving Language Models for Emotion Analysis: Insights from Cognitive Science}. \textit{CMCL @ ACL 2024}.
 \end{frame}
 
@@ -497,10 +499,12 @@ Similar to aspect-based sentiment analysis \smallcitep{zhangSurveyAspectBasedSen
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Linguistic and cognitive science theories
     %\section{Cognitive science perspective on emotion analysis}
 \end{center}
+\vfill
 
 \end{frame}
 
@@ -561,7 +565,9 @@ $\rightarrow$ [add refs] \smallcitep{etienne-etal-2022-psycho,dragos-etal-2022-a
 
 %[add Appraisal dimensions]
 
-$\rightarrow$ We use this framework to construct an emotion corpus
+\pause
+
+$\rightarrow$ We use this framework to construct a corpus based on components
     
 \end{frame}
 
@@ -581,19 +587,22 @@ $\rightarrow$ We use this framework to construct an emotion corpus
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     French narratives based on emotion components
     %\section{Construction of an emotion dataset}
 
-    \vspace{1.5cm}
+    \vfill
 \end{center}
 
-\small
-%Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives}
+\footnotesize{
+%Available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives} 
 
-%\vspace{0.5cm}
+The corpus is available at \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{hf.co/datasets/gustavecortal/FrenchEmotionalNarratives}
 
-\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
+\vspace{0.5cm}
+
+\textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}.}% \href{https://underline.io/lecture/71953-emotion-recognition-based-on-psychological-components-in-guided-narratives-for-emotion-regulation}{video}.
 \end{frame}
 
 \begin{frame}{Motivation}
@@ -658,7 +667,7 @@ The questionnaire:
 \textbf{Contribution}: +1,000 narratives structured with emotion components by the writers themselves plus discrete emotion labels
 
 %\vspace{0.05cm}
-\pause
+%\pause
 
 \begin{table}
     \centering
@@ -704,12 +713,13 @@ $\rightarrow$ A. Finkel has been collecting narratives since 2005 during emotion
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Language models for emotion analysis in emotional and dream narratives
     %\section{Training language models for emotion analysis}
 \end{center}
 
-\vspace{1.5cm}
+\vfill
 
 \footnotesize
 
@@ -718,6 +728,10 @@ $\rightarrow$ A. Finkel has been collecting narratives since 2005 during emotion
 %\href{https://huggingface.co/gustavecortal/oneirogen-7B}{Oneirogen}, a language model for dream generation along with \href{https://huggingface.co/datasets/gustavecortal/DreamBank-annotated}{27,000 annotated dream narratives}
 
 %\href{https://huggingface.co/gustavecortal/dream-t5}{Dream-T5}, a language model for emotion and character prediction in dream narratives
+
+Language models are available on \href{https://huggingface.co/gustavecortal}{hf.co/gustavecortal}
+
+\vspace{0.5cm}
 
 \textbf{G. Cortal}, A. Finkel, P. Paroubek, L. Ye. \href{https://aclanthology.org/2023.latechclfl-1.8/}{Emotion Recognition based on Psychological Components in Guided Narratives for Emotion Regulation}. \textit{SIGHUM @ EACL 2023}
 
@@ -825,7 +839,7 @@ $\rightarrow$ How to automate the annotation process using language models?
     
 \end{frame}
 
-\begin{frame}{Hall and Van de Castle annotation scheme}
+\begin{frame}{Example of an annotated dream with HVdC}
 
   %
 
@@ -834,16 +848,23 @@ $\rightarrow$ How to automate the annotation process using language models?
 \begin{figure}
     \centering
     \includegraphics[width=1.\linewidth]{img/hdvc_girl.png}
-    \caption{\textbf{Example of an annotated dream narrative with HVdC.}}
+    %caption{\textbf{Example of an annotated dream narrative with HVdC.}}
     \label{fig:placeholder}
 \end{figure}
 
-%\begin{itemize}
-%    \item Status: individual alive (1), group alive (2), dead individual (3), dead group (4), imaginary individual (5), imaginary group (6), original form (7), changed form (8).
-%    \item Gender: male (M), female (F), joint (J), indefinite (I).
-%    \item Identity: known (K), prominent (P), occupational (O), ethnic (E), stranger (S).
-%    \item Age: adult (A), child (C).
-%\end{itemize}
+\footnotesize{
+
+\vspace{-0.5cm}
+\textbf{Character}:
+
+\begin{itemize}\setlength{\itemsep}{0.2em}
+  \item \textbf{Status}: individual alive (\textbf{1}), group alive (\textbf{2}), dead individual (\textbf{3}), dead group (\textbf{4}), imaginary individual (\textbf{5}), imaginary group (\textbf{6}), original form (\textbf{7}), changed form (\textbf{8})
+  \item \textbf{Gender}: male (\textbf{M}), female (\textbf{F}), joint (\textbf{J}), indefinite (\textbf{I})
+  \item \textbf{Identity}: known (\textbf{K}), prominent (\textbf{P}), occupational (\textbf{O}), ethnic (\textbf{E}), stranger (\textbf{S})
+  \item \textbf{Age}: adult (\textbf{A}), child (\textbf{C})
+\end{itemize}
+
+\textbf{Emotion}: anger (\textbf{AN}), apprehension (\textbf{AP}), sadness (\textbf{SD}), confusion (\textbf{CO}), and happiness (\textbf{HA})}
   
 \end{frame}
 
@@ -898,9 +919,38 @@ $\rightarrow$ How to automate the annotation process using language models?
 
 \end{frame}
 
+\begin{frame}{Encoder-decoder transformer architecture}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\linewidth]{img/seq2seq.png}
+    %\caption{\textbf{Sequence-to-sequence architecture based on transformers} \smallcitep{vaswani2017attention}. The encoder processes the input sequence, and the decoder generates the output sequence.}
+    \label{fig:placeholder}
+\end{figure}
+
+\smallcitet{vaswani2017attention}
+
+\end{frame}
+
+\begin{frame}{T5 sequence-to-sequence framework}
+\begin{figure}
+    \centering
+    \includegraphics[width=1\linewidth]{img/t5_architecture.png}
+    %\caption{\textbf{T5 architecture} \smallcitep{2020t5}. The model is pre-trained on a text-to-text objective and can be fine-tuned for various NLP tasks.}
+    \label{fig:placeholder}
+\end{figure}
+
+\smallcitet{2020t5}
+
+\vspace{0.5cm}
+\pause
+
+248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
+
+\end{frame}
+
 \begin{frame}{Character and emotion detection in dream narratives}
 
-  [add seq2seq architecture illustration, add list of characters and emotions]
+  %[add list of characters and emotions]
 
 %\textbf{Goal}: Character and emotion detection in dream narratives
 
@@ -930,6 +980,9 @@ $\rightarrow$ How to automate the annotation process using language models?
   % columns stay aligned across slides.
   \small
   \setlength{\tabcolsep}{5pt} 
+
+    \caption{\textbf{Character and emotion detection}. \scriptsize{\textcolor{bluepanam}{$p<0.05$}.}}
+  \label{tab:result_ablation}
   
   \begin{tabular}{lcccccc}
     \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
@@ -941,30 +994,27 @@ $\rightarrow$ How to automate the annotation process using language models?
     \pause
     
     \texttt{No\textsubscript{semantics}} & 71.4 & \textcolor{bluepanam}{56.5} & 61.0  & 90.5  & \textcolor{bluepanam}{41.8} &  75.8 \\
-    \texttt{No\textsubscript{names}} & \textcolor{bluepanam}{80.7}  & \textcolor{blueNCS}{74.3}  & 74.2  & \textcolor{bluepanam}{84.0}  & \textcolor{blueNCS}{60.9} &  \textcolor{bluepanam}{73.0} \\
+    \texttt{No\textsubscript{names}} & \textcolor{bluepanam}{80.7}  & \textcolor{bluepanam}{74.3}  & 74.2  & \textcolor{bluepanam}{84.0}  & \textcolor{bluepanam}{60.9} &  \textcolor{bluepanam}{73.0} \\
     \hline
     
     \pause
     
-    \texttt{Size\textsubscript{small}} & \textcolor{blueNCS}{78.4}  & \textcolor{blueNCS}{72.1}  & \textcolor{blueNCS}{70.3}  & \textcolor{blueNCS}{81.7}  & \textcolor{blueNCS}{56.8} &  \textcolor{blueNCS}{70.2} \\
-    \texttt{Size\textsubscript{large}} & \textcolor{bluepanam}{84.5} & \textcolor{blueNCS}{80.3}  & \textcolor{blueNCS}{78.6}  & 87.3  & \textcolor{blueNCS}{67.6} & 74.7 \\
+    \texttt{Size\textsubscript{small}} & \textcolor{bluepanam}{78.4}  & \textcolor{bluepanam}{72.1}  & \textcolor{bluepanam}{70.3}  & \textcolor{bluepanam}{81.7}  & \textcolor{bluepanam}{56.8} &  \textcolor{bluepanam}{70.2} \\
+    \texttt{Size\textsubscript{large}} & \textcolor{bluepanam}{84.5} & \textcolor{bluepanam}{80.3}  & \textcolor{bluepanam}{78.6}  & 87.3  & \textcolor{bluepanam}{67.6} & 74.7 \\
     \hline
     
     \pause
     
     \texttt{First\textsubscript{group}} & 82.3  & 77.7  & 74.9  & 85.6  & 63.7 &  71.9 \\
-    \texttt{First\textsubscript{individual}} & \textcolor{blueNCS}{80.6}  & 76.1  & \textcolor{bluepanam}{74.2}  & \textcolor{blueNCS}{83.9} & 62.7 &  67.3 \\
+    \texttt{First\textsubscript{individual}} & \textcolor{bluepanam}{80.6}  & 76.1  & \textcolor{bluepanam}{74.2}  & \textcolor{bluepanam}{83.9} & 62.7 &  67.3 \\
     \texttt{First\textsubscript{emotion}} & 83.9 & 78.7 & 77.1  & 87.6  & 65.0 &  72.0 \\
     \hline
     
     \pause
     
-    \texttt{Conversion\textsubscript{comma}} & \textcolor{blueNCS}{84.0}  & \textcolor{blueNCS}{79.8}  & \textcolor{blueNCS}{77.7}  & \textcolor{bluepanam}{87.1}  & \textcolor{blueNCS}{66.7} &  73.7 \\
+    \texttt{Conversion\textsubscript{comma}} & \textcolor{bluepanam}{84.0}  & \textcolor{bluepanam}{79.8}  & \textcolor{bluepanam}{77.7}  & \textcolor{bluepanam}{87.1}  & \textcolor{bluepanam}{66.7} &  73.7 \\
     \texttt{Conversion\textsubscript{marker}} & 82.4  & 78.5  & 76.5  & 86.1  & 65.4 &  74.4 \\
   \end{tabular}
-  
-  \caption{\textbf{Character and emotion detection}. \scriptsize{\textcolor{bluepanam}{$p<0.05$}, \textcolor{blueNCS}{$p<0.01$}.}}
-  \label{tab:result_ablation}
 \end{table}
 
 %\vspace{0.25cm}
@@ -1000,8 +1050,14 @@ $\rightarrow$ Our models can address this task; there is room for improvement
 \label{tab:case_study_war_veteran}
 \end{table}
 
+\vspace{-0.5cm}
+
 \onslide<2->{
 $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethnic}, and \textit{unknown} identities compared to other dreamers}
+
+\vspace{0.25cm}
+
+\onslide<2->{\footnotesize{Generated annotations for DreamBank are available on \href{https://huggingface.co/gustavecortal}{hf.co/gustavecortal}}}
 
 \end{frame}
 
@@ -1009,16 +1065,38 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Formalization of style in personal narratives
     %\section{Formalization of style in personal narratives}
 \end{center}
 
-\vspace{1.5cm}
+\vfill
 
 \footnotesize
 
 \textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
+\end{frame}
+
+\begin{frame}{Motivation}
+
+  \textbf{Limitation}: A formalization of style that captures how subjective experience is linguistically communicated is lacking
+
+  \vspace{0.5cm}
+  \pause
+
+  Formalization could enable more precise identification of linguistic patterns associated with psychological states and may support interventions \smallcitep{whiteNarrativeMeansTherapeutic1990} 
+
+  \vspace{0.5cm}
+  \pause
+
+  %$\rightarrow$ Our approach complements existing works by providing a formal framework grounded in systemic functional linguistics %\smallcitep{hallidayIntroductionFunctionalGrammar2014}
+
+  %\vspace{0.5cm}
+  %\pause
+
+  $\rightarrow$ We aim to create a accessible framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
+
 \end{frame}
 
 \begin{frame}{Motivation}
@@ -1049,12 +1127,12 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{Motivation}
 
-  \citet{TellierFinkel95} define linguistic style as lexical and syntactical patterns using formal language theory [be more precise]
+  \citet{TellierFinkel95} define linguistic style as lexical and syntactical patterns using formal language theory %[be more precise]
 
   \vspace{0.5cm}
   \pause
 
-  \citet{pachet} proposes constrained Markov processes to generate song lyrics that match an author's style while satisfying rhyme and meter constraints %style as markov chains, short-term probabilities, music domain
+  \citet{pachet} use constrained Markov processes to generate lyrics that match an author's style while satisfying rhyme and meter constraints %style as markov chains, short-term probabilities, music domain
 
   \vspace{0.5cm}
   \pause
@@ -1064,58 +1142,36 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \end{frame}
 
-\begin{frame}{Motivation}
-
-  \textbf{Limitation}: A formalization of style that captures how subjective experience is linguistically communicated is lacking
-
-  \vspace{0.5cm}
-  \pause
-
-  Formalization could enable more precise identification of linguistic patterns associated with psychological states and may support interventions \smallcitep{whiteNarrativeMeansTherapeutic1990} 
-
-  \vspace{0.5cm}
-  \pause
-
-  %$\rightarrow$ Our approach complements existing works by providing a formal framework grounded in systemic functional linguistics %\smallcitep{hallidayIntroductionFunctionalGrammar2014}
-
-  %\vspace{0.5cm}
-  %\pause
-
-  $\rightarrow$ We aim to create a accessible framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
-
-\end{frame}
-
 \begin{frame}{How to give an operational definition of style?}
 
 \textbf{Intuitive definition}: a distinctive manner of communicating subjective experience in personal narratives
 
-\vspace{0.25cm}
+\vspace{0.5cm}
 \pause
 
 \textbf{Hypothesis}: An individual uses some redundant choices of features that characterize its style
 
-\vspace{0.25cm}
+\vspace{0.5cm}
 \pause
 
 \textbf{Goal}: Map narratives to sequences based on extracted linguistic features:
 
 “I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
 
-\vspace{0.25cm}
-\pause
-
 %\textbf{Research task}: Formalize style as \textit{patterns of linguistic choices that encode subjective experience}
 
 %\vspace{0.5cm}
 %\pause
+    
+\end{frame}
 
-\textbf{Contributions}:
+\begin{frame}{Contributions}
 
-\begin{enumerate}[<+->]
+\begin{itemize}[<+->]
     \item A sequence-based framework defining style as \textit{patterns in sequences of linguistic choices that encode subjective experience}% grounded in systemic functional linguistics
     \item A methodology for identifying patterns using sequence analysis
     \item A case study on dream narratives %, showing how the analysis of patterns can reveal psychological insights
-\end{enumerate}
+\end{itemize}
     
 \end{frame}
 
@@ -1128,18 +1184,23 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
         We ground our framework in \textit{systemic functional linguistics} \smallcitep{hallidayIntroductionFunctionalGrammar2014a}
     }
 
-    \vspace{1.cm}
+    \vspace{0.5cm}
 
     % 2. Wrap the second paragraph to appear on Slide 2+
     \onslide<2->{
         Meaning emerges through choices in systems of linguistic features to achieve communicative goals
     }
 
-    \vspace{1.cm}
+    \vspace{0.5cm}
 
     % 3. Wrap the third paragraph to appear on Slide 3+
     \onslide<3->{
-        Language achieves three functions: interpersonal (language builds social relationships), textual (information is organized to create coherent messages), and \textit{ideational} (language represents experience)
+        Language achieves three functions:
+        \begin{itemize}
+            \item Interpersonal: language builds social relationships
+            \item Textual: information is organized to create coherent messages
+            \item \textit{Ideational}: language represents experience
+        \end{itemize}
     }
   \end{column}
 
@@ -1161,7 +1222,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
   According to the \textit{ideational function}, language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}
 
   %\vspace{0.05cm}
-  \pause
+  %\pause
 
 \begin{table}[!htb]
   \centering
@@ -1210,12 +1271,12 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{Formal definition of style}
 
-\textbf{Alphabet}: Let $\Sigma$ be a finite alphabet grounded in \textit{Systemic Functional Linguistics} to capture meaningful distinctions in experience
+\textbf{Alphabet}: Let $\Sigma$ be a finite alphabet grounded in the ideational function of language
 
 \vspace{0.25cm}
 \pause
 
-$$ \Sigma = \{ \texttt{Action}, \texttt{Mental}, \texttt{Verbal}, \texttt{State}, \dots \} $$
+$$ \Sigma = \{ \texttt{Action}, \texttt{Mental}, \texttt{Verbal}, \texttt{State}\} $$
 
 \vspace{0.5cm}
 \pause
@@ -1225,12 +1286,14 @@ $$ \Sigma = \{ \texttt{Action}, \texttt{Mental}, \texttt{Verbal}, \texttt{State}
 \vspace{0.25cm}
 \pause
 
-$$ \phi(T) = u = (u_1, u_2, \dots, u_n) $$
+$$
+\phi(T)=u\in\Sigma^n,\quad u=(u_1,u_2,\ldots,u_n)
+$$
 
 \vspace{0.25cm}
 \pause
 
-$\rightarrow$ We implement $\phi$ using language models with in-context learning to extract features at the clause level
+$\rightarrow$ We implement $\phi$ using a language model with in-context learning% to extract features at the clause level
 
 \end{frame}
 
@@ -1248,12 +1311,12 @@ $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
 \small
 (where $w \subseteq u$ denotes that $w$ is a substring of $u$)
 
-\vspace{0.5cm}
-\pause
+%\vspace{0.5cm}
+%\pause
 
-\raggedright
+%\raggedright
 
-$\rightarrow$ Style is formally captured as the set of sequential patterns chosen by the author to encode experience
+%$\rightarrow$ Style is formally captured as the set of sequential patterns chosen by the author to encode experience
 
 \end{frame}
 
@@ -1373,7 +1436,7 @@ $\rightarrow$ Our results can inform psychological interpretations; need more in
 
 
 \begin{itemize}[<+->]
-    \item \textbf{Incorporating additional linguistic features} with a functional role (duration of processes, concreteness of participants) %\smallcitep{hallidayIntroductionFunctionalGrammar2014a,troianoTheoriesStylesTheir2023a}%: adding features related to the interpersonal and textual functions of language
+    \item \textbf{Incorporating additional linguistic features}: duration of processes, concreteness of participants %\smallcitep{hallidayIntroductionFunctionalGrammar2014a,troianoTheoriesStylesTheir2023a}%: adding features related to the interpersonal and textual functions of language
     \item \textbf{Authorship profiling}: predicting authors based on their sequences \smallcitep{ferraraDetectionPromotedSocial2016}
     %[map sequences to authors]
     %: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
@@ -1387,10 +1450,12 @@ $\rightarrow$ Our results can inform psychological interpretations; need more in
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Conclusion and perspectives
     %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
+\vfill
 
 \end{frame}
 
@@ -1409,18 +1474,35 @@ How to model subjective experience in personal narratives?
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Perspectives}
+
+  \begin{itemize}[<+->]
+    \item \textbf{Emotion analysis for mental health}: empathic support, cognitive distortions, theory of mind \smallcitep{gandhiUnderstandingSocialReasoning2023,maHolisticLandscapeSituated2023,sharmaCognitiveReframingNegative2023b}
+    \item \textbf{Post-training for psychology}: preferences and reasoning data \smallcitep{zhang2025preferencelearningunlocksllms}
+    \item \textbf{Psychology of language models}: sycophancy, thought operations \smallcitep{didolkar2025metacognitivereuseturningrecurring,sharma2025understandingsycophancylanguagemodels}
+  \end{itemize}
+
+%\vspace{0.5cm}
+%\pause
+
+%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
+  
+\end{frame}
+
 \section{Impact}
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Impact
     %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
+\vfill
 
 \end{frame}
 
-\begin{frame}[noframenumbering]
+\begin{frame}
     \frametitle{Ongoing PhD thesis related to my works}
 
 \begin{figure}[!htb]
@@ -1474,12 +1556,13 @@ I wanted to apply my NLP skills to industry work with social impact
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Automatic thematic analysis in mental health narratives using language models% (change title to thematic analysis?)
     %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
 
-\vspace{1.5cm}
+\vfill
 
 \footnotesize
 
@@ -1502,27 +1585,23 @@ I wanted to apply my NLP skills to industry work with social impact
   %$\rightarrow$ We developed a pipeline that (a) clusters narratives from different cohorts, (b) generates descriptions for each cluster, and (c) links clusters to variation in clinical scores and sociodemographic factors %We then quantified which questions best separate clinically relevant clusters, and we conducted an analysis of confounding by age, education, and sex, an aspect often overlooked in topic modeling despite strong demographic effects on language use.
 
 \end{frame}
-
-\begin{comment}
   
 
 \begin{frame}{Data collection}
 
-We collected clinical scores and narratives from \textbf{four cohorts}. A French general population cohort (n=1809), and three clinical populations: Italian (n=116), Chinese (n=52), and Spanish (n=90) cohorts%. We focus on the French general population cohort.
+Narratives and clinical scores from \textit{four cohorts}: French general population (n=1809) and three clinical cohorts (Italian n=116, Chinese n=52, Spanish n=90)
 
 \vspace{0.5cm}
 \pause
 
-\textbf{Clinical scores} were assessed using various scales such as: AIS (Athens Insomnia Scale); BDI (Beck Depression Inventory); GAD-7 (Generalized Anxiety Disorder 7-item scale); MFI (Multidimensional Fatigue Inventory); PHQ-9 (Patient Health Questionnaire-9 for depression)
+\textit{Clinical scores} for depression, anxiety, insomnia
 
 \vspace{0.5cm}
 \pause
 
-\textbf{Open-ended questions}: \textit{Describe your last 24 hours} / \textit{a negative event that happened to you in the past} / \textit{a positive event that happened to you in the past} / \textit{a negative event you think might happen in the future} / \textit{a positive event you think might happen in the future} / \textit{Describe how you are feeling at the moment and how your sleep has been lately}
+\textit{Open-ended questions} involving last 24h, positive future event, current feelings and sleep, etc.
 
 \end{frame}
-
-\end{comment}
 
 \begin{frame}{Semantic clustering and description generation}
 
@@ -1540,7 +1619,7 @@ We collected clinical scores and narratives from \textbf{four cohorts}. A French
 
 \begin{frame}{Distribution of depression scores across clusters}
 
-  \textit{How you are feeling and how your sleep has been lately}% (n=1,786 transcripts) 
+  \textit{Current feelings and sleep} (n=1,786)
   \begin{figure}
     \centering
     \includegraphics[scale=0.06]{img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png}
@@ -1580,26 +1659,14 @@ $\rightarrow$ Clustering captures symptom severity and age-related circumstances
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Perspectives
     %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
 
-\end{frame}
+\vfill
 
-\begin{frame}{Perspectives}
-
-  \begin{itemize}[<+->]
-    \item \textbf{Emotion analysis for mental health}: empathic support, cognitive distortions, theory of mind \smallcitep{gandhiUnderstandingSocialReasoning2023,maHolisticLandscapeSituated2023,sharmaCognitiveReframingNegative2023b}
-    \item \textbf{Post-training for psychology}: preferences and reasoning data \smallcitep{zhang2025preferencelearningunlocksllms}
-    \item \textbf{Psychology of language models}: sycophancy, thought operations \smallcitep{didolkar2025metacognitivereuseturningrecurring,sharma2025understandingsycophancylanguagemodels}
-  \end{itemize}
-
-%\vspace{0.5cm}
-%\pause
-
-%I co-supervised ongoing PhD thesis: Nicolas Richet (multimodal emotion recognition), Amine Haddou (cognitive distortions), and Raphael Faure (style analysis)
-  
 \end{frame}
 
 \begin{frame}{Conclusion}
@@ -1628,6 +1695,7 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
+\appendix
 \begin{frame}{Selected research papers}
   \scriptsize
 
@@ -1646,15 +1714,16 @@ How to model subjective experience in personal narratives?
     \fullcitenourl{cortal-finkel-2025-formalizing}
 \end{frame}
 
-\appendix
 \section{Appendix}
 
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     Appendix
     %\section{Appendix}
 \end{center}
+\vfill
 
 \end{frame}
 
@@ -2033,13 +2102,14 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
 
 \end{comment}
 
-
+\section{References}
 \begin{frame}{}
 \Large
+\vfill
 \begin{center}
     References
-    \section{References}
 \end{center}
+\vfill
 
 \end{frame}
 
