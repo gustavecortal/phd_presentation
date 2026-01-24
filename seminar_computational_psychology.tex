@@ -789,7 +789,7 @@ $\rightarrow$ Some components benefit from contextual understanding and world kn
 
 \begin{frame}{Motivation for dream analysis}
 
-  We performed emotional analysis on concrete, real life situations
+  We performed emotion analysis on concrete, real life situations
 
   \vspace{0.5cm}
   \pause
@@ -860,8 +860,8 @@ $\rightarrow$ How to automate the annotation process using language models?
 \begin{itemize}\setlength{\itemsep}{0.2em}
   \item \textbf{Status}: individual alive (\textbf{1}), group alive (\textbf{2}), dead individual (\textbf{3}), dead group (\textbf{4}), imaginary individual (\textbf{5}), imaginary group (\textbf{6}), original form (\textbf{7}), changed form (\textbf{8})
   \item \textbf{Gender}: male (\textbf{M}), female (\textbf{F}), joint (\textbf{J}), indefinite (\textbf{I})
-  \item \textbf{Identity}: known (\textbf{K}), prominent (\textbf{P}), occupational (\textbf{O}), ethnic (\textbf{E}), stranger (\textbf{S})
-  \item \textbf{Age}: adult (\textbf{A}), child (\textbf{C})
+  \item \textbf{Identity}: known (\textbf{K}), prominent (\textbf{P}), occupational (\textbf{O}), ethnic (\textbf{E}), unknown (\textbf{U})
+  \item \textbf{Age}: adult (\textbf{A}), teen (\textbf{T}), child (\textbf{C})
 \end{itemize}
 
 \textbf{Emotion}: anger (\textbf{AN}), apprehension (\textbf{AP}), sadness (\textbf{SD}), confusion (\textbf{CO}), and happiness (\textbf{HA})}
@@ -939,12 +939,14 @@ $\rightarrow$ How to automate the annotation process using language models?
     \label{fig:placeholder}
 \end{figure}
 
+
+
 \smallcitet{2020t5}
 
 \vspace{0.5cm}
 \pause
 
-248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
+$\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
 
 \end{frame}
 
@@ -1125,22 +1127,22 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \end{frame}
 
-\begin{frame}{Motivation}
+%\begin{frame}{Motivation}
 
-  \citet{TellierFinkel95} define linguistic style as lexical and syntactical patterns using formal language theory %[be more precise]
+%  \citet{TellierFinkel95} define linguistic style as lexical and syntactical patterns using formal language theory %[be more precise]
 
-  \vspace{0.5cm}
-  \pause
+%  \vspace{0.5cm}
+%  \pause
 
-  \citet{pachet} use constrained Markov processes to generate lyrics that match an author's style while satisfying rhyme and meter constraints %style as markov chains, short-term probabilities, music domain
+%  \citet{pachet} use constrained Markov processes to generate lyrics that match an author's style while satisfying rhyme and meter constraints %style as markov chains, short-term probabilities, music domain
 
-  \vspace{0.5cm}
-  \pause
+%  \vspace{0.5cm}
+%  \pause
   
-  $\rightarrow$ Drawing on these ideas, we provide a sequence-based framework to analyze how personal narratives convey subjective experience
+%  $\rightarrow$ We retain the idea 
 
 
-\end{frame}
+%\end{frame}
 
 \begin{frame}{How to give an operational definition of style?}
 
@@ -1309,7 +1311,12 @@ $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
 \vspace{0.1cm}
 \centering
 \small
-(where $w \subseteq u$ denotes that $w$ is a substring of $u$)
+where $w \subseteq u$ denotes that $w$ is a substring of $u$
+
+
+\vspace{0.5cm}
+\small
+\textit{Substrings are contiguous sequences of symbols within a sequence}
 
 %\vspace{0.5cm}
 %\pause
@@ -1327,15 +1334,17 @@ $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
 %\vspace{0.25cm}
 %\pause
 
-%“I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
+\textbf{Narrative}: “I wake in a dark room. I feel a cold wind. I tell myself to move.” %$\rightarrow$ $amv$
 
 %\pause
+
+%\vspace{0.5cm}
 
 
 \begin{table}[!ht]
   \centering
-  \small
-  \renewcommand{\arraystretch}{1.1}
+  %\small
+  \renewcommand{\arraystretch}{1.5}
   \begin{threeparttable}
     %\caption{Illustrative pipeline for our sequence-based framework. We first segment “I wake in a dark room. I feel a cold wind. I tell myself to move.” into clauses, then identify features such as processes and participants for each clause. Each text is mapped to a symbolic sequence using an alphabet based on extracted features.}
     \label{tab:example}
@@ -1359,10 +1368,10 @@ $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
   \end{threeparttable}
 \end{table}
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\small
-\textit{Substrings are contiguous sequences of symbols within a sequence}
+%\small
+%\textit{Substrings are contiguous sequences of symbols within a sequence}
 
 %\begin{enumerate}[<+->]
 %    \item We first segment \textit{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} into clauses
@@ -1675,7 +1684,7 @@ How to model subjective experience in personal narratives?
 
 \vspace{0.5cm}
 
-\begin{itemize}[<+->]
+\begin{itemize}%[<+->]
     \item Cognitive science perspective on emotion analysis
     \item French narratives based on emotion components
     \item Emotion analysis in emotional and dream narratives 
@@ -1684,14 +1693,14 @@ How to model subjective experience in personal narratives?
 
 \vspace{0.5cm}
 
-\onslide<6->{
+
 {\small
 \textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues
 
 \vspace{0.25cm}
 
 \textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
-}}
+}
 
 \end{frame}
 

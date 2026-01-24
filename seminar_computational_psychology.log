@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.26)  24 JAN 2026 20:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.12.26)  24 JAN 2026 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1756,18 +1756,18 @@ Overfull \vbox (3.37933pt too high) detected at line 932
 <img/t5_architecture.png, id=831, 1453.43pt x 497.86pt>
 File: img/t5_architecture.png Graphic file (type png)
 <use img/t5_architecture.png>
-Package pdftex.def Info: img/t5_architecture.png  used on input line 949.
+Package pdftex.def Info: img/t5_architecture.png  used on input line 951.
 (pdftex.def)             Requested size: 307.28987pt x 105.26018pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.949 \end{frame}
+l.951 \end{frame}
                   [78
 
  <./img/t5_architecture.png>]
 File: img/t5_architecture.png Graphic file (type png)
 <use img/t5_architecture.png>
-Package pdftex.def Info: img/t5_architecture.png  used on input line 949.
+Package pdftex.def Info: img/t5_architecture.png  used on input line 951.
 (pdftex.def)             Requested size: 307.28987pt x 105.26018pt.
  [79
 
@@ -1775,51 +1775,51 @@ Package pdftex.def Info: img/t5_architecture.png  used on input line 949.
 <img/dream_method.png, id=852, 289.8027pt x 210.3057pt>
 File: img/dream_method.png Graphic file (type png)
 <use img/dream_method.png>
-Package pdftex.def Info: img/dream_method.png  used on input line 971.
+Package pdftex.def Info: img/dream_method.png  used on input line 973.
 (pdftex.def)             Requested size: 245.83282pt x 178.39806pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.971 \end{frame}
+l.973 \end{frame}
                   [80
 
  <./img/dream_method.png>]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
 [81
 
 ]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
 [82
 
 ]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
 [83
 
 ]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
 [84
 
 ]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
 [85
 
 ]
-Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
+Overfull \hbox (0.87004pt too wide) in paragraph at lines 1029--1029
  [] 
  []
 
@@ -1859,59 +1859,59 @@ Overfull \hbox (0.87004pt too wide) in paragraph at lines 1027--1027
 
 ] [103
 
-] [104
-
-] [105
-
-] [106
-
 ]
-<img/halliday_book_cover_upscale.jpg, id=1091, 708.6475pt x 1003.75pt>
+<img/halliday_book_cover_upscale.jpg, id=1064, 708.6475pt x 1003.75pt>
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1218.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1220.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:placeholder}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1218 \end{frame}
-                   [107
+l.1220 \end{frame}
+                   [104
 
  <./img/halliday_book_cover_upscale.jpg>]
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1218.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1220.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
- [108
+ [105
 
 ]
 File: img/halliday_book_cover_upscale.jpg Graphic file (type jpg)
 <use img/halliday_book_cover_upscale.jpg>
-Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1218.
+Package pdftex.def Info: img/halliday_book_cover_upscale.jpg  used on input line 1220.
 (pdftex.def)             Requested size: 76.82246pt x 108.80466pt.
- [109
+ [106
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1272
 
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 1270--1270
+Underfull \hbox (badness 1852) in paragraph at lines 1272--1272
 []|\T1/cmtt/m/n/10 Mental\T1/cmss/m/n/10 : in-ter-nal ex-pe-ri-ences
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
+Underfull \hbox (badness 10000) in paragraph at lines 1272--1272
 
  []
 
-[110
+[107
+
+] [108
+
+] [109
+
+] [110
 
 ] [111
 
@@ -1923,92 +1923,92 @@ Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
 
 ] [115
 
-] [116
-
-] [117
-
-] [118
-
 ]
-<img/dendogram_viet.png, id=1182, 655.9707pt x 427.3566pt>
+<img/dendogram_viet.png, id=1156, 655.9707pt x 427.3566pt>
 File: img/dendogram_viet.png Graphic file (type png)
 <use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 1397.
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1406.
 (pdftex.def)             Requested size: 215.10196pt x 140.13474pt.
- [119
+ [116
 
  <./img/dendogram_viet.png>]
 File: img/dendogram_viet.png Graphic file (type png)
 <use img/dendogram_viet.png>
-Package pdftex.def Info: img/dendogram_viet.png  used on input line 1397.
+Package pdftex.def Info: img/dendogram_viet.png  used on input line 1406.
 (pdftex.def)             Requested size: 215.10196pt x 140.13474pt.
- [120
+ [117
 
 ]
-<img/viet_odds_2.png, id=1197, 710.655pt x 420.6114pt>
+<img/viet_odds_2.png, id=1171, 710.655pt x 420.6114pt>
 File: img/viet_odds_2.png Graphic file (type png)
 <use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1432.
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1441.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-<img/viet_odds_3.png, id=1198, 710.655pt x 420.6114pt>
+<img/viet_odds_3.png, id=1172, 710.655pt x 420.6114pt>
 File: img/viet_odds_3.png Graphic file (type png)
 <use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1432.
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1441.
 (pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
 
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1432--1432
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1441--1441
+ [][] 
+ []
+
+[118
+
+ <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1441--1441
+ [][] 
+ []
+
+[119
+
+]
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1441--1441
+ [][] 
+ []
+
+[120
+
+]
+File: img/viet_odds_2.png Graphic file (type png)
+<use img/viet_odds_2.png>
+Package pdftex.def Info: img/viet_odds_2.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+File: img/viet_odds_3.png Graphic file (type png)
+<use img/viet_odds_3.png>
+Package pdftex.def Info: img/viet_odds_3.png  used on input line 1441.
+(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+
+Overfull \hbox (19.21442pt too wide) in paragraph at lines 1441--1441
  [][] 
  []
 
 [121
 
- <./img/viet_odds_2.png> <./img/viet_odds_3.png>]
-File: img/viet_odds_2.png Graphic file (type png)
-<use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-File: img/viet_odds_3.png Graphic file (type png)
-<use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
+] [122
 
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1432--1432
- [][] 
- []
+] [123
 
-[122
-
-]
-File: img/viet_odds_2.png Graphic file (type png)
-<use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-File: img/viet_odds_3.png Graphic file (type png)
-<use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1432--1432
- [][] 
- []
-
-[123
-
-]
-File: img/viet_odds_2.png Graphic file (type png)
-<use img/viet_odds_2.png>
-Package pdftex.def Info: img/viet_odds_2.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-File: img/viet_odds_3.png Graphic file (type png)
-<use img/viet_odds_3.png>
-Package pdftex.def Info: img/viet_odds_3.png  used on input line 1432.
-(pdftex.def)             Requested size: 142.12848pt x 84.12079pt.
-
-Overfull \hbox (19.21442pt too wide) in paragraph at lines 1432--1432
- [][] 
- []
-
-[124
+] [124
 
 ] [125
 
@@ -2032,44 +2032,44 @@ Overfull \hbox (19.21442pt too wide) in paragraph at lines 1432--1432
 
 ] [135
 
-] [136
-
-] [137
-
-] [138
-
 ]
-<img/face/face_amine.png, id=1367, 401.5pt x 401.5pt>
+<img/face/face_amine.png, id=1342, 401.5pt x 401.5pt>
 File: img/face/face_amine.png Graphic file (type png)
 <use img/face/face_amine.png>
-Package pdftex.def Info: img/face/face_amine.png  used on input line 1532.
+Package pdftex.def Info: img/face/face_amine.png  used on input line 1541.
 (pdftex.def)             Requested size: 98.335pt x 98.33466pt.
-<img/face/face_raphael.jpeg, id=1368, 803.0pt x 803.0pt>
+<img/face/face_raphael.jpeg, id=1343, 803.0pt x 803.0pt>
 File: img/face/face_raphael.jpeg Graphic file (type jpg)
 <use img/face/face_raphael.jpeg>
-Package pdftex.def Info: img/face/face_raphael.jpeg  used on input line 1532.
+Package pdftex.def Info: img/face/face_raphael.jpeg  used on input line 1541.
 (pdftex.def)             Requested size: 98.335pt x 98.32854pt.
-<img/face/face_nicolas.jpeg, id=1369, 1230.5975pt x 1230.5975pt>
+<img/face/face_nicolas.jpeg, id=1344, 1230.5975pt x 1230.5975pt>
 File: img/face/face_nicolas.jpeg Graphic file (type jpg)
 <use img/face/face_nicolas.jpeg>
-Package pdftex.def Info: img/face/face_nicolas.jpeg  used on input line 1532.
+Package pdftex.def Info: img/face/face_nicolas.jpeg  used on input line 1541.
 (pdftex.def)             Requested size: 98.335pt x 98.31836pt.
- [139
+ [136
 
  <./img/face/face_amine.png> <./img/face/face_raphael.jpeg> <./img/face/face_nicolas.jpeg>]
-<img/logo_callyope.png, id=1384, 513.92pt x 513.92pt>
+<img/logo_callyope.png, id=1358, 513.92pt x 513.92pt>
 File: img/logo_callyope.png Graphic file (type png)
 <use img/logo_callyope.png>
-Package pdftex.def Info: img/logo_callyope.png  used on input line 1553.
+Package pdftex.def Info: img/logo_callyope.png  used on input line 1562.
 (pdftex.def)             Requested size: 61.66772pt x 61.66772pt.
- [140
+ [137
 
  <./img/logo_callyope.png>]
 File: img/logo_callyope.png Graphic file (type png)
 <use img/logo_callyope.png>
-Package pdftex.def Info: img/logo_callyope.png  used on input line 1553.
+Package pdftex.def Info: img/logo_callyope.png  used on input line 1562.
 (pdftex.def)             Requested size: 61.66772pt x 61.66772pt.
- [141
+ [138
+
+] [139
+
+] [140
+
+] [141
 
 ] [142
 
@@ -2081,61 +2081,61 @@ Package pdftex.def Info: img/logo_callyope.png  used on input line 1553.
 
 ] [146
 
-] [147
-
-] [148
-
-] [149
-
 ]
-<img/topic_modeling/methods_v3.png, id=1447, 513.8397pt x 281.1303pt>
+<img/topic_modeling/methods_v3.png, id=1422, 513.8397pt x 281.1303pt>
 File: img/topic_modeling/methods_v3.png Graphic file (type png)
 <use img/topic_modeling/methods_v3.png>
-Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 1618.
+Package pdftex.def Info: img/topic_modeling/methods_v3.png  used on input line 1627.
 (pdftex.def)             Requested size: 308.3062pt x 168.67947pt.
 
-Overfull \hbox (1.01633pt too wide) in paragraph at lines 1618--1618
+Overfull \hbox (1.01633pt too wide) in paragraph at lines 1627--1627
  [] 
  []
 
-[150
+[147
 
  <./img/topic_modeling/methods_v3.png>]
-<img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png, id=1457, 4131.435pt x 2727.18875pt>
+<img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png, id=1431, 4131.435pt x 2727.18875pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1641.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1650.
 (pdftex.def)             Requested size: 247.8754pt x 163.62427pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 1641.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 1650.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [151
+) [148
 
  <./img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>]
 File: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1641.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png  used on input line 1650.
 (pdftex.def)             Requested size: 247.8754pt x 163.62427pt.
- [152
+ [149
 
 ]
-<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=1474, 991.5444pt x 766.3029pt>
+<img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png, id=1447, 991.5444pt x 766.3029pt>
 File: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1656.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1665.
 (pdftex.def)             Requested size: 247.88548pt x 191.57526pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:popgen_description}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1656 \end{frame}
-                   [153
+l.1665 \end{frame}
+                   [150
 
  <./img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>]
 File: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png Graphic file (type png)
 <use img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png>
-Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1656.
+Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png  used on input line 1665.
 (pdftex.def)             Requested size: 247.88548pt x 191.57526pt.
- [154
+ [151
+
+] [152
+
+] [153
+
+] [154
 
 ] [155
 
@@ -2145,9 +2145,15 @@ Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_descripti
 
 ] [158
 
-] [159
+]
+<img/scherer_dictionary_eng.png, id=1511, 1517.67pt x 708.6475pt>
+File: img/scherer_dictionary_eng.png Graphic file (type png)
+<use img/scherer_dictionary_eng.png>
+Package pdftex.def Info: img/scherer_dictionary_eng.png  used on input line 1767.
+(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
+ [159
 
-] [160
+ <./img/scherer_dictionary_eng.png>] [160
 
 ] [161
 
@@ -2162,16 +2168,28 @@ Package pdftex.def Info: img/topic_modeling/boxplot_description/popgen_descripti
 ] [166
 
 ]
-<img/scherer_dictionary_eng.png, id=1583, 1517.67pt x 708.6475pt>
 File: img/scherer_dictionary_eng.png Graphic file (type png)
 <use img/scherer_dictionary_eng.png>
-Package pdftex.def Info: img/scherer_dictionary_eng.png  used on input line 1758.
+Package pdftex.def Info: img/scherer_dictionary_eng.png  used on input line 1806.
 (pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
  [167
 
- <./img/scherer_dictionary_eng.png>] [168
+]
+<img/scherer_eng.png, id=1568, 1517.67pt x 708.6475pt>
+File: img/scherer_eng.png Graphic file (type png)
+<use img/scherer_eng.png>
+Package pdftex.def Info: img/scherer_eng.png  used on input line 1822.
+(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
+ [168
 
-] [169
+ <./img/scherer_eng.png>]
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1844.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1844.
+LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1844.
+ [169
 
 ] [170
 
@@ -2179,83 +2197,73 @@ Package pdftex.def Info: img/scherer_dictionary_eng.png  used on input line 1758
 
 ] [172
 
-] [173
-
-] [174
-
 ]
-File: img/scherer_dictionary_eng.png Graphic file (type png)
-<use img/scherer_dictionary_eng.png>
-Package pdftex.def Info: img/scherer_dictionary_eng.png  used on input line 1797.
-(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
- [175
-
-]
-<img/scherer_eng.png, id=1641, 1517.67pt x 708.6475pt>
-File: img/scherer_eng.png Graphic file (type png)
-<use img/scherer_eng.png>
-Package pdftex.def Info: img/scherer_eng.png  used on input line 1813.
-(pdftex.def)             Requested size: 303.52863pt x 141.72699pt.
- [176
-
- <./img/scherer_eng.png>]
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1835.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <7> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1835.
-LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 1835.
- [177
-
-] [178
-
-] [179
-
-] [180
-
-]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=1677, 849.1725pt x 409.2891pt>
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png, id=1606, 849.1725pt x 409.2891pt>
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1877.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1886.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
- [181
+ [173
 
  <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>]
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1877.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png  used on input line 1886.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
- [182
+ [174
 
 ]
-<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=1693, 849.1725pt x 409.2891pt>
+<img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png, id=1621, 849.1725pt x 409.2891pt>
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1892.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1901.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
- [183
+ [175
 
  <./img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>]
 File: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png Graphic file (type png)
 <use img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png>
-Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1892.
+Package pdftex.def Info: img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png  used on input line 1901.
 (pdftex.def)             Requested size: 297.21483pt x 143.25333pt.
- [184
+ [176
 
-] [185
+] [177
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{tab:demographics}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1985 \end{frame}
-                   [186
+l.1994 \end{frame}
+                   [178
 
-] Excluding 'comment' comment. [187
+] Excluding 'comment' comment. [179
+
+] [180
+
+ </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [181
+
+
+] [182
+
+
+] [183
+
+
+] [184
+
+
+] [185
+
+
+] [186
+
+
+] [187
+
 
 ] [188
 
- </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>] [189
+
+] [189
 
 
 ] [190
@@ -2288,30 +2296,6 @@ l.1985 \end{frame}
 ] [199
 
 
-] [200
-
-
-] [201
-
-
-] [202
-
-
-] [203
-
-
-] [204
-
-
-] [205
-
-
-] [206
-
-
-] [207
-
-
 ]
 \tf@nav=\write8
 \openout8 = `seminar_computational_psychology.nav'.
@@ -2336,18 +2320,18 @@ Package logreq Info: Writing requests to 'seminar_computational_psychology.run.x
 
  ) 
 Here is how much of TeX's memory you used:
- 40092 strings out of 478287
- 817613 string characters out of 5849288
- 1522246 words of memory out of 5000000
- 56987 multiletter control sequences out of 15000+600000
+ 40063 strings out of 478287
+ 817179 string characters out of 5849288
+ 1522149 words of memory out of 5000000
+ 56975 multiletter control sequences out of 15000+600000
  506623 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,14n,122p,2574b,1955s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfso1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on seminar_computational_psychology.pdf (207 pages, 4479315 bytes).
+Output written on seminar_computational_psychology.pdf (199 pages, 4467736 bytes).
 PDF statistics:
- 2198 PDF objects out of 2487 (max. 8388607)
- 1836 compressed objects within 19 object streams
- 525 named destinations out of 1000 (max. 500000)
+ 2123 PDF objects out of 2487 (max. 8388607)
+ 1770 compressed objects within 18 object streams
+ 508 named destinations out of 1000 (max. 500000)
  317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
