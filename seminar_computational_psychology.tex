@@ -266,7 +266,7 @@ We first address the \textit{content} by classifying elements of personal narrat
 \begin{itemize}[<+->]
     \item Cognitive science perspective on emotion analysis
     \item French corpus based on emotion components
-    \item Models for emotion analysis in emotional and dream narratives 
+    \item Emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
     %\item Automatic thematic analysis in mental health narratives %using language models
 \end{itemize}
@@ -322,7 +322,7 @@ We first address the \textit{content} by classifying elements of personal narrat
   
 \end{frame}
 
-\begin{frame}{Corpus and tools}
+\begin{frame}{Open corpus and tools}
 
 \begin{columns}[T,onlytextwidth]
   \begin{column}{0.75\textwidth}
@@ -352,6 +352,11 @@ We first address the \textit{content} by classifying elements of personal narrat
     \textbf{\footnotesize{\href{https://huggingface.co/gustavecortal}{hf.co/gustavecortal}}}
   \end{column}
 \end{columns}
+
+\vspace{0.5cm}
+
+\small
+\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
   
 \end{frame}
 
@@ -1016,7 +1021,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 \textbf{G. Cortal} and A. Finkel. \href{https://gustavecortal.com/data/Formalizing_Style_in_Personal_Narratives.pdf}{Formalizing Style in Personal Narratives}. \textit{EMNLP 2025}.
 \end{frame}
 
-\begin{frame}{Introduction}
+\begin{frame}{Motivation}
 
   Scholarly work has examined personal modes of reasoning and expression \smallcitep{hadamard1945essay,granger1968essai,husserl2012ideas,dilts1994strategies}
 
@@ -1033,7 +1038,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
   \vspace{0.5cm}
     \pause
 
-    In NLP, style transfer aims to control linguistic attributes while preserving semantic content \smallcitep{jinDeepLearningText2022}
+    In NLP, style transfer aims to control linguistic attributes while preserving semantic content \smallcitep{jinDeepLearningText2022,troianoTheoriesStylesTheir2023a}
 
         \vspace{0.5cm}
     \pause
@@ -1042,7 +1047,24 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \end{frame}
 
-\begin{frame}{Introduction}
+\begin{frame}{Motivation}
+
+  \citet{TellierFinkel95} define linguistic style as lexical and syntactical patterns using formal language theory [be more precise]
+
+  \vspace{0.5cm}
+  \pause
+
+  \citet{pachet} proposes constrained Markov processes to generate song lyrics that match an author's style while satisfying rhyme and meter constraints %style as markov chains, short-term probabilities, music domain
+
+  \vspace{0.5cm}
+  \pause
+  
+  $\rightarrow$ Drawing on these ideas, we provide a sequence-based framework to analyze how personal narratives convey subjective experience
+
+
+\end{frame}
+
+\begin{frame}{Motivation}
 
   \textbf{Limitation}: A formalization of style that captures how subjective experience is linguistically communicated is lacking
 
@@ -1054,10 +1076,10 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
   \vspace{0.5cm}
   \pause
 
-  $\rightarrow$ Our approach complements existing works by providing a formal framework grounded in systemic functional linguistics %\smallcitep{hallidayIntroductionFunctionalGrammar2014}
+  %$\rightarrow$ Our approach complements existing works by providing a formal framework grounded in systemic functional linguistics %\smallcitep{hallidayIntroductionFunctionalGrammar2014}
 
-  \vspace{0.5cm}
-  \pause
+  %\vspace{0.5cm}
+  %\pause
 
   $\rightarrow$ We aim to create a accessible framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
 
@@ -1065,12 +1087,19 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{How to give an operational definition of style?}
 
-\textbf{Intuitive definition}: a distinctive manner of communicating subjective experience in narratives
+\textbf{Intuitive definition}: a distinctive manner of communicating subjective experience in personal narratives
 
 \vspace{0.25cm}
 \pause
 
 \textbf{Hypothesis}: An individual uses some redundant choices of features that characterize its style
+
+\vspace{0.25cm}
+\pause
+
+\textbf{Goal}: Map narratives to sequences based on extracted linguistic features:
+
+“I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
 
 \vspace{0.25cm}
 \pause
@@ -1129,6 +1158,10 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{What linguistic features encode subjective experience?}
 
+  According to the \textit{ideational function}, language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}
+
+  %\vspace{0.05cm}
+  \pause
 
 \begin{table}[!htb]
   \centering
@@ -1157,12 +1190,12 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
     \texttt{State}: states of being, having, or existence. &
      %\textcolor{DarkBlue}{\textbf{was}}\textsubscript{\texttt{Existential}} \textcolor{blueNCS}{a swimming pool}\textsubscript{\texttt{Existent}} \newline
     
-    \textcolor{blueNCS}{John}\textsubscript{\texttt{Carrier}} \textcolor{DarkBlue}{\textbf{is}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{an interesting teacher}\textsubscript{\texttt{Attribute}} \newline
+    \textcolor{blueNCS}{Clément}\textsubscript{\texttt{Carrier}} \textcolor{DarkBlue}{\textbf{is}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{a teacher}\textsubscript{\texttt{Attribute}} \newline
     
-    \textcolor{blueNCS}{Chloé}\textsubscript{\texttt{Possessor}} \textcolor{DarkBlue}{\textbf{has}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{a cat}\textsubscript{\texttt{Possessed}} \\ %\hline
+    \textcolor{blueNCS}{Arthur}\textsubscript{\texttt{Possessor}} \textcolor{DarkBlue}{\textbf{has}}\textsubscript{\texttt{State}} \textcolor{blueNCS}{a cat}\textsubscript{\texttt{Possessed}} \\ %\hline
   \end{tabular}}
   \label{tab:process_participants}
-  \caption{According to \textit{systemic functional linguistics}, language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}.}% and \textit{circumstances}}
+  %\caption{According to \textit{systemic functional linguistics}, language represents experience through \textcolor{DarkBlue}{\textbf{processes}} and \textcolor{blueNCS}{participants}.}% and \textit{circumstances}}
 \end{table}
 
 %\vspace{0.15cm}
@@ -1175,16 +1208,65 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \end{frame}
 
-\begin{frame}{Methodology for our sequence-based framework}
+\begin{frame}{Formal definition of style}
 
-\textbf{Goal}: Map narratives to sequences based on extracted linguistic features:
+\textbf{Alphabet}: Let $\Sigma$ be a finite alphabet grounded in \textit{Systemic Functional Linguistics} to capture meaningful distinctions in experience
 
 \vspace{0.25cm}
 \pause
 
-“I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
+$$ \Sigma = \{ \texttt{Action}, \texttt{Mental}, \texttt{Verbal}, \texttt{State}, \dots \} $$
 
+\vspace{0.5cm}
 \pause
+
+\textbf{Mapping}: Let $\phi$ be a function that maps a narrative text $T$ to a sequence of symbols in $\Sigma^*$
+
+\vspace{0.25cm}
+\pause
+
+$$ \phi(T) = u = (u_1, u_2, \dots, u_n) $$
+
+\vspace{0.25cm}
+\pause
+
+$\rightarrow$ We implement $\phi$ using language models with in-context learning to extract features at the clause level
+
+\end{frame}
+
+\begin{frame}{Formal definition of style}
+
+\textbf{Definition}: We define the style of text $T$ as the set of patterns contained in its sequence $\phi(T)$
+
+\vspace{0.25cm}
+\pause
+
+$$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
+
+\vspace{0.1cm}
+\centering
+\small
+(where $w \subseteq u$ denotes that $w$ is a substring of $u$)
+
+\vspace{0.5cm}
+\pause
+
+\raggedright
+
+$\rightarrow$ Style is formally captured as the set of sequential patterns chosen by the author to encode experience
+
+\end{frame}
+
+\begin{frame}{Methodology for our sequence-based framework}
+
+%\textbf{Goal}: Map narratives to sequences based on extracted linguistic features:
+
+%\vspace{0.25cm}
+%\pause
+
+%“I wake in a dark room. I feel a cold wind. I tell myself to move.” $\rightarrow$ $amv$
+
+%\pause
 
 
 \begin{table}[!ht]
@@ -1288,11 +1370,14 @@ $\rightarrow$ Our results can inform psychological interpretations; need more in
 
 \begin{frame}{How can this framework be extended?}
 
+
+
 \begin{itemize}[<+->]
+    \item \textbf{Incorporating additional linguistic features} with a functional role (duration of processes, concreteness of participants) %\smallcitep{hallidayIntroductionFunctionalGrammar2014a,troianoTheoriesStylesTheir2023a}%: adding features related to the interpersonal and textual functions of language
     \item \textbf{Authorship profiling}: predicting authors based on their sequences \smallcitep{ferraraDetectionPromotedSocial2016}
-    [map sequences to authors]
+    %[map sequences to authors]
     %: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
-    \item \textbf{Style-conditioned narrative generation} \smallcitep{alhafniPersonalizedTextGeneration2024b} [add pachet]%: generating narratives from a sequence of linguistic features
+    \item \textbf{Style-conditioned narrative generation} \smallcitep{pachet,alhafniPersonalizedTextGeneration2024b}%: generating narratives from a sequence of linguistic features
     \item \textbf{Applying methods from complexity science} \smallcitep{lempelComplexityFiniteSequences1976,hipolitoPatternBreakingComplex2023a}% and formal language theory%: analyzing subsequences, using complexity measures to quantify redundancies, etc.
 \end{itemize}
 
@@ -1319,17 +1404,9 @@ How to model subjective experience in personal narratives?
 \begin{itemize}[<+->]
     \item Cognitive science perspective on emotion analysis
     \item French narratives based on emotion components
-    \item Models for emotion analysis in emotional and dream narratives 
+    \item Emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
 \end{itemize}
-
-\vspace{0.5cm}
-%\pause
-
-\small
-
-\onslide<6->{
-\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}}
 \end{frame}
 
 \section{Impact}
@@ -1372,8 +1449,13 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
-\begin{frame}[noframenumbering]
+\begin{frame}
     \frametitle{NLP for psychiatry (industry)}
+
+I wanted to apply my NLP skills to industry work with social impact
+
+\vspace{1cm}
+\pause
 
 \noindent
 \begin{minipage}[c]{0.7\textwidth}
@@ -1388,7 +1470,7 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
-\section{Thematic analysis in mental health narratives}
+\section{Automatic thematic analysis in mental health narratives}
 
 \begin{frame}{}
 \Large
@@ -1405,7 +1487,7 @@ How to model subjective experience in personal narratives?
 
 \end{frame}
 
-\begin{frame}{Introduction}
+\begin{frame}{Motivation}
 
   \begin{itemize}[<+->]
     \item Qualitative analysis of speech content is central to clinical practice
@@ -1456,33 +1538,42 @@ We collected clinical scores and narratives from \textbf{four cohorts}. A French
 
 \end{frame}
 
-\begin{frame}{Effect size across questions and clinical scores}
+\begin{frame}{Distribution of depression scores across clusters}
 
-\begin{figure}
+  \textit{How you are feeling and how your sleep has been lately}% (n=1,786 transcripts) 
+  \begin{figure}
     \centering
-    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
-    %\caption{Effect size across questions and clinical scores for the French general population cohort}
-    \label{fig:popgen_clinical_heatmap}
+    \includegraphics[scale=0.06]{img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png}
+    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to \textit{Describe how you are feeling at the moment and how your sleep has been lately}.}
+    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \label{fig:popgen_description}
 \end{figure}
 
-\pause
-$\rightarrow$ Certain questions better discriminate clinical scores
 
+%\vspace{0.1cm}
+\pause
+
+$\rightarrow$ Depression scores vary significantly: cluster 26 highest (13.4±5.4), cluster 1 lowest (2.6±2.2)
+
+
+%For the French general population cohort based on answers to “Describe how you’re feeling and how your nights have been”, among 26 identified clusters (n=1,786 transcripts), PHQ-9 scores differed significantly across clusters $(H=0.17, p\leq0.00001)$. Cluster 26 (n=37, age=25±9) exhibited the highest depression scores PHQ-9 (13.4±5.4) with LLM-generated descriptions highlighting \textit{sleep disturbances characterized by insomnia, frequent awakenings, and restless sleep}, alongside pervasive \textit{anxiety, emotional instability, and self-esteem issues}. In contrast, Cluster 1 (n=35, age=39±19) showed the lowest scores PHQ-9 (2.6±2.2), with descriptions emphasizing\textit{ consistent satisfaction with current well-being, good sleep quality, and general relaxation}.
+
+%Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort
 \end{frame}
 
-\begin{frame}{Effect size across questions and sociodemographics}
-
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
-  %\caption{Effect size across questions and sociodemographics for the French general population cohort}
-  \label{fig:popgen_demo_heatmap}
+\begin{frame}{Generated cluster descriptions}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.25]{img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png}
+    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
+    \label{fig:popgen_description}
 \end{figure}
 
 \pause
 
-$\rightarrow$ Nearly all questions discriminate sociodemographics
+$\rightarrow$ Clustering captures symptom severity and age-related circumstances
 
+%Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
 \section{Perspectives}
@@ -1499,9 +1590,9 @@ $\rightarrow$ Nearly all questions discriminate sociodemographics
 \begin{frame}{Perspectives}
 
   \begin{itemize}[<+->]
-    \item \textbf{Emotion analysis for mental health}: empathic support \smallcitep{sharmaCognitiveReframingNegative2023b}, cognitive distortions, theory of mind \smallcitep{zhouHowFaRAre2023,maHolisticLandscapeSituated2023,kimFANToMBenchmarkStresstesting2023,gandhiUnderstandingSocialReasoning2023}
-    \item \textbf{Psychology of language models}: sycophancy, thought operations \smallcitep{didolkar2025metacognitivereuseturningrecurring} [add refs]
-    \item \textbf{Post-training for psychology} (preferences and reasoning data) [add refs]
+    \item \textbf{Emotion analysis for mental health}: empathic support, cognitive distortions, theory of mind \smallcitep{gandhiUnderstandingSocialReasoning2023,maHolisticLandscapeSituated2023,sharmaCognitiveReframingNegative2023b}
+    \item \textbf{Post-training for psychology}: preferences and reasoning data \smallcitep{zhang2025preferencelearningunlocksllms}
+    \item \textbf{Psychology of language models}: sycophancy, thought operations \smallcitep{didolkar2025metacognitivereuseturningrecurring,sharma2025understandingsycophancylanguagemodels}
   \end{itemize}
 
 %\vspace{0.5cm}
@@ -1517,12 +1608,24 @@ How to model subjective experience in personal narratives?
 
 \vspace{0.5cm}
 
-\begin{itemize}
-    \item Definition of objectives and scope using cognitive science
-    \item Construction of an emotion corpus 
-    \item Training of language models for emotion analysis 
+\begin{itemize}[<+->]
+    \item Cognitive science perspective on emotion analysis
+    \item French narratives based on emotion components
+    \item Emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
 \end{itemize}
+
+\vspace{0.5cm}
+
+\onslide<6->{
+{\small
+\textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues
+
+\vspace{0.25cm}
+
+\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
+}}
+
 \end{frame}
 
 \begin{frame}{Selected research papers}
@@ -1690,42 +1793,33 @@ $\rightarrow$ Compared to \texttt{StableBeluga}, our supervised models perform b
     
 \end{frame}
 
-\begin{frame}{Distribution of depression scores across clusters}
+\begin{frame}{Effect size across questions and clinical scores}
 
-  \textit{How you are feeling and how your sleep has been lately}% (n=1,786 transcripts) 
-  \begin{figure}
+\begin{figure}
     \centering
-    \includegraphics[scale=0.06]{img/topic_modeling/boxplot_description/popgen_description_larger_boxplots.png}
-    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to \textit{Describe how you are feeling at the moment and how your sleep has been lately}.}
-    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
-    \label{fig:popgen_description}
+    \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png}
+    %\caption{Effect size across questions and clinical scores for the French general population cohort}
+    \label{fig:popgen_clinical_heatmap}
 \end{figure}
 
-
-%\vspace{0.1cm}
 \pause
+$\rightarrow$ Certain questions better discriminate clinical scores
 
-$\rightarrow$ Depression scores vary significantly: cluster 26 highest (13.4±5.4), cluster 1 lowest (2.6±2.2)
-
-
-%For the French general population cohort based on answers to “Describe how you’re feeling and how your nights have been”, among 26 identified clusters (n=1,786 transcripts), PHQ-9 scores differed significantly across clusters $(H=0.17, p\leq0.00001)$. Cluster 26 (n=37, age=25±9) exhibited the highest depression scores PHQ-9 (13.4±5.4) with LLM-generated descriptions highlighting \textit{sleep disturbances characterized by insomnia, frequent awakenings, and restless sleep}, alongside pervasive \textit{anxiety, emotional instability, and self-esteem issues}. In contrast, Cluster 1 (n=35, age=39±19) showed the lowest scores PHQ-9 (2.6±2.2), with descriptions emphasizing\textit{ consistent satisfaction with current well-being, good sleep quality, and general relaxation}.
-
-%Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort
 \end{frame}
 
-\begin{frame}{Generated cluster descriptions}
-  \begin{figure}
-    \centering
-    \includegraphics[scale=0.25]{img/topic_modeling/boxplot_description/popgen_description_larger_descriptions.png}
-    %\caption{Distribution of PHQ-9 depression scores across automatically identified clusters in the French general population cohort (n=1,786 transcripts). Responses to the prompt 'Describe how you are feeling at the moment and how your sleep has been lately'. Box plots show median (center line), interquartile range (box), and 1.5x IQR whiskers. Effect size (Kruskal-Wallis H = 0.17, p < 0.00001) indicates moderate discrimination between clusters. Sample sizes per cluster range from n=34 to n=92. Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.}
-    \label{fig:popgen_description}
+\begin{frame}{Effect size across questions and sociodemographics}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.35]{img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png}
+  %\caption{Effect size across questions and sociodemographics for the French general population cohort}
+  \label{fig:popgen_demo_heatmap}
 \end{figure}
 
 \pause
 
-$\rightarrow$ Clustering captures symptom severity and age-related circumstances
+$\rightarrow$ Nearly all questions discriminate sociodemographics
 
-%Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
 \begin{frame}{Demographics}

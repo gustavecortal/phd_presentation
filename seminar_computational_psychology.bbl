@@ -148,6 +148,60 @@
       \field{year}{1960}
       \field{dateera}{ce}
     \endentry
+    \entry{pachet}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=618fb63c5049fb78cde3a67b6339d669}{%
+           family={Barbieri},
+           familyi={B\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=806be538478ce47a6a363ecce2630d34}{%
+           family={Pachet},
+           familyi={P\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cc9feda0aec8f1b4f86dd6b928cce2a}{%
+           family={Roy},
+           familyi={R\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cf0f6d8a841e53d517ccf8e3d66b79f}{%
+           family={Esposti},
+           familyi={E\bibinitperiod},
+           given={Mirko\bibnamedelima Degli},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Montpellier, France}%
+      }
+      \list{publisher}{1}{%
+        {IOS Press}%
+      }
+      \strng{namehash}{09c3a9c71a1968b6d28add8e764dd5cc}
+      \strng{fullhash}{c5eaf3e02a46f3eb1cdc94b4ddecd392}
+      \strng{bibnamehash}{09c3a9c71a1968b6d28add8e764dd5cc}
+      \strng{authorbibnamehash}{09c3a9c71a1968b6d28add8e764dd5cc}
+      \strng{authornamehash}{09c3a9c71a1968b6d28add8e764dd5cc}
+      \strng{authorfullhash}{c5eaf3e02a46f3eb1cdc94b4ddecd392}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We address the issue of generating texts in the style of an existing author, that also satisfy structural constraints imposed by the genre of the text. We focus on song lyrics, for which structural constraints are well-defined: rhyme and meter. Although Markov processes are known to be suitable for representing style, they are difficult to control in order to satisfy non-local properties, such as structural constraints, that require long distance modeling. We show that the framework of Constrained Markov Processes allows us to precisely generate texts that are consistent with a corpus, while being controllable in terms of rhymes and meter, a result that no other technique, to our knowledge, could achieve to date. Controlled Markov processes consist in reformulating Markov processes in the context of constraint satisfaction. We describe how to represent stylistic and structural properties in terms of constraints in this framework and we provide an evaluation of our method by comparing it to both pure Markov and pure constraint-based approaches. We show how this approach can be used for the semi-automatic generation of lyrics in the style of a popular author that has the same structure as an existing song.}
+      \field{booktitle}{Proceedings of the 20th European Conference on Artificial Intelligence}
+      \field{isbn}{9781614990970}
+      \field{series}{ECAI'12}
+      \field{title}{Markov constraints for generating lyrics with style}
+      \field{year}{2012}
+      \field{pages}{115\bibrangedash 120}
+      \range{pages}{6}
+    \endentry
     \entry{bertolini2023automatic}{misc}{}
       \name{author}{5}{}{%
         {{un=0,uniquepart=base,hash=ca7619139aee200440b53cdea0deec25}{%
@@ -1846,12 +1900,12 @@
     \endentry
     \entry{kim-klinger-2019-analysis}{inproceedings}{}
       \name{author}{2}{}{%
-        {{un=1,uniquepart=given,hash=64d4666577407979d0b71c4f95c66a6c}{%
+        {{un=0,uniquepart=base,hash=64d4666577407979d0b71c4f95c66a6c}{%
            family={Kim},
            familyi={K\bibinitperiod},
            given={Evgeny},
            giveni={E\bibinitperiod},
-           givenun=1}}%
+           givenun=0}}%
         {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
            family={Klinger},
            familyi={K\bibinitperiod},
@@ -1893,82 +1947,6 @@
       \verb{url}
       \verb https://aclanthology.org/W19-3406
       \endverb
-    \endentry
-    \entry{kimFANToMBenchmarkStresstesting2023}{misc}{}
-      \name{author}{7}{}{%
-        {{un=1,uniquepart=given,hash=b0b312b71e9f0f0ba01027017c18717b}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Hyunwoo},
-           giveni={H\bibinitperiod},
-           givenun=1}}%
-        {{un=0,uniquepart=base,hash=77137c320a8b03d67130db50691be796}{%
-           family={Sclar},
-           familyi={S\bibinitperiod},
-           given={Melanie},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ba22c75d7aa23d8ca51f50038d130ed6}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Xuhui},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=62c2d350eff3c9b76d6355eea3ea9788}{%
-           family={Bras},
-           familyi={B\bibinitperiod},
-           given={Ronan\bibnamedelima Le},
-           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8909d30b1960f92d393725f3da0abaad}{%
-           family={Kim},
-           familyi={K\bibinitperiod},
-           given={Gunhee},
-           giveni={G\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=64d48b2f4b0370b6692c87cfc65f19b9}{%
-           family={Choi},
-           familyi={C\bibinitperiod},
-           given={Yejin},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d08a8223cbc0816afc54dd2f7f7eb96c}{%
-           family={Sap},
-           familyi={S\bibinitperiod},
-           given={Maarten},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{748b979c33a155851428d4c7e7e75266}
-      \strng{fullhash}{cffc4e5a2ca6b23ec3c1fd8af284a25e}
-      \strng{bibnamehash}{748b979c33a155851428d4c7e7e75266}
-      \strng{authorbibnamehash}{748b979c33a155851428d4c7e7e75266}
-      \strng{authornamehash}{748b979c33a155851428d4c7e7e75266}
-      \strng{authorfullhash}{cffc4e5a2ca6b23ec3c1fd8af284a25e}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Theory of mind (ToM) evaluations currently focus on testing models using passive narratives that inherently lack interactivity. We introduce FANToM, a new benchmark designed to stress-test ToM within information-asymmetric conversational contexts via question answering. Our benchmark draws upon important theoretical requisites from psychology and necessary empirical considerations when evaluating large language models (LLMs). In particular, we formulate multiple types of questions that demand the same underlying reasoning to identify illusory or false sense of ToM capabilities in LLMs. We show that FANToM is challenging for state-of-the-art LLMs, which perform significantly worse than humans even with chain-of-thought reasoning or fine-tuning.}
-      \field{eprintclass}{cs}
-      \field{eprinttype}{arXiv}
-      \field{month}{10}
-      \field{shorttitle}{{{FANToM}}}
-      \field{title}{{{FANToM}}: {{A Benchmark}} for {{Stress-testing Machine Theory}} of {{Mind}} in {{Interactions}}}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.48550/arXiv.2310.15421
-      \endverb
-      \verb{eprint}
-      \verb 2310.15421
-      \endverb
-      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
     \endentry
     \entry{klingerWhereAreWe2023}{inproceedings}{}
       \name{author}{1}{}{%
@@ -2708,12 +2686,12 @@
     \endentry
     \entry{sharmaCognitiveReframingNegative2023b}{inproceedings}{}
       \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=b05620aa2ec177d220e7ad210f055d74}{%
+        {{un=1,uniquepart=given,hash=b05620aa2ec177d220e7ad210f055d74}{%
            family={Sharma},
            familyi={S\bibinitperiod},
            given={Ashish},
            giveni={A\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=d8da60b15cded2305f204fabfe079f16}{%
            family={Rushton},
            familyi={R\bibinitperiod},
@@ -2805,6 +2783,194 @@
       \verb{file}
       \verb C:\Users\Gustave\Zotero\storage\KUDKPFE5\Sharma et al. - 2023 - Cognitive Reframing of Negative Thoughts through H.pdf
       \endverb
+    \endentry
+    \entry{sharma2025understandingsycophancylanguagemodels}{misc}{}
+      \name{author}{19}{}{%
+        {{un=1,uniquepart=given,hash=49d116ec3ed86188a20d9d789823167a}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Mrinank},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=f80811b5e1dd2bd44d10c61bece6c20f}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Meg},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fdb24b7e1395cadcdff75e54b32dc221}{%
+           family={Korbak},
+           familyi={K\bibinitperiod},
+           given={Tomasz},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=834f50f5d5a332c21effd10f07daf79e}{%
+           family={Duvenaud},
+           familyi={D\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e84eff933be9f4887bf369cf181bf12}{%
+           family={Askell},
+           familyi={A\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc3587de57b6b9868eab5cb9c8efc3fb}{%
+           family={Bowman},
+           familyi={B\bibinitperiod},
+           given={Samuel\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2acfa56da9a4454a1dcb35c3f6bcd7ee}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Newton},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb99a22b9a7e4d6e6827455fa420fc5f}{%
+           family={Durmus},
+           familyi={D\bibinitperiod},
+           given={Esin},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b453e963913f0d9b4b7015dcdda7fab6}{%
+           family={Hatfield-Dodds},
+           familyi={H\bibinithyphendelim D\bibinitperiod},
+           given={Zac},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2e63a5f2533a0f91153e9cc6917169b9}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Scott\bibnamedelima R.},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6cc94a80c21f9c5b346a6f1a21e75095}{%
+           family={Kravec},
+           familyi={K\bibinitperiod},
+           given={Shauna},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5b69bffdc0edac21b7ffc14db9387ffa}{%
+           family={Maxwell},
+           familyi={M\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b51e7c5fe92844f39ce52b8a5fa5675f}{%
+           family={McCandlish},
+           familyi={M\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a51e2df8c9693c1274b429fada63fd6}{%
+           family={Ndousse},
+           familyi={N\bibinitperiod},
+           given={Kamal},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=059c4a45fbeaeb950683f41531009d7e}{%
+           family={Rausch},
+           familyi={R\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=145ba94765ef92b3094332c3fa573d26}{%
+           family={Schiefer},
+           familyi={S\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a77b52a56b510047e70537cb18a85cc2}{%
+           family={Yan},
+           familyi={Y\bibinitperiod},
+           given={Da},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c04009ed3e7391baf859a001240fd543}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Miranda},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79978685fd7b37606022b06c0f6419a1}{%
+           family={Perez},
+           familyi={P\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1dba52bbe445c630712df6b2c2f730f8}
+      \strng{fullhash}{b5560adfc3a4b30193b2e6e9fc51cd8b}
+      \strng{bibnamehash}{1dba52bbe445c630712df6b2c2f730f8}
+      \strng{authorbibnamehash}{1dba52bbe445c630712df6b2c2f730f8}
+      \strng{authornamehash}{1dba52bbe445c630712df6b2c2f730f8}
+      \strng{authorfullhash}{b5560adfc3a4b30193b2e6e9fc51cd8b}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Towards Understanding Sycophancy in Language Models}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2310.13548
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2310.13548
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2310.13548
+      \endverb
+    \endentry
+    \entry{TellierFinkel95}{incollection}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=bcbf7023ae3c4d26b7dd4b37047d5937}{%
+           family={Tellier},
+           familyi={T\bibinitperiod},
+           given={Isabelle},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=509dc3f55025549291f16bed8cd64ba1}{%
+           family={Finkel},
+           familyi={F\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=a21a367e619da0eca6910e5b018c72ff}{%
+           family={Endres-Niggemeyer},
+           familyi={E\bibinithyphendelim N\bibinitperiod},
+           given={Heide},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{9200e16f29f83465489a65b671dbad36}
+      \strng{fullhash}{9200e16f29f83465489a65b671dbad36}
+      \strng{bibnamehash}{9200e16f29f83465489a65b671dbad36}
+      \strng{authorbibnamehash}{9200e16f29f83465489a65b671dbad36}
+      \strng{authornamehash}{9200e16f29f83465489a65b671dbad36}
+      \strng{authorfullhash}{9200e16f29f83465489a65b671dbad36}
+      \strng{editorbibnamehash}{a21a367e619da0eca6910e5b018c72ff}
+      \strng{editornamehash}{a21a367e619da0eca6910e5b018c72ff}
+      \strng{editorfullhash}{a21a367e619da0eca6910e5b018c72ff}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{The Cognitive Level}
+      \field{series}{Duisburg {{LAUD}} Series of Cognitive Linguistics}
+      \field{title}{Cognitive Style of Decision Making Narrations}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{pages}{41\bibrangedash 59}
+      \range{pages}{19}
     \endentry
     \entry{tomkins_affect_1962}{book}{}
       \name{author}{1}{}{%
@@ -2902,6 +3068,56 @@
       \verb{url}
       \verb https://doi.org/10.1162/coli_a_00461
       \endverb
+    \endentry
+    \entry{troianoTheoriesStylesTheir2023a}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5f4d2d4557cd530abfddfca75e9a4fe4}{%
+           family={Troiano},
+           familyi={T\bibinitperiod},
+           given={Enrica},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=534aa176daf70665e2eddf845080110e}{%
+           family={Velutharambath},
+           familyi={V\bibinitperiod},
+           given={Aswathy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2c2bc9b064a660f5bab9807cc78239f3}{%
+           family={Klinger},
+           familyi={K\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69100e380d5c09545ac85e6c59578e87}
+      \strng{fullhash}{69100e380d5c09545ac85e6c59578e87}
+      \strng{bibnamehash}{69100e380d5c09545ac85e6c59578e87}
+      \strng{authorbibnamehash}{69100e380d5c09545ac85e6c59578e87}
+      \strng{authornamehash}{69100e380d5c09545ac85e6c59578e87}
+      \strng{authorfullhash}{69100e380d5c09545ac85e6c59578e87}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Humans are naturally endowed with the ability to write in a particular style. They can, for instance, rephrase a formal letter in an informal way, convey a literal message with the use of figures of speech or edit a novel by mimicking the style of some well-known authors. Automating this form of creativity constitutes the goal of style transfer. As a natural language generation task, style transfer aims at rewriting existing texts, and specifically, it creates paraphrases that exhibit some desired stylistic attributes. From a practical perspective, it envisions beneficial applications, like chatbots that modulate their communicative style to appear empathetic, or systems that automatically simplify technical articles for a non-expert audience.Several style-aware paraphrasing methods have attempted to tackle style transfer. A handful of surveys give a methodological overview of the field, but they do not support researchers to focus on specific styles. With this paper, we aim at providing a comprehensive discussion of the styles that have received attention in the transfer task. We organize them in a hierarchy, highlighting the challenges for the definition of each of them and pointing out gaps in the current research landscape. The hierarchy comprises two main groups. One encompasses styles that people modulate arbitrarily, along the lines of registers and genres. The other group corresponds to unintentionally expressed styles, due to an author’s personal characteristics. Hence, our review shows how these groups relate to one another and where specific styles, including some that have not yet been explored, belong in the hierarchy. Moreover, we summarize the methods employed for different stylistic families, hinting researchers towards those that would be the most fitting for future research.}
+      \field{issn}{1351-3249, 1469-8110}
+      \field{journaltitle}{Natural Language Engineering}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shorttitle}{From Theories on Styles to Their Transfer in Text}
+      \field{title}{From Theories on Styles to Their Transfer in Text: {{Bridging}} the Gap with a Hierarchical Survey}
+      \field{volume}{29}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{pages}{849\bibrangedash 908}
+      \range{pages}{60}
+      \verb{file}
+      \verb C:\Users\Gustave\Zotero\storage\ZNSMNLBY\Troiano et al. - 2023 - From theories on styles to their transfer in text.pdf
+      \endverb
+      \keyw{Natural Language Generation,Paraphrasing,Style Transfer,Translation Technology}
     \endentry
     \entry{walesDictionaryStylistics2014a}{book}{}
       \name{author}{1}{}{%
@@ -3047,14 +3263,61 @@
       \verb https://doi.org/10.1037/drm0000189
       \endverb
     \endentry
+    \entry{zhang2025preferencelearningunlocksllms}{misc}{}
+      \name{author}{3}{}{%
+        {{un=1,uniquepart=given,hash=305f19a03f769b245f726c84cf186c9e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Mian},
+           giveni={M\bibinitperiod},
+           givenun=1}}%
+        {{un=0,uniquepart=base,hash=420599bfaa69d222e83f49d81d775451}{%
+           family={Eack},
+           familyi={E\bibinitperiod},
+           given={Shaun\bibnamedelima M.},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1cadfd850e7d7655e8d926e2214d5675}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Zhiyu\bibnamedelima Zoey},
+           giveni={Z\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \strng{fullhash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \strng{bibnamehash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \strng{authorbibnamehash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \strng{authornamehash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \strng{authorfullhash}{188dd9b3d8c4f87e2b09e91a73d33d88}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CL}
+      \field{eprinttype}{arXiv}
+      \field{title}{Preference Learning Unlocks LLMs' Psycho-Counseling Skills}
+      \field{year}{2025}
+      \verb{eprint}
+      \verb 2502.19731
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2502.19731
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2502.19731
+      \endverb
+    \endentry
     \entry{zhangSentimentAnalysisEra2023}{misc}{}
       \name{author}{5}{ul=2}{%
-        {{un=0,uniquepart=base,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
+        {{un=1,uniquepart=given,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
            given={Wenxuan},
            giveni={W\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=ec5b7fd92345dc07570d3626b3cf329e}{%
            family={Deng},
            familyi={D\bibinitperiod},
@@ -3113,12 +3376,12 @@
     \endentry
     \entry{zhangSurveyAspectBasedSentiment2022}{unpublished}{}
       \name{author}{5}{ul=2}{%
-        {{un=0,uniquepart=base,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
+        {{un=1,uniquepart=given,hash=c4c338db452298ba7661a0bcdbc26ae8}{%
            family={Zhang},
            familyi={Z\bibinitperiod},
            given={Wenxuan},
            giveni={W\bibinitperiod},
-           givenun=0}}%
+           givenun=1}}%
         {{un=0,uniquepart=base,hash=86d8cd66cb62928ca1ec636d8cd2e11c}{%
            family={Li},
            familyi={L\bibinitperiod},
@@ -3168,111 +3431,6 @@
       \verb 2203.01054
       \endverb
       \keyw{Computer Science - Computation and Language,notion}
-    \endentry
-    \entry{zhouHowFaRAre2023}{misc}{}
-      \name{author}{12}{}{%
-        {{un=0,uniquepart=base,hash=2dd11f0e6305e6c8cbffd634ed28ed57}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Pei},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=bc045738b58bf295d87617ee066e6714}{%
-           family={Madaan},
-           familyi={M\bibinitperiod},
-           given={Aman},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=59c58fee07449d2500551864e78aa3b7}{%
-           family={Potharaju},
-           familyi={P\bibinitperiod},
-           given={Srividya\bibnamedelima Pranavi},
-           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f546049cf939f55379fab01f639f61e9}{%
-           family={Gupta},
-           familyi={G\bibinitperiod},
-           given={Aditya},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8c5090d22f754600c3456980aef0ddc1}{%
-           family={McKee},
-           familyi={M\bibinitperiod},
-           given={Kevin\bibnamedelima R.},
-           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=c32ace2a5a2590ef3542c3713e05925d}{%
-           family={Holtzman},
-           familyi={H\bibinitperiod},
-           given={Ari},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=603e425c04181fb9cb012633c322ac6d}{%
-           family={Pujara},
-           familyi={P\bibinitperiod},
-           given={Jay},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=62341ebcc57e03720c55a39d93f0b17d}{%
-           family={Ren},
-           familyi={R\bibinitperiod},
-           given={Xiang},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=1d320765e8b313bd56bb50bd79666ad2}{%
-           family={Mishra},
-           familyi={M\bibinitperiod},
-           given={Swaroop},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=d3f725068034ab2e73a4197de624ce20}{%
-           family={Nematzadeh},
-           familyi={N\bibinitperiod},
-           given={Aida},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7ca2d2f9cb5655371f602dce60560de0}{%
-           family={Upadhyay},
-           familyi={U\bibinitperiod},
-           given={Shyam},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7a0b82c57d86d45ad2132d2cff643d32}{%
-           family={Faruqui},
-           familyi={F\bibinitperiod},
-           given={Manaal},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{organization}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{6be96f7a41a6ceb25678490c9a6de7b6}
-      \strng{fullhash}{35c39e2d3540581637a05ae4db615f03}
-      \strng{bibnamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
-      \strng{authorbibnamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
-      \strng{authornamehash}{6be96f7a41a6ceb25678490c9a6de7b6}
-      \strng{authorfullhash}{35c39e2d3540581637a05ae4db615f03}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{"Thinking is for Doing." Humans can infer other people's mental states from observations–an ability called Theory-of-Mind (ToM)–and subsequently act pragmatically on those inferences. Existing question answering benchmarks such as ToMi ask models questions to make inferences about beliefs of characters in a story, but do not test whether models can then use these inferences to guide their actions. We propose a new evaluation paradigm for large language models (LLMs): Thinking for Doing (T4D), which requires models to connect inferences about others' mental states to actions in social scenarios. Experiments on T4D demonstrate that LLMs such as GPT-4 and PaLM 2 seemingly excel at tracking characters' beliefs in stories, but they struggle to translate this capability into strategic action. Our analysis reveals the core challenge for LLMs lies in identifying the implicit inferences about mental states without being explicitly asked about as in ToMi, that lead to choosing the correct action in T4D. To bridge this gap, we introduce a zero-shot prompting framework, Foresee and Reflect (FaR), which provides a reasoning structure that encourages LLMs to anticipate future challenges and reason about potential actions. FaR boosts GPT-4's performance from 50\% to 71\% on T4D, outperforming other prompting methods such as Chain-of-Thought and Self-Ask. Moreover, FaR generalizes to diverse out-of-distribution story structures and scenarios that also require ToM inferences to choose an action, consistently outperforming other methods including few-shot in-context learning.}
-      \field{eprintclass}{cs}
-      \field{eprinttype}{arXiv}
-      \field{month}{10}
-      \field{title}{How {{FaR Are Large Language Models From Agents}} with {{Theory-of-Mind}}?}
-      \field{year}{2023}
-      \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.48550/arXiv.2310.03051
-      \endverb
-      \verb{eprint}
-      \verb 2310.03051
-      \endverb
-      \keyw{Computer Science - Artificial Intelligence,Computer Science - Computation and Language}
     \endentry
   \enddatalist
 \endrefsection
