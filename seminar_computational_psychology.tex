@@ -1181,7 +1181,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 \vspace{0.5cm}
 \pause
 
-\textbf{Hypothesis}: An individual uses some redundant choices of features that characterize its style
+\textbf{Hypothesis}: An author uses some redundant choices of features that characterize its style
 
 \vspace{0.5cm}
 \pause
@@ -1231,7 +1231,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
         \begin{itemize}
             \item Interpersonal: language builds social relationships
             \item Textual: information is organized to create coherent messages
-            \item \textit{Ideational}: language represents experience
+            \item \textit{Ideational}: language represents experience through processes and participants
         \end{itemize}
     }
   \end{column}
@@ -1334,7 +1334,7 @@ $\rightarrow$ We implement $\phi$ using a language model with in-context learnin
 
 \begin{frame}{Formal definition style}
 
-\textbf{Style}: We define the style of text $T$ as the set of patterns contained in its sequence $\phi(T)$
+\textbf{Style of text}: We define the style of text $T$ as the set of patterns contained in its sequence $\phi(T)$
 $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
 
 \vspace{0.1cm}
@@ -1352,7 +1352,7 @@ where $w \subseteq \phi(T)$ denotes a substring (contiguous symbols)
 \vspace{0.5cm}
 \pause
 
-\textbf{Definition}: The style of author $A$, denoted $\mathcal{S}(A)$, is the union of the sets of patterns contained in each text $T \in \mathcal{C}_A$
+\textbf{Style of author}: The style of author $A$, denoted $\mathcal{S}(A)$, is the union of patterns contained in each text $T \in \mathcal{C}_A$
 
 \vspace{0.15cm}
 
@@ -1519,6 +1519,19 @@ How to model subjective experience in personal narratives?
     \item Emotion analysis in emotional and dream narratives 
     \item Formalization of style in personal narratives
 \end{itemize}
+
+\vspace{0.5cm}
+
+\onslide<1->{
+{\small
+\textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues
+
+\vspace{0.25cm}
+
+\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
+}}
+
+
 \end{frame}
 
 \begin{frame}{Perspectives}
@@ -1726,8 +1739,7 @@ How to model subjective experience in personal narratives?
     \item Cognitive science perspective on emotion analysis
     \item French narratives based on emotion components
     \item Emotion analysis in emotional and dream narratives 
-    \item For*
-    malization of style in personal narratives
+    \item Formalization of style in personal narratives
 \end{itemize}
 
 \vspace{0.5cm}
