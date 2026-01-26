@@ -456,6 +456,7 @@ Appraisal theory& a continuous value with a \textit{cognitive} meaning & "I rece
 \hline
 & composed of \textit{semantic roles} & "Louise (\texttt{experiencer}) was angry (\texttt{cue}) towards Paul (\texttt{target}), because he didn’t inform her (\texttt{cause})." \\
 \smallcitet{campagnano-etal-2022-srl4e,klingerWhereAreWe2023} & & \\
+\smallcitet{lee-etal-2010-text,xia-ding-2019-emotion,tammewar-etal-2020-annotation} & & \\
 \end{tabular}
 \end{center}
 }
@@ -541,7 +542,7 @@ $\rightarrow$ Emotion expression modes vary in interpretive difficulty \smallcit
 \pause
 \vspace{0.25cm}
 
-$\rightarrow$ [add refs] \smallcitep{etienne-etal-2022-psycho,dragos-etal-2022-angry}
+$\rightarrow$ There exist an annotation scheme for emotion expression modes \smallcitep{etienne-etal-2022-psycho,dragos-etal-2022-angry}
 
 \end{frame}
 
@@ -607,27 +608,27 @@ The corpus is available at \href{https://huggingface.co/datasets/gustavecortal/F
 
 \begin{frame}{Motivation}
 
-\textbf{Limitation}: No annotation schemes consider all emotion components
+\textbf{Limitation}: Existing datasets do not consider all emotion components
 
 \vspace{0.5cm}
 \pause
 
-\citet{kim-klinger-2019-analysis} study emotion communication in fiction via subjective sensations, postures, and facial expressions
+\citet{kim-klinger-2019-analysis} study emotion communication in fan-fiction via sensations, postures, and facial expressions
 
 \vspace{0.5cm}
 \pause
 
-\citet{casel-etal-2021-emotion} associate text spans with Scherer's emotion components
-
-%\vspace{0.25cm}
-%\pause
-
-%To our knowledge, no annotation schemes capture the interaction between components
+\citet{tammewar-etal-2020-annotation} annotate emotion carriers (events, people, objects) in spoken personal narratives in German \smallcitep{rathner18b_interspeech}
 
 \vspace{0.5cm}
 \pause
 
-$\rightarrow$ We structure emotional narratives according to behaviors, thoughts, physical feelings, and reasons
+\citet{casel-etal-2021-emotion} associate text spans with Scherer's emotion components in literature and Twitter corpora
+
+\vspace{0.5cm}
+\pause
+
+$\rightarrow$ A new French corpus of emotional narratives structured by the authors according to their behaviors, thoughts, physical feelings, and reasons
     
 \end{frame}
 
@@ -746,12 +747,16 @@ Language models are available on \href{https://huggingface.co/gustavecortal}{hf.
 %\textbf{Goal}: Discrete emotion detection based on components
 %\vspace{0.5cm}
 
+%"Le choix a été fait de comparer l'approche traditionnelle basée sur le lexique (TF-IDF) avec l'état de l'art actuel (modèles contextuels).
+
+%une étape intermédiaire avec Word2Vec aurait permis de décorréler précisément ce qui relève de la sémantique statique de ce qui relève de la sémantique contextuelle.
+
 \begin{table}
   \centering
   \resizebox{1\textwidth}{!}{
 \begin{tabular}{l|ccccccc}
 
-&\multicolumn{3}{c}{\textbf{Logistic Regression}}&\multicolumn{3}{c}{\textbf{CamemBERT}} \\
+&\multicolumn{3}{c}{\textbf{Logistic Regression} (tf-idf)}&\multicolumn{3}{c}{\textbf{CamemBERT}} \\
 
            \textbf{Component} &  Precision &     Recall &   $F_1$ &  Precision &     Recall &   $F_1$ \\
 \hline
@@ -782,7 +787,7 @@ $\rightarrow$ All components help; best results come from using all, \textit{sup
 
 % This appears on the next click (slide 5)
 \onslide<5->{
-$\rightarrow$ Some components benefit from contextual understanding and world knowledge (\texttt{behavior} and \texttt{thinking})
+$\rightarrow$ Some components benefit from contextual understanding and world knowledge; need to study static \textit{vs.} contextual semantics
 }
 
 \end{frame}
@@ -900,50 +905,57 @@ $\rightarrow$ How to automate the annotation process using language models?
 
 \begin{frame}{Existing research on computational dream analysis}
 
-  \citet{bertolini2023automatic} are the first to fine-tune a pre-trained language model for detecting the presence of emotions
 
-  \vspace{0.5cm}
+  %\citet{bertolini2023automatic} are the first to fine-tune a pre-trained language model for detecting the presence of emotions
+
+  %\vspace{0.5cm}
+  %\pause
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.8\linewidth]{img/bertolini_dream.png}
+    \caption{\textbf{Architecture for multi-label emotion detection} \smallcitep{bertolini2023automatic}.}
+    \label{fig:placeholder}
+  \end{figure}
+
+  %\vspace{0.25cm}
   \pause
 
-  This approach uses full narrative context and compares predictions with HVdC gold annotations
+  This approach uses full context and compares predictions with gold annotations
 
-  \vspace{0.5cm}
+  \vspace{0.25cm}
   \pause
 
-  \textbf{Limitations}: emotions are not linked to characters; emotion frequency is not modeled
+  \textbf{Limitations}: emotions without characters; frequency not captured
 
-  \vspace{0.5cm}
+  \vspace{0.25cm}
   \pause
   
   $\rightarrow$ We address this by identifying characters and their emotions with transformer-based sequence-to-sequence models
 
 \end{frame}
 
-\begin{frame}{Encoder-decoder transformer architecture}
-\begin{figure}
-    \centering
-    \includegraphics[width=0.45\linewidth]{img/seq2seq.png}
+%\begin{frame}{Encoder-decoder transformer architecture}
+%\begin{figure}
+%    \centering
+%    \includegraphics[width=0.45\linewidth]{img/seq2seq.png}
     %\caption{\textbf{Sequence-to-sequence architecture based on transformers} \smallcitep{vaswani2017attention}. The encoder processes the input sequence, and the decoder generates the output sequence.}
-    \label{fig:placeholder}
-\end{figure}
+%    \label{fig:placeholder}
+%\end{figure}
 
-\smallcitet{vaswani2017attention}
+%\smallcitet{vaswani2017attention}
 
-\end{frame}
+%\end{frame}
 
-\begin{frame}{T5 sequence-to-sequence framework}
+\begin{frame}{T5 language models}
 \begin{figure}
     \centering
     \includegraphics[width=1\linewidth]{img/t5_architecture.png}
-    %\caption{\textbf{T5 architecture} \smallcitep{2020t5}. The model is pre-trained on a text-to-text objective and can be fine-tuned for various NLP tasks.}
+    \caption{\textbf{Text-to-text framework} \smallcitep{2020t5}. One model maps input text to target text for tasks such as translation, QA, and classification.}
     \label{fig:placeholder}
 \end{figure}
 
-
-
-\smallcitet{2020t5}
-
-\vspace{0.5cm}
+%\vspace{0.5cm}
 \pause
 
 $\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
@@ -966,6 +978,11 @@ $\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-tra
     \label{fig:placeholder}
 \end{figure}
 
+\vspace{0.25cm}
+\pause
+
+$\rightarrow$ Our framework can be extended to include other HVdC categories %(social interactions, settings, objects)
+
 %\scriptsize
 
 %\textbf{G. Cortal}. \href{https://aclanthology.org/2024.lrec-main.1282/}{Sequence-to-Sequence Language Models for Character and Emotion Detection in Dream Narratives}. \textit{LREC-COLING 2024}.
@@ -985,6 +1002,8 @@ $\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-tra
 
     \caption{\textbf{Character and emotion detection}. \scriptsize{\textcolor{bluepanam}{$p<0.05$}.}}
   \label{tab:result_ablation}
+
+  \vspace{-0.5cm}
   
   \begin{tabular}{lcccccc}
     \textbf{Model} & \textbf{Status} & \textbf{Gender} & \textbf{Identity} & \textbf{Age} & \textbf{Character} & \textbf{Emotion} \\
@@ -1022,9 +1041,20 @@ $\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-tra
 %\vspace{0.25cm}
 
 % The table sequence ends on slide 7, so we force this to slide 8
+
 \onslide<6->{
 $\rightarrow$ Our models can address this task; there is room for improvement
+
+%\vspace{0.25cm}
+
+{\scriptsize 58 $F_1$-score for gender prediction using lexical approaches \smallcitep{ourdreams}}
+
+\vspace{-0.15cm}
+
+{\scriptsize 86 $F_1$-score for emotion presence detection using transformers \smallcitep{bertolini2023automatic}}
+
 }
+
     
 \end{frame}
 
@@ -1273,59 +1303,64 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
 
 \begin{frame}{Formal definition of style}
 
-\textbf{Alphabet}: Let $\Sigma$ be a finite alphabet grounded in the ideational function of language
-
-\vspace{0.25cm}
-\pause
-
+\textbf{Alphabet}: Let $\Sigma$ be the set of process types
 $$ \Sigma = \{ \texttt{Action}, \texttt{Mental}, \texttt{Verbal}, \texttt{State}\} $$
 
-\vspace{0.5cm}
+\vspace{0.2cm}
 \pause
 
-\textbf{Mapping}: Let $\phi$ be a function that maps a narrative text $T$ to a sequence of symbols in $\Sigma^*$
+\textbf{Text}: Let $\mathcal{C}$ be the set of all natural language clauses. We define a text $T$ as a finite sequence of clauses:
+$$ T = (c_1, c_2, \dots, c_n) \in \mathcal{C}^n $$
 
-\vspace{0.25cm}
+\vspace{0.2cm}
 \pause
 
-$$
-\phi(T)=u\in\Sigma^n,\quad u=(u_1,u_2,\ldots,u_n)
-$$
+\textbf{Mapping}: Each text $T$ is mapped to a sequence $\phi(T)$ over the alphabet $\Sigma$. Let $\phi: \mathcal{C}^* \to \Sigma^*$ be a function mapping clauses to symbol sequences:
+$$ \phi(T) = (y_1, y_2, \dots, y_n) \in \Sigma^n $$
+%\vspace{-0.1cm}
+%\centering
+%\small
+%where $y_i \in \Sigma$ is the letter assigned to clause $c_i$% by the model
 
-\vspace{0.25cm}
+\vspace{0.3cm}
 \pause
+\raggedright
+\normalsize
 
-$\rightarrow$ We implement $\phi$ using a language model with in-context learning% to extract features at the clause level
+$\rightarrow$ We implement $\phi$ using a language model with in-context learning
 
 \end{frame}
 
-\begin{frame}{Formal definition of style}
 
-\textbf{Definition}: We define the style of text $T$ as the set of patterns contained in its sequence $\phi(T)$
+\begin{frame}{Formal definition style}
 
-\vspace{0.25cm}
-\pause
-
+\textbf{Style}: We define the style of text $T$ as the set of patterns contained in its sequence $\phi(T)$
 $$ \mathcal{S}(T) = \{ w \in \Sigma^* \mid w \subseteq \phi(T) \} $$
 
 \vspace{0.1cm}
 \centering
 \small
-where $w \subseteq u$ denotes that $w$ is a substring of $u$
-
+where $w \subseteq \phi(T)$ denotes a substring (contiguous symbols)
 
 \vspace{0.5cm}
-\small
-\textit{Substrings are contiguous sequences of symbols within a sequence}
+\pause
+\normalsize
+\raggedright
 
-%\vspace{0.5cm}
-%\pause
+\textbf{Author corpus}: Let $\mathcal{C}_A = \{T_1, T_2, \dots, T_k\}$ be the finite set of narrative texts attributed to author $A$
 
-%\raggedright
+\vspace{0.5cm}
+\pause
 
-%$\rightarrow$ Style is formally captured as the set of sequential patterns chosen by the author to encode experience
+\textbf{Definition}: The style of author $A$, denoted $\mathcal{S}(A)$, is the union of the sets of patterns contained in each text $T \in \mathcal{C}_A$
+
+\vspace{0.15cm}
+
+$$ \mathcal{S}(A) = \bigcup_{T \in \mathcal{C}_A} \mathcal{S}(T) $$
 
 \end{frame}
+
+%\textit{We implement $\phi$ using a language model with in-context learning}
 
 \begin{frame}{Methodology for our sequence-based framework}
 
@@ -1334,7 +1369,7 @@ where $w \subseteq u$ denotes that $w$ is a substring of $u$
 %\vspace{0.25cm}
 %\pause
 
-\textbf{Narrative}: “I wake in a dark room. I feel a cold wind. I tell myself to move.” %$\rightarrow$ $amv$
+\textbf{Narrative}: \small{“I wake in a dark room. I feel a cold wind. I tell myself to move.”} %$\rightarrow$ $amv$
 
 %\pause
 
@@ -1344,7 +1379,7 @@ where $w \subseteq u$ denotes that $w$ is a substring of $u$
 \begin{table}[!ht]
   \centering
   %\small
-  \renewcommand{\arraystretch}{1.5}
+  \renewcommand{\arraystretch}{1.8}
   \begin{threeparttable}
     %\caption{Illustrative pipeline for our sequence-based framework. We first segment “I wake in a dark room. I feel a cold wind. I tell myself to move.” into clauses, then identify features such as processes and participants for each clause. Each text is mapped to a symbolic sequence using an alphabet based on extracted features.}
     \label{tab:example}
@@ -1361,7 +1396,7 @@ where $w \subseteq u$ denotes that $w$ is a substring of $u$
     \end{tabular}
 
     \begin{tablenotes}[flushleft]
-      \footnotesize
+      %\large
       \item \textbf{Sequence:} $amv$\quad|\quad
             \textbf{Substrings:} \{am, mv\}
     \end{tablenotes}
@@ -1394,8 +1429,10 @@ where $w \subseteq u$ denotes that $w$ is a substring of $u$
 %\vspace{0.25cm}
 \pause
 
-{\small
-\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} with $a=\text{action},\; m=\text{mental},\; s=\text{state},\; v=\text{verbal}$
+{%\small
+\textbf{Representative sequences}: \textit{savamasasaaamaaasavvvaaaaaaavssaaaaa} and \textit{sssssavaavssvsavvvvsmasasaasasaamaamvmsss} 
+
+\small with $a=\text{action},\; m=\text{mental},\; s=\text{state},\; v=\text{verbal}$
 }
 
 %\vspace{0.25cm}
@@ -1442,11 +1479,12 @@ $\rightarrow$ Our results can inform psychological interpretations; need more in
 
 \begin{frame}{How can this framework be extended?}
 
+  %Retour à l'ingénierie des traits: utilisation de la puissance des modèles de langues pour extraire des traits linguistiques, que l'on analyse ensuite avec des méthodes d'analyse de séquence 
 
 
 \begin{itemize}[<+->]
     \item \textbf{Incorporating additional linguistic features}: duration of processes, concreteness of participants %\smallcitep{hallidayIntroductionFunctionalGrammar2014a,troianoTheoriesStylesTheir2023a}%: adding features related to the interpersonal and textual functions of language
-    \item \textbf{Authorship profiling}: predicting authors based on their sequences \smallcitep{ferraraDetectionPromotedSocial2016}
+    \item \textbf{Authorship profiling}: classifying authors based on their sequences \smallcitep{ferraraDetectionPromotedSocial2016}
     %[map sequences to authors]
     %: identifying signature patterns (\textit{e.g.}, distinctive substrings) that characterize an author's unique way of constructing narratives
     \item \textbf{Style-conditioned narrative generation} \smallcitep{pachet,alhafniPersonalizedTextGeneration2024b}%: generating narratives from a sequence of linguistic features
@@ -1688,7 +1726,8 @@ How to model subjective experience in personal narratives?
     \item Cognitive science perspective on emotion analysis
     \item French narratives based on emotion components
     \item Emotion analysis in emotional and dream narratives 
-    \item Formalization of style in personal narratives
+    \item For*
+    malization of style in personal narratives
 \end{itemize}
 
 \vspace{0.5cm}
@@ -2123,6 +2162,7 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
 \end{frame}
 
 \begin{frame}[allowframebreaks]{References}
+\footnotesize
 \printbibliography
 \end{frame}
 
