@@ -174,6 +174,19 @@
   \makeatother
 
 
+\makeatletter
+\setbeamertemplate{headline}{%
+    \begin{beamercolorbox}[wd=\paperwidth,ht=1pt,dp=0pt]{progress bar}
+        \begin{tikzpicture}
+            % Background of the bar (light gray or light blue)
+            \fill[bluepanam!20] (0,0) rectangle (\paperwidth, 1pt);
+            % The actual progress based on frame numbers
+            \fill[bluepanam] (0,0) rectangle ({(\insertframenumber/\inserttotalframenumber)*\paperwidth}, 1pt);
+        \end{tikzpicture}
+    \end{beamercolorbox}
+}
+\makeatother
+
 \begin{document}
 
 \setlength{\parskip}{5pt}%
@@ -349,6 +362,11 @@ We first address the \textit{content} by classifying elements of personal narrat
     
 
     French language models for \href{https://huggingface.co/gustavecortal/distilcamembert-cae-component}{emotion component prediction} and \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{discrete emotion prediction} \parensmall{+1200 downloads}}
+
+    \vspace{0.25cm}
+
+    \footnotesize
+    Models were trained using the Jean Zay supercomputer
   \end{column}
   \begin{column}{0.20\textwidth}
     \centering
@@ -359,8 +377,10 @@ We first address the \textit{content} by classifying elements of personal narrat
 
 \vspace{0.5cm}
 
-\small
-\textit{My research models are publicly hosted on Hugging Face and were trained using the Jean Zay supercomputer}
+\footnotesize
+%Models were trained using the Jean Zay supercomputer
+
+Licence: CC-BY-NC 4.0
   
 \end{frame}
 
@@ -628,7 +648,7 @@ The corpus is available at \href{https://huggingface.co/datasets/gustavecortal/F
 \vspace{0.5cm}
 \pause
 
-$\rightarrow$ A new French corpus of emotional narratives structured by the authors according to their behaviors, thoughts, physical feelings, and reasons
+$\rightarrow$ New French corpus of emotional narratives structured by the authors according to their behaviors, thoughts, physical feelings, and reasons
     
 \end{frame}
 
@@ -921,7 +941,7 @@ $\rightarrow$ How to automate the annotation process using language models?
   %\vspace{0.25cm}
   \pause
 
-  This approach uses full context and compares predictions with gold annotations
+  They use full context and compare predictions with gold annotations
 
   \vspace{0.25cm}
   \pause
@@ -931,7 +951,7 @@ $\rightarrow$ How to automate the annotation process using language models?
   \vspace{0.25cm}
   \pause
   
-  $\rightarrow$ We address this by identifying characters and their emotions with transformer-based sequence-to-sequence models
+  $\rightarrow$ We address this by identifying characters and their emotions with transformer-based text-to-text models
 
 \end{frame}
 
@@ -958,7 +978,7 @@ $\rightarrow$ How to automate the annotation process using language models?
 %\vspace{0.5cm}
 \pause
 
-$\rightarrow$ 248M-parameter LaMini-Flan-T5 encoder-decoder transformer, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
+$\rightarrow$ 248M-parameter LaMini-Flan-T5, pre-trained on 2.58M instructions across 15 tasks \smallcitep{lamini-lm}%, which takes token sequences as input and generates token sequences as output, and was among the top sub-1B models across 15 NLP tasks \parencite{lamini-lm}.
 
 \end{frame}
 
@@ -1127,7 +1147,7 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
   %\vspace{0.5cm}
   %\pause
 
-  $\rightarrow$ We aim to create a accessible framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
+  $\rightarrow$ We aim to create an accessible, formal framework that researchers can build upon in future studies % We do not claim to capture the full complexity of subjective experience in text
 
 \end{frame}
 
@@ -1513,23 +1533,41 @@ How to model subjective experience in personal narratives?
 \vspace{0.5cm}
 \pause
 
+%\begin{itemize}[<+->]
+%    \item Cognitive science perspective on emotion analysis
+%    \item French narratives based on emotion components
+%    \item Emotion analysis in emotional and dream narratives 
+%    \item Formalization of style in personal narratives
+%\end{itemize}
+
 \begin{itemize}[<+->]
-    \item Cognitive science perspective on emotion analysis
-    \item French narratives based on emotion components
-    \item Emotion analysis in emotional and dream narratives 
-    \item Formalization of style in personal narratives
+  \setlength{\itemsep}{1.0em}
+  \item Cognitive science perspective on emotion analysis
+  \begin{itemize}[<+->]\footnotesize
+    \setlength{\itemsep}{0.5em}
+    \item Overview of psychological theories with emotion annotation schemes
+    \item Limitations and research directions for emotion analysis
+  \end{itemize}
+  \item New \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus of narratives based on emotion components}
+  \item Emotion analysis in emotional and dream narratives 
+  \begin{itemize}[<+->]\footnotesize
+    \setlength{\itemsep}{0.5em}
+    \item First \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{language model for emotion prediction based on components}
+    \item First \href{https://huggingface.co/gustavecortal/dream-t5}{language model for character and emotion prediction in dreams}
+  \end{itemize}
+  \item Formalization of style in personal narratives
 \end{itemize}
 
 \vspace{0.5cm}
 
 \onslide<1->{
 {\small
-\textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues
+\textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues}}
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
-}}
+%\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
+%}}
 
 
 \end{frame}
@@ -1649,17 +1687,17 @@ I wanted to apply my NLP skills to industry work with social impact
 
 \begin{frame}{Data collection}
 
-Narratives and clinical scores from \textit{four cohorts}: French general population (n=1809) and three clinical cohorts (Italian n=116, Chinese n=52, Spanish n=90)
+Narratives and clinical scores from \textbf{four cohorts}: French general population (n=1809) and three clinical cohorts (Italian n=116, Chinese n=52, Spanish n=90)
 
 \vspace{0.5cm}
 \pause
 
-\textit{Clinical scores} for depression, anxiety, insomnia
+\textbf{Clinical scores} for depression, anxiety, insomnia
 
 \vspace{0.5cm}
 \pause
 
-\textit{Open-ended questions} involving last 24h, positive future event, current feelings and sleep, etc.
+\textbf{Open-ended questions} involving last 24h, positive future event, current feelings and sleep, etc.
 
 \end{frame}
 
@@ -1715,31 +1753,41 @@ $\rightarrow$ Clustering captures symptom severity and age-related circumstances
 %Selected cluster descriptions (Clusters 1, 10, 12, 26) were generated by Qwen3-14B summarizing 30 random transcripts per cluster.
 \end{frame}
 
-\section{Perspectives}
+%\section{Perspectives}
 
-\begin{frame}{}
-\Large
-\vfill
-\begin{center}
-    Perspectives
+%\begin{frame}{}
+%\Large
+%\vfill
+%\begin{center}
+%    Perspectives
     %\section{Thematic analysis in mental health narratives using language models}
-\end{center}
+%\end{center}
 
-\vfill
+%\vfill
 
-\end{frame}
+%\end{frame}
 
 \begin{frame}{Conclusion}
 
 How to model subjective experience in personal narratives?
 
-\vspace{0.5cm}
-
-\begin{itemize}%[<+->]
-    \item Cognitive science perspective on emotion analysis
-    \item French narratives based on emotion components
-    \item Emotion analysis in emotional and dream narratives 
-    \item Formalization of style in personal narratives
+\vspace{0.25cm}
+\begin{itemize}
+  \setlength{\itemsep}{1.0em}
+  \item Cognitive science perspective on emotion analysis
+  \begin{itemize}\footnotesize
+    \setlength{\itemsep}{0.5em}
+    \item Overview of psychological theories with emotion annotation schemes
+    \item Limitations and research directions for emotion analysis
+  \end{itemize}
+  \item New \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus of narratives based on emotion components}
+  \item Emotion analysis in emotional and dream narratives 
+  \begin{itemize}\footnotesize
+    \setlength{\itemsep}{0.5em}
+    \item First \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{language model for emotion prediction based on components}
+    \item First \href{https://huggingface.co/gustavecortal/dream-t5}{language model for character and emotion prediction in dreams}
+  \end{itemize}
+  \item Formalization of style in personal narratives
 \end{itemize}
 
 \vspace{0.5cm}
@@ -1748,9 +1796,9 @@ How to model subjective experience in personal narratives?
 {\small
 \textbf{Papers}: 2 int. conferences, 3 int. workshops, 2 national venues
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
+%\textbf{Open corpus and tools}: \href{https://huggingface.co/datasets/gustavecortal/FrenchEmotionalNarratives}{French corpus based on emotion components}; language models for emotion analysis in \href{https://huggingface.co/gustavecortal/distilcamembert-cae-all}{emotional} and \href{https://huggingface.co/gustavecortal/dream-t5}{dream} narratives
 }
 
 \end{frame}
@@ -1819,7 +1867,7 @@ The formal semantics of a language is made of syntactical and lexical rules that
 
 \begin{frame}{Codes underdetermine emotion meaning}
 
-\pause
+%\pause
 
 Let's take emotion expression modes as an example:
 
