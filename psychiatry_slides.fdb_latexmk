@@ -1,18 +1,12 @@
 # Fdb version 3
-["biber psychiatry_slides"] 1770046927 "psychiatry_slides.bcf" "psychiatry_slides.bbl" "psychiatry_slides" 1770047204
-  "custom.bib" 1766065529 1072 d3d70f42005efe9ee947e8fae6b9c587 ""
-  "full.bib" 1769173831 240993 2e7ae1c34d9a9ce6cb2e22be5b620ffd ""
-  "gustave.bib" 1770039989 143485 ac5904fdd825ff3176fffde4e0e4509d ""
-  "introduction.bib" 1769349867 22967 b17bb3d588fab6521080aa0da0626dba ""
-  "phd_slides_biblatex.bib" 1767957021 15387 f983338cefab62b9668a127cde09ddbc ""
-  "psychiatry_slides.bcf" 1770047204 127380 a91534f2c139d8279aecbc9ca6e846bc "pdflatex"
-  "rachid.bib" 1770039991 6937 c374d81f4a951856258b80c959bf2f58 ""
+["biber psychiatry_slides"] 1770065730 "psychiatry_slides.bcf" "psychiatry_slides.bbl" "psychiatry_slides" 1770066798
+  "psychiatry_slides.bcf" 1770066798 128625 0db37459a0b0974c09ed07c853ff75d2 "pdflatex"
   (generated)
   "psychiatry_slides.bbl"
   "psychiatry_slides.blg"
-["pdflatex"] 1770047196 "/home/gcortal/phd_presentation/psychiatry_slides.tex" "psychiatry_slides.pdf" "psychiatry_slides" 1770047204
+["pdflatex"] 1770066787 "/home/gcortal/phd_presentation/psychiatry_slides.tex" "psychiatry_slides.pdf" "psychiatry_slides" 1770066798
   "/etc/texmf/web2c/texmf.cnf" 1766596138 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gcortal/phd_presentation/psychiatry_slides.tex" 1770047196 79770 b04373fd6109a2d7df5cdc48346e20f1 ""
+  "/home/gcortal/phd_presentation/psychiatry_slides.tex" 1770066787 80192 8dae800424eb783d402751add49a2e84 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0700.tfm" 1136768653 3584 0720b4ccd5fa2debb05d019875c8e532 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0800.tfm" 1136768653 3584 3dfe0566d0b48ead5866d1b455f67a43 ""
@@ -352,6 +346,7 @@
   "img/dream_method.png" 1767957021 142570 0ebe2336c7c379dc29789c1f397ee938 ""
   "img/hdvc_girl.png" 1769282339 84433 5948d550e0d9ee0379826ee95ad8faf2 ""
   "img/lmf_logo_emnlp.png" 1767957021 49966 69e7aca10c8367acfb496ca7652711f0 ""
+  "img/logo_callyope.png" 1768918391 45362 a09fda7e129d59d854c0b5803d589269 ""
   "img/logo_cnrs.png" 1687273644 19008 01b8e06aa182588d5b889b8e0643be1c ""
   "img/logo_ens_saclay.png" 1767957021 19764 6f143337b0c6f10d065435dfc4942e62 ""
   "img/logo_lisn.png" 1768303669 30572 347743e101c593c9d36e919143d2a15b ""
@@ -363,12 +358,12 @@
   "img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png" 1767957021 321901 634de14d21b9597c6d24013dde4ab4b5 ""
   "img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png" 1767957021 366244 c48ed929b430cc3e629fa5619aa12ac6 ""
   "img/topic_modeling/methods_v3.png" 1767957021 184598 ebe7f8c6743b13afc3823bd137bcf3b0 ""
-  "psychiatry_slides.aux" 1770047204 50833 9cc361928216f05f06654170296052da "pdflatex"
-  "psychiatry_slides.bbl" 1770046928 179653 4c914387028d12a6d8add939c68713b9 "biber psychiatry_slides"
-  "psychiatry_slides.nav" 1770047204 9354 ac7c393ee2de34fe5a15da2b6217d049 "pdflatex"
-  "psychiatry_slides.out" 1770047204 2081 2f7546b4afd23473f65707b50ab1c9e3 "pdflatex"
-  "psychiatry_slides.run.xml" 1770047204 2600 089a13b9f8f0bb2b0b4dc212e593bf63 "pdflatex"
-  "psychiatry_slides.tex" 1770047196 79770 b04373fd6109a2d7df5cdc48346e20f1 ""
+  "psychiatry_slides.aux" 1770066798 53096 4b3c3ba2549ecec8cffaf5a77dd2c2c2 "pdflatex"
+  "psychiatry_slides.bbl" 1770065732 179653 4c914387028d12a6d8add939c68713b9 "biber psychiatry_slides"
+  "psychiatry_slides.nav" 1770066798 9353 4a59e07e4155e22b7f34709d97691858 "pdflatex"
+  "psychiatry_slides.out" 1770066798 2081 2f7546b4afd23473f65707b50ab1c9e3 "pdflatex"
+  "psychiatry_slides.run.xml" 1770066798 2600 089a13b9f8f0bb2b0b4dc212e593bf63 "pdflatex"
+  "psychiatry_slides.tex" 1770066787 80192 8dae800424eb783d402751add49a2e84 ""
   (generated)
   "psychiatry_slides.aux"
   "psychiatry_slides.bcf"

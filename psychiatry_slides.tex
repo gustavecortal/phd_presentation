@@ -1065,6 +1065,13 @@ $\rightarrow$ The veteran dreams more about \textit{occupational}, \textit{ethni
     %\section{Thematic analysis in mental health narratives using language models}
 \end{center}
 
+\begin{figure}
+  \centering
+  \includegraphics[width=0.2\linewidth]{img/logo_callyope.png}
+  \caption*{\href{https://www.callyope.com/}{callyope.com}}
+  \label{fig:placeholder}
+\end{figure}
+
 \vfill
 
 \footnotesize
@@ -1144,8 +1151,8 @@ Narratives and clinical scores from \textbf{four cohorts}: French general popula
 
   \begin{itemize}[<+->]
     \item First topic modeling \textit{across different languages and cohorts} using language models
-    \item Replaced keywords ("family") with \textit{context-rich descriptions} to capture symptom co-occurrence and clinical nuance ("family conflicts", "family relationships")
-    \item Identified \textit{risk} ("sleep disturbance") and \textit{protective} ("physical activity") topics for depression, consistent with psychiatric literature
+    \item Replaced keywords \parensmall{("family")} with \textit{context-rich descriptions} to capture symptom co-occurrence and clinical nuance \parensmall{("family conflicts", "stress related to exam preparation")}
+    \item Identified \textit{risk} \parensmall{("sleep disturbance")} and \textit{protective} \parensmall{("physical activity")} topics for depression, consistent with psychiatric literature
   \end{itemize}
 
   %language models can generate cluster descriptions reflecting core psychiatric constructs, bridging qualitative insights and scalable assessment
@@ -1222,7 +1229,7 @@ $\rightarrow$ Nearly all questions discriminate sociodemographics
 
 \begin{frame}{Risk and protective topics for depression}
 
-$\rightarrow$ NLP and psychiatry researchers reviewed generated cluster descriptions to identify risk and protective topics for depression
+NLP and psychiatry researchers reviewed generated cluster descriptions to identify risk and protective topics for depression
 
 \vspace{0.5cm}
 \pause
@@ -1233,21 +1240,11 @@ $\rightarrow$ NLP and psychiatry researchers reviewed generated cluster descript
   \item \textbf{Protective topics}: arts and creative activity \smallcitep{fancourt_what_2019}; gardening and nature \smallcitep{soga_gardening_2017}; holidays and travel \smallcitep{de_bloom_vacation_2013}; physical activity \smallcitep{pearce_association_2022}
 \end{itemize}
 
+\vspace{0.5cm}
+\pause
 
-\end{frame}
+$\rightarrow$ We found topics consistent with psychiatric literature, aligned with labor-intensive qualitative research \smallcitep{stanghellini2023lived}
 
-\begin{frame}{Potential applications and future work}
-
-  \begin{itemize}[<+->]
-    \item \textbf{Risk stratification}: flagging individuals in high-severity clusters for clinical review
-    \item \textbf{Personalized treatment}: interventions based on cluster themes
-    \item \textbf{Treatment monitoring}: tracking thematic shifts over time% during therapy
-  \end{itemize}
-
-  \vspace{0.5cm}
-  \pause
-
-  $\rightarrow$ Do cluster descriptions improve clinician decision-making?
 
 \end{frame}
 
@@ -1661,6 +1658,21 @@ Beck is based on \href{https://huggingface.co/gustavecortal/Piaget-8B}{Piaget} a
 \end{frame}
 
 \end{comment}
+
+\begin{frame}{Potential applications and future work}
+
+  \begin{itemize}[<+->]
+    \item \textbf{Risk stratification}: flagging individuals in high-severity clusters for clinical review
+    \item \textbf{Personalized treatment}: interventions based on cluster themes
+    \item \textbf{Treatment monitoring}: tracking thematic shifts over time% during therapy
+  \end{itemize}
+
+  \vspace{0.5cm}
+  \pause
+
+  $\rightarrow$ Do cluster descriptions improve clinician decision-making?
+
+\end{frame}
 
 \section{References}
 \begin{frame}{}
