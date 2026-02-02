@@ -1,0 +1,10 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Cognitive science perspective on emotion analysis}{12}{0}{2}
+\beamer@sectionintoc {3}{Linguistic and cognitive science theories}{21}{0}{3}
+\beamer@sectionintoc {4}{French narratives based on emotion components}{43}{0}{4}
+\beamer@sectionintoc {5}{Language models for emotion analysis}{51}{0}{5}
+\beamer@sectionintoc {6}{Automatic thematic analysis in mental health narratives}{83}{0}{6}
+\beamer@sectionintoc {7}{Conclusion and perspectives}{114}{0}{7}
+\beamer@sectionintoc {8}{Appendix}{128}{1}{8}
+\beamer@sectionintoc {9}{References}{135}{1}{9}
