@@ -1,12 +1,18 @@
 # Fdb version 3
-["biber psychiatry_slides"] 1770065730 "psychiatry_slides.bcf" "psychiatry_slides.bbl" "psychiatry_slides" 1770066798
-  "psychiatry_slides.bcf" 1770066798 128625 0db37459a0b0974c09ed07c853ff75d2 "pdflatex"
+["biber psychiatry_slides"] 1770302683 "psychiatry_slides.bcf" "psychiatry_slides.bbl" "psychiatry_slides" 1770302876
+  "custom.bib" 1766065529 1072 d3d70f42005efe9ee947e8fae6b9c587 ""
+  "full.bib" 1769173831 240993 2e7ae1c34d9a9ce6cb2e22be5b620ffd ""
+  "gustave.bib" 1770039989 143485 ac5904fdd825ff3176fffde4e0e4509d ""
+  "introduction.bib" 1769349867 22967 b17bb3d588fab6521080aa0da0626dba ""
+  "phd_slides_biblatex.bib" 1767957021 15387 f983338cefab62b9668a127cde09ddbc ""
+  "psychiatry_slides.bcf" 1770302876 116233 54c917b4d6f5ae6097f43df2c3982729 "pdflatex"
+  "rachid.bib" 1770039991 6937 c374d81f4a951856258b80c959bf2f58 ""
   (generated)
   "psychiatry_slides.bbl"
   "psychiatry_slides.blg"
-["pdflatex"] 1770066787 "/home/gcortal/phd_presentation/psychiatry_slides.tex" "psychiatry_slides.pdf" "psychiatry_slides" 1770066798
+["pdflatex"] 1770302869 "/home/gcortal/phd_presentation/psychiatry_slides.tex" "psychiatry_slides.pdf" "psychiatry_slides" 1770302876
   "/etc/texmf/web2c/texmf.cnf" 1766596138 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/gcortal/phd_presentation/psychiatry_slides.tex" 1770066787 80192 8dae800424eb783d402751add49a2e84 ""
+  "/home/gcortal/phd_presentation/psychiatry_slides.tex" 1770302869 80255 78fc9e9522b33b91f18c9b3bfa1db7b1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0700.tfm" 1136768653 3584 0720b4ccd5fa2debb05d019875c8e532 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecsi0800.tfm" 1136768653 3584 3dfe0566d0b48ead5866d1b455f67a43 ""
@@ -358,12 +364,12 @@
   "img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_diploma_level_gender_age_global_heatmap.png" 1767957021 321901 634de14d21b9597c6d24013dde4ab4b5 ""
   "img/topic_modeling/heatmap_effect_sizes/V5_V6_V7_V8_V9_V10_phq9_gad7_bdi_ais_mfi_global_heatmap.png" 1767957021 366244 c48ed929b430cc3e629fa5619aa12ac6 ""
   "img/topic_modeling/methods_v3.png" 1767957021 184598 ebe7f8c6743b13afc3823bd137bcf3b0 ""
-  "psychiatry_slides.aux" 1770066798 53096 4b3c3ba2549ecec8cffaf5a77dd2c2c2 "pdflatex"
-  "psychiatry_slides.bbl" 1770065732 179653 4c914387028d12a6d8add939c68713b9 "biber psychiatry_slides"
-  "psychiatry_slides.nav" 1770066798 9353 4a59e07e4155e22b7f34709d97691858 "pdflatex"
-  "psychiatry_slides.out" 1770066798 2081 2f7546b4afd23473f65707b50ab1c9e3 "pdflatex"
-  "psychiatry_slides.run.xml" 1770066798 2600 089a13b9f8f0bb2b0b4dc212e593bf63 "pdflatex"
-  "psychiatry_slides.tex" 1770066787 80192 8dae800424eb783d402751add49a2e84 ""
+  "psychiatry_slides.aux" 1770302876 31799 8f330871fc491235a302bd7659a59513 "pdflatex"
+  "psychiatry_slides.bbl" 1770302684 179653 4c914387028d12a6d8add939c68713b9 "biber psychiatry_slides"
+  "psychiatry_slides.nav" 1770302876 8783 edb240c7a2444bb068bb386ffb5a8816 "pdflatex"
+  "psychiatry_slides.out" 1770302876 1978 dc615ea36954b458395ed06b0df5d783 "pdflatex"
+  "psychiatry_slides.run.xml" 1770302876 2600 089a13b9f8f0bb2b0b4dc212e593bf63 "pdflatex"
+  "psychiatry_slides.tex" 1770302869 80255 78fc9e9522b33b91f18c9b3bfa1db7b1 ""
   (generated)
   "psychiatry_slides.aux"
   "psychiatry_slides.bcf"

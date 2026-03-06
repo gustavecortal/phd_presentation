@@ -1,13 +1,13 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Contributions}{13}{0}{2}
-\beamer@sectionintoc {3}{Cognitive science perspective on emotion analysis}{25}{0}{3}
-\beamer@sectionintoc {4}{Linguistic and cognitive science theories}{34}{0}{4}
-\beamer@sectionintoc {5}{French narratives based on emotion components}{44}{0}{5}
-\beamer@sectionintoc {6}{Language models for emotion analysis}{56}{0}{6}
-\beamer@sectionintoc {7}{Formalization of style}{90}{0}{7}
-\beamer@sectionintoc {8}{Conclusion and perspectives}{127}{0}{8}
-\beamer@sectionintoc {9}{Impact}{140}{0}{9}
-\beamer@sectionintoc {10}{Automatic thematic analysis in mental health narratives}{144}{0}{10}
-\beamer@sectionintoc {11}{Appendix}{159}{1}{11}
-\beamer@sectionintoc {12}{References}{182}{1}{12}
+\beamer@sectionintoc {2}{Contributions}{5}{0}{2}
+\beamer@sectionintoc {3}{Cognitive science perspective on emotion analysis}{8}{0}{3}
+\beamer@sectionintoc {4}{Linguistic and cognitive science theories}{12}{0}{4}
+\beamer@sectionintoc {5}{French narratives based on emotion components}{15}{0}{5}
+\beamer@sectionintoc {6}{Language models for emotion analysis}{19}{0}{6}
+\beamer@sectionintoc {7}{Formalization of style}{30}{0}{7}
+\beamer@sectionintoc {8}{Conclusion and perspectives}{43}{0}{8}
+\beamer@sectionintoc {9}{Impact}{46}{0}{9}
+\beamer@sectionintoc {10}{Automatic thematic analysis in mental health narratives}{49}{0}{10}
+\beamer@sectionintoc {11}{Appendix}{57}{1}{11}
+\beamer@sectionintoc {12}{References}{69}{1}{12}
